@@ -1,0 +1,1052 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.40.3.8902/W32 for ARM        24/Dec/2016  13:33:49
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\Core\Test_Program\test_program.c
+#    Command line =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\Core\Test_Program\test_program.c
+#        -D USE_STDPERIPH_DRIVER -D STM32F429_439xx -D USE_STM32F429I_DISCO -D
+#        USE_USB_OTG_HS -D USE_EMBEDDED_PHY -lcN
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\
+#        --diag_suppress Pe111,Pa082 -o
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\
+#        --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.2\arm\INC\c\DLib_Config_Full.h" -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Config\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Devices\STM32F4xx\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\User\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Demo\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Lib\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Test_Program\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\HID\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\Audio\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_OTG_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Common\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\STM32F429i-Discovery\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\fat_fs\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\Config\
+#        -Ohs --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.2\arm\CMSIS\Include\"
+#    List file    =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\test_program.lst
+#    Object file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\test_program.o
+#
+###############################################################################
+
+D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\Core\Test_Program\test_program.c
+      1          /**
+      2            ******************************************************************************
+      3            * @file    test_program.c 
+      4            * @author  MCD Application Team
+      5            * @version V1.0.1
+      6            * @date    11-November-2013
+      7            * @brief   Test program for STM32F429I-DISCO board
+      8            ******************************************************************************
+      9            * @attention
+     10            *
+     11            * <h2><center>&copy; COPYRIGHT 2013 STMicroelectronics</center></h2>
+     12            *
+     13            * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
+     14            * You may not use this file except in compliance with the License.
+     15            * You may obtain a copy of the License at:
+     16            *
+     17            *        http://www.st.com/software_license_agreement_liberty_v2
+     18            *
+     19            * Unless required by applicable law or agreed to in writing, software 
+     20            * distributed under the License is distributed on an "AS IS" BASIS, 
+     21            * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     22            * See the License for the specific language governing permissions and
+     23            * limitations under the License.
+     24            *
+     25            ******************************************************************************
+     26            */
+     27          
+     28          /* Includes ------------------------------------------------------------------*/
+     29          #include "test_program.h"
+     30          #include "image.h"
+     31          
+     32          /** @addtogroup STM32F429I-Discovery_Demo
+     33          * @{
+     34          */
+     35          
+     36          /* Private typedef -----------------------------------------------------------*/
+     37          /* Private define ------------------------------------------------------------*/
+     38          /* Private macro -------------------------------------------------------------*/
+     39          #define ABS(x)         (x < 0) ? (-x) : x
+     40          #define L3G_Sensitivity_250dps     (float)   114.285f  /*!< gyroscope sensitivity with 250 dps full scale [LSB/dps]  */
+     41          #define L3G_Sensitivity_500dps     (float)   57.1429f  /*!< gyroscope sensitivity with 500 dps full scale [LSB/dps]  */
+     42          #define L3G_Sensitivity_2000dps    (float)   14.285f   /*!< gyroscope sensitivity with 2000 dps full scale [LSB/dps] */
+     43          
+     44          /* Private variables ---------------------------------------------------------*/
+     45          #define IS42S16400J_SIZE_16             0x400000
+     46          static __IO uint32_t TimingDelay;
+     47          extern __IO uint32_t ButtonPressed;
+     48          __ALIGN_BEGIN USB_OTG_CORE_HANDLE  USB_OTG_dev __ALIGN_END;
+     49          float Buffer[6];
+     50          uint8_t Xval, Yval = 0x00;
+     51          L3GD20_InitTypeDef L3GD20_InitStructure;
+     52          L3GD20_FilterConfigTypeDef L3GD20_FilterStructure;
+     53          
+     54          /* Private function prototypes -----------------------------------------------*/
+     55          static void SetSYSCLK_168(void);
+     56          static void SetSYSCLK_180(void);
+     57          
+     58          /* Private functions ---------------------------------------------------------*/
+     59          
+     60          /**
+     61          * @brief  Main program.
+     62          * @param  None
+     63          * @retval None
+     64          */
+     65          void start_test(void)
+     66          {
+     67            /* Configure system clock (SYSCLK) to 180 MHz, at this stage the USB is not used.
+     68               Please note that the USB is not functional if the system clock is set to 180 MHz. */
+     69            SetSYSCLK_180();
+     70          
+     71            /* Reconfigure the SysTick following SYSCLK frequency change */
+     72            if (SysTick_Config(SystemCoreClock / 1000))
+     73            { 
+     74              /* Capture error */ 
+     75              while (1);
+     76            }
+     77             
+     78            /* Initialize LEDs, User Button and LCD on STM32F429I-Disco */
+     79            STM_EVAL_LEDInit(LED3);
+     80            STM_EVAL_LEDInit(LED4);
+     81            STM_EVAL_PBInit(BUTTON_USER, BUTTON_MODE_EXTI); 
+     82            
+     83            /* Display message on LCD */ 
+     84            LCD_Init();
+     85            LCD_LayerInit();
+     86            
+     87            /* LTDC reload configuration */  
+     88            LTDC_ReloadConfig(LTDC_IMReload);
+     89            
+     90            /* Enable the LTDC */
+     91            LTDC_Cmd(ENABLE);
+     92            
+     93            /* Set LCD foreground layer */
+     94            LCD_SetLayer(LCD_FOREGROUND_LAYER);
+     95            LCD_SetTransparency(0);
+     96            
+     97            /* Set LCD background layer */
+     98            LCD_SetLayer(LCD_BACKGROUND_LAYER);
+     99            
+    100            /* LCD display message */
+    101            LCD_Clear(LCD_COLOR_BLUE);
+    102            LCD_SetTextColor(LCD_COLOR_BLACK); 
+    103            LCD_DisplayStringLine(LCD_LINE_1,(uint8_t*)"  TEST PROGRAM ");
+    104            LCD_DisplayStringLine(LCD_LINE_3,(uint8_t*)"    V1.0.1     ");
+    105            LCD_DisplayStringLine(LCD_LINE_5,(uint8_t*)"      PUSH     ");
+    106            LCD_DisplayStringLine(LCD_LINE_7,(uint8_t*)"  USER BUTTON  ");
+    107            LCD_DisplayStringLine(LCD_LINE_9,(uint8_t*)"    TO START   ");
+    108            
+    109            /* Wait for User button to be pressed */
+    110            while (STM_EVAL_PBGetState(BUTTON_USER) != Bit_SET)
+    111            {}
+    112            /* Wait for User button is released */
+    113            while (STM_EVAL_PBGetState(BUTTON_USER) != Bit_RESET)
+    114            {}
+    115          
+    116          /* SDRAM TEST *****************************************************************/  
+    117            /* LCD display message */
+    118            LCD_DisplayStringLine(LCD_LINE_1,(uint8_t*)"   SDRAM TEST  ");
+    119            LCD_DisplayStringLine(LCD_LINE_3,(uint8_t*)"               ");  
+    120            
+    121            /* Wait for User button to be pressed */
+    122            while (STM_EVAL_PBGetState(BUTTON_USER) != Bit_SET)
+    123            {}
+    124            /* Wait for User button is released */
+    125            while (STM_EVAL_PBGetState(BUTTON_USER) != Bit_RESET)
+    126            {}
+    127            
+    128            /* SDRAM Test */
+    129            SDRAM_Test();
+    130          
+    131          
+    132          /* LCD TEST *******************************************************************/    
+    133            /* LCD display message */
+    134            LCD_Clear(LCD_COLOR_BLUE);
+    135            LCD_SetTextColor(LCD_COLOR_BLACK); 
+    136            LCD_DisplayStringLine(LCD_LINE_1,(uint8_t*)"    LCD TEST   ");
+    137            LCD_DisplayStringLine(LCD_LINE_3,(uint8_t*)"      PUSH     ");
+    138            LCD_DisplayStringLine(LCD_LINE_5,(uint8_t*)"  USER BUTTON  ");
+    139            LCD_DisplayStringLine(LCD_LINE_7,(uint8_t*)"    TO START   ");
+    140            
+    141            /* Wait for User button to be pressed */
+    142            while (STM_EVAL_PBGetState(BUTTON_USER) != Bit_SET)
+    143            {}
+    144            /* Wait for User button is released */
+    145            while (STM_EVAL_PBGetState(BUTTON_USER) != Bit_RESET)
+    146            {}
+    147            
+    148            /* LCD Test */
+    149            LCD_Test();
+    150          
+    151          /* TP TEST ********************************************************************/  
+    152            /* LCD display message */
+    153            LCD_Clear(LCD_COLOR_BLUE);
+    154            LCD_SetTextColor(LCD_COLOR_BLACK); 
+    155            LCD_DisplayStringLine(LCD_LINE_1,(uint8_t*)"     TP TEST   ");
+    156            LCD_DisplayStringLine(LCD_LINE_3,(uint8_t*)"      PUSH     ");
+    157            LCD_DisplayStringLine(LCD_LINE_5,(uint8_t*)"  USER BUTTON  ");
+    158            LCD_DisplayStringLine(LCD_LINE_7,(uint8_t*)"    TO START   ");
+    159            
+    160            /* Wait for User button to be pressed */
+    161            while (STM_EVAL_PBGetState(BUTTON_USER) != Bit_SET)
+    162            { }
+    163            /* Wait for User button is released */
+    164            while (STM_EVAL_PBGetState(BUTTON_USER) != Bit_RESET)
+    165            { }
+    166            
+    167            /* TS Test */
+    168            TP_Test();
+    169          
+    170          /* MEMS TEST ******************************************************************/  
+    171            /* LCD display message */
+    172            LCD_Clear(LCD_COLOR_BLUE);
+    173            LCD_SetTextColor(LCD_COLOR_BLACK); 
+    174            LCD_DisplayStringLine(LCD_LINE_1,(uint8_t*)"   MEMS TEST   ");
+    175            LCD_DisplayStringLine(LCD_LINE_3,(uint8_t*)"     PUSH      ");
+    176            LCD_DisplayStringLine(LCD_LINE_5,(uint8_t*)"  USER BUTTON  ");
+    177            LCD_DisplayStringLine(LCD_LINE_7,(uint8_t*)"    TO START   ");
+    178            
+    179            /* Wait for User button to be pressed */
+    180            while (STM_EVAL_PBGetState(BUTTON_USER) != Bit_SET)
+    181            { }
+    182            /* Wait for User button is released */
+    183            while (STM_EVAL_PBGetState(BUTTON_USER) != Bit_RESET)
+    184            { }
+    185            
+    186            /* Configure Mems L3GD20*/
+    187            Demo_GyroConfig();
+    188            
+    189            /* Mems Test */
+    190            MEMS_Test();  
+    191          
+    192          /* USB TEST *******************************************************************/  
+    193            /* LCD display message */
+    194            LCD_Clear(LCD_COLOR_BLUE);
+    195            LCD_SetTextColor(LCD_COLOR_BLACK); 
+    196            LCD_DisplayStringLine(LCD_LINE_1,(uint8_t*)"    USB TEST   ");
+    197            LCD_DisplayStringLine(LCD_LINE_3,(uint8_t*)"      PUSH     ");
+    198            LCD_DisplayStringLine(LCD_LINE_5,(uint8_t*)"  USER BUTTON  ");
+    199            LCD_DisplayStringLine(LCD_LINE_7,(uint8_t*)"    TO START   ");
+    200            
+    201            /* Wait for User button to be pressed */
+    202            while (STM_EVAL_PBGetState(BUTTON_USER) != Bit_SET)
+    203            {}
+    204            /* Wait for User button is released */
+    205            while (STM_EVAL_PBGetState(BUTTON_USER) != Bit_RESET)
+    206            {}
+    207          
+    208            /* Configure system clock (SYSCLK) to 168 MHz to provide 48 MHz clock needed for
+    209               the USB operation.
+    210               Please note that the USB is not functional if the system clock is set to 180 MHz. */
+    211            SetSYSCLK_168();
+    212          
+    213            /* Reconfigure the SysTick following SYSCLK frequency change */
+    214            if (SysTick_Config(SystemCoreClock / 1000))
+    215            { 
+    216              /* Capture error */ 
+    217              while (1);
+    218            }  
+    219            /* USB Test */
+    220            USB_Test();  
+    221          
+    222          
+    223          /* End of test program: go to infinite loop ***********************************/
+    224            LCD_Clear(LCD_COLOR_BLUE);
+    225            LCD_SetTextColor(LCD_COLOR_BLACK); 
+    226            LCD_DisplayStringLine(LCD_LINE_5,(uint8_t*)"  End Of Test  ");
+    227            LCD_DisplayStringLine(LCD_LINE_7,(uint8_t*)"   Program     ");
+    228           
+    229            while (1)
+    230            {   
+    231            }
+    232          }
+    233          
+    234          /**
+    235          * @brief   Detect motion direction to test MEMS.
+    236          * @param  None
+    237          * @retval None
+    238          */
+    239          void MEMS_Test(void)
+    240          {  
+    241            
+    242            /* LCD display message */
+    243            LCD_DisplayStringLine(LCD_LINE_3,(uint8_t*)"MOVE DISCOVERY ");
+    244            LCD_DisplayStringLine(LCD_LINE_5,(uint8_t*)"If screen color");
+    245            LCD_DisplayStringLine(LCD_LINE_6,(uint8_t*)"changes:Test OK");
+    246            LCD_DisplayStringLine(LCD_LINE_7,(uint8_t*)"Else Test KO   ");
+    247          
+    248           
+    249            /* Wait for User button to be pressed */
+    250            while (STM_EVAL_PBGetState(BUTTON_USER) != Bit_SET)
+    251            {
+    252              /* Read Gyro Angular data */
+    253              Demo_GyroReadAngRate(Buffer);
+    254              
+    255              /* Update autoreload and capture compare registers value*/
+    256              Xval = ABS((int8_t)(Buffer[0]));
+    257              Yval = ABS((int8_t)(Buffer[1]));   
+    258              if ( Xval>Yval)
+    259              {
+    260                if ((int8_t)Buffer[0] > 10.0f)
+    261                { 
+    262                  /* LED3 and LED4 On */
+    263                  STM_EVAL_LEDOn(LED3);
+    264                  STM_EVAL_LEDOn(LED4);
+    265                  
+    266                  /* Clear the LCD */ 
+    267                  LCD_Clear(LCD_COLOR_BLUE);
+    268                  LCD_DisplayStringLine(LCD_LINE_10,(uint8_t*)"   PUSH USER    ");
+    269                  LCD_DisplayStringLine(LCD_LINE_11,(uint8_t*)"  BUTTON TO GO  ");
+    270                  LCD_DisplayStringLine(LCD_LINE_12,(uint8_t*)"  TO NEXT TEST  ");
+    271                  Delay(200);
+    272                }
+    273                if ((int8_t)Buffer[0] < -10.0f)
+    274                { 
+    275                  /* LED3 and LED4 Off */
+    276                  STM_EVAL_LEDOff(LED3);
+    277                  STM_EVAL_LEDOff(LED4);
+    278                  /* Clear the LCD */ 
+    279                  LCD_Clear(LCD_COLOR_WHITE); 
+    280                  LCD_DisplayStringLine(LCD_LINE_10,(uint8_t*)"   PUSH USER    ");
+    281                  LCD_DisplayStringLine(LCD_LINE_11,(uint8_t*)"  BUTTON TO GO  ");
+    282                  LCD_DisplayStringLine(LCD_LINE_12,(uint8_t*)"  TO NEXT TEST  ");
+    283                  Delay(200);
+    284                }
+    285              }
+    286              else
+    287              {
+    288                if ((int8_t)Buffer[1] < -10.0f)
+    289                {
+    290                  /* LED4 On */
+    291                  STM_EVAL_LEDOff(LED3);
+    292                  STM_EVAL_LEDOn(LED4);
+    293                  
+    294                  /* Clear the LCD */ 
+    295                  LCD_Clear(LCD_COLOR_RED);
+    296                  LCD_DisplayStringLine(LCD_LINE_10,(uint8_t*)"   PUSH USER    ");
+    297                  LCD_DisplayStringLine(LCD_LINE_11,(uint8_t*)"  BUTTON TO GO  ");
+    298                  LCD_DisplayStringLine(LCD_LINE_12,(uint8_t*)"  TO NEXT TEST  ");          
+    299                  Delay(200);
+    300                }
+    301                if ((int8_t)Buffer[1] > 10.0f)
+    302                {
+    303                  /* LED3 On */
+    304                  STM_EVAL_LEDOff(LED4);
+    305                  STM_EVAL_LEDOn(LED3);
+    306                  
+    307                  /* Clear the LCD */ 
+    308                  LCD_Clear(LCD_COLOR_GREEN);
+    309                  LCD_DisplayStringLine(LCD_LINE_10,(uint8_t*)"   PUSH USER    ");
+    310                  LCD_DisplayStringLine(LCD_LINE_11,(uint8_t*)"  BUTTON TO GO  ");
+    311                  LCD_DisplayStringLine(LCD_LINE_12,(uint8_t*)"  TO NEXT TEST  ");        
+    312                  Delay(200);
+    313                } 
+    314              }
+    315            }
+    316            /* Wait for User button is released */
+    317            while (STM_EVAL_PBGetState(BUTTON_USER) != Bit_RESET)
+    318            {}
+    319            /* LED3 and LED4 Off */
+    320            STM_EVAL_LEDOff(LED3);
+    321            STM_EVAL_LEDOff(LED4);
+    322          }
+    323          
+    324          /**
+    325          * @brief  Detect screen touch in specific square.
+    326          * @param  None
+    327          * @retval None
+    328          */
+    329          void TP_Test(void)
+    330          {
+    331            static TP_STATE* TP_State; 
+    332            
+    333            /* Clear the LCD */ 
+    334            LCD_Clear(LCD_COLOR_BLUE2);
+    335            
+    336            /* Configure the IO Expander */
+    337            if (IOE_Config() == IOE_OK)
+    338            {
+    339              /* Update the structure with the current position */
+    340              TP_State = IOE_TP_GetState();  
+    341              
+    342              while (!(TP_State->TouchDetected) )
+    343              {
+    344                LCD_SetTextColor(LCD_COLOR_RED); 
+    345                LCD_DisplayStringLine(LCD_LINE_1,(uint8_t*)"  PLEASE TOUCH ");
+    346                LCD_DisplayStringLine(LCD_LINE_5,(uint8_t*)"  THE SCREEN   ");
+    347                LCD_DrawFullRect(80, 200, 80, 80);       
+    348                TP_State = IOE_TP_GetState(); 
+    349                TP_State->X = TP_State->X;
+    350                TP_State->Y = TP_State->Y;
+    351                if ((TP_State->TouchDetected) && (TP_State->Y < 280) && (TP_State->Y > 200) && (TP_State->X > 80) && (TP_State->X < 160))
+    352                {
+    353                  /* LCD display message */ 
+    354                  LCD_Clear(LCD_COLOR_GREEN);
+    355                  LCD_SetTextColor(LCD_COLOR_BLACK); 
+    356                  LCD_DisplayStringLine(LCD_LINE_1,(uint8_t*)"   TP TEST OK  ");
+    357                  LCD_DisplayStringLine(LCD_LINE_3,(uint8_t*)"      PUSH     ");
+    358                  LCD_DisplayStringLine(LCD_LINE_5,(uint8_t*)"  USER BUTTON  ");
+    359                  /* Waiting User Button is pressed */
+    360                  while ((STM_EVAL_PBGetState(BUTTON_USER) != Bit_SET))
+    361                  {}      
+    362                  /* Wait for User button is released */
+    363                  while (STM_EVAL_PBGetState(BUTTON_USER) != Bit_RESET)
+    364                  { }
+    365                }
+    366                else
+    367                {
+    368                  TP_State->TouchDetected = 0;
+    369                }
+    370              }
+    371            }  
+    372            else
+    373            {
+    374              /* LCD display message */
+    375              LCD_Clear(LCD_COLOR_RED);
+    376              LCD_SetTextColor(LCD_COLOR_BLACK); 
+    377              LCD_DisplayStringLine(LCD_LINE_1,(uint8_t*)"   TS TEST     ");
+    378              LCD_DisplayStringLine(LCD_LINE_3,(uint8_t*)"    FAILED     ");
+    379              
+    380              /* Waiting User Button is pressed */
+    381              while ((STM_EVAL_PBGetState(BUTTON_USER) != Bit_SET))
+    382              {}      
+    383              /* Wait for User Button is released */
+    384              while (STM_EVAL_PBGetState(BUTTON_USER) != Bit_RESET)
+    385              { } 
+    386            }
+    387          }
+    388          
+    389          /**
+    390          * @brief  Display image on LCD.
+    391          * @param  None
+    392          * @retval None
+    393          */
+    394          void LCD_Test(void)
+    395          { 
+    396            DMA2D_InitTypeDef              DMA2D_InitStruct;
+    397            DMA2D_FG_InitTypeDef           DMA2D_FG_InitStruct;
+    398            
+    399            /* Transfer data from SDRAM to Graphics RAM using DMA2D */
+    400            /* Memory to Memory Transfer */
+    401            DMA2D_DeInit();
+    402            DMA2D_InitStruct.DMA2D_Mode = DMA2D_M2M;       
+    403            DMA2D_InitStruct.DMA2D_CMode = DMA2D_RGB565;      
+    404            DMA2D_InitStruct.DMA2D_OutputGreen = 0x0;      
+    405            DMA2D_InitStruct.DMA2D_OutputBlue = 0x00;     
+    406            DMA2D_InitStruct.DMA2D_OutputRed = 0x00;                
+    407            DMA2D_InitStruct.DMA2D_OutputAlpha = 0x0;                  
+    408            DMA2D_InitStruct.DMA2D_OutputMemoryAdd = 0xD0000000;                
+    409            DMA2D_InitStruct.DMA2D_OutputOffset = 0x0;                
+    410            DMA2D_InitStruct.DMA2D_NumberOfLine = 320;            
+    411            DMA2D_InitStruct.DMA2D_PixelPerLine = 240;
+    412            DMA2D_Init(&DMA2D_InitStruct);   
+    413            DMA2D_FG_InitStruct.DMA2D_FGMA = (uint32_t)&Image;
+    414            DMA2D_FG_InitStruct.DMA2D_FGO = 0x00;
+    415            DMA2D_FG_InitStruct.DMA2D_FGCM = CM_RGB565;
+    416            DMA2D_FG_InitStruct.DMA2D_FGPFC_ALPHA_VALUE = 0x00;
+    417            DMA2D_FG_InitStruct.DMA2D_FGC_BLUE = 0x00;
+    418            DMA2D_FG_InitStruct.DMA2D_FGC_GREEN = 0x00;
+    419            DMA2D_FG_InitStruct.DMA2D_FGC_RED = 0x00;
+    420            DMA2D_FGConfig(&DMA2D_FG_InitStruct);
+    421            
+    422            /* Start Transfer */ 
+    423            DMA2D_StartTransfer();
+    424            
+    425            /* LTDC configuration reload */  
+    426            LTDC_ReloadConfig(LTDC_IMReload);
+    427            
+    428            /* Wait for TC Flag activation */
+    429            while(DMA2D_GetFlagStatus(DMA2D_FLAG_TC) == RESET)
+    430            {}
+    431          
+    432            /* Add some delay to have the image visible for 1.5s */
+    433            Delay (1500);
+    434            
+    435            /* Clear the LCD */ 
+    436            LCD_Clear(LCD_COLOR_GREEN);
+    437            LCD_SetTextColor(LCD_COLOR_BLACK); 
+    438            LCD_DisplayStringLine(LCD_LINE_1,(uint8_t*)"  LCD TEST OK  ");
+    439            LCD_DisplayStringLine(LCD_LINE_3,(uint8_t*)"      PUSH     ");
+    440            LCD_DisplayStringLine(LCD_LINE_5,(uint8_t*)"  USER BUTTON  ");
+    441            /* Waiting User Button is pressed */
+    442            while ((STM_EVAL_PBGetState(BUTTON_USER) != Bit_SET))
+    443            {}
+    444            /* Wait for User Button is released */
+    445            while (STM_EVAL_PBGetState(BUTTON_USER) != Bit_RESET)
+    446            {}
+    447          }
+    448          
+    449          /**
+    450          * @brief  USB Test : LED5 ON  when USB OK and connected to PC.
+    451          * @param  None
+    452          * @retval None
+    453          */
+    454          void USB_Test(void)
+    455          {     
+    456          
+    457            /* Init Device Library ********************************************************/
+    458            USBD_Init(&USB_OTG_dev,
+    459                      USB_OTG_HS_CORE_ID,
+    460                      &USR_desc, 
+    461                      &USBD_HID_cb, 
+    462                      &USR_cb);   
+    463            
+    464            /* Connect USB to PC/Laptop, if LED5 is ON test OK, otherwise NotOK */
+    465            /* LCD display message */
+    466            LCD_Clear(LCD_COLOR_GREEN);
+    467            LCD_SetTextColor(LCD_COLOR_BLACK); 
+    468            LCD_DisplayStringLine(LCD_LINE_1,(uint8_t*)" CONNECT USB   ");
+    469            LCD_DisplayStringLine(LCD_LINE_2,(uint8_t*)"USER CN6 TO PC ");
+    470            LCD_DisplayStringLine(LCD_LINE_4,(uint8_t*)"If LED5 ON:    ");
+    471            LCD_DisplayStringLine(LCD_LINE_5,(uint8_t*)"    TEST OK    ");
+    472            LCD_DisplayStringLine(LCD_LINE_7,(uint8_t*)"If LED5 OFF:   ");
+    473            LCD_DisplayStringLine(LCD_LINE_8,(uint8_t*)"    TEST KO    ");
+    474            LCD_DisplayStringLine(LCD_LINE_10,(uint8_t*)"      PUSH     ");
+    475            LCD_DisplayStringLine(LCD_LINE_11,(uint8_t*)"  USER BUTTON  ");
+    476            
+    477            /* Waiting User Button is pressed */
+    478            while ((STM_EVAL_PBGetState(BUTTON_USER) != Bit_SET))
+    479            {}      
+    480            /* Wait for User Button is released */
+    481            while (STM_EVAL_PBGetState(BUTTON_USER) != Bit_RESET)
+    482            { }   
+    483          }
+    484          
+    485          /**
+    486          * @brief  Erase, then write/read operation are performed to test SDRAM.
+    487          * @param  None
+    488          * @retval None
+    489          */
+    490          void SDRAM_Test(void)
+    491          {
+    492            uint16_t writedata_16b = 0x1E5A, readdata_16b = 0;  
+    493            uint32_t readwritestatus = 0;
+    494            uint32_t index = 0;
+    495            
+    496            /* SDRAM Initialization */  
+    497            SDRAM_Init();
+    498            
+    499            /* FMC SDRAM GPIOs Configuration*/
+    500            SDRAM_GPIOConfig(); 
+    501            
+    502            /* Disable write protection */
+    503            FMC_SDRAMWriteProtectionConfig(FMC_Bank2_SDRAM,DISABLE); 
+    504            
+    505            /* Erase SDRAM memory */
+    506            for (index = 0x00; index < IS42S16400J_SIZE_16; index++)
+    507            {
+    508              *(__IO uint16_t*) (SDRAM_BANK_ADDR + 2*index) = (uint16_t)0x00;
+    509            }
+    510            
+    511            /* Write data value to all SDRAM memory */
+    512            for (index = 0; index < IS42S16400J_SIZE_16; index++)
+    513            {
+    514              *(__IO uint16_t*) (SDRAM_BANK_ADDR + 2*index) = (uint16_t)(writedata_16b + index);
+    515            }
+    516            
+    517            /* Read back SDRAM memory and check content correctness*/
+    518            index = 0;
+    519            readwritestatus = 0;
+    520            while ((index < IS42S16400J_SIZE_16) && (readwritestatus == 0))
+    521            {
+    522              readdata_16b = *(__IO uint16_t*)(SDRAM_BANK_ADDR + 2*index);
+    523              if ( readdata_16b != (uint16_t)(writedata_16b + index))
+    524              {
+    525                readwritestatus = 1;
+    526                STM_EVAL_LEDOn(LED4);
+    527                STM_EVAL_LEDOff(LED3); 
+    528                /* LCD display ERROR message */
+    529                LCD_Clear(LCD_COLOR_RED);
+    530                LCD_SetTextColor(LCD_COLOR_BLACK); 
+    531                LCD_DisplayStringLine(LCD_LINE_1,(uint8_t*)"   SDRAM TEST  ");
+    532                LCD_DisplayStringLine(LCD_LINE_3,(uint8_t*)"    FAILED     ");
+    533                /*infinite loop on memory error.*/
+    534                while(1)
+    535                {
+    536                  Delay(100);
+    537                  STM_EVAL_LEDToggle(LED4);
+    538                }      
+    539              }
+    540              else
+    541              {
+    542                STM_EVAL_LEDOn(LED3);
+    543              }
+    544              index++;
+    545            }
+    546               /* LCD display OK message */ 
+    547            LCD_Clear(LCD_COLOR_GREEN);
+    548            LCD_SetTextColor(LCD_COLOR_BLACK); 
+    549            LCD_DisplayStringLine(LCD_LINE_1,(uint8_t*)" SDRAM TEST OK ");
+    550            LCD_DisplayStringLine(LCD_LINE_3,(uint8_t*)"      PUSH     ");
+    551            LCD_DisplayStringLine(LCD_LINE_5,(uint8_t*)"  USER BUTTON  ");
+    552             /* Waiting User Button is pressed */
+    553            while ((STM_EVAL_PBGetState(BUTTON_USER) != Bit_SET))
+    554            {}
+    555            /* Wait for User button is released */
+    556            while (STM_EVAL_PBGetState(BUTTON_USER) != Bit_RESET)
+    557            { }
+    558             
+    559            /* Turn Off Leds */ 
+    560            STM_EVAL_LEDOff(LED3);
+    561            STM_EVAL_LEDOff(LED4);  
+    562          }
+    563          
+    564          /**
+    565          * @brief  Configure the Mems to gyroscope application.
+    566          * @param  None
+    567          * @retval None
+    568          */
+    569          void Demo_GyroConfig(void)
+    570          {
+    571            /* Configure Mems L3GD20 */
+    572            L3GD20_InitStructure.Power_Mode = L3GD20_MODE_ACTIVE;
+    573            L3GD20_InitStructure.Output_DataRate = L3GD20_OUTPUT_DATARATE_1;
+    574            L3GD20_InitStructure.Axes_Enable = L3GD20_AXES_ENABLE;
+    575            L3GD20_InitStructure.Band_Width = L3GD20_BANDWIDTH_4;
+    576            L3GD20_InitStructure.BlockData_Update = L3GD20_BlockDataUpdate_Continous;
+    577            L3GD20_InitStructure.Endianness = L3GD20_BLE_LSB;
+    578            L3GD20_InitStructure.Full_Scale = L3GD20_FULLSCALE_500; 
+    579            L3GD20_Init(&L3GD20_InitStructure);
+    580            L3GD20_FilterStructure.HighPassFilter_Mode_Selection =L3GD20_HPM_NORMAL_MODE_RES;
+    581            L3GD20_FilterStructure.HighPassFilter_CutOff_Frequency = L3GD20_HPFCF_0;
+    582            L3GD20_FilterConfig(&L3GD20_FilterStructure) ;
+    583            L3GD20_FilterCmd(L3GD20_HIGHPASSFILTER_ENABLE);
+    584          }
+    585          
+    586          /**
+    587          * @brief  Calculate the angular Data rate Gyroscope.
+    588          * @param  pfData : Data out pointer
+    589          * @retval None
+    590          */
+    591          void Demo_GyroReadAngRate (float* pfData)
+    592          {
+    593            uint8_t tmpbuffer[6] ={0};
+    594            int16_t RawData[3] = {0};
+    595            uint8_t tmpreg = 0;
+    596            float sensitivity = 0;
+    597            int i =0;
+    598            
+    599            L3GD20_Read(&tmpreg,L3GD20_CTRL_REG4_ADDR,1);
+    600            L3GD20_Read(tmpbuffer,L3GD20_OUT_X_L_ADDR,6);
+    601            
+    602            /* check in the control register 4 the data alignment (Big Endian or Little Endian)*/
+    603            if(!(tmpreg & 0x40))
+    604            {
+    605              for(i=0; i<3; i++)
+    606              {
+    607                RawData[i]=(int16_t)(((uint16_t)tmpbuffer[2*i+1] << 8) + tmpbuffer[2*i]);
+    608              }
+    609            }
+    610            else
+    611            {
+    612              for(i=0; i<3; i++)
+    613              {
+    614                RawData[i]=(int16_t)(((uint16_t)tmpbuffer[2*i] << 8) + tmpbuffer[2*i+1]);
+    615              }
+    616            }
+    617            
+    618            /* Switch the sensitivity value set in the CRTL4 */
+    619            switch(tmpreg & 0x30)
+    620            {
+    621            case 0x00:
+    622              sensitivity=L3G_Sensitivity_250dps;
+    623              break;
+    624              
+    625            case 0x10:
+    626              sensitivity=L3G_Sensitivity_500dps;
+    627              break;
+    628              
+    629            case 0x20:
+    630              sensitivity=L3G_Sensitivity_2000dps;
+    631              break;
+    632            }
+    633            /* divide by sensitivity */
+    634            for(i=0; i<3; i++)
+    635            {
+    636              pfData[i]=(float)RawData[i]/sensitivity;
+    637            }
+    638          }
+    639          
+    640          /**
+    641          * @brief  Basic management of the timeout situation.
+    642          * @param  None.
+    643          * @retval None.
+    644          */
+    645          uint32_t L3GD20_TIMEOUT_UserCallback(void)
+    646          {
+    647            return 0;
+    648          }
+    649          
+    650          /**
+    651          * @brief  Inserts a delay time.
+    652          * @param  nTime: specifies the delay time length, in 10 ms.
+    653          * @retval None
+    654          */
+    655          void Delay(__IO uint32_t nTime)
+    656          {
+    657            TimingDelay = nTime; 
+    658            while(TimingDelay != 0);
+    659          }
+    660          
+    661          /**
+    662          * @brief  Decrements the TimingDelay variable.
+    663          * @param  None
+    664          * @retval None
+    665          */
+    666          void TimingDelay_Decrement(void)
+    667          {
+    668            if (TimingDelay != 0x00)
+    669            { 
+    670              TimingDelay--;
+    671            }
+    672          }
+    673          
+    674          
+    675          /**
+    676          * @brief  Configures System clock to 180 MHz.
+    677          * @param  None
+    678          * @retval None
+    679          */
+    680          static void SetSYSCLK_180(void)
+    681          {
+    682            /* Select HSE as system clock source */
+    683            RCC_SYSCLKConfig(RCC_SYSCLKSource_HSE);
+    684            
+    685            /* Wait till HSE is used as system clock source */
+    686            while (RCC_GetSYSCLKSource() != 0x04)
+    687            {}
+    688            
+    689            /* Disable PLL */
+    690            RCC_PLLCmd(DISABLE);  
+    691            
+    692            /* Configure PLL clock to have:
+    693            PLL_VCO = (HSE_VALUE / PLL_M) * PLL_N = 360 MHz
+    694            SYSCLK = PLL_VCO / PLL_P = 180 MHz
+    695            USB OTG FS, SDIO and RNG Clock =  PLL_VCO / PLLQ = ~51 MHz (USB is not used)
+    696            */
+    697            RCC_PLLConfig(RCC_PLLSource_HSE, 
+    698                          8, //PLLM
+    699                          360, //PLLN
+    700                          2, //PLLP
+    701                          7 //PLLQ
+    702                            );
+    703            
+    704            /* Enable PLL */
+    705            RCC_PLLCmd(ENABLE);
+    706            
+    707            /* Wait till PLL is ready */
+    708            while (RCC_GetFlagStatus(RCC_FLAG_PLLRDY) == RESET)
+    709            {}
+    710            
+    711            /* Enable the Over-drive to extend the clock frequency to 180 Mhz */
+    712            PWR_OverDriveCmd(ENABLE);
+    713              
+    714            /* Wait till Over-drive is ready */
+    715            while (PWR_GetFlagStatus(PWR_FLAG_ODRDY) == RESET)
+    716            {}
+    717            /* Enable the Over-drive mode switching to extend the clock frequency to 180 Mhz */
+    718            PWR_OverDriveSWCmd(ENABLE);
+    719              
+    720            /* Wait till Over-drive mode switching is ready */
+    721            while (PWR_GetFlagStatus(PWR_FLAG_ODSWRDY) == RESET)
+    722            {}
+    723            
+    724            /* Select PLL as system clock source */
+    725            RCC_SYSCLKConfig(RCC_SYSCLKSource_PLLCLK);
+    726            
+    727            /* Wait till PLL is used as system clock source */
+    728            while (RCC_GetSYSCLKSource() != 0x08)
+    729            {}
+    730            
+    731            /* Update SystemCoreClock global variable value */
+    732            SystemCoreClock = 180000000;
+    733          }
+    734          
+    735          
+    736          /**
+    737          * @brief  Configures System clock to 168 MHz, to have USB clocked at 48 MHz.
+    738          * @param  None
+    739          * @retval None
+    740          */
+    741          static void SetSYSCLK_168(void)
+    742          {  
+    743            /* Select HSE as system clock source */
+    744            RCC_SYSCLKConfig(RCC_SYSCLKSource_HSE);
+    745            
+    746            /* Wait till HSE is used as system clock source */
+    747            while (RCC_GetSYSCLKSource() != 0x04)
+    748            {}
+    749            
+    750            /* Disable PLL */
+    751            RCC_PLLCmd(DISABLE);  
+    752          
+    753            /* Disable Over-drive mode */
+    754            PWR_OverDriveCmd(DISABLE);    
+    755            PWR_OverDriveSWCmd(DISABLE);
+    756              
+    757            /* Wait till ODSWRDY is reset */
+    758            while (PWR_GetFlagStatus(PWR_FLAG_ODSWRDY) != RESET)
+    759            {}
+    760              
+    761            /* Configure PLL clock to have:
+    762            PLL_VCO = (HSE_VALUE / PLL_M) * PLL_N = 336 MHz
+    763            SYSCLK = PLL_VCO / PLL_P = 168 MHz
+    764            USB OTG FS, SDIO and RNG Clock =  PLL_VCO / PLLQ = 48 MHz
+    765            */
+    766            RCC_PLLConfig(RCC_PLLSource_HSE, 
+    767                          8, //PLLM
+    768                          336, //PLLN
+    769                          2, //PLLP
+    770                          7 //PLLQ
+    771                            );
+    772            
+    773            /* Enable PLL */
+    774            RCC_PLLCmd(ENABLE);  
+    775            
+    776            /* Wait till PLL is ready */
+    777            while (RCC_GetFlagStatus(RCC_FLAG_PLLRDY) == RESET)
+    778            {}
+    779            
+    780            /* Select PLL as system clock source */
+    781            RCC_SYSCLKConfig(RCC_SYSCLKSource_PLLCLK);
+    782            
+    783            /* Wait till PLL is used as system clock source */
+    784            while (RCC_GetSYSCLKSource() != 0x08)
+    785            {} 
+    786            
+    787            /* Update SystemCoreClock global variable value */
+    788            SystemCoreClock = 168000000;
+    789          }
+    790          
+    791          /**
+    792          * @}
+    793          */
+    794          
+    795          /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       4   Delay
+       8   Demo_GyroConfig
+         0   -> L3GD20_FilterCmd
+         8   -> L3GD20_FilterConfig
+         8   -> L3GD20_Init
+      48   Demo_GyroReadAngRate
+        48   -> L3GD20_Read
+       0   L3GD20_TIMEOUT_UserCallback
+      96   LCD_Test
+        96   -> DMA2D_DeInit
+        96   -> DMA2D_FGConfig
+        96   -> DMA2D_GetFlagStatus
+        96   -> DMA2D_Init
+        96   -> DMA2D_StartTransfer
+        96   -> LCD_Clear
+        96   -> LCD_DisplayStringLine
+        96   -> LCD_GetFont
+        96   -> LCD_SetTextColor
+        96   -> LTDC_ReloadConfig
+        96   -> STM_EVAL_PBGetState
+      40   MEMS_Test
+        40   -> Demo_GyroReadAngRate
+        40   -> LCD_Clear
+        40   -> LCD_DisplayStringLine
+        40   -> LCD_GetFont
+         0   -> STM_EVAL_LEDOff
+        40   -> STM_EVAL_LEDOff
+        40   -> STM_EVAL_LEDOn
+        40   -> STM_EVAL_PBGetState
+      24   SDRAM_Test
+        24   -> FMC_SDRAMWriteProtectionConfig
+        24   -> LCD_Clear
+        24   -> LCD_DisplayStringLine
+        24   -> LCD_GetFont
+        24   -> LCD_SetTextColor
+        24   -> SDRAM_GPIOConfig
+        24   -> SDRAM_Init
+         0   -> STM_EVAL_LEDOff
+        24   -> STM_EVAL_LEDOff
+        24   -> STM_EVAL_LEDOn
+        24   -> STM_EVAL_LEDToggle
+        24   -> STM_EVAL_PBGetState
+      32   TP_Test
+        32   -> IOE_Config
+        32   -> IOE_TP_GetState
+        32   -> LCD_Clear
+        32   -> LCD_DisplayStringLine
+        32   -> LCD_DrawFullRect
+        32   -> LCD_GetFont
+        32   -> LCD_SetTextColor
+        32   -> STM_EVAL_PBGetState
+       0   TimingDelay_Decrement
+       8   USB_Test
+         8   -> LCD_Clear
+         8   -> LCD_DisplayStringLine
+         8   -> LCD_GetFont
+         8   -> LCD_SetTextColor
+         8   -> STM_EVAL_PBGetState
+         8   -> USBD_Init
+      32   start_test
+        32   -> Demo_GyroConfig
+        32   -> LCD_Clear
+        32   -> LCD_DisplayStringLine
+        32   -> LCD_GetFont
+        32   -> LCD_Init
+        32   -> LCD_LayerInit
+        32   -> LCD_SetLayer
+        32   -> LCD_SetTextColor
+        32   -> LCD_SetTransparency
+        32   -> LCD_Test
+        32   -> LTDC_Cmd
+        32   -> LTDC_ReloadConfig
+        32   -> MEMS_Test
+        32   -> PWR_GetFlagStatus
+        32   -> PWR_OverDriveCmd
+        32   -> PWR_OverDriveSWCmd
+        32   -> RCC_GetFlagStatus
+        32   -> RCC_GetSYSCLKSource
+        32   -> RCC_PLLCmd
+        32   -> RCC_PLLConfig
+        32   -> RCC_SYSCLKConfig
+        32   -> SDRAM_Test
+        32   -> STM_EVAL_LEDInit
+        32   -> STM_EVAL_PBGetState
+        32   -> STM_EVAL_PBInit
+        32   -> TP_Test
+        32   -> USB_Test
+
+
+   Section sizes:
+
+   Bytes   Function/Label
+   -----   --------------
+        4  ??DataTable46
+        4  ??DataTable46_1
+        4  ??DataTable46_10
+        4  ??DataTable46_11
+        4  ??DataTable46_12
+        4  ??DataTable46_13
+        4  ??DataTable46_14
+        4  ??DataTable46_15
+        4  ??DataTable46_16
+        4  ??DataTable46_2
+        4  ??DataTable46_3
+        4  ??DataTable46_4
+        4  ??DataTable46_5
+        4  ??DataTable46_6
+        4  ??DataTable46_7
+        4  ??DataTable46_8
+        4  ??DataTable46_9
+       16  ?_0
+       16  ?_1
+       16  ?_10
+       16  ?_11
+       16  ?_12
+       16  ?_13
+       16  ?_14
+       16  ?_15
+       16  ?_16
+       16  ?_17
+       20  ?_18
+       20  ?_19
+       16  ?_2
+       20  ?_20
+       16  ?_21
+       16  ?_22
+       16  ?_23
+       16  ?_24
+       16  ?_25
+       16  ?_26
+       16  ?_27
+       16  ?_28
+       16  ?_29
+       16  ?_3
+       16  ?_30
+       16  ?_31
+       16  ?_32
+       16  ?_33
+        8  ?_34
+        8  ?_35
+       16  ?_4
+       16  ?_5
+       16  ?_6
+       16  ?_7
+       16  ?_8
+       16  ?_9
+       32  Buffer
+           Xval
+           Yval
+           TimingDelay
+       18  Delay
+       56  Demo_GyroConfig
+      196  Demo_GyroReadAngRate
+   153600  Image
+       12  L3GD20_InitStructure
+           L3GD20_FilterStructure
+        4  L3GD20_TIMEOUT_UserCallback
+      212  LCD_Test
+      624  MEMS_Test
+      278  SDRAM_Test
+        4  TP_State
+      302  TP_Test
+       14  TimingDelay_Decrement
+     2704  USB_OTG_dev
+      210  USB_Test
+     1000  start_test
+
+ 
+   2 752 bytes in section .bss
+      16 bytes in section .rodata
+ 157 138 bytes in section .text
+ 
+ 157 138 bytes of CODE  memory
+      16 bytes of CONST memory
+   2 752 bytes of DATA  memory
+
+Errors: none
+Warnings: none

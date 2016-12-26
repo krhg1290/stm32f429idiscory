@@ -1,0 +1,423 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.40.3.8902/W32 for ARM        24/Dec/2016  13:33:39
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\Core\User\fatfs_drv.c
+#    Command line =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\Core\User\fatfs_drv.c
+#        -D USE_STDPERIPH_DRIVER -D STM32F429_439xx -D USE_STM32F429I_DISCO -D
+#        USE_USB_OTG_HS -D USE_EMBEDDED_PHY -lcN
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\
+#        --diag_suppress Pe111,Pa082 -o
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\
+#        --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.2\arm\INC\c\DLib_Config_Full.h" -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Config\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Devices\STM32F4xx\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\User\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Demo\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Lib\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Test_Program\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\HID\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\Audio\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_OTG_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Common\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\STM32F429i-Discovery\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\fat_fs\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\Config\
+#        -Ohs --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.2\arm\CMSIS\Include\"
+#    List file    =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\fatfs_drv.lst
+#    Object file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\fatfs_drv.o
+#
+###############################################################################
+
+D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\Core\User\fatfs_drv.c
+      1          /**
+      2            ******************************************************************************
+      3            * @file    fatfs_drv.c
+      4            * @author  MCD Application Team
+      5            * @version V1.0.1
+      6            * @date    11-November-2013
+      7            * @brief   FatFS functions
+      8            ******************************************************************************
+      9            * @attention
+     10            *
+     11            * <h2><center>&copy; COPYRIGHT 2013 STMicroelectronics</center></h2>
+     12            *
+     13            * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
+     14            * You may not use this file except in compliance with the License.
+     15            * You may obtain a copy of the License at:
+     16            *
+     17            *        http://www.st.com/software_license_agreement_liberty_v2
+     18            *
+     19            * Unless required by applicable law or agreed to in writing, software 
+     20            * distributed under the License is distributed on an "AS IS" BASIS, 
+     21            * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     22            * See the License for the specific language governing permissions and
+     23            * limitations under the License.
+     24            *
+     25            ******************************************************************************
+     26            */
+     27          
+     28          /* Includes ------------------------------------------------------------------*/
+     29          #include <stdio.h>
+     30          #include <stdlib.h>
+     31          #include <string.h>
+     32          #include "usbh_msc_core.h"
+     33          #include "usbh_usr.h"
+     34          #include "diskio.h"
+     35          #include "global_includes.h"
+     36          
+     37          /* Private typedef -----------------------------------------------------------*/
+     38          /* Private define ------------------------------------------------------------*/
+     39          #define USE_FS_RTC                 1
+     40          #define BLOCK_SIZE                 512 /* Block Size in Bytes */
+     41          /* Private macro -------------------------------------------------------------*/
+     42          /* Private variables ---------------------------------------------------------*/
+     43          static volatile DSTATUS Stat = STA_NOINIT;	/* Disk status */
+     44          BYTE                                status = USBH_MSC_OK;
+     45          extern USB_OTG_CORE_HANDLE          USB_OTG_Core;
+     46          extern USBH_HOST                    USB_Host;
+     47          
+     48          /* Private function prototypes -----------------------------------------------*/
+     49          /* Private functions ---------------------------------------------------------*/
+     50          
+     51          
+     52          /**
+     53            * @brief  Initialize Disk Drive  
+     54            * @param  drv : driver index
+     55            * @retval DSTATUS : operation status
+     56            */
+     57          DSTATUS disk_initialize ( BYTE drv )
+     58          {
+     59          
+     60            Stat = STA_NOINIT;
+     61          
+     62            switch (drv)
+     63            {
+     64            case 0 :
+     65          
+     66              if(USB_Host_Application_Ready)
+     67              {
+     68                Stat &= ~STA_NOINIT;
+     69              }
+     70              break;
+     71            }
+     72            return Stat;
+     73          }
+     74          
+     75          /**
+     76             * @brief  Get Disk Status  
+     77             * @param  drv : driver index
+     78             * @retval DSTATUS : operation status
+     79            */
+     80          DSTATUS disk_status ( BYTE drv)
+     81          {
+     82            Stat = STA_NOINIT;
+     83            
+     84            switch (drv)
+     85            {
+     86            case 0 :
+     87          
+     88              if ((status == USBH_MSC_OK) && (HCD_IsDeviceConnected(&USB_OTG_Core)))
+     89              {
+     90                Stat &= ~STA_NOINIT;
+     91              }
+     92              break;
+     93          
+     94            }
+     95            return Stat;
+     96          }
+     97          
+     98          /**
+     99            * @brief  Read Sector(s)
+    100            * @param  drv : driver index
+    101            * @param  buff : Pointer to the data buffer to store read data
+    102            * @param  sector : Start sector number
+    103            * param   count : Sector count (1..255)
+    104            * @retval DSTATUS : operation status
+    105            */
+    106          DRESULT disk_read (
+    107                             BYTE drv,			/* Physical drive number (0) */
+    108                             BYTE *buff,			/* Pointer to the data buffer to store read data */
+    109                             DWORD sector,		/* Start sector number (LBA) */
+    110                             BYTE count			/* Sector count (1..255) */
+    111                               )
+    112          {  
+    113            switch (drv)
+    114            {
+    115            case 0 :
+    116              {
+    117                  if(USB_Host_Application_Ready)
+    118                  {
+    119                    do
+    120                    {
+    121                      status = USBH_MSC_Read10(&USB_OTG_Core, (uint8_t *)buff,sector,BLOCK_SIZE * count);
+    122                      USBH_MSC_HandleBOTXfer(&USB_OTG_Core ,&USB_Host);
+    123          
+    124                      if(!HCD_IsDeviceConnected(&USB_OTG_Core))
+    125                      {
+    126                        return RES_ERROR;
+    127                      }
+    128                    }
+    129                    while(status == USBH_MSC_BUSY );
+    130          
+    131                    if(status == USBH_MSC_OK)
+    132                    {
+    133                      return RES_OK;
+    134                    }
+    135                  }
+    136          
+    137                  break;
+    138                }
+    139              }
+    140              return RES_NOTRDY;
+    141          }
+    142          /**
+    143            * @brief  write Sector(s) 
+    144            * @param  drv : driver index
+    145            * @param  buff : Pointer to the data to be written
+    146            * @param  sector : Start sector number
+    147            * @param  count :  Sector count (1..255)
+    148            * @retval DSTATUS : operation status
+    149            */
+    150          
+    151          #if _READONLY == 0
+    152          DRESULT disk_write (
+    153                              BYTE drv,			/* Physical drive number (0) */
+    154                              const BYTE *buff,	/* Pointer to the data to be written */
+    155                              DWORD sector,		/* Start sector number (LBA) */
+    156                              BYTE count			/* Sector count (1..255) */
+    157                                )
+    158          {
+    159          
+    160            switch (drv)
+    161            {
+    162            case 0 :
+    163              {
+    164                if(USB_Host_Application_Ready)
+    165                {
+    166                  do
+    167                  {
+    168                    status = USBH_MSC_Write10(&USB_OTG_Core, (uint8_t *)buff, sector, BLOCK_SIZE * count);
+    169                    USBH_MSC_HandleBOTXfer(&USB_OTG_Core ,&USB_Host);
+    170          
+    171                    if(!HCD_IsDeviceConnected(&USB_OTG_Core))
+    172                    {
+    173                      return RES_ERROR;
+    174                    }
+    175                  }
+    176                  while(status == USBH_MSC_BUSY );
+    177          
+    178                }
+    179          
+    180                if(status == USBH_MSC_OK)
+    181                { 
+    182                  return RES_OK;
+    183                }
+    184          
+    185                break;
+    186              }
+    187            }
+    188            return RES_NOTRDY;
+    189          }
+    190          #endif /* _READONLY == 0 */
+    191          
+    192          
+    193          /**
+    194            * @brief  I/O control operation
+    195            * @param  drv : driver index
+    196            * @param  ctrl : ontrol code
+    197            * @param  buff : Buffer to send/receive control data
+    198            * @retval DSTATUS : operation status
+    199            */
+    200          
+    201          
+    202          #if _USE_IOCTL != 0
+    203          DRESULT disk_ioctl (
+    204                              BYTE drv,/* Physical drive number (0) */
+    205                              BYTE ctrl,/* Control code */
+    206                              void *buff/* Buffer to send/receive control data */
+    207                                )
+    208          {
+    209            DRESULT res;
+    210          
+    211            if (drv >= _VOLUMES) return RES_PARERR;
+    212          
+    213            res = RES_ERROR;
+    214          
+    215            if (Stat & STA_NOINIT) return RES_NOTRDY;
+    216          
+    217            switch (ctrl) {
+    218            case CTRL_SYNC :		/* Make sure that no pending write process */
+    219              res = RES_OK;
+    220              break;
+    221          
+    222            case GET_SECTOR_COUNT :	/* Get number of sectors on the disk (DWORD) */
+    223              if(drv == 0)
+    224              {
+    225                *(DWORD*)buff = (DWORD) USBH_MSC_Param.MSCapacity;
+    226              }
+    227              res = RES_OK;
+    228              break;
+    229          
+    230            case GET_SECTOR_SIZE :	/* Get R/W sector size (WORD) */
+    231              *(WORD*)buff = BLOCK_SIZE;
+    232              res = RES_OK;
+    233              break;
+    234          
+    235            case GET_BLOCK_SIZE :	/* Get erase block size in unit of sector (DWORD) */
+    236              if(drv == 0)
+    237              {
+    238                *(DWORD*)buff = BLOCK_SIZE;
+    239              }
+    240              else
+    241              {
+    242                *(DWORD*)buff = 32;
+    243              }
+    244          
+    245          
+    246              break;
+    247          
+    248          
+    249            default:
+    250              res = RES_PARERR;
+    251            }
+    252          
+    253          
+    254          
+    255            return res;
+    256          }
+    257          #endif /* _USE_IOCTL != 0 */
+    258          /**
+    259            * @brief  Get Time from RTC
+    260            * @param  None
+    261            * @retval Time in DWORD
+    262            */
+    263          
+    264          DWORD get_fattime (void)
+    265          {
+    266          
+    267            DWORD time = 0;
+    268          #if !defined (STM32F10X_CL)    
+    269          #ifdef USE_FS_RTC
+    270            RTC_TimeTypeDef   RTC_TimeStructure;
+    271            RTC_DateTypeDef   RTC_DateStructure;
+    272          
+    273            BYTE rtcYear , rtcMon , rtcMday, rtcHour, rtcMin, rtcSec;
+    274          
+    275            /* Get info from RTC here */
+    276            RTC_GetTime(RTC_Format_BIN, &RTC_TimeStructure);
+    277          
+    278            rtcSec    =  RTC_TimeStructure.RTC_Seconds;
+    279            rtcMin    =  RTC_TimeStructure.RTC_Minutes;
+    280            rtcHour   =  RTC_TimeStructure.RTC_Hours;
+    281          
+    282            RTC_GetDate(RTC_Format_BIN, &RTC_DateStructure);
+    283          
+    284            rtcYear =  RTC_DateStructure.RTC_Year;
+    285            rtcMon =  RTC_DateStructure.RTC_Month;
+    286            rtcMday =  RTC_DateStructure.RTC_Date;
+    287          
+    288            /* Pack date and time into a DWORD variable */
+    289            time =	  (((DWORD)rtcYear) << 25)
+    290                           | ((DWORD)rtcMon << 21)
+    291                           | ((DWORD)rtcMday << 16)
+    292                           | (WORD)(rtcHour << 11)
+    293                           | (WORD)(rtcMin << 5)
+    294                           | (WORD)(rtcSec >> 1);
+    295          #endif
+    296          #endif  
+    297            return time;
+    298          }
+    299          
+    300          /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   disk_initialize
+       0   disk_ioctl
+      24   disk_read
+        24   -> HCD_IsDeviceConnected
+        24   -> USBH_MSC_HandleBOTXfer
+        24   -> USBH_MSC_Read10
+       8   disk_status
+         8   -> HCD_IsDeviceConnected
+      24   disk_write
+        24   -> HCD_IsDeviceConnected
+        24   -> USBH_MSC_HandleBOTXfer
+        24   -> USBH_MSC_Write10
+      24   get_fattime
+        24   -> RTC_GetDate
+        24   -> RTC_GetTime
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable4
+       4  ??DataTable4_1
+       4  ??DataTable4_2
+       4  ??DataTable4_3
+       4  ??DataTable4_4
+       2  Stat
+          status
+      26  disk_initialize
+      60  disk_ioctl
+      76  disk_read
+      34  disk_status
+      78  disk_write
+      72  get_fattime
+
+ 
+   2 bytes in section .data
+ 366 bytes in section .text
+ 
+ 366 bytes of CODE memory
+   2 bytes of DATA memory
+
+Errors: none
+Warnings: none

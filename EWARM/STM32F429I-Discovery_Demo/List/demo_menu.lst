@@ -1,0 +1,540 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.40.3.8902/W32 for ARM        24/Dec/2016  13:33:38
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\Core\Demo\demo_menu.c
+#    Command line =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\Core\Demo\demo_menu.c
+#        -D USE_STDPERIPH_DRIVER -D STM32F429_439xx -D USE_STM32F429I_DISCO -D
+#        USE_USB_OTG_HS -D USE_EMBEDDED_PHY -lcN
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\
+#        --diag_suppress Pe111,Pa082 -o
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\
+#        --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.2\arm\INC\c\DLib_Config_Full.h" -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Config\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Devices\STM32F4xx\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\User\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Demo\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Lib\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Test_Program\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\HID\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\Audio\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_OTG_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Common\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\STM32F429i-Discovery\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\fat_fs\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\Config\
+#        -Ohs --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.2\arm\CMSIS\Include\"
+#    List file    =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\demo_menu.lst
+#    Object file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\demo_menu.o
+#
+###############################################################################
+
+D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\Core\Demo\demo_menu.c
+      1          /**
+      2            ******************************************************************************
+      3            * @file    demo_menu.c
+      4            * @author  MCD Application Team
+      5            * @version V1.0.1
+      6            * @date    11-November-2013
+      7            * @brief   Demo menu and icons
+      8            ******************************************************************************
+      9            * @attention
+     10            *
+     11            * <h2><center>&copy; COPYRIGHT 2013 STMicroelectronics</center></h2>
+     12            *
+     13            * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
+     14            * You may not use this file except in compliance with the License.
+     15            * You may obtain a copy of the License at:
+     16            *
+     17            *        http://www.st.com/software_license_agreement_liberty_v2
+     18            *
+     19            * Unless required by applicable law or agreed to in writing, software 
+     20            * distributed under the License is distributed on an "AS IS" BASIS, 
+     21            * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     22            * See the License for the specific language governing permissions and
+     23            * limitations under the License.
+     24            *
+     25            ******************************************************************************
+     26            */
+     27          
+     28          /* Includes ------------------------------------------------------------------*/
+     29          #include <stddef.h>
+     30          #include <stdlib.h>
+     31          #include <string.h>
+     32          #include <math.h>
+     33          #include "WM.h"
+     34          #include "Res\menu_res.c"
+     35          #include "Res\clock.c"
+     36          #include "Res\cpu.c"
+     37          #include "Res\game.c"
+     38          #include "Res\image.c"
+     39          #include "Res\info.c"
+     40          #include "Res\multimedia.c"
+     41          #include "Res\background.c"
+     42          #include "time_utils.h"
+     43          #include "cpu_utils.h"
+     44          
+     45          /* External variables --------------------------------------------------------*/
+     46          extern __IO uint8_t alarm_now;
+     47          extern __IO uint32_t alarm_set;
+     48          extern RTC_AlarmTypeDef  RTC_AlarmStructure;
+     49          extern WM_HWIN  VIDEO_hWin, hVideoScreen;
+     50          extern WM_HWIN  IMAGE_hWin, vFrame;
+     51          extern __IO uint32_t TS_Orientation;
+     52          extern __IO uint32_t IMAGE_Enlarge;
+     53          extern __IO uint32_t VIDEO_Enlarge;
+     54          
+     55          extern void DEMO_SystemInfo ( WM_HWIN hWin);
+     56          extern void DEMO_Game(WM_HWIN hWin);
+     57          extern void DEMO_Video(WM_HWIN hWin);
+     58          extern void DEMO_Image(WM_HWIN hWin);
+     59          extern void DEMO_Clock(WM_HWIN hWin);
+     60          extern void DEMO_Cpu(WM_HWIN hWin);
+     61          
+     62          /* Private typedef -----------------------------------------------------------*/
+     63          typedef struct {
+     64            const GUI_BITMAP * pBitmap;  
+     65            const char       * pText;
+     66            const char       * pExplanation;
+     67          } BITMAP_ITEM;
+     68          
+     69          /* Private defines -----------------------------------------------------------*/
+     70          #define WM_MSG_USB_STATUS_CHANGED      WM_USER + 0x01
+     71          #define ID_TIMER_TIME                  1
+     72          
+     73          /* Private macros ------------------------------------------------------------*/
+     74          /* Private variables ---------------------------------------------------------*/
+     75          uint32_t current_module = 0xFF;
+     76          
+     77          static const BITMAP_ITEM _aBitmapItem[] = {
+     78            {&bmmultimedia,   "Video Player"        , "Launch MPJPEG video"},
+     79            {&bmimage,        "Image Browser"       , "Browse Images"},  
+     80            {&bmclock,        "Clock/Calendar"      , "Clock settings"},
+     81            {&bmgame,         "Game"                , "Launch Reversi game"},
+     82            {&bmcpu,          "Perfomance"          , "Show CPU performance"},  
+     83            {&bminfo,         "System Info"         , "Get System Information"},
+     84          };
+     85          
+     86          static void (* _apModules[])( WM_HWIN hWin) = 
+     87          {
+     88            DEMO_Video,
+     89            DEMO_Image,
+     90            DEMO_Clock,
+     91            DEMO_Game,
+     92            DEMO_Cpu,
+     93            DEMO_SystemInfo,
+     94          };
+     95          
+     96          /* Private function prototypes -----------------------------------------------*/
+     97          /* Private functions ---------------------------------------------------------*/
+     98          
+     99          /**
+    100            * @brief  Callback routine of desktop window
+    101            * @param  pMsg: pointer to a data structure of type WM_MESSAGE
+    102            * @retval None
+    103            */
+    104          static void _cbBk(WM_MESSAGE * pMsg) {
+    105            uint32_t NCode, Id, sel;
+    106            static uint32_t module_mutex = 0;
+    107           
+    108            switch (pMsg->MsgId) 
+    109            {
+    110            case WM_PAINT:
+    111              GUI_SetBkColor(GUI_TRANSPARENT);
+    112              GUI_Clear();
+    113              break;
+    114              
+    115            case WM_NOTIFY_PARENT:
+    116              Id    = WM_GetId(pMsg->hWinSrc);     
+    117              NCode = pMsg->Data.v;  
+    118              
+    119              switch (NCode) 
+    120              {  
+    121              case WM_NOTIFICATION_CLICKED: 
+    122                if (Id == '0')
+    123                {
+    124                  sel = ICONVIEW_GetSel(pMsg->hWinSrc);
+    125                  if(sel < GUI_COUNTOF(_aBitmapItem))
+    126                  {
+    127                    if(module_mutex == 0)
+    128                    {
+    129                      module_mutex = 1;
+    130                      _apModules [sel](pMsg->hWinSrc);
+    131                      current_module = sel;
+    132                    }
+    133                  }
+    134                }
+    135                break;
+    136                
+    137              case 0x500:
+    138                module_mutex = 0;
+    139                current_module = 0xFF;
+    140                ICONVIEW_SetSel(pMsg->hWinSrc, -1);
+    141                break;
+    142                
+    143              default:
+    144                break;
+    145              }
+    146              break;
+    147            default:
+    148              WM_DefaultProc(pMsg);
+    149            }
+    150          }
+    151          
+    152          /**
+    153            * @brief  Callback routine of the status bar
+    154            * @param  pMsg: pointer to a data structure of type WM_MESSAGE
+    155            * @retval None
+    156            */
+    157          static void _cbStatus(WM_MESSAGE * pMsg) {
+    158            int xSize, ySize;
+    159            static uint8_t TempStr[50];
+    160            
+    161            RTC_TimeTypeDef   RTC_TimeStructure;
+    162            RTC_DateTypeDef   RTC_DateStructure;
+    163            uint8_t sec, min, hour;
+    164            
+    165            static WM_HTIMER hTimerTime;
+    166            WM_HWIN hWin;
+    167            
+    168            hWin = pMsg->hWin;
+    169            switch (pMsg->MsgId) {
+    170          
+    171            case WM_CREATE:
+    172              hTimerTime = WM_CreateTimer(hWin, ID_TIMER_TIME, 1000, 0);
+    173              break;
+    174            case WM_DELETE:
+    175              WM_DeleteTimer(hTimerTime);
+    176              break;
+    177            case WM_TIMER:
+    178              WM_InvalidateWindow(hWin);
+    179              WM_RestartTimer(pMsg->Data.v, 0);
+    180              break;
+    181              
+    182            case WM_MSG_USB_STATUS_CHANGED:    
+    183              WM_InvalidateWindow(hWin);
+    184              break;
+    185              
+    186            case WM_PAINT:
+    187              xSize = WM_GetWindowSizeX(hWin);
+    188              ySize = WM_GetWindowSizeY(hWin);
+    189              
+    190              /* Draw background */
+    191              GUI_SetColor(0x303030);
+    192              GUI_FillRect(0, 0, xSize , ySize - 3);
+    193              GUI_SetColor(0x808080);
+    194              GUI_DrawHLine(ySize - 2, 0, xSize );
+    195              GUI_SetColor(0x404040);
+    196              GUI_DrawHLine(ySize - 1, 0, xSize );
+    197              
+    198              /* Draw time & Date */
+    199              GUI_SetTextMode(GUI_TM_TRANS);
+    200              GUI_SetColor(GUI_WHITE);
+    201              GUI_SetFont(GUI_FONT_13B_ASCII);
+    202              
+    203              RTC_GetTime(RTC_Format_BIN, &RTC_TimeStructure);
+    204              sec    =  RTC_TimeStructure.RTC_Seconds;
+    205              min    =  RTC_TimeStructure.RTC_Minutes;
+    206              hour   =  RTC_TimeStructure.RTC_Hours;
+    207              
+    208              RTC_GetDate(RTC_Format_BIN, &RTC_DateStructure);
+    209              
+    210              sprintf((char *)TempStr, "%02d:%02d:%02d", hour , min, sec);
+    211              GUI_DispStringAt((char *)TempStr, xSize - 50, 4);
+    212              
+    213              /* Draw alarm icon */
+    214              if (alarm_set == 1)
+    215              {
+    216                GUI_DrawBitmap(&_bmAlarm_16x16, xSize - 73, 3);
+    217              }
+    218              
+    219              /* Logo */
+    220              GUI_DrawBitmap(&bmSTLogo40x20, 5, 1);
+    221              
+    222              /* USB */
+    223              if(USB_Host_Application_Ready == 1)
+    224              {
+    225                GUI_DrawBitmap(&bmusbdisk, xSize - 115, 0);
+    226              }
+    227              
+    228              sprintf((char *)TempStr, "CPU : %d %%", FreeRTOS_GetCPUUsage());
+    229              
+    230              if(FreeRTOS_GetCPUUsage() < 75 )
+    231              {
+    232                GUI_SetColor(GUI_WHITE);
+    233              }
+    234              else
+    235              {
+    236                GUI_SetColor(GUI_RED);
+    237              }
+    238              GUI_DispStringAt( (char *)TempStr, 50, 4);
+    239              GUI_SetColor(GUI_WHITE);
+    240              break;
+    241              
+    242            default:
+    243              WM_DefaultProc(pMsg);
+    244            }
+    245          }
+    246          
+    247          /**
+    248            * @brief  Demo Main menu
+    249            * @param  None
+    250            * @retval None
+    251            */
+    252          void DEMO_MainMenu(void) 
+    253          {
+    254            ICONVIEW_Handle hIcon;
+    255            WM_HWIN hStatusWin;
+    256            static uint32_t prev_usb_state = 0;
+    257            int i = 0;
+    258            
+    259          
+    260            GUI_DrawBitmap(&bmbackground, 0,0);     
+    261            GUI_SetAlpha(0xA0);
+    262            GUI_DrawBitmap(&bmSTM32_F4, LCD_GetXSize() - bmSTM32_F4.XSize - 10 , LCD_GetYSize() - bmSTM32_F4.YSize - 10); 
+    263            GUI_SetAlpha(0x00);
+    264          
+    265            WM_SetCallback(WM_GetDesktopWindowEx(1), _cbBk);
+    266            
+    267            hStatusWin = WM_CreateWindowAsChild(
+    268                                                0,
+    269                                                0,
+    270                                                LCD_GetXSize(),
+    271                                                25,
+    272                                                WM_GetDesktopWindowEx(1), WM_CF_SHOW | WM_CF_HASTRANS , _cbStatus, 0);
+    273            
+    274            hIcon = ICONVIEW_CreateEx(0, 25, LCD_GetXSize(), LCD_GetYSize()- 26, WM_GetDesktopWindowEx(1), WM_CF_SHOW | WM_CF_HASTRANS ,0 ,'0', 115, 95);
+    275            
+    276            ICONVIEW_SetFont(hIcon, &GUI_Font13B_ASCII);
+    277            
+    278            ICONVIEW_SetBkColor(hIcon, ICONVIEW_CI_SEL, 0x941000 | 0x80404040);
+    279            
+    280            ICONVIEW_SetSpace(hIcon, GUI_COORD_Y, 3);
+    281            
+    282            ICONVIEW_SetFrame(hIcon, GUI_COORD_Y, 1);
+    283            
+    284            for (i = 0; i < GUI_COUNTOF(_aBitmapItem); i++)
+    285            {
+    286              ICONVIEW_AddBitmapItem(hIcon,_aBitmapItem[i].pBitmap, _aBitmapItem[i].pText);
+    287            }
+    288            
+    289            GUI_SelectLayer(1);  
+    290          
+    291            while (1) 
+    292            {
+    293              if(USB_Host_Application_Ready != prev_usb_state)
+    294              {
+    295                prev_usb_state = USB_Host_Application_Ready;
+    296                WM_SendMessageNoPara(hStatusWin, WM_MSG_USB_STATUS_CHANGED);
+    297                
+    298                if(USB_Host_Application_Ready == 0)
+    299                {
+    300                  if(current_module == 0)
+    301                  {
+    302                    GUI_EndDialog(VIDEO_hWin, 0);
+    303                    if (VIDEO_Enlarge == 1)
+    304                    {
+    305                      WM_DeleteWindow(hVideoScreen);
+    306                      GUI_SetOrientation(0);
+    307                      TS_Orientation = 0;
+    308                    }
+    309                  }
+    310                  else if (current_module == 1)
+    311                  {
+    312                    GUI_EndDialog(IMAGE_hWin, 0);
+    313                    if (IMAGE_Enlarge == 1)
+    314                    {
+    315                      WM_DeleteWindow(vFrame);
+    316                      GUI_SetOrientation(0);
+    317                      TS_Orientation = 0;
+    318                    }
+    319                  }
+    320                }
+    321              }
+    322              GUI_Delay(100);
+    323            }
+    324          }
+    325          
+    326          /*************************** End of file ****************************/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      64   DEMO_MainMenu
+        64   -> GUI_Delay
+        64   -> GUI_DrawBitmap
+        64   -> GUI_EndDialog
+        64   -> GUI_SelectLayer
+        64   -> GUI_SetAlpha
+        64   -> GUI_SetOrientation
+        64   -> ICONVIEW_AddBitmapItem
+        64   -> ICONVIEW_CreateEx
+        64   -> ICONVIEW_SetBkColor
+        64   -> ICONVIEW_SetFont
+        64   -> ICONVIEW_SetFrame
+        64   -> ICONVIEW_SetSpace
+        64   -> LCD_GetXSize
+        64   -> LCD_GetYSize
+        64   -> WM_CreateWindowAsChild
+        64   -> WM_DeleteWindow
+        64   -> WM_GetDesktopWindowEx
+        64   -> WM_SendMessageNoPara
+        64   -> WM_SetCallback
+      16   _cbBk
+        16   -- Indirect call
+        16   -> GUI_SetBkColor
+        16   -> ICONVIEW_GetSel
+        16   -> WM_GetId
+      40   _cbStatus
+        40   -> FreeRTOS_GetCPUUsage
+        40   -> GUI_DispStringAt
+        40   -> GUI_DrawBitmap
+        40   -> GUI_DrawHLine
+        40   -> GUI_FillRect
+        40   -> GUI_SetColor
+        40   -> GUI_SetFont
+        40   -> GUI_SetTextMode
+        40   -> RTC_GetDate
+        40   -> RTC_GetTime
+        40   -> WM_CreateTimer
+        40   -> WM_DefaultProc
+        40   -> WM_DeleteTimer
+        40   -> WM_GetWindowSizeX
+        40   -> WM_GetWindowSizeY
+        40   -> WM_InvalidateWindow
+        40   -> WM_RestartTimer
+        40   -> sprintf
+
+
+   Section sizes:
+
+   Bytes   Function/Label
+   -----   --------------
+        4  ??DataTable39
+        4  ??DataTable39_1
+        4  ??DataTable39_10
+        4  ??DataTable39_11
+        4  ??DataTable39_12
+        4  ??DataTable39_13
+        4  ??DataTable39_14
+        4  ??DataTable39_15
+        4  ??DataTable39_16
+        4  ??DataTable39_17
+        4  ??DataTable39_18
+        4  ??DataTable39_19
+        4  ??DataTable39_2
+        4  ??DataTable39_20
+        4  ??DataTable39_21
+        4  ??DataTable39_22
+        4  ??DataTable39_23
+        4  ??DataTable39_24
+        4  ??DataTable39_25
+        4  ??DataTable39_3
+        4  ??DataTable39_4
+        4  ??DataTable39_5
+        4  ??DataTable39_6
+        4  ??DataTable39_7
+        4  ??DataTable39_8
+        4  ??DataTable39_9
+       16  ?_0
+       20  ?_1
+       12  ?_10
+       24  ?_11
+       16  ?_12
+       12  ?_13
+       16  ?_2
+       16  ?_3
+       16  ?_4
+       16  ?_5
+        8  ?_6
+       20  ?_7
+       12  ?_8
+       24  ?_9
+      400  DEMO_MainMenu
+       72  _aBitmapItem
+    57600  _acSTM32_F4
+   153600  _acbackground
+    32400  _acclock
+    32400  _accpu
+    32400  _acgame
+    32400  _acimage
+    32400  _acinfo
+    32400  _acmultimedia
+       20  _bmAlarm_16x16
+      128  _cbBk
+      380  _cbStatus
+     1024  acAlarm_16x16
+     4800  acSTLogo40x20
+     2500  acusbdisk
+       20  bmSTLogo40x20
+       20  bmSTM32_F4
+       20  bmbackground
+       20  bmclock
+       20  bmcpu
+       20  bmgame
+       20  bmimage
+       20  bminfo
+       20  bmmultimedia
+       20  bmusbdisk
+       36  current_module
+           _apModules
+           module_mutex
+           prev_usb_state
+       56  hTimerTime
+           TempStr
+
+ 
+      56 bytes in section .bss
+      36 bytes in section .data
+ 414 276 bytes in section .rodata
+   1 180 bytes in section .text
+ 
+   1 180 bytes of CODE  memory
+ 414 276 bytes of CONST memory
+      92 bytes of DATA  memory
+
+Errors: none
+Warnings: none

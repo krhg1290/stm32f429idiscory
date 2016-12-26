@@ -1,0 +1,485 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.40.3.8902/W32 for ARM        24/Dec/2016  13:33:36
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\Core\Demo\demo_cpu.c
+#    Command line =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\Core\Demo\demo_cpu.c
+#        -D USE_STDPERIPH_DRIVER -D STM32F429_439xx -D USE_STM32F429I_DISCO -D
+#        USE_USB_OTG_HS -D USE_EMBEDDED_PHY -lcN
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\
+#        --diag_suppress Pe111,Pa082 -o
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\
+#        --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.2\arm\INC\c\DLib_Config_Full.h" -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Config\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Devices\STM32F4xx\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\User\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Demo\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Lib\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Test_Program\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\HID\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\Audio\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_OTG_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Common\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\STM32F429i-Discovery\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\fat_fs\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\Config\
+#        -Ohs --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.2\arm\CMSIS\Include\"
+#    List file    =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\demo_cpu.lst
+#    Object file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\demo_cpu.o
+#
+###############################################################################
+
+D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\Core\Demo\demo_cpu.c
+      1          /**
+      2            ******************************************************************************
+      3            * @file    demo_cpu.c
+      4            * @author  MCD Application Team
+      5            * @version V1.0.1
+      6            * @date    11-November-2013 
+      7            * @brief   CPU performance functions
+      8            ******************************************************************************
+      9            * @attention
+     10            *
+     11            * <h2><center>&copy; COPYRIGHT 2013 STMicroelectronics</center></h2>
+     12            *
+     13            * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
+     14            * You may not use this file except in compliance with the License.
+     15            * You may obtain a copy of the License at:
+     16            *
+     17            *        http://www.st.com/software_license_agreement_liberty_v2
+     18            *
+     19            * Unless required by applicable law or agreed to in writing, software 
+     20            * distributed under the License is distributed on an "AS IS" BASIS, 
+     21            * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     22            * See the License for the specific language governing permissions and
+     23            * limitations under the License.
+     24            *
+     25            ******************************************************************************
+     26            */
+     27          
+     28          /* Includes ------------------------------------------------------------------*/
+     29          #include <stdlib.h>  
+     30          #include "global_includes.h"
+     31          #include "DIALOG.h"
+     32          #include "cpu_utils.h"
+     33          
+     34          /* External variables --------------------------------------------------------*/
+     35          /* Private typedef -----------------------------------------------------------*/
+     36          /* Private defines -----------------------------------------------------------*/
+     37          #define ID_FRAMEWIN_CPU    (GUI_ID_USER + 0x01)
+     38          #define ID_CPU_GRAPH       (GUI_ID_USER + 0x03)
+     39          #define ID_TEXT_CPU        (GUI_ID_USER + 0x04)
+     40          #define ID_BENCH_CPU       (GUI_ID_USER + 0x05)
+     41          
+     42          /* Private macros ------------------------------------------------------------*/
+     43          /* Private variables ---------------------------------------------------------*/
+     44          GRAPH_DATA_Handle hData;
+     45          GRAPH_SCALE_Handle hScale;
+     46          
+     47          static const GUI_WIDGET_CREATE_INFO _aDialog[] = {
+     48            { FRAMEWIN_CreateIndirect, "Performance", ID_FRAMEWIN_CPU, 0, 0, 240, 320-20, WM_CF_STAYONTOP, 0 },
+     49            { TEXT_CreateIndirect, "00000000 Pixels/s ", ID_TEXT_CPU, 28, 175, 300, 25, 0, 0, 0 }, 
+     50            { BUTTON_CreateIndirect, "Start Speed Benchmark", ID_BENCH_CPU, 20 , 220 , 200, 40, 0, 0, 0 },  
+     51          };
+     52          
+     53          static const GUI_COLOR _aColor[8] = {
+     54            0x000000, 
+     55            0x0000FF, 
+     56            0x00FF00, 
+     57            0x00FFFF, 
+     58            0xFF0000, 
+     59            0xFF00FF, 
+     60            0xFFFF00, 
+     61            0xFFFFFF
+     62          };
+     63          
+     64          uint32_t Stop_Test = 0;
+     65          
+     66          /* Private function prototypes -----------------------------------------------*/
+     67          int Run_SpeedTest(void) ;
+     68          
+     69          /* Private functions ---------------------------------------------------------*/
+     70          
+     71          /**
+     72            * @brief  Return pixels per second rate
+     73            * @param  None
+     74            * @retval U32
+     75            */
+     76          static U32 _GetPixelsPerSecond(void) {
+     77            GUI_COLOR Color, BkColor;
+     78            U32 x0, y0, x1, y1, xSize, ySize;
+     79            I32 t, t0;
+     80            U32 Cnt, PixelsPerSecond, PixelCnt;
+     81            
+     82            /* Find an area which is not obstructed by any windows */
+     83            xSize   = LCD_GetXSize();
+     84            ySize   = LCD_GetYSize();
+     85            Cnt     = 0;
+     86            x0      = 0;
+     87            x1      = xSize - 1;
+     88            y0      = 65;
+     89            y1      = ySize - 60 - 1;
+     90            Color   = GUI_GetColor();
+     91            BkColor = GUI_GetBkColor();
+     92            GUI_SetColor(BkColor);
+     93            
+     94            /* Repeat fill as often as possible in 100 ms */
+     95            t0 = GUI_GetTime();
+     96            do {
+     97              GUI_FillRect(x0, y0, x1, y1);
+     98              Cnt++;
+     99              t = GUI_GetTime();    
+    100            } while ((t - (t0 + 100)) <= 0);
+    101            
+    102            /* Compute result */
+    103            t -= t0;
+    104            PixelCnt = (x1 - x0 + 1) * (y1 - y0 + 1) * Cnt;
+    105            PixelsPerSecond = PixelCnt / t * 1000;   
+    106            GUI_SetColor(Color);
+    107            return PixelsPerSecond;
+    108          }
+    109          
+    110          /**
+    111            * @brief  Run the speed test
+    112            * @param  None
+    113            * @retval int
+    114            */
+    115          int Run_SpeedTest(void) {
+    116            int      TimeStart, i;
+    117            U32      PixelsPerSecond;
+    118            unsigned aColorIndex[8];
+    119            int      xSize, ySize, vySize;
+    120            GUI_RECT Rect, ClipRect;
+    121            xSize  = LCD_GetXSize();
+    122            ySize  = LCD_GetYSize();
+    123            vySize = LCD_GetVYSize();
+    124          #if GUI_SUPPORT_CURSOR
+    125            GUI_CURSOR_Hide();
+    126          #endif
+    127            if (vySize > ySize)
+    128            {
+    129              ClipRect.x0 = 0;
+    130              ClipRect.y0 = 0;
+    131              ClipRect.x1 = xSize;
+    132              ClipRect.y1 = ySize;
+    133              GUI_SetClipRect(&ClipRect);
+    134            }
+    135            
+    136            Stop_Test = 0;
+    137            
+    138            for (i = 0; i< 8; i++)
+    139            {
+    140              aColorIndex[i] = GUI_Color2Index(_aColor[i]);
+    141            }  
+    142            TimeStart = GUI_GetTime();
+    143            for (i = 0; ((GUI_GetTime() - TimeStart) < 5000) &&( Stop_Test == 0); i++)
+    144            {
+    145              GUI_SetColorIndex(aColorIndex[i&7]);
+    146              
+    147              /* Calculate random positions */
+    148              Rect.x0 = (GUI_GetTime()/(i%25)) % xSize - xSize / 2;
+    149              Rect.y0 = (GUI_GetTime()/(i%25)) % ySize - ySize / 2;
+    150              Rect.x1 = Rect.x0 + 20 + (GUI_GetTime()/(i%25)) % xSize;
+    151              Rect.y1 = Rect.y0 + 20 + (GUI_GetTime()/(i%25)) % ySize;
+    152          
+    153              GUI_FillRect(Rect.x0, Rect.y0, Rect.x1, Rect.y1);
+    154              
+    155              /* Clip rectangle to visible area and add the number of pixels (for speed computation) */
+    156              if (Rect.x1 >= xSize)
+    157              {
+    158                Rect.x1 = xSize - 1;
+    159              }
+    160              
+    161              if (Rect.y1 >= ySize)
+    162              {
+    163                Rect.y1 = ySize - 1;
+    164              }
+    165              
+    166              if (Rect.x0 < 0 )
+    167              {
+    168                Rect.x0 = 0;
+    169              }
+    170              
+    171              if (Rect.y1 < 0)
+    172              {
+    173                Rect.y1 = 0;
+    174              }
+    175              
+    176              GUI_Exec();
+    177              
+    178              /* Allow short breaks so we do not use all available CPU time ... */
+    179            }
+    180            PixelsPerSecond = _GetPixelsPerSecond();
+    181            GUI_SetClipRect(NULL);
+    182            return PixelsPerSecond;
+    183          }
+    184          
+    185          /**
+    186            * @brief  Callback function of the CPU window
+    187            * @param  pMsg: pointer to a data structure of type WM_MESSAGE
+    188            * @retval None
+    189            */
+    190          static void _cbCpuWindow(WM_MESSAGE * pMsg) {
+    191            
+    192            static WM_HTIMER hTimerTime; 
+    193            switch (pMsg->MsgId) 
+    194            {
+    195            case WM_CREATE:
+    196              /* Create timer */
+    197              hTimerTime = WM_CreateTimer(pMsg->hWin, 0, 400, 0);        
+    198              break;
+    199              
+    200            case WM_TIMER:
+    201              GRAPH_DATA_YT_AddValue(hData , FreeRTOS_GetCPUUsage());
+    202              WM_InvalidateWindow(pMsg->hWin);
+    203              WM_RestartTimer(pMsg->Data.v, 0);
+    204              break; 
+    205              
+    206            case WM_DELETE:
+    207              WM_DeleteTimer(hTimerTime);
+    208              break;
+    209              
+    210            default:
+    211              WM_DefaultProc(pMsg);
+    212            }
+    213          }
+    214          
+    215          /**
+    216            * @brief  Callback routine of the dialog
+    217            * @param  pMsg: pointer to a data structure of type WM_MESSAGE
+    218            * @retval None
+    219            */
+    220          static void _cbDialog(WM_MESSAGE * pMsg) {
+    221            WM_HWIN hItem;
+    222            int Id, NCode;
+    223            WM_HWIN hGraph;
+    224            int cpu_speed = 0;
+    225            char temp[50];
+    226            
+    227            switch (pMsg->MsgId) {
+    228            case WM_INIT_DIALOG:
+    229              
+    230              /* Initialization of 'CPU' */
+    231              hItem = pMsg->hWin;
+    232              FRAMEWIN_SetFont(hItem, GUI_FONT_13HB_ASCII);
+    233              FRAMEWIN_AddCloseButton(hItem, FRAMEWIN_BUTTON_RIGHT,  0);
+    234              
+    235              hItem = TEXT_CreateEx(5, 30, 100, 25, pMsg->hWin, WM_CF_SHOW,0, 0x123,"");
+    236              TEXT_SetFont(hItem, GUI_FONT_13B_1);
+    237              TEXT_SetTextColor(hItem, 0x00804000);
+    238              TEXT_SetText(hItem, "CPU Usage %:");
+    239              
+    240              hItem = WM_GetDialogItem(pMsg->hWin, ID_TEXT_CPU);
+    241              TEXT_SetFont(hItem, GUI_FONT_24B_ASCII);
+    242              TEXT_SetTextColor(hItem, GUI_DARKRED);
+    243              
+    244              hItem = WM_GetDialogItem(pMsg->hWin, ID_CPU_GRAPH);  
+    245              FRAMEWIN_SetBarColor(hItem, 0, GUI_DARKGRAY);  
+    246              FRAMEWIN_SetBarColor(hItem, 1, GUI_DARKGRAY);   
+    247              
+    248              hGraph = GRAPH_CreateEx(5, 45, 230, 115, pMsg->hWin, WM_CF_SHOW, 0, GUI_ID_GRAPH0);
+    249              hData = GRAPH_DATA_YT_Create(GUI_LIGHTGREEN, 500, 0, 20);
+    250              GRAPH_SetGridVis(hGraph, 1);
+    251              GRAPH_SetBorder(hGraph, 10, 4, 5, 4); 
+    252              GRAPH_AttachData(hGraph, hData);
+    253              hScale = GRAPH_SCALE_Create(20, GUI_TA_RIGHT, GRAPH_SCALE_CF_VERTICAL, 25);
+    254              GRAPH_AttachScale(hGraph, hScale);  
+    255              GRAPH_SCALE_SetTextColor(hScale, GUI_YELLOW);
+    256              GRAPH_SetGridDistX(hGraph, 25);
+    257              GRAPH_SetGridDistY(hGraph, 25);   
+    258              
+    259              WM_CreateWindowAsChild(0, 20, 240, 23, pMsg->hWin, WM_CF_SHOW | WM_CF_HASTRANS, _cbCpuWindow , 0); 
+    260              
+    261              break;
+    262              
+    263            case WM_NOTIFY_PARENT:
+    264              Id    = WM_GetId(pMsg->hWinSrc);    /* Id of widget */
+    265              NCode = pMsg->Data.v;               /* Notification code */
+    266              switch (NCode) {
+    267              case WM_NOTIFICATION_RELEASED:      /* React only if released */
+    268                switch (Id) {
+    269                  
+    270                case ID_BENCH_CPU:
+    271                  Stop_Test = 0;
+    272                  
+    273                  WM_HideWindow(pMsg->hWin);
+    274                  GUI_Exec();
+    275                  cpu_speed = Run_SpeedTest();
+    276                  WM_ShowWindow(pMsg->hWin);
+    277                  
+    278                  hItem = WM_GetDialogItem(pMsg->hWin, ID_TEXT_CPU);
+    279                  sprintf (temp, "%d  Pixels/s ", cpu_speed); 
+    280                  TEXT_SetText(hItem, temp);
+    281                  WM_InvalidateWindow(WM_GetDesktopWindowEx(1));
+    282                  break;
+    283                }
+    284                break;
+    285                
+    286              case WM_NOTIFICATION_CHILD_DELETED:
+    287                Stop_Test = 1;
+    288                WM_NotifyParent(WM_GetParent(pMsg->hWin), 0x500);
+    289                break; 
+    290              }
+    291              break;
+    292              
+    293            default:
+    294              WM_DefaultProc(pMsg);
+    295              break;
+    296            }
+    297          }
+    298          
+    299          /**
+    300            * @brief  DEMO_Cpu
+    301            * @param  hWin: Window handle
+    302            * @retval None
+    303            */
+    304          void DEMO_Cpu(WM_HWIN hWin)
+    305          {
+    306            GUI_CreateDialogBox(_aDialog, GUI_COUNTOF(_aDialog), _cbDialog, hWin, 0, 0);
+    307          }
+    308          /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   DEMO_Cpu
+        16   -> GUI_CreateDialogBox
+      88   Run_SpeedTest
+        88   -> GUI_CURSOR_Hide
+        88   -> GUI_Color2Index
+        88   -> GUI_Exec
+        88   -> GUI_FillRect
+        88   -> GUI_GetBkColor
+        88   -> GUI_GetColor
+        88   -> GUI_GetTime
+        88   -> GUI_SetClipRect
+        88   -> GUI_SetColor
+        88   -> GUI_SetColorIndex
+        88   -> LCD_GetVYSize
+        88   -> LCD_GetXSize
+        88   -> LCD_GetYSize
+       8   _cbCpuWindow
+         8   -> FreeRTOS_GetCPUUsage
+         8   -> GRAPH_DATA_YT_AddValue
+         8   -> WM_CreateTimer
+         0   -> WM_DefaultProc
+         8   -> WM_InvalidateWindow
+      88   _cbDialog
+        88   -> FRAMEWIN_AddCloseButton
+        88   -> FRAMEWIN_SetBarColor
+        88   -> FRAMEWIN_SetFont
+        88   -> GRAPH_AttachData
+        88   -> GRAPH_AttachScale
+        88   -> GRAPH_CreateEx
+        88   -> GRAPH_DATA_YT_Create
+        88   -> GRAPH_SCALE_Create
+        88   -> GRAPH_SCALE_SetTextColor
+        88   -> GRAPH_SetBorder
+        88   -> GRAPH_SetGridDistX
+        88   -> GRAPH_SetGridDistY
+        88   -> GRAPH_SetGridVis
+        88   -> GUI_Exec
+        88   -> Run_SpeedTest
+        88   -> TEXT_CreateEx
+        88   -> TEXT_SetFont
+        88   -> TEXT_SetText
+        88   -> TEXT_SetTextColor
+        88   -> WM_CreateWindowAsChild
+        16   -> WM_DefaultProc
+        88   -> WM_GetDesktopWindowEx
+        88   -> WM_GetDialogItem
+        88   -> WM_GetId
+        88   -> WM_GetParent
+        88   -> WM_HideWindow
+        88   -> WM_InvalidateWindow
+        88   -> WM_NotifyParent
+        88   -> WM_ShowWindow
+        88   -> sprintf
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable11
+       4  ??DataTable11_1
+       4  ??DataTable11_10
+       4  ??DataTable11_2
+       4  ??DataTable11_3
+       4  ??DataTable11_4
+       4  ??DataTable11_5
+       4  ??DataTable11_6
+       4  ??DataTable11_7
+       4  ??DataTable11_8
+       4  ??DataTable11_9
+      12  ?_0
+      20  ?_1
+      24  ?_2
+       1  ?_3
+      16  ?_4
+      16  ?_5
+      28  DEMO_Cpu
+     430  Run_SpeedTest
+      32  _aColor
+      84  _aDialog
+      98  _cbCpuWindow
+     456  _cbDialog
+      16  hData
+          hScale
+          Stop_Test
+          hTimerTime
+
+ 
+    16 bytes in section .bss
+    89 bytes in section .rodata
+ 1 172 bytes in section .text
+ 
+ 1 172 bytes of CODE  memory
+    89 bytes of CONST memory
+    16 bytes of DATA  memory
+
+Errors: none
+Warnings: none

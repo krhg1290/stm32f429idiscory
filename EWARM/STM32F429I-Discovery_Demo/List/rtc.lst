@@ -1,0 +1,334 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.40.3.8902/W32 for ARM        24/Dec/2016  13:33:42
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\Core\User\rtc.c
+#    Command line =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\Core\User\rtc.c
+#        -D USE_STDPERIPH_DRIVER -D STM32F429_439xx -D USE_STM32F429I_DISCO -D
+#        USE_USB_OTG_HS -D USE_EMBEDDED_PHY -lcN
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\
+#        --diag_suppress Pe111,Pa082 -o
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\
+#        --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.2\arm\INC\c\DLib_Config_Full.h" -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Config\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Devices\STM32F4xx\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\User\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Demo\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Lib\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Test_Program\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\HID\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\Audio\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_OTG_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Common\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\STM32F429i-Discovery\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\fat_fs\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\Config\
+#        -Ohs --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.2\arm\CMSIS\Include\"
+#    List file    =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\rtc.lst
+#    Object file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\rtc.o
+#
+###############################################################################
+
+D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\Core\User\rtc.c
+      1          /**
+      2            ******************************************************************************
+      3            * @file    rtc.c
+      4            * @author  MCD Application Team
+      5            * @version V1.0.1
+      6            * @date    11-November-2013
+      7            * @brief   RTC functions
+      8            ******************************************************************************
+      9            * @attention
+     10            *
+     11            * <h2><center>&copy; COPYRIGHT 2013 STMicroelectronics</center></h2>
+     12            *
+     13            * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
+     14            * You may not use this file except in compliance with the License.
+     15            * You may obtain a copy of the License at:
+     16            *
+     17            *        http://www.st.com/software_license_agreement_liberty_v2
+     18            *
+     19            * Unless required by applicable law or agreed to in writing, software 
+     20            * distributed under the License is distributed on an "AS IS" BASIS, 
+     21            * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     22            * See the License for the specific language governing permissions and
+     23            * limitations under the License.
+     24            *
+     25            ******************************************************************************
+     26            */
+     27          
+     28          /* Includes ------------------------------------------------------------------*/
+     29          #include "rtc.h"
+     30          /* Private typedef -----------------------------------------------------------*/
+     31          /* Private define ------------------------------------------------------------*/
+     32          #define LSE_MAX_TRIALS_NB         6
+     33          
+     34          /* Private macro -------------------------------------------------------------*/
+     35          /* Private variables ---------------------------------------------------------*/
+     36          RTC_InitTypeDef   RTC_InitStructure;
+     37          uint32_t RTC_Timeout = 0x10000;
+     38          int8_t RTC_Error = 0;
+     39          uint8_t RTC_HandlerFlag;
+     40          uint8_t __IO alarm_now = 1;
+     41          __IO uint32_t LsiFreq = 0;
+     42          __IO uint32_t CaptureNumber = 0, PeriodValue = 0;
+     43          
+     44          /* Private function prototypes -----------------------------------------------*/
+     45          uint32_t GetLSIFrequency(void);
+     46          /* Private functions ---------------------------------------------------------*/
+     47          
+     48          /**
+     49          * @brief  Configures the RTC peripheral.
+     50          * @param  None
+     51          * @retval None
+     52          */
+     53          int8_t RTC_Configuration(void)
+     54          {
+     55          
+     56            RTC_Error = 0;
+     57            /* Enable the PWR clock */
+     58            RCC_APB1PeriphClockCmd(RCC_APB1Periph_PWR, ENABLE);
+     59          
+     60            /* Allow access to RTC */
+     61            PWR_BackupAccessCmd(ENABLE);
+     62          
+     63          /* LSI used as RTC source clock */
+     64          /* The RTC Clock may varies due to LSI frequency dispersion. */   
+     65            /* Enable the LSI OSC */ 
+     66            RCC_LSICmd(ENABLE);
+     67          
+     68            /* Wait till LSI is ready */  
+     69            while(RCC_GetFlagStatus(RCC_FLAG_LSIRDY) == RESET)
+     70            {
+     71            }
+     72          
+     73            /* Select the RTC Clock Source */
+     74            RCC_RTCCLKConfig(RCC_RTCCLKSource_LSI);
+     75             
+     76            /* Enable the RTC Clock */
+     77            RCC_RTCCLKCmd(ENABLE);
+     78            
+     79              /* Wait for RTC APB registers synchronisation */
+     80            RTC_WaitForSynchro();
+     81            
+     82            /* Calendar Configuration with LSI supposed at 32KHz */
+     83            RTC_InitStructure.RTC_AsynchPrediv = 0x7F;
+     84            RTC_InitStructure.RTC_SynchPrediv	=  0xFF; /* (32KHz / 128) - 1 = 0xFF*/
+     85            RTC_InitStructure.RTC_HourFormat = RTC_HourFormat_24;
+     86            RTC_Init(&RTC_InitStructure);  
+     87          
+     88            /* Get the LSI frequency:  TIM5 is used to measure the LSI frequency */
+     89            LsiFreq = GetLSIFrequency();
+     90             
+     91            /* Adjust LSI Configuration */
+     92            RTC_InitStructure.RTC_AsynchPrediv = 0x7F;
+     93            RTC_InitStructure.RTC_SynchPrediv	=  (LsiFreq/128) - 1;
+     94            RTC_InitStructure.RTC_HourFormat = RTC_HourFormat_24;
+     95            RTC_Init(&RTC_InitStructure);
+     96            return RTC_Error;
+     97          }
+     98          
+     99          /**
+    100            * @brief  Configures TIM5 to measure the LSI oscillator frequency. 
+    101            * @param  None
+    102            * @retval LSI Frequency
+    103            */
+    104          uint32_t GetLSIFrequency(void)
+    105          {
+    106            NVIC_InitTypeDef   NVIC_InitStructure;
+    107            TIM_ICInitTypeDef  TIM_ICInitStructure;
+    108          
+    109            /* Enable the LSI oscillator ************************************************/
+    110            RCC_LSICmd(ENABLE);
+    111            
+    112            /* Wait till LSI is ready */
+    113            while (RCC_GetFlagStatus(RCC_FLAG_LSIRDY) == RESET)
+    114            {}
+    115          
+    116            /* TIM5 configuration *******************************************************/ 
+    117            /* Enable TIM5 clock */
+    118            RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM5, ENABLE);
+    119            
+    120            /* Connect internally the TIM5_CH4 Input Capture to the LSI clock output */
+    121            TIM_RemapConfig(TIM5, TIM5_LSI);
+    122          
+    123            /* Configure TIM5 presclaer */
+    124            TIM_PrescalerConfig(TIM5, 0, TIM_PSCReloadMode_Immediate);
+    125            
+    126            /* TIM5 configuration: Input Capture mode ---------------------
+    127               The LSI oscillator is connected to TIM5 CH4
+    128               The Rising edge is used as active edge,
+    129               The TIM5 CCR4 is used to compute the frequency value 
+    130            ------------------------------------------------------------ */
+    131            TIM_ICInitStructure.TIM_Channel = TIM_Channel_4;
+    132            TIM_ICInitStructure.TIM_ICPolarity = TIM_ICPolarity_Rising;
+    133            TIM_ICInitStructure.TIM_ICSelection = TIM_ICSelection_DirectTI;
+    134            TIM_ICInitStructure.TIM_ICPrescaler = TIM_ICPSC_DIV8;
+    135            TIM_ICInitStructure.TIM_ICFilter = 0;
+    136            TIM_ICInit(TIM5, &TIM_ICInitStructure);
+    137            
+    138            /* Enable TIM5 Interrupt channel */
+    139            NVIC_InitStructure.NVIC_IRQChannel = TIM5_IRQn;
+    140            NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
+    141            NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
+    142            NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+    143            NVIC_Init(&NVIC_InitStructure);
+    144          
+    145            /* Enable TIM5 counter */
+    146            TIM_Cmd(TIM5, ENABLE);
+    147          
+    148            /* Reset the flags */
+    149            TIM5->SR = 0;
+    150              
+    151            /* Enable the CC4 Interrupt Request */  
+    152            TIM_ITConfig(TIM5, TIM_IT_CC4, ENABLE);
+    153          
+    154          
+    155            /* Wait until the TIM5 get 2 LSI edges (refer to TIM5_IRQHandler() in 
+    156              stm32fxxx_it.c file) ******************************************************/
+    157            while(CaptureNumber != 2)
+    158            {
+    159            }
+    160            /* Deinitialize the TIM5 peripheral registers to their default reset values */
+    161            TIM_DeInit(TIM5);
+    162            
+    163            /* Get PCLK1 prescaler */
+    164            if ((RCC->CFGR & RCC_CFGR_PPRE1) == 0)
+    165            { 
+    166              /* PCLK1 prescaler equal to 1 => TIMCLK = PCLK1 */
+    167              return (((SystemCoreClock/4) / PeriodValue) * 8);
+    168            }
+    169            else
+    170            { /* PCLK1 prescaler different from 1 => TIMCLK = 2 * PCLK1 */
+    171              return (((2 * (SystemCoreClock/4)) / PeriodValue) * 8) ;
+    172            }
+    173          }
+    174          
+    175          /**
+    176          * @brief  This function handles RTC Alarm A interrupt request.
+    177          * @param  None
+    178          * @retval None
+    179          */
+    180          void RTC_Alarm_IRQHandler(void)
+    181          {
+    182            /* Clear the EXTIL line 17 */
+    183            EXTI_ClearITPendingBit(EXTI_Line17);
+    184          
+    185            /* Check on the AlarmA falg and on the number of interrupts per Second (60*8) */
+    186            if (RTC_GetITStatus(RTC_IT_ALRA) != RESET)
+    187            {
+    188              STM_EVAL_LEDOn(LED4);
+    189              alarm_now = 0;
+    190              /* Clear RTC AlarmA Flags */
+    191              RTC_ClearITPendingBit(RTC_IT_ALRA);
+    192              RTC_HandlerFlag = ENABLE;
+    193            }
+    194          }
+    195          /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      32   GetLSIFrequency
+        32   -> NVIC_Init
+        32   -> RCC_APB1PeriphClockCmd
+        32   -> RCC_GetFlagStatus
+        32   -> RCC_LSICmd
+        32   -> TIM_Cmd
+        32   -> TIM_DeInit
+        32   -> TIM_ICInit
+        32   -> TIM_ITConfig
+        32   -> TIM_PrescalerConfig
+        32   -> TIM_RemapConfig
+       8   RTC_Alarm_IRQHandler
+         8   -> EXTI_ClearITPendingBit
+         8   -> RTC_ClearITPendingBit
+         8   -> RTC_GetITStatus
+         8   -> STM_EVAL_LEDOn
+       8   RTC_Configuration
+         8   -> GetLSIFrequency
+         8   -> PWR_BackupAccessCmd
+         8   -> RCC_APB1PeriphClockCmd
+         8   -> RCC_GetFlagStatus
+         8   -> RCC_LSICmd
+         8   -> RCC_RTCCLKCmd
+         8   -> RCC_RTCCLKConfig
+         8   -> RTC_Init
+         8   -> RTC_WaitForSynchro
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       4  ??DataTable2_1
+       4  ??DataTable2_2
+       4  ??DataTable2_3
+       4  ??DataTable2_4
+       4  ??DataTable2_5
+       8  CaptureNumber
+          PeriodValue
+     180  GetLSIFrequency
+      46  RTC_Alarm_IRQHandler
+     110  RTC_Configuration
+       2  RTC_HandlerFlag
+          alarm_now
+      20  RTC_InitStructure
+          RTC_Error
+          LsiFreq
+       4  RTC_Timeout
+
+ 
+  28 bytes in section .bss
+   6 bytes in section .data
+ 360 bytes in section .text
+ 
+ 360 bytes of CODE memory
+  34 bytes of DATA memory
+
+Errors: none
+Warnings: none

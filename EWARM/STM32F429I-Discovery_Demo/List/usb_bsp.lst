@@ -1,0 +1,509 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.40.3.8902/W32 for ARM        24/Dec/2016  13:33:49
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\Core\User\usb_bsp.c
+#    Command line =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\Core\User\usb_bsp.c
+#        -D USE_STDPERIPH_DRIVER -D STM32F429_439xx -D USE_STM32F429I_DISCO -D
+#        USE_USB_OTG_HS -D USE_EMBEDDED_PHY -lcN
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\
+#        --diag_suppress Pe111,Pa082 -o
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\
+#        --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.2\arm\INC\c\DLib_Config_Full.h" -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Config\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Devices\STM32F4xx\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\User\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Demo\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Lib\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Test_Program\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\HID\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\Audio\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_OTG_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Common\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\STM32F429i-Discovery\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\fat_fs\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\Config\
+#        -Ohs --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.2\arm\CMSIS\Include\"
+#    List file    =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\usb_bsp.lst
+#    Object file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\usb_bsp.o
+#
+###############################################################################
+
+D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\Core\User\usb_bsp.c
+      1          /**
+      2            ******************************************************************************
+      3            * @file    usb_bsp.c
+      4            * @author  MCD Application Team
+      5            * @version V1.0.1
+      6            * @date    11-November-2013
+      7            * @brief   USB bsp
+      8            ******************************************************************************
+      9            * @attention
+     10            *
+     11            * <h2><center>&copy; COPYRIGHT 2013 STMicroelectronics</center></h2>
+     12            *
+     13            * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
+     14            * You may not use this file except in compliance with the License.
+     15            * You may obtain a copy of the License at:
+     16            *
+     17            *        http://www.st.com/software_license_agreement_liberty_v2
+     18            *
+     19            * Unless required by applicable law or agreed to in writing, software 
+     20            * distributed under the License is distributed on an "AS IS" BASIS, 
+     21            * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     22            * See the License for the specific language governing permissions and
+     23            * limitations under the License.
+     24            *
+     25            ******************************************************************************
+     26            */ 
+     27          
+     28          /* Includes ------------------------------------------------------------------*/
+     29          #include "usb_bsp.h"
+     30          #include "usb_conf.h"
+     31          #include "global_includes.h"
+     32          
+     33          /** @addtogroup USBH_USER
+     34          * @{
+     35          */
+     36          
+     37          /** @defgroup USB_BSP
+     38            * @brief This file is responsible to offer board support package
+     39            * @{
+     40            */ 
+     41          
+     42          /** @defgroup USB_BSP_Private_Defines
+     43            * @{
+     44            */ 
+     45          
+     46          #define TIM_MSEC_DELAY                     0x01
+     47          #define TIM_USEC_DELAY                     0x02
+     48          #define HOST_OVRCURR_PORT                  GPIOE
+     49          #define HOST_OVRCURR_LINE                  GPIO_Pin_1
+     50          #define HOST_OVRCURR_PORT_SOURCE           GPIO_PortSourceGPIOE
+     51          #define HOST_OVRCURR_PIN_SOURCE            GPIO_PinSource1
+     52          #define HOST_OVRCURR_PORT_RCC              RCC_APB2Periph_GPIOE
+     53          #define HOST_OVRCURR_EXTI_LINE             EXTI_Line1
+     54          #define HOST_OVRCURR_IRQn                  EXTI1_IRQn 
+     55          
+     56          #define HOST_POWERSW_PORT_RCC             RCC_APB2Periph_GPIOC
+     57          #define HOST_POWERSW_PORT                 GPIOC
+     58          #define HOST_POWERSW_VBUS                 GPIO_Pin_4
+     59          
+     60          /**
+     61            * @}
+     62            */ 
+     63          
+     64          
+     65          /** @defgroup USB_BSP_Private_TypesDefinitions
+     66            * @{
+     67            */ 
+     68          /**
+     69            * @}
+     70            */ 
+     71          uint16_t tmprg=0;
+     72          
+     73          
+     74          /** @defgroup USB_BSP_Private_Macros
+     75            * @{
+     76            */ 
+     77          /**
+     78            * @}
+     79            */ 
+     80          
+     81          /** @defgroup USBH_BSP_Private_Variables
+     82            * @{
+     83            */ 
+     84          ErrorStatus HSEStartUpStatus;
+     85          #ifdef USE_ACCURATE_TIME 
+     86          __IO uint32_t BSP_delay = 0;
+     87          #endif
+     88          /**
+     89            * @}
+     90            */ 
+     91          
+     92          /** @defgroup USBH_BSP_Private_FunctionPrototypes
+     93            * @{
+     94            */ 
+     95          
+     96          #ifdef USE_ACCURATE_TIME 
+     97          static void BSP_SetTime(uint8_t Unit);
+     98          static void BSP_Delay(uint32_t nTime,uint8_t Unit);
+     99          #endif
+    100          static void USB_OTG_BSP_TimeInit ( void );
+    101          /**
+    102            * @}
+    103            */ 
+    104          
+    105          /** @defgroup USB_BSP_Private_Functions
+    106            * @{
+    107            */ 
+    108          
+    109          /**
+    110            * @brief  USB_OTG_BSP_Init
+    111            *         Initilizes BSP configurations
+    112            * @param  None
+    113            * @retval None
+    114            */
+    115          
+    116          void USB_OTG_BSP_Init(USB_OTG_CORE_HANDLE *pdev)
+    117          {
+    118            GPIO_InitTypeDef GPIO_InitStructure;    
+    119          
+    120            /* Configuration for USB OTG HS used in FS mode with EMBEDDED PHY */
+    121            RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOB , ENABLE);
+    122            
+    123            GPIO_InitStructure.GPIO_Pin = GPIO_Pin_12 | GPIO_Pin_14 | GPIO_Pin_15;
+    124            
+    125            GPIO_InitStructure.GPIO_Speed = GPIO_Speed_100MHz;
+    126            GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF;
+    127            GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+    128            GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL ;
+    129            GPIO_Init(GPIOB, &GPIO_InitStructure);  
+    130            
+    131            GPIO_PinAFConfig(GPIOB,GPIO_PinSource14,GPIO_AF_OTG2_FS) ; 
+    132            GPIO_PinAFConfig(GPIOB,GPIO_PinSource15,GPIO_AF_OTG2_FS) ;
+    133            
+    134            GPIO_InitStructure.GPIO_Pin = GPIO_Pin_13;
+    135            GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN;
+    136            GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL ;
+    137            GPIO_Init(GPIOB, &GPIO_InitStructure);  
+    138              
+    139            RCC_AHB1PeriphClockCmd( RCC_AHB1Periph_OTG_HS, ENABLE);
+    140          
+    141            USB_OTG_BSP_TimeInit();
+    142          }
+    143          
+    144          /**
+    145            * @brief  USB_OTG_BSP_EnableInterrupt
+    146            *         Configures USB Global interrupt
+    147            * @param  None
+    148            * @retval None
+    149            */
+    150          void USB_OTG_BSP_EnableInterrupt(USB_OTG_CORE_HANDLE *pdev)
+    151          {
+    152            NVIC_InitTypeDef NVIC_InitStructure; 
+    153               
+    154            NVIC_InitStructure.NVIC_IRQChannel = OTG_HS_IRQn;
+    155            NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
+    156            NVIC_InitStructure.NVIC_IRQChannelSubPriority = 2;
+    157            NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+    158            NVIC_Init(&NVIC_InitStructure);  
+    159          }
+    160          
+    161          /**
+    162            * @brief  BSP_Drive_VBUS
+    163            *         Drives the Vbus signal through IO
+    164            * @param  state : VBUS states
+    165            * @retval None
+    166            */
+    167          
+    168          void USB_OTG_BSP_DriveVBUS(USB_OTG_CORE_HANDLE *pdev, uint8_t state)
+    169          {
+    170            /*
+    171            On-chip 5 V VBUS generation is not supported. For this reason, a charge pump 
+    172            or, if 5 V are available on the application board, a basic power switch, must 
+    173            be added externally to drive the 5 V VBUS line. The external charge pump can 
+    174            be driven by any GPIO output. When the application decides to power on VBUS 
+    175            using the chosen GPIO, it must also set the port power bit in the host port 
+    176            control and status register (PPWR bit in OTG_FS_HPRT).
+    177            
+    178            Bit 12 PPWR: Port power
+    179            The application uses this field to control power to this port, and the core 
+    180            clears this bit on an overcurrent condition.
+    181            */  
+    182            
+    183            if (0 == state)
+    184            { 
+    185              /* DISABLE is needed on output of the Power Switch */
+    186              GPIO_SetBits(HOST_POWERSW_PORT, HOST_POWERSW_VBUS);
+    187            }
+    188            else
+    189            {
+    190              /*ENABLE the Power Switch by driving the Enable LOW */
+    191              GPIO_ResetBits(HOST_POWERSW_PORT, HOST_POWERSW_VBUS);
+    192            }
+    193            
+    194          }
+    195          
+    196          /**
+    197            * @brief  USB_OTG_BSP_ConfigVBUS
+    198            *         Configures the IO for the Vbus and OverCurrent
+    199            * @param  None
+    200            * @retval None
+    201            */
+    202          void  USB_OTG_BSP_ConfigVBUS(USB_OTG_CORE_HANDLE *pdev)
+    203          {
+    204          
+    205            GPIO_InitTypeDef GPIO_InitStructure; 
+    206            
+    207            RCC_AHB1PeriphClockCmd( RCC_AHB1Periph_GPIOH , ENABLE);  
+    208            
+    209            GPIO_InitStructure.GPIO_Pin = HOST_POWERSW_VBUS;
+    210            GPIO_InitStructure.GPIO_Speed = GPIO_Speed_100MHz;
+    211            GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
+    212            GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+    213            GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL ;
+    214            GPIO_Init(HOST_POWERSW_PORT,&GPIO_InitStructure);
+    215          
+    216            /* By Default, DISABLE is needed on output of the Power Switch */
+    217            GPIO_SetBits(HOST_POWERSW_PORT, HOST_POWERSW_VBUS);
+    218            
+    219            USB_OTG_BSP_mDelay(200);   /* Delay is need for stabilising the Vbus Low 
+    220            in Reset Condition, when Vbus=1 and Reset-button is pressed by user */
+    221          
+    222          }
+    223          
+    224          /**
+    225            * @brief  USB_OTG_BSP_TimeInit
+    226            *         Initializes delay unit using Timer2
+    227            * @param  None
+    228            * @retval None
+    229            */
+    230          static void USB_OTG_BSP_TimeInit ( void )
+    231          {
+    232          #ifdef USE_ACCURATE_TIME   
+    233            NVIC_InitTypeDef NVIC_InitStructure;
+    234               
+    235            /* Enable the TIM2 global Interrupt */
+    236            NVIC_InitStructure.NVIC_IRQChannel = TIM2_IRQn;
+    237            NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
+    238            NVIC_InitStructure.NVIC_IRQChannelSubPriority = 1;
+    239            NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+    240            
+    241            NVIC_Init(&NVIC_InitStructure);
+    242            
+    243            RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2, ENABLE);  
+    244          #endif  
+    245          }
+    246          
+    247          /**
+    248            * @brief  USB_OTG_BSP_uDelay
+    249            *         This function provides delay time in micro sec
+    250            * @param  usec : Value of delay required in micro sec
+    251            * @retval None
+    252            */
+    253          void USB_OTG_BSP_uDelay (const uint32_t usec)
+    254          {
+    255            
+    256          #ifdef USE_ACCURATE_TIME    
+    257            BSP_Delay(usec,TIM_USEC_DELAY); 
+    258          #else
+    259            __IO uint32_t count = 0;
+    260            const uint32_t utime = (120 * usec / 7);
+    261            do
+    262            {
+    263              if ( ++count > utime )
+    264              {
+    265                return ;
+    266              }
+    267            }
+    268            while (1);
+    269          #endif   
+    270            
+    271          }
+    272          
+    273          
+    274          /**
+    275            * @brief  USB_OTG_BSP_mDelay
+    276            *          This function provides delay time in milli sec
+    277            * @param  msec : Value of delay required in milli sec
+    278            * @retval None
+    279            */
+    280          void USB_OTG_BSP_mDelay (const uint32_t msec)
+    281          { 
+    282          #ifdef USE_ACCURATE_TIME  
+    283              BSP_Delay(msec,TIM_MSEC_DELAY);   
+    284          #else
+    285              USB_OTG_BSP_uDelay(msec * 1000);   
+    286          #endif    
+    287          
+    288          }
+    289          
+    290          
+    291          /**
+    292            * @brief  USB_OTG_BSP_TimerIRQ
+    293            *         Time base IRQ
+    294            * @param  None
+    295            * @retval None
+    296            */
+    297          
+    298          void USB_OTG_BSP_TimerIRQ (void)
+    299          {
+    300          #ifdef USE_ACCURATE_TIME 
+    301            if (TIM_GetITStatus(TIM2, TIM_IT_Update) != RESET)
+    302            {
+    303              TIM_ClearITPendingBit(TIM2, TIM_IT_Update);
+    304              if (BSP_delay > 0x00)
+    305              { 
+    306                BSP_delay--;
+    307              }
+    308              else
+    309              {
+    310                TIM_Cmd(TIM2,DISABLE);
+    311              }
+    312            }
+    313          #endif  
+    314          } 
+    315          
+    316          #ifdef USE_ACCURATE_TIME 
+    317          /**
+    318            * @brief  BSP_Delay
+    319            *         Delay routine based on TIM2
+    320            * @param  nTime : Delay Time 
+    321            * @param  unit : Delay Time unit : milli sec / micro sec
+    322            * @retval None
+    323            */
+    324          static void BSP_Delay(uint32_t nTime, uint8_t unit)
+    325          {
+    326            
+    327            BSP_delay = nTime;
+    328            BSP_SetTime(unit);  
+    329            while(BSP_delay != 0);
+    330            TIM_Cmd(TIM2,DISABLE);
+    331          }
+    332          
+    333          /**
+    334            * @brief  BSP_SetTime
+    335            *         Configures TIM2 for delay routine based on TIM2
+    336            * @param  unit : msec /usec
+    337            * @retval None
+    338            */
+    339          static void BSP_SetTime(uint8_t unit)
+    340          {
+    341            TIM_TimeBaseInitTypeDef  TIM_TimeBaseStructure;
+    342            
+    343            TIM_Cmd(TIM2,DISABLE);
+    344            TIM_ITConfig(TIM2, TIM_IT_Update, DISABLE); 
+    345            
+    346            
+    347            if(unit == TIM_USEC_DELAY)
+    348            {  
+    349              TIM_TimeBaseStructure.TIM_Period = 11;
+    350            }
+    351            else if(unit == TIM_MSEC_DELAY)
+    352            {
+    353              TIM_TimeBaseStructure.TIM_Period = 11999;
+    354            }
+    355            TIM_TimeBaseStructure.TIM_Prescaler = 5;
+    356            TIM_TimeBaseStructure.TIM_ClockDivision = 0;
+    357            TIM_TimeBaseStructure.TIM_CounterMode = TIM_CounterMode_Up;
+    358            
+    359            TIM_TimeBaseInit(TIM2, &TIM_TimeBaseStructure);
+    360            TIM_ClearITPendingBit(TIM2, TIM_IT_Update);
+    361            
+    362            TIM_ARRPreloadConfig(TIM2, ENABLE);
+    363            
+    364            /* TIM IT enable */
+    365            TIM_ITConfig(TIM2, TIM_IT_Update, ENABLE);
+    366            
+    367            /* TIM2 enable counter */ 
+    368            TIM_Cmd(TIM2, ENABLE);  
+    369          } 
+    370          
+    371          #endif
+    372          
+    373          /**
+    374          * @}
+    375          */ 
+    376          
+    377          /**
+    378          * @}
+    379          */ 
+    380          
+    381          /**
+    382          * @}
+    383          */
+    384          
+    385          /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      24   USB_OTG_BSP_ConfigVBUS
+        24   -> GPIO_Init
+        24   -> GPIO_SetBits
+        24   -> RCC_AHB1PeriphClockCmd
+       0   USB_OTG_BSP_DriveVBUS
+         0   -> GPIO_ResetBits
+         0   -> GPIO_SetBits
+       8   USB_OTG_BSP_EnableInterrupt
+         8   -> NVIC_Init
+      16   USB_OTG_BSP_Init
+        16   -> GPIO_Init
+        16   -> GPIO_PinAFConfig
+        16   -> RCC_AHB1PeriphClockCmd
+       0   USB_OTG_BSP_TimerIRQ
+       4   USB_OTG_BSP_mDelay
+       4   USB_OTG_BSP_uDelay
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable3
+       4  ??DataTable3_1
+       4  ??DataTable3_2
+       4  ??DataTable3_3
+       1  HSEStartUpStatus
+      72  USB_OTG_BSP_ConfigVBUS
+      18  USB_OTG_BSP_DriveVBUS
+      38  USB_OTG_BSP_EnableInterrupt
+     104  USB_OTG_BSP_Init
+       2  USB_OTG_BSP_TimerIRQ
+      30  USB_OTG_BSP_mDelay
+      32  USB_OTG_BSP_uDelay
+       2  tmprg
+
+ 
+   3 bytes in section .bss
+ 312 bytes in section .text
+ 
+ 312 bytes of CODE memory
+   3 bytes of DATA memory
+
+Errors: none
+Warnings: none

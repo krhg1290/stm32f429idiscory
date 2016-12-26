@@ -1,0 +1,332 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.40.3.8902/W32 for ARM        24/Dec/2016  13:33:39
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Libraries\STemWinLibrary522_4x9i\OS\GUI_X_FreeRTOS.c
+#    Command line =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Libraries\STemWinLibrary522_4x9i\OS\GUI_X_FreeRTOS.c
+#        -D USE_STDPERIPH_DRIVER -D STM32F429_439xx -D USE_STM32F429I_DISCO -D
+#        USE_USB_OTG_HS -D USE_EMBEDDED_PHY -lcN
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\
+#        --diag_suppress Pe111,Pa082 -o
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\
+#        --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.2\arm\INC\c\DLib_Config_Full.h" -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Config\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Devices\STM32F4xx\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\User\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Demo\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Lib\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Test_Program\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\HID\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\Audio\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_OTG_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Common\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\STM32F429i-Discovery\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\fat_fs\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\Config\
+#        -Ohs --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.2\arm\CMSIS\Include\"
+#    List file    =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\GUI_X_FreeRTOS.lst
+#    Object file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\GUI_X_FreeRTOS.o
+#
+###############################################################################
+
+D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Libraries\STemWinLibrary522_4x9i\OS\GUI_X_FreeRTOS.c
+      1          /*********************************************************************
+      2          *          Portions COPYRIGHT 2013 STMicroelectronics                *
+      3          *          Portions SEGGER Microcontroller GmbH & Co. KG             *
+      4          *        Solutions for real time microcontroller applications        *
+      5          **********************************************************************
+      6          *                                                                    *
+      7          *        (c) 1996 - 2013  SEGGER Microcontroller GmbH & Co. KG       *
+      8          *                                                                    *
+      9          *        Internet: www.segger.com    Support:  support@segger.com    *
+     10          *                                                                    *
+     11          **********************************************************************
+     12          
+     13          ** emWin V5.22 - Graphical user interface for embedded applications **
+     14          All  Intellectual Property rights  in the Software belongs to  SEGGER.
+     15          emWin is protected by  international copyright laws.  Knowledge of the
+     16          source code may not be used to write a similar product.  This file may
+     17          only be used in accordance with the following terms:
+     18          
+     19          The  software has  been licensed  to STMicroelectronics International
+     20          N.V. a Dutch company with a Swiss branch and its headquarters in Plan-
+     21          les-Ouates, Geneva, 39 Chemin du Champ des Filles, Switzerland for the
+     22          purposes of creating libraries for ARM Cortex-M-based 32-bit microcon_
+     23          troller products commercialized by Licensee only, sublicensed and dis_
+     24          tributed under the terms and conditions of the End User License Agree_
+     25          ment supplied by STMicroelectronics International N.V.
+     26          Full source code is available at: www.segger.com
+     27          
+     28          We appreciate your understanding and fairness.
+     29          ----------------------------------------------------------------------
+     30          File        : GUI_X.C
+     31          Purpose     : This file provides emWin Interface with FreeRTOS
+     32          ---------------------------END-OF-HEADER------------------------------
+     33          */
+     34          
+     35          /**
+     36            ******************************************************************************
+     37            * @attention
+     38            *
+     39            * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
+     40            * You may not use this file except in compliance with the License.
+     41            * You may obtain a copy of the License at:
+     42            *
+     43            *        http://www.st.com/software_license_agreement_liberty_v2
+     44            *
+     45            * Unless required by applicable law or agreed to in writing, software 
+     46            * distributed under the License is distributed on an "AS IS" BASIS, 
+     47            * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     48            * See the License for the specific language governing permissions and
+     49            * limitations under the License.
+     50            *
+     51            ******************************************************************************
+     52            */
+     53          
+     54          /* Includes ------------------------------------------------------------------*/
+     55          
+     56          #include "GUI.h"
+     57              
+     58              /* FreeRTOS include files */
+     59          #include "FreeRTOS.h"
+     60          #include "task.h"
+     61          #include "timers.h"
+     62          #include "semphr.h"
+     63              
+     64          /*********************************************************************
+     65          *
+     66          * Global data
+     67          */
+     68              static xSemaphoreHandle xQueueMutex;
+     69          static xSemaphoreHandle xSemaTxDone;
+     70          
+     71          /*********************************************************************
+     72          *
+     73          * Timing:
+     74          * GUI_X_GetTime()
+     75          * GUI_X_Delay(int)
+     76          
+     77          Some timing dependent routines require a GetTime
+     78          and delay function. Default time unit (tick), normally is
+     79          1 ms.
+     80          */
+     81          
+     82          int GUI_X_GetTime(void)
+     83          {
+     84            return ((int) xTaskGetTickCount());
+     85          }
+     86          
+     87          void GUI_X_Delay(int ms)
+     88          {
+     89            vTaskDelay( ms );
+     90          }
+     91          
+     92          /*********************************************************************
+     93          *
+     94          * GUI_X_Init()
+     95          *
+     96          * Note:
+     97          * GUI_X_Init() is called from GUI_Init is a possibility to init
+     98          * some hardware which needs to be up and running before the GUI.
+     99          * If not required, leave this routine blank.
+    100          */
+    101          
+    102          void GUI_X_Init(void) {
+    103          }
+    104          
+    105          
+    106          /*********************************************************************
+    107          *
+    108          * GUI_X_ExecIdle
+    109          *
+    110          * Note:
+    111          * Called if WM is in idle state
+    112          */
+    113          
+    114          void GUI_X_ExecIdle(void) {}
+    115          
+    116          /*********************************************************************
+    117          *
+    118          * Multitasking:
+    119          *
+    120          * GUI_X_InitOS()
+    121          * GUI_X_GetTaskId()
+    122          * GUI_X_Lock()
+    123          * GUI_X_Unlock()
+    124          *
+    125          * Note:
+    126          * The following routines are required only if emWin is used in a
+    127          * true multi task environment, which means you have more than one
+    128          * thread using the emWin API.
+    129          * In this case the
+    130          * #define GUI_OS 1
+    131          * needs to be in GUIConf.h
+    132          */
+    133          
+    134          /* Init OS */
+    135          void GUI_X_InitOS(void)
+    136          { 
+    137            /* Create Mutex lock */
+    138            xQueueMutex = xSemaphoreCreateMutex();
+    139            configASSERT (xQueueMutex != NULL);
+    140            
+    141            /* Queue Semaphore */ 
+    142            vSemaphoreCreateBinary( xSemaTxDone );
+    143            configASSERT ( xSemaTxDone != NULL );
+    144          }
+    145          
+    146          void GUI_X_Unlock(void)
+    147          { 
+    148            xSemaphoreGive( xQueueMutex ); 
+    149          }
+    150          
+    151          void GUI_X_Lock(void)
+    152          {
+    153            if(xQueueMutex == NULL)
+    154            {
+    155              GUI_X_InitOS();
+    156            }
+    157            
+    158            xSemaphoreTake( xQueueMutex, portMAX_DELAY );
+    159          }
+    160          
+    161          /* Get Task handle */
+    162          U32 GUI_X_GetTaskId(void) 
+    163          { 
+    164            return ((U32) xTaskGetCurrentTaskHandle());
+    165          }
+    166          
+    167          void GUI_X_WaitEvent (void) 
+    168          {
+    169            while( xSemaphoreTake(xSemaTxDone, portMAX_DELAY ) != pdTRUE );
+    170          }
+    171          
+    172          
+    173          void GUI_X_SignalEvent (void) 
+    174          {
+    175            xSemaphoreGive( xSemaTxDone );
+    176          }
+    177          
+    178          /*********************************************************************
+    179          *
+    180          * Logging: OS dependent
+    181          
+    182          Note:
+    183          Logging is used in higher debug levels only. The typical target
+    184          build does not use logging and does therefor not require any of
+    185          the logging routines below. For a release build without logging
+    186          the routines below may be eliminated to save some space.
+    187          (If the linker is not function aware and eliminates unreferenced
+    188          functions automatically)
+    189          
+    190          */
+    191          
+    192          void GUI_X_Log (const char *s) { }
+    193          void GUI_X_Warn (const char *s) { }
+    194          void GUI_X_ErrorOut(const char *s) { }
+    195          
+    196          /*************************** End of file ****************************/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   GUI_X_Delay
+         0   -> vTaskDelay
+       0   GUI_X_ErrorOut
+       0   GUI_X_ExecIdle
+       0   GUI_X_GetTaskId
+         0   -> xTaskGetCurrentTaskHandle
+       0   GUI_X_GetTime
+         0   -> xTaskGetTickCount
+       0   GUI_X_Init
+       8   GUI_X_InitOS
+         8   -> xQueueCreateMutex
+         8   -> xQueueGenericCreate
+       8   GUI_X_Lock
+         8   -> xQueueCreateMutex
+         8   -> xQueueGenericCreate
+         0   -> xQueueGenericReceive
+         8   -> xQueueGenericSend
+       0   GUI_X_Log
+       0   GUI_X_SignalEvent
+         0   -> xQueueGenericSend
+       0   GUI_X_Unlock
+         0   -> xQueueGenericSend
+       8   GUI_X_WaitEvent
+         8   -> xQueueGenericReceive
+       0   GUI_X_Warn
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable4
+       4  GUI_X_Delay
+       2  GUI_X_ErrorOut
+       2  GUI_X_ExecIdle
+       4  GUI_X_GetTaskId
+       4  GUI_X_GetTime
+       2  GUI_X_Init
+      42  GUI_X_InitOS
+      58  GUI_X_Lock
+       2  GUI_X_Log
+      14  GUI_X_SignalEvent
+      14  GUI_X_Unlock
+      28  GUI_X_WaitEvent
+       2  GUI_X_Warn
+       8  xQueueMutex
+          xSemaTxDone
+
+ 
+   8 bytes in section .bss
+ 182 bytes in section .text
+ 
+ 182 bytes of CODE memory
+   8 bytes of DATA memory
+
+Errors: none
+Warnings: none

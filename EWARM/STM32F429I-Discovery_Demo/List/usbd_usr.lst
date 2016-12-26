@@ -1,0 +1,335 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.40.3.8902/W32 for ARM        24/Dec/2016  13:33:52
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\Core\Test_Program\usbd_usr.c
+#    Command line =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\Core\Test_Program\usbd_usr.c
+#        -D USE_STDPERIPH_DRIVER -D STM32F429_439xx -D USE_STM32F429I_DISCO -D
+#        USE_USB_OTG_HS -D USE_EMBEDDED_PHY -lcN
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\
+#        --diag_suppress Pe111,Pa082 -o
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\
+#        --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.2\arm\INC\c\DLib_Config_Full.h" -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Config\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Devices\STM32F4xx\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\User\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Demo\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Lib\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Test_Program\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\HID\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\Audio\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_OTG_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Common\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\STM32F429i-Discovery\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\fat_fs\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\Config\
+#        -Ohs --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.2\arm\CMSIS\Include\"
+#    List file    =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\usbd_usr.lst
+#    Object file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\usbd_usr.o
+#
+###############################################################################
+
+D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\Core\Test_Program\usbd_usr.c
+      1          /**
+      2            ******************************************************************************
+      3            * @file    usbd_usr.c
+      4            * @author  MCD Application Team
+      5            * @version V1.0.1
+      6            * @date    11-November-2013
+      7            * @brief   This file includes the user application layer
+      8            ******************************************************************************
+      9            * @attention
+     10            *
+     11            * <h2><center>&copy; COPYRIGHT 2013 STMicroelectronics</center></h2>
+     12            *
+     13            * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
+     14            * You may not use this file except in compliance with the License.
+     15            * You may obtain a copy of the License at:
+     16            *
+     17            *        http://www.st.com/software_license_agreement_liberty_v2
+     18            *
+     19            * Unless required by applicable law or agreed to in writing, software 
+     20            * distributed under the License is distributed on an "AS IS" BASIS, 
+     21            * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     22            * See the License for the specific language governing permissions and
+     23            * limitations under the License.
+     24            *
+     25            ******************************************************************************
+     26            */ 
+     27          
+     28          /* Includes ------------------------------------------------------------------*/
+     29          #include "usbd_usr.h"
+     30          #include "usbd_ioreq.h"
+     31          #include "usb_conf.h"
+     32          
+     33          /** @addtogroup STM32_USB_OTG_DEVICE_LIBRARY
+     34          * @{
+     35          */
+     36          
+     37          /** @defgroup USBD_USR 
+     38          * @brief    This file includes the user application layer
+     39          * @{
+     40          */ 
+     41          
+     42          /** @defgroup USBD_USR_Private_TypesDefinitions
+     43          * @{
+     44          */ 
+     45          /**
+     46          * @}
+     47          */ 
+     48          
+     49          
+     50          /** @defgroup USBD_USR_Private_Defines
+     51          * @{
+     52          */ 
+     53          /**
+     54          * @}
+     55          */ 
+     56          
+     57          
+     58          /** @defgroup USBD_USR_Private_Macros
+     59          * @{
+     60          */ 
+     61          /**
+     62          * @}
+     63          */ 
+     64          
+     65          
+     66          /** @defgroup USBD_USR_Private_Variables
+     67          * @{
+     68          */ 
+     69          
+     70          USBD_Usr_cb_TypeDef USR_cb =
+     71          {
+     72            USBD_USR_Init,
+     73            USBD_USR_DeviceReset,
+     74            USBD_USR_DeviceConfigured,
+     75            USBD_USR_DeviceSuspended,
+     76            USBD_USR_DeviceResumed,
+     77            
+     78            USBD_USR_DeviceConnected,
+     79            USBD_USR_DeviceDisconnected,  
+     80            
+     81            
+     82          };
+     83          
+     84          
+     85          
+     86          /**
+     87          * @}
+     88          */
+     89          
+     90          /** @defgroup USBD_USR_Private_Constants
+     91          * @{
+     92          */ 
+     93          
+     94          /**
+     95          * @}
+     96          */
+     97          
+     98          
+     99          
+    100          /** @defgroup USBD_USR_Private_FunctionPrototypes
+    101          * @{
+    102          */ 
+    103          /**
+    104          * @}
+    105          */ 
+    106          
+    107          
+    108          /** @defgroup USBD_USR_Private_Functions
+    109          * @{
+    110          */ 
+    111          
+    112          
+    113          /**
+    114          * @brief  USBD_USR_Init 
+    115          *         Displays the message on LCD for host lib initialization
+    116          * @param  None
+    117          * @retval None
+    118          */
+    119          void USBD_USR_Init(void)
+    120          {  
+    121          }
+    122          
+    123          /**
+    124          * @brief  USBD_USR_DeviceReset 
+    125          *         Displays the message on LCD on device Reset Event
+    126          * @param  speed : device speed
+    127          * @retval None
+    128          */
+    129          void USBD_USR_DeviceReset(uint8_t speed )
+    130          {
+    131          }
+    132          
+    133          
+    134          /**
+    135          * @brief  USBD_USR_DeviceConfigured
+    136          *         Displays the message on LCD on device configuration Event
+    137          * @param  None
+    138          * @retval Staus
+    139          */
+    140          void USBD_USR_DeviceConfigured (void)
+    141          {
+    142          }
+    143          
+    144          
+    145          /**
+    146          * @brief  USBD_USR_DeviceConnected
+    147          *         Displays the message on LCD on device connection Event
+    148          * @param  None
+    149          * @retval Staus
+    150          */
+    151          void USBD_USR_DeviceConnected (void)
+    152          {
+    153          }
+    154          
+    155          
+    156          /**
+    157          * @brief  USBD_USR_DeviceDisonnected
+    158          *         Displays the message on LCD on device disconnection Event
+    159          * @param  None
+    160          * @retval Staus
+    161          */
+    162          void USBD_USR_DeviceDisconnected (void)
+    163          {
+    164          }
+    165          
+    166          /**
+    167          * @brief  USBD_USR_DeviceSuspended 
+    168          *         Displays the message on LCD on device suspend Event
+    169          * @param  None
+    170          * @retval None
+    171          */
+    172          void USBD_USR_DeviceSuspended(void)
+    173          {
+    174          }
+    175          
+    176          
+    177          /**
+    178          * @brief  USBD_USR_DeviceResumed 
+    179          *         Displays the message on LCD on device resume Event
+    180          * @param  None
+    181          * @retval None
+    182          */
+    183          void USBD_USR_DeviceResumed(void)
+    184          {
+    185          }
+    186          
+    187          /**
+    188          * @}
+    189          */ 
+    190          
+    191          /**
+    192          * @}
+    193          */ 
+    194          
+    195          /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+    196          
+    197          
+    198          
+    199          
+    200          
+    201          
+    202          
+    203          
+    204          
+    205          
+    206          
+    207          
+    208          
+    209          
+    210          
+    211          
+    212          
+    213          
+    214          
+    215          
+    216          
+    217          
+    218          
+    219          
+    220          
+    221          
+    222          
+    223          
+    224          
+    225          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   USBD_USR_DeviceConfigured
+       0   USBD_USR_DeviceConnected
+       0   USBD_USR_DeviceDisconnected
+       0   USBD_USR_DeviceReset
+       0   USBD_USR_DeviceResumed
+       0   USBD_USR_DeviceSuspended
+       0   USBD_USR_Init
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       2  USBD_USR_DeviceConfigured
+       2  USBD_USR_DeviceConnected
+       2  USBD_USR_DeviceDisconnected
+       2  USBD_USR_DeviceReset
+       2  USBD_USR_DeviceResumed
+       2  USBD_USR_DeviceSuspended
+       2  USBD_USR_Init
+      28  USR_cb
+
+ 
+ 28 bytes in section .data
+ 14 bytes in section .text
+ 
+ 14 bytes of CODE memory
+ 28 bytes of DATA memory
+
+Errors: none
+Warnings: none

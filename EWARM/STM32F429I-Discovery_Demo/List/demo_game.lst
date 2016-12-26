@@ -1,0 +1,1318 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.40.3.8902/W32 for ARM        24/Dec/2016  13:33:37
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\Core\Demo\demo_game.c
+#    Command line =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\Core\Demo\demo_game.c
+#        -D USE_STDPERIPH_DRIVER -D STM32F429_439xx -D USE_STM32F429I_DISCO -D
+#        USE_USB_OTG_HS -D USE_EMBEDDED_PHY -lcN
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\
+#        --diag_suppress Pe111,Pa082 -o
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\
+#        --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.2\arm\INC\c\DLib_Config_Full.h" -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Config\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Devices\STM32F4xx\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\User\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Demo\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Lib\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Test_Program\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\HID\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\Audio\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_OTG_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Common\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\STM32F429i-Discovery\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\fat_fs\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\Config\
+#        -Ohs --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.2\arm\CMSIS\Include\"
+#    List file    =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\demo_game.lst
+#    Object file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\demo_game.o
+#
+###############################################################################
+
+D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\Core\Demo\demo_game.c
+      1          /*********************************************************************
+      2          *                SEGGER Microcontroller GmbH & Co. KG                *
+      3          *        Solutions for real time microcontroller applications        *
+      4          **********************************************************************
+      5          *                                                                    *
+      6          *        (c) 1996 - 2013  SEGGER Microcontroller GmbH & Co. KG       *
+      7          *                                                                    *
+      8          *        Internet: www.segger.com    Support:  support@segger.com    *
+      9          *                                                                    *
+     10          **********************************************************************
+     11          
+     12          ** emWin V5.22 - Graphical user interface for embedded applications **
+     13          All  Intellectual Property rights  in the Software belongs to  SEGGER.
+     14          emWin is protected by  international copyright laws.  Knowledge of the
+     15          source code may not be used to write a similar product.  This file may
+     16          only be used in accordance with the following terms:
+     17          
+     18          The  software has  been licensed  to STMicroelectronics International
+     19          N.V. a Dutch company with a Swiss branch and its headquarters in Plan-
+     20          les-Ouates, Geneva, 39 Chemin du Champ des Filles, Switzerland for the
+     21          purposes of creating libraries for ARM Cortex-M-based 32-bit microcon_
+     22          troller products commercialized by Licensee only, sublicensed and dis_
+     23          tributed under the terms and conditions of the End User License Agree_
+     24          ment supplied by STMicroelectronics International N.V.
+     25          Full source code is available at: www.segger.com
+     26          
+     27          We appreciate your understanding and fairness.
+     28          ----------------------------------------------------------------------
+     29          File        : Reversi.c
+     30          Purpose     : Simple 'reversi' game
+     31          
+     32                        With game engine 'SmartGecko' from
+     33                        Energy Micro AS (http://www.energymicro.com)
+     34          ----------------------------------------------------------------------
+     35          */
+     36          
+     37          /**
+     38            ******************************************************************************
+     39            * @file    demo_game.c
+     40            * @author  MCD Application Team
+     41            * @version V1.0.1
+     42            * @date    11-November-2013 
+     43            * @brief   Game module functions
+     44            ******************************************************************************
+     45            * @attention
+     46            *
+     47            * <h2><center>&copy; COPYRIGHT 2013 STMicroelectronics</center></h2>
+     48            *
+     49            * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
+     50            * You may not use this file except in compliance with the License.
+     51            * You may obtain a copy of the License at:
+     52            *
+     53            *        http://www.st.com/software_license_agreement_liberty_v2
+     54            *
+     55            * Unless required by applicable law or agreed to in writing, software 
+     56            * distributed under the License is distributed on an "AS IS" BASIS, 
+     57            * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     58            * See the License for the specific language governing permissions and
+     59            * limitations under the License.
+     60            *
+     61            ******************************************************************************
+     62            */
+     63          
+     64          #include <string.h>
+     65          #include <stdio.h>
+     66          
+     67          #include "GUI.h"
+     68          #include "DIALOG.h"
+     69          #include "MENU.h"
+     70          
+     71          /*********************************************************************
+     72          *
+     73          *       Defines
+     74          *
+     75          **********************************************************************
+     76          */
+     77          #define NUM_CELL_X        8
+     78          #define NUM_CELL_Y        8
+     79          
+     80          #define AA_USE_HIRES      0
+     81          #define AA_FACTOR         1
+     82          
+     83          #if AA_USE_HIRES
+     84            #define AA_CALCFACTOR   AA_FACTOR
+     85          #else
+     86            #define AA_CALCFACTOR   1
+     87          #endif
+     88          
+     89          #define DESKTOP_COLOR     GUI_DARKGREEN
+     90          #define CLIENT_COLOR      GUI_DARKGRAY
+     91          #define GRID_COLOR        GUI_BROWN
+     92          
+     93          #define ID_MENU_NEW       (GUI_ID_USER +  0)
+     94          #define ID_MENU_PASS      (GUI_ID_USER +  1)
+     95          #define ID_MENU_EXIT      (GUI_ID_USER +  2)
+     96          #define ID_MENU_SETTINGS  (GUI_ID_USER +  3)
+     97          #define ID_MENU_ABOUT     (GUI_ID_USER +  4)
+     98          #define ID_MENU_TEST      (GUI_ID_USER +  5)
+     99          
+    100          //
+    101          // Defines, player AI 'SmartGecko'
+    102          //
+    103          #define DEPTH          4
+    104          #define END_GAME_DEPTH 9
+    105          
+    106          #define INFINITY       1000000
+    107          #define WINNING_BONUS   100000
+    108          
+    109          #define VALUE_OF_A_MOVE_POSSIBILITY 15
+    110          #define VALUE_OF_AN_UNSAFE_PIECE     8
+    111          #define VALUE_OF_A_SAFE_PIECE       20
+    112          #define VALUE_OF_A_CORNER         1000
+    113          
+    114          /*********************************************************************
+    115          *
+    116          *       Types
+    117          *
+    118          **********************************************************************
+    119          */
+    120          
+    121          typedef struct {
+    122            U8  aCells[NUM_CELL_X][NUM_CELL_Y];
+    123            U8  aMoves[NUM_CELL_X][NUM_CELL_Y];
+    124            int ActPlayer;
+    125          } BOARD;
+    126          
+    127          typedef char REVERSI_AI_Func(const BOARD * pBoard, int* px, int* py);
+    128          
+    129          /*********************************************************************
+    130          *
+    131          *       Static data
+    132          *
+    133          **********************************************************************
+    134          */
+    135          //
+    136          // Global data
+    137          //
+    138          static WM_HWIN  _hFrame;
+    139          
+    140          static REVERSI_AI_Func* _pPlayerAI[2];
+    141          
+    142          static BOARD  _Board;
+    143          static int    _GameOver;
+    144          static int    _BoardX0;
+    145          static int    _BoardY0;
+    146          static int    _CellSize;
+    147          
+    148          //
+    149          // Game settings
+    150          //
+    151          static int      _ShowPossibleMoves = 1;
+    152          
+    153          //
+    154          // Static data, player AI 'SmartGecko'
+    155          //
+    156          static int * _px;
+    157          static int * _py;
+    158          
+    159          static BOARD _aBoardStack[END_GAME_DEPTH + 1];
+    160          
+    161          static const int _xs[60] = { 
+    162            7, 7, 0, 0, 7, 7, 5, 5, 2, 2, 
+    163            0, 0, 5, 5, 2, 2, 5, 5, 4, 4, 
+    164            3, 3, 2, 2, 7, 7, 4, 4, 3, 3, 
+    165            0, 0, 6, 6, 6, 6, 5, 5, 4, 4, 
+    166            3, 3, 2, 2, 1, 1, 1, 1, 7, 7, 
+    167            6, 6, 1, 1, 0, 0, 6, 6, 1, 1
+    168          };
+    169          
+    170          static const int _ys[60] = { 
+    171            7, 0, 7, 0, 5, 2, 7, 0, 7, 0, 
+    172            5, 2, 5, 2, 5, 2, 4, 3, 5, 2, 
+    173            5, 2, 4, 3, 4, 3, 7, 0, 7, 0, 
+    174            4, 3, 5, 4, 3, 2, 6, 1, 6, 1, 
+    175            6, 1, 6, 1, 5, 4, 3, 2, 6, 1, 
+    176            7, 0, 7, 0, 6, 1, 6, 1, 6, 1 
+    177          };
+    178          
+    179          static int _aaSafe[10][10];
+    180          
+    181          static const I32 _aaValues[8][8] = { 
+    182            { 1000, -100, 25,  0,  0, 25, -100, 1000 },
+    183            { -100, -400, -5, -5, -5, -5, -400, -100 },
+    184            {   25,   -5, 12,  2,  2, 12,   -5,   25 },
+    185            {    0,   -5,  2,  2,  2,  2,   -5,    0 },
+    186            {    0,   -5,  2,  2,  2,  2,   -5,    0 },
+    187            {   25,   -5, 12,  2,  2, 12,   -5,   25 },
+    188            { -100, -400, -5, -5, -5, -5, -400, -100 },
+    189            { 1000, -100, 25,  0,  0, 25, -100, 1000 }
+    190          };
+    191          
+    192          /*********************************************************************
+    193          *
+    194          *       Function declarations
+    195          *
+    196          **********************************************************************
+    197          */
+    198          static void _StartNewGame(void);
+    199          
+    200          /*********************************************************************
+    201          *
+    202          *       Static code, helper functions
+    203          *
+    204          **********************************************************************
+    205          */
+    206          /*******************************************************************
+    207          *
+    208          *       _CalcBoardDimensions
+    209          */
+    210          static void _CalcBoardDimensions(void) {
+    211            GUI_RECT r;
+    212            WM_GetClientRectEx(WM_GetClientWindow(_hFrame), &r);
+    213            _CellSize  = ((r.x1 > r.y1) ? r.y1 : r.x1) >> 3;
+    214            _BoardX0   = (r.x1 - (_CellSize << 3)) >> 1;
+    215            _BoardY0   = (r.y1 - (_CellSize << 3)) >> 1;
+    216          }
+    217          
+    218          /*******************************************************************
+    219          *
+    220          *       _InvalidateBoard
+    221          */
+    222          static void _InvalidateBoard(void) {
+    223            WM_InvalidateWindow(WM_GetClientWindow(_hFrame));
+    224          }
+    225          
+    226          /*******************************************************************
+    227          *
+    228          *       _InvalidateCell
+    229          */
+    230          static void _InvalidateCell(int x, int y) {
+    231            GUI_RECT r;
+    232            r.x0 = _BoardX0 + (x * _CellSize);
+    233            r.y0 = _BoardY0 + (y * _CellSize);
+    234            r.x1 = r.x0 + _CellSize - 1;
+    235            r.y1 = r.y0 + _CellSize - 1;
+    236            WM_InvalidateRect(WM_GetClientWindow(_hFrame), &r);
+    237          }
+    238          
+    239          /*********************************************************************
+    240          *
+    241          *       _SetCapture
+    242          */
+    243          static void _SetCapture(void) {
+    244          #if (GUI_SUPPORT_MOUSE & GUI_SUPPORT_CURSOR)
+    245            WM_HWIN hWin;
+    246            hWin = WM_GetClientWindow(_hFrame);
+    247            if (WM_HasCaptured(hWin) == 0) {
+    248              WM_SetCapture(hWin, 0);
+    249            }
+    250          #endif
+    251          }
+    252          
+    253          /*********************************************************************
+    254          *
+    255          *       _ReleaseCapture
+    256          */
+    257          static void _ReleaseCapture(void) {
+    258          #if (GUI_SUPPORT_MOUSE & GUI_SUPPORT_CURSOR)
+    259            WM_HWIN hWin;
+    260            hWin = WM_GetClientWindow(_hFrame);
+    261            if (WM_HasCaptured(hWin)) {
+    262              WM_ReleaseCapture();
+    263            }
+    264          #endif
+    265          }
+    266          
+    267          /*********************************************************************
+    268          *
+    269          *       Static code, game API routines
+    270          *
+    271          **********************************************************************
+    272          */
+    273          /*******************************************************************
+    274          *
+    275          *       _GetStone
+    276          */
+    277          static char _GetStone(const BOARD * pBoard, int x, int y) {
+    278            char r = 0;
+    279            if ((x >= 0) && (y >= 0) && (x < NUM_CELL_X) && (y < NUM_CELL_Y)) {
+    280              r = pBoard->aCells[x][y];
+    281            }
+    282            return r;
+    283          }
+    284          
+    285          /*******************************************************************
+    286          *
+    287          *       _SetStone
+    288          */
+    289          static void _SetStone(BOARD * pBoard, int x, int y) {
+    290            if ((x >= 0) && (y >= 0) && (x < NUM_CELL_X) && (y < NUM_CELL_Y)) {
+    291              pBoard->aCells[x][y] = pBoard->ActPlayer;
+    292              _InvalidateCell(x, y);
+    293            }
+    294          }
+    295          
+    296          /*******************************************************************
+    297          *
+    298          *       _IsValidMove
+    299          */
+    300          static char _IsValidMove(BOARD * pBoard, int x, int y) {
+    301            char r = 0;
+    302            if ((x >= 0) && (y >= 0) && (x < NUM_CELL_X) && (y < NUM_CELL_Y)) {
+    303              r = ((pBoard->aMoves[x][y]) ? 1 : 0);
+    304            }
+    305            return r;
+    306          }
+    307          
+    308          
+    309          /*******************************************************************
+    310          *
+    311          *       _CheckDirection
+    312          */
+    313          static char _CheckDirection(const BOARD * pBoard, int x, int y, int dx, int dy) {
+    314            char Cell;
+    315            x += dx;
+    316            y += dy;
+    317            Cell = _GetStone(pBoard, x, y);
+    318            if ((Cell != pBoard->ActPlayer) && (Cell != 0)) {
+    319              do {
+    320                x += dx;
+    321                y += dy;
+    322                Cell = _GetStone(pBoard, x, y);
+    323              } while ((Cell != pBoard->ActPlayer) && (Cell != 0));
+    324              return ((Cell == pBoard->ActPlayer) ? 1 : 0);
+    325            }
+    326            return 0;
+    327          }
+    328          
+    329          /*******************************************************************
+    330          *
+    331          *       _CalcValidMoves
+    332          */
+    333          static int _CalcValidMoves(BOARD * pBoard) {
+    334            int x, y, r = 0;
+    335            U8 Valid;
+    336            for (y = 0; y < NUM_CELL_Y; y++) {
+    337              for (x = 0; x < NUM_CELL_X; x++) {
+    338                Valid = 0;
+    339                if (pBoard->aCells[x][y] == 0) {
+    340                  Valid |= _CheckDirection(pBoard, x, y, -1, -1) << 0;
+    341                  Valid |= _CheckDirection(pBoard, x, y,  0, -1) << 1;
+    342                  Valid |= _CheckDirection(pBoard, x, y,  1, -1) << 2;
+    343                  Valid |= _CheckDirection(pBoard, x, y,  1,  0) << 3;
+    344                  Valid |= _CheckDirection(pBoard, x, y,  1,  1) << 4;
+    345                  Valid |= _CheckDirection(pBoard, x, y,  0,  1) << 5;
+    346                  Valid |= _CheckDirection(pBoard, x, y, -1,  1) << 6;
+    347                  Valid |= _CheckDirection(pBoard, x, y, -1,  0) << 7;
+    348                  if (Valid) {
+    349                    r++;
+    350                  }
+    351                }
+    352                if (Valid != pBoard->aMoves[x][y]) {
+    353                  pBoard->aMoves[x][y] = Valid;
+    354                  _InvalidateCell(x, y);
+    355                }
+    356              }
+    357            }
+    358            return r;
+    359          }
+    360          
+    361          /*******************************************************************
+    362          *
+    363          *       _DoDirection
+    364          */
+    365          static void _DoDirection(BOARD * pBoard, int x, int y, int dx, int dy) {
+    366            do {
+    367              _SetStone(pBoard, x, y);
+    368              x += dx;
+    369              y += dy;
+    370            } while (_GetStone(pBoard, x, y) != pBoard->ActPlayer);
+    371          }
+    372          
+    373          /*******************************************************************
+    374          *
+    375          *       _MakeMove
+    376          */
+    377          static void _MakeMove(BOARD * pBoard, int x, int y) {
+    378            U8 Valid;
+    379            _SetStone(pBoard, x, y);
+    380            Valid = pBoard->aMoves[x][y];
+    381            if (Valid & (U8)(1 << 0)) { _DoDirection(pBoard, x, y, -1, -1); }
+    382            if (Valid & (U8)(1 << 1)) { _DoDirection(pBoard, x, y,  0, -1); }
+    383            if (Valid & (U8)(1 << 2)) { _DoDirection(pBoard, x, y,  1, -1); }
+    384            if (Valid & (U8)(1 << 3)) { _DoDirection(pBoard, x, y,  1,  0); }
+    385            if (Valid & (U8)(1 << 4)) { _DoDirection(pBoard, x, y,  1,  1); }
+    386            if (Valid & (U8)(1 << 5)) { _DoDirection(pBoard, x, y,  0,  1); }
+    387            if (Valid & (U8)(1 << 6)) { _DoDirection(pBoard, x, y, -1,  1); }
+    388            if (Valid & (U8)(1 << 7)) { _DoDirection(pBoard, x, y, -1,  0); }
+    389          }
+    390          
+    391          /*******************************************************************
+    392          *
+    393          *       _CalcScore
+    394          */
+    395          static int _CalcScore(const BOARD * pBoard) {
+    396            int x, y, r = 0;
+    397            char Cell;
+    398            for (y = 0; y < NUM_CELL_Y; y++) {
+    399              for (x = 0; x < NUM_CELL_X; x++) {
+    400                Cell = pBoard->aCells[x][y];
+    401                if (Cell) {
+    402                  r += (Cell == pBoard->ActPlayer) ? (1) : (-1);
+    403                }
+    404              }
+    405            }
+    406            return r;
+    407          }
+    408          
+    409          /*********************************************************************
+    410          *
+    411          *       Static code, player AI 'SmartGecko'
+    412          *
+    413          **********************************************************************
+    414          */
+    415          /*********************************************************************
+    416          *
+    417          *       _valuePieces
+    418          *
+    419          * Purpose:
+    420          *   Find the value of all the pieces belonging to the given player.
+    421          *   A positive value is good for this player.
+    422          *   The value can also be negative, if the player occupies tiles
+    423          *   next to a free corner, which makes it easier for the opponent
+    424          *   to get to this corner.
+    425          */
+    426          static I32 _valuePieces(BOARD * pBoard, int player) {
+    427            I32 sum;
+    428            int x, y, corners, changed, s, xCorner, yCorner, numberOfSafe;
+    429            
+    430            sum = 0;
+    431            for (y = 1; y <= 8; y++) {
+    432              for (x = 1; x <= 8; x++) {
+    433                _aaSafe[x][y] = 0;
+    434              }
+    435            }
+    436            corners = 0;
+    437            corners += pBoard->aCells[0][0] == player;
+    438            corners += pBoard->aCells[7][0] == player;
+    439            corners += pBoard->aCells[0][7] == player;
+    440            corners += pBoard->aCells[7][7] == player;
+    441            if (corners) {
+    442              //
+    443              // Corners are the most valuable asset of the position.
+    444              //
+    445              sum += corners * VALUE_OF_A_CORNER;
+    446              //
+    447              // Calculate how many pieces are safe,
+    448              // meaning they can never be taken back
+    449              // by the opponent.
+    450              //
+    451              while (1) {
+    452                //
+    453                // Repeatedly swipe the board looking for safe pieces,
+    454                // until no more safe pieces are found.
+    455                //
+    456                changed = 0;
+    457                numberOfSafe = 0;
+    458                for (y = 1; y <= 8; y++) {
+    459                  for (x = 1; x <= 8; x++) {
+    460                    if (!_aaSafe[x][y] && pBoard->aCells[x - 1][y - 1] == player) {
+    461                      //
+    462                      // A piece can never be taken back if in each of the four directions,
+    463                      // one of the two neighboring tiles are safe.
+    464                      //
+    465                      s =  (_aaSafe[x - 1][y    ] || _aaSafe[x + 1][y    ])  // West  - East
+    466                        && (_aaSafe[x    ][y - 1] || _aaSafe[x    ][y + 1])  // North - South
+    467                        && (_aaSafe[x - 1][y - 1] || _aaSafe[x + 1][y + 1])  // NW    - SE
+    468                        && (_aaSafe[x - 1][y + 1] || _aaSafe[x + 1][y - 1]); // SW    - NE
+    469                      if (s) {
+    470                        _aaSafe[x][y] = 1;
+    471                        changed = 1;
+    472                        ++numberOfSafe;
+    473                      }
+    474                    }
+    475                  }
+    476                  sum += numberOfSafe * VALUE_OF_A_SAFE_PIECE;
+    477                }
+    478                if (!changed) {
+    479                  break;
+    480                }
+    481              }
+    482            }
+    483            //
+    484            // Now add the value of the unsafe pieces.
+    485            //
+    486            for (y = 0; y < 8; y++) {
+    487              yCorner = (y < 4) ? 0 : 7;
+    488              for (x = 0; x < 8; x++) {
+    489                if (pBoard->aCells[x][y] == player && !_aaSafe[x + 1][y + 1]) {
+    490                  xCorner = x<4 ? 0 : 7;
+    491                  if (pBoard->aCells[xCorner][yCorner]) {
+    492                    //
+    493                    // If the corner is taken, we value each position in
+    494                    // the quadrant the same.
+    495                    //
+    496                    sum += VALUE_OF_AN_UNSAFE_PIECE;
+    497                  } else {
+    498                    //
+    499                    // If the corner is still free, we use a lookup table
+    500                    // to find the value of each position.
+    501                    //
+    502                    sum += _aaValues[x][y];
+    503                  }
+    504                }
+    505              }
+    506            }
+    507            return sum;
+    508          }
+    509          
+    510          /*********************************************************************
+    511          *
+    512          *       _Eval
+    513          *
+    514          * Purpose:
+    515          *   Evaluation function for a Reversi board.
+    516          *   Positive value means player 1 is in the lead,
+    517          *   negative value means player 2 is in the lead.
+    518          */
+    519          static I32 _Eval(BOARD * pBoard) {
+    520            int ActPlayer, movesA, movesB;
+    521            I32 score, value;
+    522          
+    523            ActPlayer = pBoard->ActPlayer;
+    524            pBoard->ActPlayer = 1;
+    525            movesA = _CalcValidMoves(pBoard);
+    526            pBoard->ActPlayer = 2;
+    527            movesB = _CalcValidMoves(pBoard);
+    528            pBoard->ActPlayer = ActPlayer;
+    529            if (movesA == 0 && movesB == 0) {
+    530              //
+    531              // The game is over
+    532              //
+    533              pBoard->ActPlayer = 1;
+    534              score = _CalcScore(pBoard);
+    535              pBoard->ActPlayer = ActPlayer;
+    536              if (score==0) {
+    537                return 0;
+    538              }
+    539              if (score > 0) {
+    540                return score + WINNING_BONUS;
+    541              }
+    542              if (score > 0) {
+    543                return score - WINNING_BONUS;
+    544              }
+    545            }
+    546            //
+    547            // A high number of possible moves is very valuable
+    548            //
+    549            value  = VALUE_OF_A_MOVE_POSSIBILITY * (movesA - movesB);
+    550            value += _valuePieces(pBoard, 1);
+    551            value -= _valuePieces(pBoard, 2);
+    552            return value;
+    553          }
+    554          
+    555          /*********************************************************************
+    556          *
+    557          *       _Descend
+    558          *
+    559          * Purpose:
+    560          *   Minimax search for the best possible move with alpha-beta pruning
+    561          */
+    562          static I32 _Descend(int depth, I32 alpha, I32 beta, int firstMove) {
+    563            BOARD * pBoard;
+    564            BOARD * nextBoard;
+    565            int x, y, moves, i, alt, maximize;
+    566          
+    567            pBoard    = _aBoardStack + depth;
+    568            nextBoard = _aBoardStack + depth - 1;
+    569            if (depth == 0) {
+    570              return _Eval(pBoard);
+    571            }
+    572            moves = _CalcValidMoves(pBoard);
+    573            if (moves == 0) {
+    574                //
+    575                // The player has to pass
+    576                //
+    577                pBoard->ActPlayer = 3 - pBoard->ActPlayer;
+    578                moves = _CalcValidMoves(pBoard);
+    579                if (moves == 0) {
+    580                  //
+    581                  // The game is over
+    582                  //
+    583                  return _Eval(pBoard);
+    584                }
+    585            }
+    586            maximize = pBoard->ActPlayer == 1;
+    587            for (i = 0; i < 60; ++i) {
+    588              //
+    589              // Try the possible moves in order from most attractive to least attractive
+    590              // position, to maximize the effect of the alpha-beta pruning.
+    591              //
+    592              x = _xs[i];
+    593              y = _ys[i];
+    594              if (pBoard->aMoves[x][y]) {
+    595                *nextBoard = *pBoard;
+    596                _MakeMove(nextBoard, x, y);
+    597                nextBoard->ActPlayer = 3 - pBoard->ActPlayer;
+    598                //
+    599                // Recursively evaluate the board resulting from this move.
+    600                //
+    601                alt = _Descend(depth - 1, alpha, beta, 0);
+    602                if (maximize) {
+    603                  if (alt > alpha) {
+    604                    alpha = alt;
+    605                    if (firstMove) {
+    606                      *_px = x;
+    607                      *_py = y;
+    608                    }
+    609                  }
+    610                } else {
+    611                  if (alt < beta) {
+    612                    beta = alt;
+    613                    if (firstMove) {
+    614                      *_px = x;
+    615                      *_py = y;
+    616                    }
+    617                  }
+    618                }
+    619                if (beta <= alpha) {
+    620                  //
+    621                  // This is the alpha-beta pruning terminal condition.
+    622                  //
+    623                  goto end;
+    624                }
+    625              }
+    626            }
+    627          end:
+    628            return maximize ? alpha : beta;
+    629          }
+    630          
+    631          /*********************************************************************
+    632          *
+    633          *       _PlayerAI_SmartGecko
+    634          */
+    635          static char _PlayerAI_SmartGecko(const BOARD * pBoard, int * px, int * py) {
+    636            int x, y, freeTiles, depth;
+    637          
+    638            //
+    639            // Initialize the safe board to true to get the edges right
+    640            //
+    641            for (y = 0; y < 10; y++) {
+    642              for (x = 0; x < 10; x++) {
+    643                _aaSafe[x][y] = 1;
+    644              }
+    645            }
+    646            *px = -1;
+    647            *py = -1;
+    648            _px = px;
+    649            _py = py;
+    650            freeTiles = 0;
+    651            for (y = 0; y < 8; y++) {
+    652              for (x = 0; x < 8; x++) {
+    653                if (!pBoard->aCells[x][y]) {
+    654                  ++freeTiles;
+    655                }
+    656              }
+    657            }
+    658            depth = DEPTH;
+    659            if (freeTiles <= END_GAME_DEPTH) {
+    660              //
+    661              // In the end game, we expand the search depth.
+    662              //
+    663              depth = freeTiles;
+    664            }
+    665            _aBoardStack[depth] = *pBoard;
+    666            _Descend(depth, -INFINITY, INFINITY, 1);
+    667            if (*px == -1) {
+    668              return 0;
+    669            }
+    670            return 1;
+    671          }
+    672          
+    673          /*********************************************************************
+    674          *
+    675          *       Static code, about box
+    676          *
+    677          **********************************************************************
+    678          */
+    679          
+    680          /*********************************************************************
+    681          *
+    682          *       Static code, message box
+    683          *
+    684          **********************************************************************
+    685          */
+    686          /*******************************************************************
+    687          *
+    688          *       _cbMessageBox
+    689          */
+    690          static void _cbMessageBox(WM_MESSAGE* pMsg) {
+    691            WM_HWIN hWin;
+    692            int Id;
+    693          
+    694            hWin = pMsg->hWin;
+    695            switch (pMsg->MsgId) {
+    696            case WM_NOTIFY_PARENT:
+    697              if (pMsg->Data.v == WM_NOTIFICATION_RELEASED) 
+    698              {
+    699                Id = WM_GetId(pMsg->hWinSrc);
+    700                GUI_EndDialog(hWin, (Id == GUI_ID_OK) ? 1 : 0);
+    701              }
+    702              else if ( pMsg->Data.v == WM_NOTIFICATION_CHILD_DELETED)
+    703              {
+    704                WM_NotifyParent(WM_GetParent(pMsg->hWin), 0x500);
+    705              }
+    706              break;
+    707            default:
+    708              WM_DefaultProc(pMsg);
+    709            }
+    710          }
+    711          
+    712          /*********************************************************************
+    713          *
+    714          *       _ShowMessageBox
+    715          */
+    716          static int _ShowMessageBox(const char* pTitle, const char* pText, int YesNo) {
+    717            WM_HWIN hFrame, hClient, hBut;
+    718            int r = 0;
+    719            //
+    720            // Create framewin
+    721            //
+    722            hFrame = FRAMEWIN_CreateEx(65, 75, 190, 90, WM_GetDesktopWindowEx(1), WM_CF_SHOW, FRAMEWIN_CF_MOVEABLE, 0, pTitle, &_cbMessageBox);
+    723            FRAMEWIN_SetClientColor   (hFrame, GUI_WHITE);
+    724            FRAMEWIN_SetFont          (hFrame, &GUI_Font16B_ASCII);
+    725            FRAMEWIN_SetTextAlign     (hFrame, GUI_TA_HCENTER);
+    726            //
+    727            // Create dialog items
+    728            //
+    729            hClient = WM_GetClientWindow(hFrame);
+    730            TEXT_CreateEx(10, 7, 170, 30, hClient, WM_CF_SHOW, GUI_TA_HCENTER, 0, pText);
+    731            if (YesNo) {
+    732              hBut = BUTTON_CreateEx(97, 45, 55, 18, hClient, WM_CF_SHOW, 0, GUI_ID_CANCEL);
+    733              BUTTON_SetText        (hBut, "No");
+    734              hBut = BUTTON_CreateEx(32, 45, 55, 18, hClient, WM_CF_SHOW, 0, GUI_ID_OK);
+    735              BUTTON_SetText        (hBut, "Yes");
+    736            } else {
+    737              hBut = BUTTON_CreateEx(64, 45, 55, 18, hClient, WM_CF_SHOW, 0, GUI_ID_OK);
+    738              BUTTON_SetText        (hBut, "Ok");
+    739            }
+    740            
+    741             //Exec modal dialog
+    742            
+    743            WM_SetFocus(hFrame);
+    744            WM_MakeModal(hFrame);
+    745            r = GUI_ExecCreatedDialog(hFrame);
+    746            //WM_SetFocus(_hFrame);
+    747            return r;
+    748          }
+    749          
+    750          /*********************************************************************
+    751          *
+    752          *       Static code, dialog settings
+    753          *
+    754          **********************************************************************
+    755          */
+    756          
+    757          /*********************************************************************
+    758          *
+    759          *       Static code
+    760          *
+    761          **********************************************************************
+    762          */
+    763          /*******************************************************************
+    764          *
+    765          *       _SetPlayer
+    766          */
+    767          static void _SetPlayer(int Player) {
+    768            int Score, ValidMoves, PossibleMoves;
+    769            char ac[256];
+    770            
+    771            _Board.ActPlayer = Player;
+    772            if (Player == 1) {
+    773              FRAMEWIN_SetText(_hFrame, "Reversi - Player 1");
+    774            } else {
+    775              FRAMEWIN_SetText(_hFrame, "Reversi - Player 2");
+    776            }
+    777            FRAMEWIN_SetBarColor(_hFrame, 1, (Player == 1) ? GUI_RED : GUI_BLUE);
+    778            PossibleMoves = _CalcValidMoves(&_Board);
+    779            GUI_Exec();
+    780          
+    781            if (!PossibleMoves) {
+    782              GUI_Exec();
+    783              _Board.ActPlayer = 3 - Player;
+    784              ValidMoves = _CalcValidMoves(&_Board);
+    785              _Board.ActPlayer = Player;
+    786              _CalcValidMoves(&_Board);
+    787              if (ValidMoves) {   // No valid moves, player must pass
+    788                if (_pPlayerAI[_Board.ActPlayer - 1] == NULL) {
+    789                  _ShowMessageBox("Reversi", "No possible moves.\nYou have to pass!", 0);
+    790                } else {
+    791                  //
+    792                  // Pass ai player
+    793                  //
+    794                }
+    795                _SetPlayer(3 - _Board.ActPlayer);
+    796              } else {            // No valid moves for all players, game is over
+    797                _GameOver = 1;
+    798                _Board.ActPlayer = 1;
+    799                Score = _CalcScore(&_Board);
+    800                if (Score > 0) {
+    801                  sprintf(ac, "Red wins by %d stones!\nDo you want to start a new game?", Score);
+    802                } else if (Score) {
+    803                  sprintf(ac, "Blue wins by %d stones!\nDo you want to start a new game?", -Score);
+    804                } else {
+    805                  strcpy(ac, "The game ends in a draw!\nDo you want to start a new game?");
+    806                }
+    807                if (_ShowMessageBox("Reversi", ac, 1)) {
+    808                  _StartNewGame();
+    809                }
+    810              }
+    811            }
+    812          }
+    813          
+    814          /*******************************************************************
+    815          *
+    816          *       _NextPlayer
+    817          */
+    818          static void _NextPlayer(void) {
+    819            int x, y;
+    820            
+    821            do {
+    822              _SetPlayer(3 - _Board.ActPlayer);
+    823              if (_pPlayerAI[_Board.ActPlayer - 1]&& !_GameOver) {
+    824                char DoMove;
+    825                DoMove = (*_pPlayerAI[_Board.ActPlayer - 1])(&_Board, &x, &y);
+    826                if (DoMove) {
+    827                  _MakeMove(&_Board, x, y);
+    828                }
+    829              }
+    830            } while (_pPlayerAI[_Board.ActPlayer - 1] && !_GameOver);
+    831          }
+    832          
+    833          /*******************************************************************
+    834          *
+    835          *       _StartNewGame
+    836          */
+    837          static void _StartNewGame(void) {
+    838            memset(&_Board, 0, sizeof(BOARD));
+    839            _Board.aCells[3][3] = 1;
+    840            _Board.aCells[4][4] = 1;
+    841            _Board.aCells[3][4] = 2;
+    842            _Board.aCells[4][3] = 2;
+    843            _GameOver    = 0;
+    844            _SetPlayer(1);
+    845            _InvalidateBoard();
+    846          }
+    847          
+    848          /*******************************************************************
+    849          *
+    850          *       _HandlePID
+    851          */
+    852          static void _HandlePID(int x, int y, int Pressed) {
+    853            static int _IsInHandlePID;
+    854          
+    855            if (_IsInHandlePID++ == 0) {
+    856              _CalcBoardDimensions();
+    857              x -= _BoardX0;
+    858              y -= _BoardY0;
+    859              if ((x >= 0) && (y >= 0)) {
+    860                x /= _CellSize;
+    861                y /= _CellSize;
+    862                if ((x < 8) && (y < 8)) {
+    863                  if (_IsValidMove(&_Board, x, y)) {
+    864                    if (Pressed == 1) {
+    865                      _ReleaseCapture();
+    866                      _MakeMove(&_Board, x, y);
+    867                      _NextPlayer();
+    868                    } else {
+    869                      _SetCapture();
+    870                    }
+    871                    goto EndHandlePID;
+    872                  }   
+    873                }
+    874              }
+    875              _ReleaseCapture();
+    876            }
+    877          EndHandlePID:
+    878            _IsInHandlePID--;
+    879          }
+    880          
+    881          /*********************************************************************
+    882          *
+    883          *       _OnTouch
+    884          */
+    885          static void _OnTouch(WM_MESSAGE* pMsg) {
+    886            const GUI_PID_STATE* pState = (const GUI_PID_STATE*)pMsg->Data.p;
+    887            if (pState) {  // Something happened in our area (pressed or released)
+    888              _HandlePID(pState->x, pState->y, pState->Pressed);
+    889            }
+    890          }
+    891          
+    892          /*********************************************************************
+    893          *
+    894          *       _OnMouseOver
+    895          */
+    896          #if (GUI_SUPPORT_MOUSE & GUI_SUPPORT_CURSOR)
+    897          static void _OnMouseOver(WM_MESSAGE* pMsg) {
+    898            const GUI_PID_STATE* pState = (const GUI_PID_STATE *)pMsg->Data.p;
+    899            if (pState) {
+    900              _HandlePID(pState->x, pState->y, -1);
+    901            }
+    902          }
+    903          #endif
+    904          
+    905          /*******************************************************************
+    906          *
+    907          *       _OnPaint
+    908          */
+    909          static void _OnPaint(WM_HWIN hWin) {
+    910            GUI_COLOR Color;
+    911            GUI_RECT  r;
+    912            int x, y, xPos, yPos;
+    913            int CellSize, rStone, rMove;
+    914            char Cell, IsValidMove;
+    915            int xCircle, yCircle;
+    916            
+    917            _CalcBoardDimensions();
+    918            GUI_AA_SetFactor(AA_FACTOR);
+    919            #if AA_USE_HIRES
+    920              GUI_AA_EnableHiRes();
+    921            #endif
+    922            LCD_SetBkColor(CLIENT_COLOR);
+    923            WM_GetClientRectEx(hWin, &r);
+    924            GUI_ClearRect(r.x0, r.y0, r.x1, _BoardY0 - 1);
+    925            GUI_ClearRect(r.x0, _BoardY0, _BoardX0 - 1, _BoardY0 + (8 * _CellSize));
+    926            GUI_ClearRect(_BoardX0 + (8 * _CellSize) + 1, _BoardY0, r.x1, _BoardY0 + (8 * _CellSize));
+    927            GUI_ClearRect(r.x0, _BoardY0 + (8 * _CellSize) + 1, r.x1, r.y1);
+    928            CellSize = _CellSize - 1;
+    929            rStone = ((CellSize - 3) * AA_CALCFACTOR) >> 1;
+    930            rMove  = ((CellSize - 2) * AA_CALCFACTOR) >> 3;
+    931            if (rStone < AA_CALCFACTOR) {
+    932              rStone = AA_CALCFACTOR;
+    933            }
+    934            if (rMove < (AA_CALCFACTOR >> AA_USE_HIRES)) {
+    935              rMove = (AA_CALCFACTOR >> AA_USE_HIRES);
+    936            }
+    937            for (yPos = _BoardY0, y = 0; y < 8; y++) {
+    938              for (xPos = _BoardX0, x = 0; x < 8; x++) {
+    939                Color = ((x + (y & 1)) & 1) ? (GUI_LIGHTGRAY) : (GUI_WHITE);
+    940                LCD_SetColor(Color);
+    941                GUI_FillRect(xPos + 1, yPos + 1, xPos + CellSize, yPos + CellSize);
+    942                Cell        = _GetStone(&_Board, x, y);
+    943                IsValidMove = (_ShowPossibleMoves) ? _IsValidMove(&_Board, x, y) : 0;
+    944                if (_pPlayerAI[_Board.ActPlayer - 1]) {
+    945                  IsValidMove = 0;
+    946                }
+    947                if (Cell || IsValidMove) {
+    948                  xCircle = (xPos + 1) * AA_CALCFACTOR + ((CellSize * AA_CALCFACTOR) >> 1);
+    949                  yCircle = (yPos + 1) * AA_CALCFACTOR + ((CellSize * AA_CALCFACTOR) >> 1);
+    950                  if (Cell) {
+    951                    Color = (Cell == 1) ? (GUI_RED) : (GUI_BLUE);
+    952                    LCD_SetColor(Color);
+    953                    #if (AA_FACTOR > 1)
+    954                      GUI_AA_FillCircle(xCircle, yCircle, rStone);
+    955                    #else
+    956                      GUI_FillCircle(xCircle, yCircle, rStone);
+    957                    #endif
+    958                  } else {
+    959                    LCD_SetColor(GUI_BLACK);
+    960                    #if (AA_FACTOR > 1)
+    961                      GUI_AA_FillCircle(xCircle, yCircle, rMove);
+    962                    #else
+    963                      GUI_FillCircle(xCircle, yCircle, rMove);
+    964                    #endif
+    965                  }
+    966                }
+    967                LCD_SetColor(GRID_COLOR);
+    968                GUI_DrawVLine(xPos, yPos + 1, yPos + CellSize);
+    969                xPos += _CellSize;
+    970              }
+    971              GUI_DrawVLine(xPos, yPos + 1, yPos + CellSize);
+    972              GUI_DrawHLine(yPos, _BoardX0, _BoardX0 + (_CellSize << 3));
+    973              yPos += _CellSize;
+    974            }
+    975            GUI_DrawHLine(yPos, _BoardX0, _BoardX0 + (_CellSize << 3));
+    976          }
+    977          /*******************************************************************
+    978          *
+    979          *       _cbReversiWin
+    980          */
+    981          static void _cbReversiWin(WM_MESSAGE* pMsg) {
+    982            WM_HWIN hWin = pMsg->hWin;
+    983            
+    984            switch (pMsg->MsgId) {
+    985            case WM_PAINT:
+    986              _OnPaint(hWin);
+    987              break;
+    988            case WM_TOUCH:
+    989              _OnTouch(pMsg);
+    990              break;
+    991          #if (GUI_SUPPORT_MOUSE & GUI_SUPPORT_CURSOR)
+    992            case WM_MOUSEOVER:
+    993              _OnMouseOver(pMsg);
+    994              break;
+    995          #endif
+    996            case WM_DELETE:
+    997              _hFrame = 0;
+    998              WM_NotifyParent(WM_GetParent(pMsg->hWin), 0x500);
+    999              break;
+   1000            default:
+   1001              WM_DefaultProc(pMsg);
+   1002            }
+   1003          }
+   1004          
+   1005          /*********************************************************************
+   1006          *
+   1007          *       _StartReversi
+   1008          */
+   1009          static void _StartReversi(WM_HWIN hWin) {
+   1010            
+   1011            int xSize, ySize;
+   1012            
+   1013            xSize  = LCD_GetXSize();
+   1014            ySize  = LCD_GetYSize();
+   1015            
+   1016            _hFrame = FRAMEWIN_CreateEx(0, 0, xSize, ySize-24, hWin, WM_CF_SHOW, FRAMEWIN_CF_ACTIVE, 0, NULL, &_cbReversiWin);
+   1017            
+   1018            FRAMEWIN_SetClientColor(_hFrame, GUI_INVALID_COLOR);
+   1019            FRAMEWIN_SetFont       (_hFrame, GUI_FONT_13B_1);
+   1020            FRAMEWIN_SetTextAlign  (_hFrame, GUI_TA_HCENTER);
+   1021            FRAMEWIN_AddCloseButton(_hFrame, FRAMEWIN_BUTTON_RIGHT,  0);
+   1022          
+   1023            _StartNewGame();
+   1024          }
+   1025          
+   1026          /*********************************************************************
+   1027          *
+   1028          *       Public code
+   1029          *
+   1030          **********************************************************************
+   1031          */
+   1032          /*********************************************************************
+   1033          *
+   1034          *       MainTask
+   1035          */
+   1036          void DEMO_Game(WM_HWIN hWin) 
+   1037          {
+   1038            _pPlayerAI[1] = _PlayerAI_SmartGecko; 
+   1039            _StartReversi(hWin);
+   1040           
+   1041          }
+   1042          
+   1043          /*************************** End of file ****************************/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+     272   DEMO_Game
+       272   -> FRAMEWIN_AddCloseButton
+       272   -> FRAMEWIN_CreateEx
+       272   -> FRAMEWIN_SetBarColor
+       272   -> FRAMEWIN_SetClientColor
+       272   -> FRAMEWIN_SetFont
+       272   -> FRAMEWIN_SetText
+       272   -> FRAMEWIN_SetTextAlign
+       272   -> GUI_Exec
+       272   -> LCD_GetXSize
+       272   -> LCD_GetYSize
+       272   -> WM_GetClientWindow
+       272   -> WM_InvalidateWindow
+       272   -> _CalcScore
+       272   -> _CalcValidMoves
+       272   -> _SetPlayer
+       272   -> _ShowMessageBox
+       272   -> _StartNewGame
+       272   -> __aeabi_memclr4
+       272   -> __aeabi_memcpy4
+       272   -> sprintf
+      16   _CalcBoardDimensions
+        16   -> WM_GetClientRectEx
+        16   -> WM_GetClientWindow
+      12   _CalcScore
+      80   _CalcValidMoves
+        80   -> WM_GetClientWindow
+        80   -> WM_InvalidateRect
+      56   _Descend
+        56   -> _CalcValidMoves
+        56   -> _Descend
+        56   -> _MakeMove
+        56   -> __aeabi_memcpy4
+      24   _Eval
+        24   -> _CalcScore
+        24   -> _CalcValidMoves
+        24   -> _valuePieces
+      32   _HandlePID
+        32   -- Indirect call
+        32   -> WM_GetClientWindow
+        32   -> WM_HasCaptured
+        32   -> WM_ReleaseCapture
+        32   -> WM_SetCapture
+        32   -> _CalcBoardDimensions
+        32   -> _MakeMove
+        32   -> _SetPlayer
+      16   _InvalidateCell
+        16   -> WM_GetClientWindow
+        16   -> WM_InvalidateRect
+      48   _MakeMove
+        48   -> WM_GetClientWindow
+        48   -> WM_InvalidateRect
+        48   -> _InvalidateCell
+      72   _OnPaint
+        72   -> GUI_AA_SetFactor
+        72   -> GUI_ClearRect
+        72   -> GUI_DrawHLine
+        72   -> GUI_DrawVLine
+        72   -> GUI_FillCircle
+        72   -> GUI_FillRect
+        72   -> LCD_SetBkColor
+        72   -> LCD_SetColor
+        72   -> WM_GetClientRectEx
+        72   -> _CalcBoardDimensions
+      56   _PlayerAI_SmartGecko
+        56   -> _CalcValidMoves
+        56   -> _Descend
+        56   -> _Eval
+        56   -> _MakeMove
+        56   -> __aeabi_memcpy4
+     528   _SetPlayer
+       528   -> FRAMEWIN_SetBarColor
+       528   -> FRAMEWIN_SetText
+       528   -> GUI_Exec
+       528   -> WM_GetClientWindow
+       528   -> WM_InvalidateWindow
+       528   -> _CalcScore
+       528   -> _CalcValidMoves
+       528   -> _SetPlayer
+       528   -> _ShowMessageBox
+       528   -> _StartNewGame
+       528   -> __aeabi_memclr4
+       528   -> __aeabi_memcpy4
+       528   -> sprintf
+      48   _ShowMessageBox
+        48   -> BUTTON_CreateEx
+        48   -> BUTTON_SetText
+        48   -> FRAMEWIN_CreateEx
+        48   -> FRAMEWIN_SetClientColor
+        48   -> FRAMEWIN_SetFont
+        48   -> FRAMEWIN_SetTextAlign
+         0   -> GUI_ExecCreatedDialog
+        48   -> TEXT_CreateEx
+        48   -> WM_GetClientWindow
+        48   -> WM_GetDesktopWindowEx
+        48   -> WM_MakeModal
+        48   -> WM_SetFocus
+     272   _StartNewGame
+       272   -> FRAMEWIN_SetBarColor
+       272   -> FRAMEWIN_SetText
+       272   -> GUI_Exec
+       272   -> WM_GetClientWindow
+       272   -> WM_InvalidateWindow
+       272   -> _CalcScore
+       272   -> _CalcValidMoves
+       272   -> _SetPlayer
+       272   -> _ShowMessageBox
+       272   -> _StartNewGame
+       272   -> __aeabi_memclr4
+       272   -> __aeabi_memcpy4
+       272   -> sprintf
+       8   _cbMessageBox
+         8   -> WM_GetId
+         8   -> WM_GetParent
+       8   _cbReversiWin
+         8   -> WM_GetParent
+      24   _valuePieces
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable19
+       4  ??DataTable22
+       4  ??DataTable22_1
+       4  ??DataTable22_2
+       4  ??DataTable25
+       4  ??DataTable26
+       4  ??DataTable26_1
+       4  ??DataTable26_10
+       4  ??DataTable26_11
+       4  ??DataTable26_2
+       4  ??DataTable26_3
+       4  ??DataTable26_4
+       4  ??DataTable26_5
+       4  ??DataTable26_6
+       4  ??DataTable26_7
+       4  ??DataTable26_8
+       4  ??DataTable26_9
+       4  ?_0
+       4  ?_1
+       4  ?_2
+      20  ?_3
+      20  ?_4
+       8  ?_5
+      40  ?_6
+      56  ?_7
+      60  ?_8
+      60  ?_9
+     342  DEMO_Game
+     164  _Board
+          _pPlayerAI
+          _hFrame
+          _GameOver
+          _BoardX0
+          _BoardY0
+          _CellSize
+          _IsInHandlePID
+      68  _CalcBoardDimensions
+     176  _CalcScore
+     838  _CalcValidMoves
+     244  _Descend
+     110  _Eval
+     284  _HandlePID
+      78  _InvalidateCell
+     758  _MakeMove
+     434  _OnPaint
+     388  _PlayerAI_SmartGecko
+     466  _SetPlayer
+     232  _ShowMessageBox
+       4  _ShowPossibleMoves
+     248  _StartNewGame
+    1728  _aBoardStack
+          _aaSafe
+          _px
+          _py
+     256  _aaValues
+      74  _cbMessageBox
+     106  _cbReversiWin
+     408  _valuePieces
+     240  _xs
+     240  _ys
+
+ 
+ 1 892 bytes in section .bss
+     4 bytes in section .data
+    12 bytes in section .rodata
+ 6 322 bytes in section .text
+ 
+ 6 322 bytes of CODE  memory
+    12 bytes of CONST memory
+ 1 896 bytes of DATA  memory
+
+Errors: none
+Warnings: none

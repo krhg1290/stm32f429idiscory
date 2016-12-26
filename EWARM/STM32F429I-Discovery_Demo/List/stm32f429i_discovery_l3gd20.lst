@@ -1,0 +1,682 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.40.3.8902/W32 for ARM        24/Dec/2016  13:33:43
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Utilities\STM32F429I-Discovery\stm32f429i_discovery_l3gd20.c
+#    Command line =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Utilities\STM32F429I-Discovery\stm32f429i_discovery_l3gd20.c
+#        -D USE_STDPERIPH_DRIVER -D STM32F429_439xx -D USE_STM32F429I_DISCO -D
+#        USE_USB_OTG_HS -D USE_EMBEDDED_PHY -lcN
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\
+#        --diag_suppress Pe111,Pa082 -o
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\
+#        --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.2\arm\INC\c\DLib_Config_Full.h" -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Config\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Devices\STM32F4xx\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\User\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Demo\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Lib\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Test_Program\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\HID\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\Audio\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_OTG_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Common\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\STM32F429i-Discovery\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\fat_fs\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\Config\
+#        -Ohs --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.2\arm\CMSIS\Include\"
+#    List file    =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\stm32f429i_discovery_l3gd20.lst
+#    Object file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\stm32f429i_discovery_l3gd20.o
+#
+###############################################################################
+
+D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Utilities\STM32F429I-Discovery\stm32f429i_discovery_l3gd20.c
+      1          /**
+      2            ******************************************************************************
+      3            * @file    stm32f429i_discovery_l3gd20.c
+      4            * @author  MCD Application Team
+      5            * @version V1.0.1
+      6            * @date    28-October-2013
+      7            * @brief   This file provides a set of functions needed to manage the l3gd20
+      8            *          MEMS three-axis digital output gyroscope available on STM32F429I-DISCO Kit.
+      9            ******************************************************************************
+     10            * @attention
+     11            *
+     12            * <h2><center>&copy; COPYRIGHT 2013 STMicroelectronics</center></h2>
+     13            *
+     14            * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
+     15            * You may not use this file except in compliance with the License.
+     16            * You may obtain a copy of the License at:
+     17            *
+     18            *        http://www.st.com/software_license_agreement_liberty_v2
+     19            *
+     20            * Unless required by applicable law or agreed to in writing, software 
+     21            * distributed under the License is distributed on an "AS IS" BASIS, 
+     22            * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     23            * See the License for the specific language governing permissions and
+     24            * limitations under the License.
+     25            *
+     26            ******************************************************************************
+     27            */
+     28          /* Includes ------------------------------------------------------------------*/
+     29          #include "stm32f429i_discovery_l3gd20.h"
+     30          /** @addtogroup Utilities
+     31            * @{
+     32            */ 
+     33          
+     34          /** @addtogroup STM32F4_DISCOVERY
+     35            * @{
+     36            */ 
+     37            
+     38          /** @addtogroup STM32429I_DISCO
+     39            * @{
+     40            */  
+     41          
+     42          /** @addtogroup STM32F429I_DISCOVERY_L3GD20
+     43            * @{
+     44            */
+     45          
+     46          
+     47          /** @defgroup STM32F429I_DISCOVERY_L3GD20_Private_TypesDefinitions
+     48            * @{
+     49            */
+     50          
+     51          /**
+     52            * @}
+     53            */
+     54          
+     55          /** @defgroup STM32F429I_DISCOVERY_L3GD20_Private_Defines
+     56            * @{
+     57            */
+     58          
+     59          /**
+     60            * @}
+     61            */
+     62          
+     63          /** @defgroup STM32F429I_DISCOVERY_L3GD20_Private_Macros
+     64            * @{
+     65            */
+     66          
+     67          /**
+     68            * @}
+     69            */ 
+     70            
+     71          /** @defgroup STM32F429I_DISCOVERY_L3GD20_Private_Variables
+     72            * @{
+     73            */ 
+     74          __IO uint32_t  L3GD20Timeout = L3GD20_FLAG_TIMEOUT;  
+     75          /**
+     76            * @}
+     77            */
+     78          
+     79          /** @defgroup STM32F429I_DISCOVERY_L3GD20_Private_FunctionPrototypes
+     80            * @{
+     81            */
+     82          static uint8_t L3GD20_SendByte(uint8_t byte);
+     83          static void L3GD20_LowLevel_Init(void);
+     84          /**
+     85            * @}
+     86            */
+     87          
+     88          /** @defgroup STM32F429I_DISCOVERY_L3GD20_Private_Functions
+     89            * @{
+     90            */
+     91          
+     92          /**
+     93            * @brief  Set L3GD20 Initialization.
+     94            * @param  L3GD20_InitStruct: pointer to a L3GD20_InitTypeDef structure 
+     95            *         that contains the configuration setting for the L3GD20.
+     96            * @retval None
+     97            */
+     98          void L3GD20_Init(L3GD20_InitTypeDef *L3GD20_InitStruct)
+     99          {  
+    100            uint8_t ctrl1 = 0x00, ctrl4 = 0x00;
+    101            
+    102            /* Configure the low level interface ---------------------------------------*/
+    103            L3GD20_LowLevel_Init();
+    104            
+    105            /* Configure MEMS: data rate, power mode, full scale and axes */
+    106            ctrl1 |= (uint8_t) (L3GD20_InitStruct->Power_Mode | L3GD20_InitStruct->Output_DataRate | \
+    107                              L3GD20_InitStruct->Axes_Enable | L3GD20_InitStruct->Band_Width);
+    108            
+    109            ctrl4 |= (uint8_t) (L3GD20_InitStruct->BlockData_Update | L3GD20_InitStruct->Endianness | \
+    110                              L3GD20_InitStruct->Full_Scale);
+    111                              
+    112            /* Write value to MEMS CTRL_REG1 regsister */
+    113            L3GD20_Write(&ctrl1, L3GD20_CTRL_REG1_ADDR, 1);
+    114            
+    115            /* Write value to MEMS CTRL_REG4 regsister */
+    116            L3GD20_Write(&ctrl4, L3GD20_CTRL_REG4_ADDR, 1);
+    117          }
+    118          
+    119          /**
+    120            * @brief  Reboot memory content of L3GD20
+    121            * @param  None
+    122            * @retval None
+    123            */
+    124          void L3GD20_RebootCmd(void)
+    125          {
+    126            uint8_t tmpreg;
+    127            
+    128            /* Read CTRL_REG5 register */
+    129            L3GD20_Read(&tmpreg, L3GD20_CTRL_REG5_ADDR, 1);
+    130            
+    131            /* Enable the reboot memory */
+    132            tmpreg |= L3GD20_BOOT_REBOOTMEMORY;
+    133            
+    134            /* Write value to MEMS CTRL_REG5 regsister */
+    135            L3GD20_Write(&tmpreg, L3GD20_CTRL_REG5_ADDR, 1);
+    136          }
+    137          
+    138          /**
+    139            * @brief Set L3GD20 Interrupt configuration
+    140            * @param  L3GD20_InterruptConfig_TypeDef: pointer to a L3GD20_InterruptConfig_TypeDef 
+    141            *         structure that contains the configuration setting for the L3GD20 Interrupt.
+    142            * @retval None
+    143            */
+    144          void L3GD20_INT1InterruptConfig(L3GD20_InterruptConfigTypeDef *L3GD20_IntConfigStruct)
+    145          {
+    146            uint8_t ctrl_cfr = 0x00, ctrl3 = 0x00;
+    147            
+    148            /* Read INT1_CFG register */
+    149            L3GD20_Read(&ctrl_cfr, L3GD20_INT1_CFG_ADDR, 1);
+    150            
+    151            /* Read CTRL_REG3 register */
+    152            L3GD20_Read(&ctrl3, L3GD20_CTRL_REG3_ADDR, 1);
+    153            
+    154            ctrl_cfr &= 0x80;
+    155            
+    156            ctrl3 &= 0xDF;
+    157            
+    158            /* Configure latch Interrupt request and axe interrupts */                   
+    159            ctrl_cfr |= (uint8_t)(L3GD20_IntConfigStruct->Latch_Request| \
+    160                             L3GD20_IntConfigStruct->Interrupt_Axes);
+    161                             
+    162            ctrl3 |= (uint8_t)(L3GD20_IntConfigStruct->Interrupt_ActiveEdge);
+    163            
+    164            /* Write value to MEMS INT1_CFG register */
+    165            L3GD20_Write(&ctrl_cfr, L3GD20_INT1_CFG_ADDR, 1);
+    166            
+    167            /* Write value to MEMS CTRL_REG3 register */
+    168            L3GD20_Write(&ctrl3, L3GD20_CTRL_REG3_ADDR, 1);
+    169          }
+    170          
+    171          /**
+    172            * @brief  Enable or disable INT1 interrupt
+    173            * @param  InterruptState: State of INT1 Interrupt 
+    174            *      This parameter can be: 
+    175            *        @arg L3GD20_INT1INTERRUPT_DISABLE
+    176            *        @arg L3GD20_INT1INTERRUPT_ENABLE    
+    177            * @retval None
+    178            */
+    179          void L3GD20_INT1InterruptCmd(uint8_t InterruptState)
+    180          {  
+    181            uint8_t tmpreg;
+    182            
+    183            /* Read CTRL_REG3 register */
+    184            L3GD20_Read(&tmpreg, L3GD20_CTRL_REG3_ADDR, 1);
+    185                            
+    186            tmpreg &= 0x7F;	
+    187            tmpreg |= InterruptState;
+    188            
+    189            /* Write value to MEMS CTRL_REG3 regsister */
+    190            L3GD20_Write(&tmpreg, L3GD20_CTRL_REG3_ADDR, 1);
+    191          }
+    192          
+    193          /**
+    194            * @brief  Enable or disable INT2 interrupt
+    195            * @param  InterruptState: State of INT1 Interrupt 
+    196            *      This parameter can be: 
+    197            *        @arg L3GD20_INT2INTERRUPT_DISABLE
+    198            *        @arg L3GD20_INT2INTERRUPT_ENABLE    
+    199            * @retval None
+    200            */
+    201          void L3GD20_INT2InterruptCmd(uint8_t InterruptState)
+    202          {  
+    203            uint8_t tmpreg;
+    204            
+    205            /* Read CTRL_REG3 register */
+    206            L3GD20_Read(&tmpreg, L3GD20_CTRL_REG3_ADDR, 1);
+    207                            
+    208            tmpreg &= 0xF7;	
+    209            tmpreg |= InterruptState;
+    210            
+    211            /* Write value to MEMS CTRL_REG3 regsister */
+    212            L3GD20_Write(&tmpreg, L3GD20_CTRL_REG3_ADDR, 1);
+    213          }
+    214          
+    215          /**
+    216            * @brief  Set High Pass Filter Modality
+    217            * @param  L3GD20_FilterStruct: pointer to a L3GD20_FilterConfigTypeDef structure 
+    218            *         that contains the configuration setting for the L3GD20.        
+    219            * @retval None
+    220            */
+    221          void L3GD20_FilterConfig(L3GD20_FilterConfigTypeDef *L3GD20_FilterStruct) 
+    222          {
+    223            uint8_t tmpreg;
+    224            
+    225            /* Read CTRL_REG2 register */
+    226            L3GD20_Read(&tmpreg, L3GD20_CTRL_REG2_ADDR, 1);
+    227            
+    228            tmpreg &= 0xC0;
+    229            
+    230            /* Configure MEMS: mode and cutoff frquency */
+    231            tmpreg |= (uint8_t) (L3GD20_FilterStruct->HighPassFilter_Mode_Selection |\
+    232                                L3GD20_FilterStruct->HighPassFilter_CutOff_Frequency);                             
+    233          
+    234            /* Write value to MEMS CTRL_REG2 regsister */
+    235            L3GD20_Write(&tmpreg, L3GD20_CTRL_REG2_ADDR, 1);
+    236          }
+    237          
+    238          /**
+    239            * @brief  Enable or Disable High Pass Filter
+    240            * @param  HighPassFilterState: new state of the High Pass Filter feature.
+    241            *      This parameter can be: 
+    242            *         @arg: L3GD20_HIGHPASSFILTER_DISABLE 
+    243            *         @arg: L3GD20_HIGHPASSFILTER_ENABLE          
+    244            * @retval None
+    245            */
+    246          void L3GD20_FilterCmd(uint8_t HighPassFilterState)
+    247           {
+    248            uint8_t tmpreg;
+    249            
+    250            /* Read CTRL_REG5 register */
+    251            L3GD20_Read(&tmpreg, L3GD20_CTRL_REG5_ADDR, 1);
+    252                            
+    253            tmpreg &= 0xEF;
+    254          
+    255            tmpreg |= HighPassFilterState;
+    256          
+    257            /* Write value to MEMS CTRL_REG5 regsister */
+    258            L3GD20_Write(&tmpreg, L3GD20_CTRL_REG5_ADDR, 1);
+    259          }
+    260          
+    261          /**
+    262            * @brief  Get status for L3GD20 data
+    263            * @param  None         
+    264            * @retval L3GD20 status
+    265            */
+    266          uint8_t L3GD20_GetDataStatus(void)
+    267          {
+    268            uint8_t tmpreg;
+    269            
+    270            /* Read STATUS_REG register */
+    271            L3GD20_Read(&tmpreg, L3GD20_STATUS_REG_ADDR, 1);
+    272                            
+    273            return tmpreg;
+    274          }
+    275          
+    276          /**
+    277            * @brief  Writes a block of data to the L3GD20.
+    278            * @param  pBuffer : pointer to the buffer containing the data to be written to the L3GD20.
+    279            * @param  WriteAddr : L3GD20's internal address to write to.
+    280            * @param  NumByteToWrite: Number of bytes to write.
+    281            * @retval None
+    282            */
+    283          void L3GD20_Write(uint8_t* pBuffer, uint8_t WriteAddr, uint16_t NumByteToWrite)
+    284          {
+    285            /* Configure the MS bit: 
+    286                 - When 0, the address will remain unchanged in multiple read/write commands.
+    287                 - When 1, the address will be auto incremented in multiple read/write commands.
+    288            */
+    289            if(NumByteToWrite > 0x01)
+    290            {
+    291              WriteAddr |= (uint8_t)MULTIPLEBYTE_CMD;
+    292            }
+    293            /* Set chip select Low at the start of the transmission */
+    294            L3GD20_CS_LOW();
+    295            
+    296            /* Send the Address of the indexed register */
+    297            L3GD20_SendByte(WriteAddr);
+    298          
+    299            /* Send the data that will be written into the device (MSB First) */
+    300            while(NumByteToWrite >= 0x01)
+    301            {
+    302              L3GD20_SendByte(*pBuffer);
+    303              NumByteToWrite--;
+    304              pBuffer++;
+    305            }
+    306            
+    307            /* Set chip select High at the end of the transmission */ 
+    308            L3GD20_CS_HIGH();
+    309          }
+    310          
+    311          /**
+    312            * @brief  Reads a block of data from the L3GD20.
+    313            * @param  pBuffer : pointer to the buffer that receives the data read from the L3GD20.
+    314            * @param  ReadAddr : L3GD20's internal address to read from.
+    315            * @param  NumByteToRead : number of bytes to read from the L3GD20.
+    316            * @retval None
+    317            */
+    318          void L3GD20_Read(uint8_t* pBuffer, uint8_t ReadAddr, uint16_t NumByteToRead)
+    319          {  
+    320            if(NumByteToRead > 0x01)
+    321            {
+    322              ReadAddr |= (uint8_t)(READWRITE_CMD | MULTIPLEBYTE_CMD);
+    323            }
+    324            else
+    325            {
+    326              ReadAddr |= (uint8_t)READWRITE_CMD;
+    327            }
+    328            /* Set chip select Low at the start of the transmission */
+    329            L3GD20_CS_LOW();
+    330            
+    331            /* Send the Address of the indexed register */
+    332            L3GD20_SendByte(ReadAddr);
+    333            
+    334            /* Receive the data that will be read from the device (MSB First) */
+    335            while(NumByteToRead > 0x00)
+    336            {
+    337              /* Send dummy byte (0x00) to generate the SPI clock to L3GD20 (Slave device) */
+    338              *pBuffer = L3GD20_SendByte(DUMMY_BYTE);
+    339              NumByteToRead--;
+    340              pBuffer++;
+    341            }
+    342            
+    343            /* Set chip select High at the end of the transmission */ 
+    344            L3GD20_CS_HIGH();
+    345          }  
+    346          
+    347          /**
+    348            * @brief  Initializes the low level interface used to drive the L3GD20
+    349            * @param  None
+    350            * @retval None
+    351            */
+    352          static void L3GD20_LowLevel_Init(void)
+    353          {
+    354            GPIO_InitTypeDef GPIO_InitStructure;
+    355            SPI_InitTypeDef  SPI_InitStructure;
+    356          
+    357            /* Enable the SPI periph */
+    358            RCC_APB2PeriphClockCmd(L3GD20_SPI_CLK, ENABLE);
+    359          
+    360            /* Enable SCK, MOSI and MISO GPIO clocks */
+    361            RCC_AHB1PeriphClockCmd(L3GD20_SPI_SCK_GPIO_CLK | L3GD20_SPI_MISO_GPIO_CLK | L3GD20_SPI_MOSI_GPIO_CLK, ENABLE);
+    362          
+    363            /* Enable CS GPIO clock */
+    364            RCC_AHB1PeriphClockCmd(L3GD20_SPI_CS_GPIO_CLK, ENABLE);
+    365            
+    366            /* Enable INT1 GPIO clock */
+    367            RCC_AHB1PeriphClockCmd(L3GD20_SPI_INT1_GPIO_CLK, ENABLE);
+    368            
+    369            /* Enable INT2 GPIO clock */
+    370            RCC_AHB1PeriphClockCmd(L3GD20_SPI_INT2_GPIO_CLK, ENABLE);
+    371          
+    372            GPIO_PinAFConfig(L3GD20_SPI_SCK_GPIO_PORT, L3GD20_SPI_SCK_SOURCE, L3GD20_SPI_SCK_AF);
+    373            GPIO_PinAFConfig(L3GD20_SPI_MISO_GPIO_PORT, L3GD20_SPI_MISO_SOURCE, L3GD20_SPI_MISO_AF);
+    374            GPIO_PinAFConfig(L3GD20_SPI_MOSI_GPIO_PORT, L3GD20_SPI_MOSI_SOURCE, L3GD20_SPI_MOSI_AF);
+    375          
+    376            GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF;
+    377            GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+    378            GPIO_InitStructure.GPIO_PuPd  = GPIO_PuPd_DOWN;
+    379            GPIO_InitStructure.GPIO_Speed = GPIO_Speed_25MHz;
+    380          
+    381            /* SPI SCK pin configuration */
+    382            GPIO_InitStructure.GPIO_Pin = L3GD20_SPI_SCK_PIN;
+    383            GPIO_Init(L3GD20_SPI_SCK_GPIO_PORT, &GPIO_InitStructure);
+    384          
+    385            /* SPI  MOSI pin configuration */
+    386            GPIO_InitStructure.GPIO_Pin =  L3GD20_SPI_MOSI_PIN;
+    387            GPIO_Init(L3GD20_SPI_MOSI_GPIO_PORT, &GPIO_InitStructure);
+    388          
+    389            /* SPI MISO pin configuration */
+    390            GPIO_InitStructure.GPIO_Pin = L3GD20_SPI_MISO_PIN;
+    391            GPIO_Init(L3GD20_SPI_MISO_GPIO_PORT, &GPIO_InitStructure);
+    392          
+    393            /* SPI configuration -------------------------------------------------------*/
+    394            SPI_I2S_DeInit(L3GD20_SPI);
+    395            SPI_InitStructure.SPI_Direction = SPI_Direction_2Lines_FullDuplex;
+    396            SPI_InitStructure.SPI_Mode = SPI_Mode_Master;
+    397            SPI_InitStructure.SPI_DataSize = SPI_DataSize_8b;
+    398            SPI_InitStructure.SPI_CPOL = SPI_CPOL_Low;
+    399            SPI_InitStructure.SPI_CPHA = SPI_CPHA_1Edge;
+    400            SPI_InitStructure.SPI_NSS = SPI_NSS_Soft;
+    401            /* SPI baudrate is set to 5.6 MHz (PCLK2/SPI_BaudRatePrescaler = 90/16 = 5.625 MHz) 
+    402               to verify these constraints:
+    403                  - ILI9341 LCD SPI interface max baudrate is 10MHz for write and 6.66MHz for read
+    404                  - l3gd20 SPI interface max baudrate is 10MHz for write/read
+    405                  - PCLK2 frequency is set to 90 MHz 
+    406              */
+    407            SPI_InitStructure.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_16;
+    408            SPI_InitStructure.SPI_FirstBit = SPI_FirstBit_MSB;
+    409            SPI_InitStructure.SPI_CRCPolynomial = 7;
+    410            SPI_Init(L3GD20_SPI, &SPI_InitStructure);
+    411          
+    412            /* Enable L3GD20_SPI  */
+    413            SPI_Cmd(L3GD20_SPI, ENABLE);
+    414            
+    415            /* Configure GPIO PIN for Lis Chip select */
+    416            GPIO_InitStructure.GPIO_Pin = L3GD20_SPI_CS_PIN;
+    417            GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
+    418            GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+    419            GPIO_InitStructure.GPIO_Speed = GPIO_Speed_25MHz;
+    420            GPIO_InitStructure.GPIO_PuPd  = GPIO_PuPd_NOPULL;
+    421            GPIO_Init(L3GD20_SPI_CS_GPIO_PORT, &GPIO_InitStructure);
+    422          
+    423            /* Deselect : Chip Select high */
+    424            GPIO_SetBits(L3GD20_SPI_CS_GPIO_PORT, L3GD20_SPI_CS_PIN);
+    425            
+    426            /* Configure GPIO PINs to detect Interrupts */
+    427            GPIO_InitStructure.GPIO_Pin = L3GD20_SPI_INT1_PIN;
+    428            GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN;
+    429            GPIO_InitStructure.GPIO_PuPd  = GPIO_PuPd_NOPULL;
+    430            GPIO_Init(L3GD20_SPI_INT1_GPIO_PORT, &GPIO_InitStructure);
+    431            
+    432            GPIO_InitStructure.GPIO_Pin = L3GD20_SPI_INT2_PIN;
+    433            GPIO_Init(L3GD20_SPI_INT2_GPIO_PORT, &GPIO_InitStructure);
+    434          }  
+    435          
+    436          /**
+    437            * @brief  Sends a Byte through the SPI interface and return the Byte received 
+    438            *         from the SPI bus.
+    439            * @param  Byte : Byte send.
+    440            * @retval The received byte value
+    441            */
+    442          static uint8_t L3GD20_SendByte(uint8_t byte)
+    443          {
+    444            /* Loop while DR register in not empty */
+    445            L3GD20Timeout = L3GD20_FLAG_TIMEOUT;
+    446            while (SPI_I2S_GetFlagStatus(L3GD20_SPI, SPI_I2S_FLAG_TXE) == RESET)
+    447            {
+    448              if((L3GD20Timeout--) == 0) return L3GD20_TIMEOUT_UserCallback();
+    449            }
+    450            
+    451            /* Send a Byte through the SPI peripheral */
+    452            SPI_I2S_SendData(L3GD20_SPI, (uint16_t)byte);
+    453            /* Wait to receive a Byte */
+    454            L3GD20Timeout = L3GD20_FLAG_TIMEOUT;
+    455            while (SPI_I2S_GetFlagStatus(L3GD20_SPI, SPI_I2S_FLAG_RXNE) == RESET)
+    456            {
+    457              if((L3GD20Timeout--) == 0) return L3GD20_TIMEOUT_UserCallback();
+    458            }
+    459            
+    460            /* Return the Byte read from the SPI bus */
+    461            return (uint8_t)SPI_I2S_ReceiveData(L3GD20_SPI);
+    462          }
+    463          
+    464          #ifdef USE_DEFAULT_TIMEOUT_CALLBACK
+    465          /**
+    466            * @brief  Basic management of the timeout situation.
+    467            * @param  None.
+    468            * @retval None.
+    469            */
+    470          uint32_t L3GD20_TIMEOUT_UserCallback(void)
+    471          {
+    472            /* Block communication and all processes */
+    473            while (1)
+    474            {   
+    475            }
+    476          }
+    477          #endif /* USE_DEFAULT_TIMEOUT_CALLBACK */
+    478          
+    479          /**
+    480            * @}
+    481            */ 
+    482          
+    483          /**
+    484            * @}
+    485            */ 
+    486            
+    487          /**
+    488            * @}
+    489            */ 
+    490          
+    491          /**
+    492            * @}
+    493            */ 
+    494            
+    495           /**
+    496            * @}
+    497            */  
+    498            
+    499          /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/     
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   L3GD20_FilterCmd
+        16   -> GPIO_ResetBits
+         0   -> GPIO_SetBits
+        16   -> GPIO_SetBits
+        16   -> L3GD20_SendByte
+      16   L3GD20_FilterConfig
+        16   -> GPIO_ResetBits
+         0   -> GPIO_SetBits
+        16   -> GPIO_SetBits
+        16   -> L3GD20_SendByte
+      16   L3GD20_GetDataStatus
+        16   -> GPIO_ResetBits
+        16   -> GPIO_SetBits
+        16   -> L3GD20_SendByte
+      16   L3GD20_INT1InterruptCmd
+        16   -> GPIO_ResetBits
+         0   -> GPIO_SetBits
+        16   -> GPIO_SetBits
+        16   -> L3GD20_SendByte
+      24   L3GD20_INT1InterruptConfig
+        24   -> GPIO_ResetBits
+         0   -> GPIO_SetBits
+        24   -> GPIO_SetBits
+        24   -> L3GD20_SendByte
+      16   L3GD20_INT2InterruptCmd
+        16   -> GPIO_ResetBits
+         0   -> GPIO_SetBits
+        16   -> GPIO_SetBits
+        16   -> L3GD20_SendByte
+      16   L3GD20_Init
+        16   -> GPIO_ResetBits
+         0   -> GPIO_SetBits
+        16   -> GPIO_SetBits
+        16   -> L3GD20_LowLevel_Init
+        16   -> L3GD20_SendByte
+      40   L3GD20_LowLevel_Init
+        40   -> GPIO_Init
+        40   -> GPIO_PinAFConfig
+        40   -> GPIO_SetBits
+        40   -> RCC_AHB1PeriphClockCmd
+        40   -> RCC_APB2PeriphClockCmd
+        40   -> SPI_Cmd
+        40   -> SPI_I2S_DeInit
+        40   -> SPI_Init
+      32   L3GD20_Read
+        32   -> GPIO_ResetBits
+         0   -> GPIO_SetBits
+        32   -> L3GD20_SendByte
+        32   -> L3GD20_TIMEOUT_UserCallback
+        32   -> SPI_I2S_GetFlagStatus
+        32   -> SPI_I2S_ReceiveData
+        32   -> SPI_I2S_SendData
+      16   L3GD20_RebootCmd
+        16   -> GPIO_ResetBits
+         0   -> GPIO_SetBits
+        16   -> GPIO_SetBits
+        16   -> L3GD20_SendByte
+      24   L3GD20_SendByte
+        24   -> L3GD20_TIMEOUT_UserCallback
+        24   -> SPI_I2S_GetFlagStatus
+        24   -> SPI_I2S_ReceiveData
+        24   -> SPI_I2S_SendData
+      32   L3GD20_Write
+        32   -> GPIO_ResetBits
+         0   -> GPIO_SetBits
+        32   -> L3GD20_SendByte
+        32   -> L3GD20_TIMEOUT_UserCallback
+        32   -> SPI_I2S_GetFlagStatus
+        32   -> SPI_I2S_ReceiveData
+        32   -> SPI_I2S_SendData
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable11
+       4  ??DataTable11_1
+       4  ??DataTable11_2
+       4  ??DataTable11_3
+       4  ??DataTable11_4
+       4  L3GD20Timeout
+      74  L3GD20_FilterCmd
+      82  L3GD20_FilterConfig
+      42  L3GD20_GetDataStatus
+      76  L3GD20_INT1InterruptCmd
+     156  L3GD20_INT1InterruptConfig
+      76  L3GD20_INT2InterruptCmd
+     100  L3GD20_Init
+     296  L3GD20_LowLevel_Init
+     140  L3GD20_Read
+      74  L3GD20_RebootCmd
+      98  L3GD20_SendByte
+     136  L3GD20_Write
+
+ 
+     4 bytes in section .data
+ 1 370 bytes in section .text
+ 
+ 1 370 bytes of CODE memory
+     4 bytes of DATA memory
+
+Errors: none
+Warnings: none

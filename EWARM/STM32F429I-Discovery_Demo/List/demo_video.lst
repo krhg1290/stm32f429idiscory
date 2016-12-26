@@ -1,0 +1,916 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.40.3.8902/W32 for ARM        24/Dec/2016  13:33:39
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\Core\Demo\demo_video.c
+#    Command line =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\Core\Demo\demo_video.c
+#        -D USE_STDPERIPH_DRIVER -D STM32F429_439xx -D USE_STM32F429I_DISCO -D
+#        USE_USB_OTG_HS -D USE_EMBEDDED_PHY -lcN
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\
+#        --diag_suppress Pe111,Pa082 -o
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\
+#        --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.2\arm\INC\c\DLib_Config_Full.h" -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Config\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Devices\STM32F4xx\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\User\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Demo\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Lib\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Test_Program\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\HID\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\Audio\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_OTG_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Common\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\STM32F429i-Discovery\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\fat_fs\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\Config\
+#        -Ohs --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.2\arm\CMSIS\Include\"
+#    List file    =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\demo_video.lst
+#    Object file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\demo_video.o
+#
+###############################################################################
+
+D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\Core\Demo\demo_video.c
+      1          /**
+      2            ******************************************************************************
+      3            * @file    demo_video.c
+      4            * @author  MCD Application Team
+      5            * @version V1.0.1
+      6            * @date    11-November-2013
+      7            * @brief   Video Player functions
+      8            ******************************************************************************
+      9            * @attention
+     10            *
+     11            * <h2><center>&copy; COPYRIGHT 2013 STMicroelectronics</center></h2>
+     12            *
+     13            * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
+     14            * You may not use this file except in compliance with the License.
+     15            * You may obtain a copy of the License at:
+     16            *
+     17            *        http://www.st.com/software_license_agreement_liberty_v2
+     18            *
+     19            * Unless required by applicable law or agreed to in writing, software 
+     20            * distributed under the License is distributed on an "AS IS" BASIS, 
+     21            * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     22            * See the License for the specific language governing permissions and
+     23            * limitations under the License.
+     24            *
+     25            ******************************************************************************
+     26            */
+     27          
+     28          
+     29          /* Includes ------------------------------------------------------------------*/
+     30          #include "global_includes.h"
+     31          #include "DIALOG.h"
+     32          #include "GUI_JPEG_Private.h"
+     33          #include "file_utils.h"
+     34          #include "str_utils.h"
+     35          #include "Res\common_res.h"
+     36          #include "string.h"
+     37          
+     38          /* External variables --------------------------------------------------------*/
+     39          extern __IO uint32_t TS_Orientation;
+     40          
+     41          /* Private typedef -----------------------------------------------------------*/
+     42          /* Private defines -----------------------------------------------------------*/
+     43          #define ID_FRAMEWIN_VIDEO   (GUI_ID_USER + 0x00)
+     44          #define PLAY_BUTTON_VIDEO   (GUI_ID_USER + 0x03)
+     45          #define PREV_BUTTON_VIDEO   (GUI_ID_USER + 0x04)
+     46          #define NEXT_BUTTON_VIDEO   (GUI_ID_USER + 0x05)
+     47          #define STOP_BUTTON_VIDEO   (GUI_ID_USER + 0x06)
+     48          #define ID_VIDEO_FILE       (GUI_ID_USER + 0x07)
+     49          #define ID_VIDEO_FPS        (GUI_ID_USER + 0x08)
+     50          #define ID_VIDEO_PROGRESS   (GUI_ID_USER + 0x09)
+     51          #define ID_VIDEO_DURATION   (GUI_ID_USER + 0x0A)
+     52          #define ID_VIDEO_EXIT       (GUI_ID_USER + 0x0B)
+     53          
+     54          #define VIDEO_IDLE      0
+     55          #define VIDEO_PLAY      1
+     56          #define VIDEO_STOP      2
+     57          #define VIDEO_PAUSE     3
+     58          
+     59          #define VIDEO_BUFFER_SIZE   (512)
+     60          
+     61          /* Private macros ------------------------------------------------------------*/
+     62          /* Private variables ---------------------------------------------------------*/
+     63          __IO uint32_t VIDEO_Enlarge = 0;
+     64          WM_HWIN  VIDEO_hWin, hVideoScreen;
+     65          FIL Video_File;
+     66          static WM_HWIN  bkparent ;
+     67          
+     68          static const GUI_WIDGET_CREATE_INFO _aDialogCreate[] = {
+     69            { FRAMEWIN_CreateIndirect, "MJPEG Player", ID_FRAMEWIN_VIDEO, 0, 0, 240, 320-20, WM_CF_STAYONTOP, 0},
+     70            { TEXT_CreateIndirect, "No File Found", ID_VIDEO_FILE, 10, 190, 160, 32, 0, 0, 0 },
+     71            { SLIDER_CreateIndirect, NULL, ID_VIDEO_PROGRESS, 2, 180, 240-4-12, 10 },
+     72            { TEXT_CreateIndirect, "00:00", ID_VIDEO_DURATION  , 190-12, 190, 179, 32, 0, 0, 0 },
+     73            { BUTTON_CreateIndirect, "", PLAY_BUTTON_VIDEO, 29 + 58, 207 + 26, 48, 24, 0, 0, 0 },
+     74            { BUTTON_CreateIndirect, "", PREV_BUTTON_VIDEO, 29 + 8 , 207 + 26, 48, 24, 0, 0, 0 },
+     75            { BUTTON_CreateIndirect, "", NEXT_BUTTON_VIDEO, 29 + 108 , 207 + 26, 48, 24, 0, 0, 0 },
+     76            { BUTTON_CreateIndirect, "", STOP_BUTTON_VIDEO, 29 + 58 , 207, 48, 24, 0, 0, 0 },//
+     77            { BUTTON_CreateIndirect, "Exit", ID_VIDEO_EXIT, 29 + 58 , 207 + 52, 48, 24, 0, 0, 0 },  
+     78          };
+     79          
+     80          char _acVideoBuffer[VIDEO_BUFFER_SIZE];
+     81          uint8_t flag = 0;
+     82          __IO int ImageOffset = 0;
+     83          uint8_t VideoPlayer_State = VIDEO_IDLE;
+     84          int t0, frame_average_period, frame_speed;
+     85          int s0, frame_average_size;
+     86          static int progress_bar = 0;
+     87          int duration = 0;
+     88          int do_clear = 0;
+     89          int time_start, current_time, time_pause, time_seek;
+     90          
+     91          /* Private function prototypes -----------------------------------------------*/
+     92          /* Private functions ---------------------------------------------------------*/
+     93          
+     94          /**
+     95            * @brief  Get MJPEG File List
+     96            * @param  path: pointer to an array of type char
+     97            * @retval None
+     98            */
+     99          static void _GetMJPEGFileList(char* path) 
+    100          {
+    101            FRESULT res;
+    102            FILINFO fno;
+    103            DIR dir;
+    104            char *fn;
+    105          #if _USE_LFN
+    106            static char lfn[_MAX_LFN];
+    107            fno.lfname = lfn;
+    108            fno.lfsize = sizeof(lfn);
+    109          #endif
+    110            FILEMGR_FileList.ptr = 0;
+    111            FILEMGR_FileList.idx = 0;
+    112            
+    113            res = f_opendir(&dir, path);
+    114            if (res == FR_OK)
+    115            {
+    116              for (;;)
+    117              {
+    118                res = f_readdir(&dir, &fno);
+    119                if (res != FR_OK || fno.fname[0] == 0)
+    120                {
+    121                  break;
+    122                }
+    123                if (fno.fname[0] == '.')
+    124                {
+    125                  continue;
+    126                }
+    127          #if _USE_LFN
+    128                fn = *fno.lfname ? fno.lfname : fno.fname;
+    129          #else
+    130                fn = fno.fname;
+    131          #endif
+    132                if (fno.fattrib & AM_DIR)
+    133                {
+    134                  continue;
+    135                }
+    136                else
+    137                {
+    138                  
+    139                  if ((check_filename_ext(fn, "mjpeg"))|| \
+    140                      (check_filename_ext(fn, "MJPEG"))|| \
+    141                      (check_filename_ext(fn, "MJP")))
+    142                  {
+    143                    if (FILEMGR_FileList.ptr < FILELIST_DEPDTH)
+    144                    {
+    145                      strncpy((char *)FILEMGR_FileList.file[FILEMGR_FileList.ptr++].line, fn, 128);
+    146                    }
+    147                  }
+    148                }
+    149              }
+    150            }
+    151          }
+    152          
+    153          /**
+    154            * @brief  Display the next MJPEG in the list
+    155            * @param  None
+    156            * @retval None
+    157            */
+    158          static void goto_next_file (void)
+    159          {
+    160            FRESULT res = FR_OK;
+    161            
+    162            if(FILEMGR_FileList.ptr > 0)
+    163            {
+    164              f_close(&Video_File);
+    165              FILEMGR_FileList.idx ++;
+    166              
+    167              if (FILEMGR_FileList.idx == FILEMGR_FileList.ptr)
+    168              {
+    169                FILEMGR_FileList.idx = 0;
+    170              }
+    171              
+    172              res = f_open(&Video_File, (char *)FILEMGR_FileList.file[FILEMGR_FileList.idx ].line, FA_OPEN_EXISTING | FA_READ);
+    173              if ( res != FR_OK)
+    174              {
+    175                /* Error open file */
+    176              }
+    177            }
+    178            else
+    179            {
+    180              /* No file */
+    181            } 
+    182          }
+    183          
+    184          /**
+    185            * @brief  Display the next MJPEG in the list
+    186            * @param  None
+    187            * @retval None
+    188            */
+    189          static void goto_previous_file (void)
+    190          {
+    191            FRESULT res = FR_OK;
+    192            
+    193            if(FILEMGR_FileList.ptr > 0)
+    194            {
+    195              f_close(&Video_File);    
+    196              FILEMGR_FileList.idx --;
+    197              
+    198              if (FILEMGR_FileList.idx < 0 )
+    199              {
+    200                FILEMGR_FileList.idx = FILEMGR_FileList.ptr - 1;
+    201              }
+    202              
+    203              res = f_open(&Video_File, (char *)FILEMGR_FileList.file[FILEMGR_FileList.idx ].line, FA_OPEN_EXISTING | FA_READ);
+    204              if ( res != FR_OK)
+    205              {
+    206                /* Error open file */
+    207              }
+    208            }
+    209            else
+    210            {
+    211              /* No file */
+    212            } 
+    213          }
+    214          
+    215          
+    216          /**
+    217            * @brief  called one time at the beginning to retrieve overhead
+    218            *         information and, after this, several times to retrieve the actual MJPEG data
+    219            * @param  p: application defined void pointer
+    220            *         ppData: pointer to the location the requested data resides in
+    221            *         NumBytesReq: number of requested bytes.
+    222            *         Off: defines the offset to use for reading the source data
+    223            * @retval The number of bytes which were actually read (int)
+    224            */
+    225          static int _GetData(void * p, const U8 ** ppData, unsigned NumBytesReq, U32 Off)
+    226          {
+    227            unsigned int NumBytesRead;
+    228            FIL * phFile;
+    229            
+    230            phFile = (FIL *)p;
+    231            /*
+    232            * Check buffer size
+    233            */
+    234            if (NumBytesReq > sizeof(_acVideoBuffer)) {
+    235              NumBytesReq = sizeof(_acVideoBuffer);
+    236            }
+    237            /*
+    238            * Set file pointer to the required position
+    239            */
+    240            f_lseek(phFile, Off + ImageOffset);
+    241            /*
+    242            * Read data into buffer
+    243            */
+    244            f_read(phFile, _acVideoBuffer, NumBytesReq, &NumBytesRead); 
+    245            /*
+    246            * Set data pointer to the beginning of the buffer
+    247            */
+    248            *ppData =(unsigned char *) _acVideoBuffer;
+    249            /*
+    250            * Return number of available bytes
+    251            */
+    252            return NumBytesRead;  
+    253          }
+    254          
+    255          
+    256          /**
+    257            * @brief  draw the image after scaling it
+    258            * @param  hFile: pointer to the MJPEG file
+    259            * @retval None
+    260            */
+    261          static int _PlayMJPEG(FIL *hFile) 
+    262          {
+    263            unsigned int  NumBytesRead;
+    264            char *ptr;
+    265            int timeout = 0xFFFF;
+    266            static int counter = 0;
+    267            GUI_JPEG_INFO video_info;
+    268          
+    269            f_lseek(hFile, ImageOffset);
+    270            
+    271            t0 = GUI_GetTime();
+    272            s0 = hFile->fptr;
+    273            
+    274           
+    275            if(VIDEO_Enlarge == 1)
+    276            {
+    277              GUI_JPEG_DrawEx(_GetData, hFile, 0, 0);
+    278            }
+    279            else
+    280            {
+    281              GUI_JPEG_DrawScaledEx(_GetData, hFile, 7, 2, 2, 3);  
+    282            }
+    283            
+    284            if(counter ++ > 20 )
+    285            {
+    286              frame_average_size =  (hFile->fptr - s0 + frame_average_size)/2; 
+    287              frame_average_period = (GUI_GetTime() - t0 + frame_average_period)/2;
+    288              counter = 0;
+    289            }
+    290            
+    291            if(frame_average_size != 0)
+    292              frame_speed = frame_average_size / frame_average_period ;
+    293            else
+    294              frame_speed = 70;
+    295            
+    296            ImageOffset = hFile->fptr;
+    297            
+    298            while ( --timeout > 0 )
+    299            {
+    300              f_lseek(hFile, ImageOffset - VIDEO_BUFFER_SIZE);
+    301              f_read(hFile, (char *)_acVideoBuffer, VIDEO_BUFFER_SIZE, &NumBytesRead); 
+    302              
+    303              /* Get image offset */
+    304              ptr = _acVideoBuffer;
+    305              while (NumBytesRead --)
+    306              {
+    307                if((*ptr == 0xFF) && ((*(ptr + 1)) == M_SOI))
+    308                {
+    309                  ImageOffset -=  (NumBytesRead + 1) ;
+    310                  GUI_JPEG_GetInfoEx   (_GetData, hFile, &video_info);
+    311                  if((video_info.XSize != 320) || (video_info.YSize != 240))
+    312                  {
+    313                    return -1; 
+    314                  }
+    315                  else
+    316                  {
+    317                    return 0;
+    318                  }
+    319                }
+    320                ptr++;
+    321              }
+    322              ImageOffset +=  2 * VIDEO_BUFFER_SIZE; 
+    323              
+    324              if (ImageOffset >= hFile->fsize)
+    325              {
+    326                return -1;
+    327              }
+    328              
+    329            }
+    330            return -1;
+    331          }
+    332          
+    333          /**
+    334            * @brief  Callback function of the MJPEG frame
+    335            * @param  pMsg: pointer to a data structure of type WM_MESSAGE
+    336            * @retval None
+    337            */
+    338          static void _cbVideoWindow(WM_MESSAGE * pMsg) 
+    339          {
+    340            char temp[20];
+    341            static WM_HTIMER hTimerTime;
+    342            WM_HWIN hItem;  
+    343            const GUI_PID_STATE * pState;
+    344            
+    345            GUI_RECT r;
+    346            WM_GetInsideRect(&r);
+    347            
+    348            switch (pMsg->MsgId) 
+    349            {
+    350              
+    351            case  WM_TOUCH:
+    352              if(VideoPlayer_State == VIDEO_PLAY)
+    353              {
+    354                pState = (const GUI_PID_STATE *)pMsg->Data.p;
+    355                if (pState) {
+    356                  if (pState->Pressed == 1) {
+    357                    VIDEO_Enlarge ^= 1;
+    358                    if(VIDEO_Enlarge)
+    359                    {
+    360                      GUI_SetOrientation(GUI_SWAP_XY | GUI_MIRROR_Y);
+    361                      TS_Orientation = 1;
+    362                      WM_AttachWindowAt(pMsg->hWin, WM_GetDesktopWindowEx(1), 0, 0);
+    363                      WM_SetSize(pMsg->hWin, LCD_GetXSize(), LCD_GetYSize());
+    364                    }
+    365                    else
+    366                    {
+    367                      WM_AttachWindow(pMsg->hWin, bkparent);
+    368                      GUI_SetOrientation(0);
+    369                      TS_Orientation = 0;
+    370                      WM_InvalidateWindow(bkparent);    
+    371                      
+    372                      WM_AttachWindowAt(pMsg->hWin, VIDEO_hWin, 5, 16);
+    373                      WM_SetSize(pMsg->hWin,230, 170);
+    374                      do_clear = 1;
+    375                    }
+    376                  }
+    377                }
+    378              }
+    379              break;
+    380              
+    381              
+    382            case WM_CREATE:
+    383              /* Create timer */
+    384              hTimerTime = WM_CreateTimer(pMsg->hWin, 0, 50, 0);        
+    385              break;
+    386              
+    387            case WM_TIMER:
+    388              WM_InvalidateWindow(pMsg->hWin);
+    389              WM_RestartTimer(pMsg->Data.v, 0);
+    390              
+    391              break; 
+    392              
+    393            case WM_DELETE:
+    394              WM_DeleteTimer(hTimerTime);
+    395              break;
+    396          
+    397              
+    398            case WM_PAINT:
+    399              
+    400              if(do_clear)
+    401              {
+    402                GUI_ClearRectEx(&r);
+    403                do_clear = 0;
+    404              } 
+    405              
+    406              if(VideoPlayer_State == VIDEO_PLAY)
+    407              {
+    408                if(_PlayMJPEG(&Video_File) < 0)
+    409                {
+    410                  VideoPlayer_State = VIDEO_PLAY;
+    411                  ImageOffset = 0; 
+    412                  time_start = GUI_GetTime();    
+    413                  f_close(&Video_File);
+    414                  goto_next_file();      
+    415                  hItem = WM_GetDialogItem(WM_GetParent(pMsg->hWin), ID_VIDEO_FILE);
+    416                  TEXT_SetText(hItem, (char *)FILEMGR_FileList.file[FILEMGR_FileList.idx].line);        
+    417                }
+    418                
+    419                hItem = WM_GetDialogItem(WM_GetParent(pMsg->hWin), ID_VIDEO_PROGRESS);
+    420                
+    421                if (progress_bar == 0)
+    422                {
+    423                  SLIDER_SetValue(hItem, (ImageOffset * 100 )/ Video_File.fsize);
+    424                }
+    425                
+    426                hItem = WM_GetDialogItem(WM_GetParent(pMsg->hWin), ID_VIDEO_DURATION);
+    427                
+    428                duration = (GUI_GetTime() - time_start )/1000;
+    429                if(duration < 0) duration = 0;
+    430                sprintf(temp,"%02d:%02d", duration/60, duration%60); 
+    431                TEXT_SetText(hItem, temp);  
+    432              }
+    433              else if(VideoPlayer_State == VIDEO_IDLE)
+    434              {
+    435                GUI_ClearRectEx(&r);
+    436              }
+    437              
+    438              break;
+    439              
+    440            default:
+    441              WM_DefaultProc(pMsg);
+    442            }
+    443            
+    444          }
+    445          
+    446          /**
+    447            * @brief  Callback routine of the dialog
+    448            * @param  pMsg: pointer to a data structure of type WM_MESSAGE
+    449            * @retval None
+    450            */
+    451          static void _cbDialog(WM_MESSAGE * pMsg) {
+    452            WM_HWIN hItem, hClient;
+    453            GUI_RECT r;
+    454            int Id, NCode, offset;
+    455            
+    456            switch (pMsg->MsgId) 
+    457            {
+    458            case WM_INIT_DIALOG:
+    459              
+    460              hItem = WM_GetDialogItem(pMsg->hWin, ID_VIDEO_DURATION);   
+    461              TEXT_SetFont(hItem, GUI_FONT_13HB_ASCII);
+    462              TEXT_SetTextColor(hItem, 0x00804000);   
+    463              
+    464              hClient = WM_GetClientWindow(pMsg->hWin);
+    465              WM_GetClientRectEx(hClient, &r);
+    466              hVideoScreen = WM_CreateWindowAsChild(r.x0 + 2, r.y0 + 2, r.x1 - 2, r.y1 - 118, hClient, WM_CF_SHOW, _cbVideoWindow , 0);
+    467              hItem = WM_GetDialogItem(pMsg->hWin, PLAY_BUTTON_VIDEO);
+    468              
+    469              BUTTON_SetBitmapEx(hItem, 0, &bmButtonPlayPauseOn, 16, 6);
+    470              BUTTON_SetBitmapEx(hItem, 1, &bmButtonPlayPauseOff,16, 6);
+    471              
+    472              hItem = WM_GetDialogItem(pMsg->hWin, PREV_BUTTON_VIDEO);     
+    473              BUTTON_SetBitmapEx(hItem, 0, &bmButtonPreviousOn, 16, 6);
+    474              BUTTON_SetBitmapEx(hItem, 1, &bmButtonPreviousOff,16, 6);
+    475              
+    476              hItem = WM_GetDialogItem(pMsg->hWin, NEXT_BUTTON_VIDEO);     
+    477              BUTTON_SetBitmapEx(hItem, 0, &bmButtonNextOn, 16, 6);
+    478              BUTTON_SetBitmapEx(hItem, 1, &bmButtonNextOff,16, 6); 
+    479              
+    480              hItem = WM_GetDialogItem(pMsg->hWin, STOP_BUTTON_VIDEO);     
+    481              BUTTON_SetBitmapEx(hItem, 0, &bmButtonStopOn, 16, 6);
+    482              BUTTON_SetBitmapEx(hItem, 1, &bmButtonStopOff,16, 6); 
+    483              
+    484              hItem = WM_GetDialogItem(pMsg->hWin, ID_VIDEO_PROGRESS);       
+    485              SLIDER_SetRange(hItem, 0, 100);
+    486              SLIDER_SetWidth( hItem, 5);
+    487              VideoPlayer_State = VIDEO_IDLE;
+    488              
+    489              _GetMJPEGFileList("0:");
+    490              
+    491              hItem = WM_GetDialogItem(pMsg->hWin, ID_VIDEO_FILE);   
+    492              if (FILEMGR_FileList.ptr == 0)
+    493              {
+    494                TEXT_SetFont(hItem, GUI_FONT_20B_ASCII);
+    495                TEXT_SetTextColor(hItem, GUI_BROWN);
+    496              }
+    497              else
+    498              {
+    499                TEXT_SetFont(hItem, GUI_FONT_13B_ASCII);
+    500                TEXT_SetTextColor(hItem, 0x00804000);
+    501              }
+    502              
+    503              do_clear = 1;
+    504              
+    505              if (FILEMGR_FileList.ptr > 0)
+    506              {
+    507                if(f_open(&Video_File, (char *)FILEMGR_FileList.file[FILEMGR_FileList.idx].line, FA_OPEN_EXISTING | FA_READ) == FR_OK)
+    508                {
+    509                  hItem = WM_GetDialogItem(pMsg->hWin, ID_VIDEO_FILE);
+    510                  TEXT_SetText(hItem, (char *)FILEMGR_FileList.file[FILEMGR_FileList.idx].line);            
+    511                  VideoPlayer_State = VIDEO_PLAY;
+    512                  ImageOffset = 0;
+    513                  time_start = GUI_GetTime();
+    514                  hItem = WM_GetDialogItem(pMsg->hWin, PLAY_BUTTON_VIDEO);
+    515                  BUTTON_SetBitmapEx(hItem, 0, &bmButtonPlay, 16, 6);
+    516                  BUTTON_SetBitmapEx(hItem, 1, &bmButtonPlayPauseOff,16, 6);
+    517                }
+    518                else
+    519                {
+    520                  /* error */
+    521                }
+    522              }
+    523              break;
+    524              
+    525            case WM_PAINT: 
+    526              break;
+    527             
+    528            case  WM_NOTIFY_CHILD_HAS_FOCUS:
+    529              do_clear = 1;
+    530              break;
+    531              
+    532            case WM_NOTIFY_PARENT:
+    533              Id    = WM_GetId(pMsg->hWinSrc);
+    534              NCode = pMsg->Data.v;
+    535              
+    536              if(NCode == WM_NOTIFICATION_CHILD_DELETED)
+    537              {
+    538                f_close(&Video_File);
+    539                WM_NotifyParent(WM_GetParent(pMsg->hWin), 0x500);      
+    540                break; 
+    541              }   
+    542              
+    543              switch(Id) {
+    544                
+    545              case PLAY_BUTTON_VIDEO: // Notifications sent by 'Button'
+    546                switch(NCode) {
+    547                case WM_NOTIFICATION_RELEASED:
+    548                  
+    549                  if(VideoPlayer_State == VIDEO_IDLE)
+    550                  {
+    551                    if (FILEMGR_FileList.ptr > 0)
+    552                    {
+    553                      if(f_open(&Video_File, (char *)FILEMGR_FileList.file[FILEMGR_FileList.idx].line, FA_OPEN_EXISTING | FA_READ) == FR_OK)
+    554                      {
+    555                        hItem = WM_GetDialogItem(pMsg->hWin, ID_VIDEO_FILE);
+    556                        TEXT_SetText(hItem, (char *)FILEMGR_FileList.file[FILEMGR_FileList.idx].line);            
+    557                        VideoPlayer_State = VIDEO_PLAY;
+    558                        ImageOffset = 0;
+    559                        time_start = GUI_GetTime();
+    560                        hItem = WM_GetDialogItem(pMsg->hWin, PLAY_BUTTON_VIDEO);
+    561                        BUTTON_SetBitmapEx(hItem, 0, &bmButtonPlay, 16, 6);
+    562                        BUTTON_SetBitmapEx(hItem, 1, &bmButtonPlayPauseOff,16, 6);
+    563                      }
+    564                      else
+    565                      {
+    566                        /* error */
+    567                      }
+    568                    }
+    569                    else
+    570                    {
+    571                      /* No file */
+    572                    }
+    573                  }
+    574                  else if(VideoPlayer_State == VIDEO_PLAY)
+    575                  {
+    576                    time_pause = GUI_GetTime();
+    577                    hItem = WM_GetDialogItem(pMsg->hWin, PLAY_BUTTON_VIDEO);
+    578                    BUTTON_SetBitmapEx(hItem, 0, &bmButtonPause, 16, 6);
+    579                    BUTTON_SetBitmapEx(hItem, 1, &bmButtonPlayPauseOff,16, 6);
+    580                    VideoPlayer_State = VIDEO_PAUSE;
+    581                  }
+    582                  else if(VideoPlayer_State == VIDEO_PAUSE)
+    583                  {
+    584                    time_start = GUI_GetTime()+ time_start - time_pause ;
+    585                    hItem = WM_GetDialogItem(pMsg->hWin, PLAY_BUTTON_VIDEO);
+    586                    BUTTON_SetBitmapEx(hItem, 0, &bmButtonPlay, 16, 6);
+    587                    BUTTON_SetBitmapEx(hItem, 1, &bmButtonPlayPauseOff,16, 6);
+    588                    VideoPlayer_State = VIDEO_PLAY;
+    589                  }        
+    590                  break;
+    591                }
+    592                break;
+    593              case PREV_BUTTON_VIDEO: /* Notifications sent by 'Button' */
+    594                switch(NCode) {
+    595                case WM_NOTIFICATION_RELEASED:
+    596                  if(VideoPlayer_State != VIDEO_IDLE)
+    597                  {
+    598                    ImageOffset = 0;  
+    599                    time_start = GUI_GetTime();
+    600                    VideoPlayer_State = VIDEO_PLAY;
+    601                    f_close(&Video_File);
+    602                    goto_previous_file();
+    603                    hItem = WM_GetDialogItem(pMsg->hWin, ID_VIDEO_FILE);
+    604                    TEXT_SetText(hItem, (char *)FILEMGR_FileList.file[FILEMGR_FileList.idx].line);   
+    605                    hItem = WM_GetDialogItem(pMsg->hWin, PLAY_BUTTON_VIDEO);
+    606                    BUTTON_SetBitmapEx(hItem, 0, &bmButtonPlay, 16, 6);
+    607                    BUTTON_SetBitmapEx(hItem, 1, &bmButtonPlayPauseOff,6, 6);
+    608                  }
+    609                  break;
+    610                }
+    611                break;
+    612                
+    613                
+    614              case ID_VIDEO_EXIT:
+    615                switch(NCode) {
+    616                case WM_NOTIFICATION_RELEASED:
+    617                  {
+    618                    GUI_EndDialog(pMsg->hWin, 0);
+    619                  }
+    620                  break;        
+    621                }
+    622                break;
+    623                
+    624              case ID_VIDEO_PROGRESS: /* Notifications sent by 'Progress Bar' */
+    625                switch(NCode) {
+    626                  
+    627                case WM_NOTIFICATION_CLICKED:
+    628                  {
+    629                    progress_bar = 1;
+    630                    hItem = WM_GetDialogItem(pMsg->hWin, ID_VIDEO_PROGRESS);
+    631                    ImageOffset = (Video_File.fsize * SLIDER_GetValue(hItem))/100;
+    632                    offset =ImageOffset - Video_File.fptr;
+    633                    time_start -= (offset / frame_speed);
+    634                    
+    635                    
+    636                  }
+    637                  break;
+    638                  
+    639                case WM_NOTIFICATION_RELEASED:
+    640                  progress_bar = 0;
+    641                  break;
+    642                }
+    643                break;
+    644                
+    645                
+    646              case NEXT_BUTTON_VIDEO: /* Notifications sent by 'Button' */
+    647                switch(NCode) {
+    648                case WM_NOTIFICATION_RELEASED:
+    649                  
+    650                  if(VideoPlayer_State != VIDEO_IDLE)
+    651                  {       
+    652                    ImageOffset = 0; 
+    653                    VideoPlayer_State = VIDEO_PLAY;          
+    654                    time_start = GUI_GetTime();
+    655                    f_close(&Video_File);
+    656                    goto_next_file();      
+    657                    hItem = WM_GetDialogItem(pMsg->hWin, ID_VIDEO_FILE);
+    658                    TEXT_SetText(hItem, (char *)FILEMGR_FileList.file[FILEMGR_FileList.idx].line);
+    659                    hItem = WM_GetDialogItem(pMsg->hWin, PLAY_BUTTON_VIDEO);
+    660                    BUTTON_SetBitmapEx(hItem, 0, &bmButtonPlay, 16, 6);
+    661                    BUTTON_SetBitmapEx(hItem, 1, &bmButtonPlayPauseOff,16, 6);   
+    662                  }     
+    663                  break;
+    664                }
+    665                break;
+    666              case STOP_BUTTON_VIDEO: /* Notifications sent by 'Button' */
+    667                switch(NCode) {
+    668                case WM_NOTIFICATION_RELEASED:
+    669                  VideoPlayer_State = VIDEO_IDLE;
+    670                  f_close(&Video_File);
+    671                  hItem = WM_GetDialogItem(pMsg->hWin, PLAY_BUTTON_VIDEO);
+    672                  BUTTON_SetBitmapEx(hItem, 0, &bmButtonPlayPauseOn, 16, 6);
+    673                  BUTTON_SetBitmapEx(hItem, 1, &bmButtonPlayPauseOff,16, 6);     
+    674                  break;
+    675                }
+    676                break;
+    677              }
+    678              break;
+    679            default:
+    680              WM_DefaultProc(pMsg);
+    681              break;
+    682            }
+    683          }
+    684          
+    685          /**
+    686            * @brief  DEMO_Video
+    687            * @param  hWin: Window handle
+    688            * @retval None
+    689            */
+    690          void DEMO_Video(WM_HWIN hWin)
+    691          {
+    692            VIDEO_Enlarge = 0;
+    693            bkparent = hWin;
+    694            VIDEO_hWin = GUI_CreateDialogBox(_aDialogCreate, GUI_COUNTOF(_aDialogCreate), &_cbDialog, hWin, 0, 0);
+    695          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   DEMO_Video
+        16   -> GUI_CreateDialogBox
+      24   _GetData
+        24   -> f_lseek
+        24   -> f_read
+      40   _PlayMJPEG
+        40   -> GUI_GetTime
+        40   -> GUI_JPEG_DrawEx
+        40   -> GUI_JPEG_DrawScaledEx
+        40   -> GUI_JPEG_GetInfoEx
+        40   -> f_lseek
+        40   -> f_read
+     112   _cbDialog
+       112   -> BUTTON_SetBitmapEx
+       112   -> GUI_EndDialog
+       112   -> GUI_GetTime
+       112   -> SLIDER_GetValue
+       112   -> SLIDER_SetRange
+       112   -> SLIDER_SetWidth
+       112   -> TEXT_SetFont
+       112   -> TEXT_SetText
+       112   -> TEXT_SetTextColor
+       112   -> WM_CreateWindowAsChild
+        36   -> WM_DefaultProc
+       112   -> WM_GetClientRectEx
+       112   -> WM_GetClientWindow
+       112   -> WM_GetDialogItem
+       112   -> WM_GetId
+       112   -> WM_GetParent
+       112   -> WM_NotifyParent
+       112   -> check_filename_ext
+       112   -> f_close
+       112   -> f_open
+       112   -> f_opendir
+       112   -> f_readdir
+       112   -> goto_next_file
+       112   -> strncpy
+      48   _cbVideoWindow
+        48   -> GUI_ClearRectEx
+        48   -> GUI_GetTime
+        48   -> GUI_SetOrientation
+        48   -> LCD_GetXSize
+        48   -> LCD_GetYSize
+        48   -> SLIDER_SetValue
+        48   -> TEXT_SetText
+        48   -> WM_AttachWindow
+        48   -> WM_AttachWindowAt
+        48   -> WM_CreateTimer
+        16   -> WM_DefaultProc
+        48   -> WM_DeleteTimer
+        48   -> WM_GetDesktopWindowEx
+        48   -> WM_GetDialogItem
+        48   -> WM_GetInsideRect
+        48   -> WM_GetParent
+        48   -> WM_InvalidateWindow
+        48   -> WM_RestartTimer
+        48   -> WM_SetSize
+        48   -> _PlayMJPEG
+        48   -> f_close
+        48   -> goto_next_file
+        48   -> sprintf
+      16   goto_next_file
+        16   -> f_close
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable16
+       4  ??DataTable16_1
+       4  ??DataTable16_10
+       4  ??DataTable16_11
+       4  ??DataTable16_12
+       4  ??DataTable16_13
+       4  ??DataTable16_14
+       4  ??DataTable16_15
+       4  ??DataTable16_16
+       4  ??DataTable16_17
+       4  ??DataTable16_18
+       4  ??DataTable16_19
+       4  ??DataTable16_2
+       4  ??DataTable16_20
+       4  ??DataTable16_3
+       4  ??DataTable16_4
+       4  ??DataTable16_5
+       4  ??DataTable16_6
+       4  ??DataTable16_7
+       4  ??DataTable16_8
+       4  ??DataTable16_9
+      16  ?_0
+      16  ?_1
+       8  ?_2
+       1  ?_3
+       8  ?_4
+       8  ?_5
+       8  ?_6
+       4  ?_7
+      12  ?_8
+       4  ?_9
+      42  DEMO_Video
+    1140  Video_File
+          VideoPlayer_State
+          VIDEO_Enlarge
+          VIDEO_hWin
+          hVideoScreen
+          bkparent
+          ImageOffset
+          t0
+          frame_average_period
+          frame_speed
+          s0
+          frame_average_size
+          progress_bar
+          duration
+          do_clear
+          time_start
+          time_pause
+          counter
+          hTimerTime
+          _acVideoBuffer
+      62  _GetData
+     318  _PlayMJPEG
+     252  _aDialogCreate
+    1494  _cbDialog
+     508  _cbVideoWindow
+       4  current_time
+       1  flag
+      68  goto_next_file
+       4  time_seek
+
+ 
+ 1 149 bytes in section .bss
+    57 bytes in section .rodata
+ 2 856 bytes in section .text
+ 
+ 2 856 bytes of CODE  memory
+    57 bytes of CONST memory
+ 1 149 bytes of DATA  memory
+
+Errors: none
+Warnings: none

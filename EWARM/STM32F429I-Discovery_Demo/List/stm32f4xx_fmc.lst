@@ -1,0 +1,1533 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.40.3.8902/W32 for ARM        24/Dec/2016  13:33:45
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_fmc.c
+#    Command line =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_fmc.c
+#        -D USE_STDPERIPH_DRIVER -D STM32F429_439xx -D USE_STM32F429I_DISCO -D
+#        USE_USB_OTG_HS -D USE_EMBEDDED_PHY -lcN
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\
+#        --diag_suppress Pe111,Pa082 -o
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\
+#        --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.2\arm\INC\c\DLib_Config_Full.h" -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Config\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Devices\STM32F4xx\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\User\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Demo\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Lib\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Test_Program\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\HID\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\Audio\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_OTG_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Common\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\STM32F429i-Discovery\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\fat_fs\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\Config\
+#        -Ohs --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.2\arm\CMSIS\Include\"
+#    List file    =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\stm32f4xx_fmc.lst
+#    Object file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\stm32f4xx_fmc.o
+#
+###############################################################################
+
+D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_fmc.c
+      1          /**
+      2            ******************************************************************************
+      3            * @file    stm32f4xx_fmc.c
+      4            * @author  MCD Application Team
+      5            * @version V1.3.0
+      6            * @date    08-November-2013
+      7            * @brief   This file provides firmware functions to manage the following 
+      8            *          functionalities of the FMC peripheral:           
+      9            *           + Interface with SRAM, PSRAM, NOR and OneNAND memories
+     10            *           + Interface with NAND memories
+     11            *           + Interface with 16-bit PC Card compatible memories 
+     12            *           + Interface with SDRAM memories    
+     13            *           + Interrupts and flags management   
+     14            *           
+     15            ******************************************************************************
+     16            * @attention
+     17            *
+     18            * <h2><center>&copy; COPYRIGHT 2013 STMicroelectronics</center></h2>
+     19            *
+     20            * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
+     21            * You may not use this file except in compliance with the License.
+     22            * You may obtain a copy of the License at:
+     23            *
+     24            *        http://www.st.com/software_license_agreement_liberty_v2
+     25            *
+     26            * Unless required by applicable law or agreed to in writing, software 
+     27            * distributed under the License is distributed on an "AS IS" BASIS, 
+     28            * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     29            * See the License for the specific language governing permissions and
+     30            * limitations under the License.
+     31            *
+     32            ******************************************************************************
+     33            */
+     34          
+     35          /* Includes ------------------------------------------------------------------*/
+     36          #include "stm32f4xx_fmc.h"
+     37          #include "stm32f4xx_rcc.h"
+     38          
+     39          /** @addtogroup STM32F4xx_StdPeriph_Driver
+     40            * @{
+     41            */
+     42          
+     43          /** @defgroup FMC 
+     44            * @brief FMC driver modules
+     45            * @{
+     46            */ 
+     47          
+     48          /* Private typedef -----------------------------------------------------------*/
+     49          /* Private define ------------------------------------------------------------*/
+     50          
+     51          /* --------------------- FMC registers bit mask ---------------------------- */
+     52          /* FMC BCRx Mask */
+     53          #define BCR_MBKEN_SET              ((uint32_t)0x00000001)
+     54          #define BCR_MBKEN_RESET            ((uint32_t)0x000FFFFE)
+     55          #define BCR_FACCEN_SET             ((uint32_t)0x00000040)
+     56          
+     57          /* FMC PCRx Mask */
+     58          #define PCR_PBKEN_SET              ((uint32_t)0x00000004)
+     59          #define PCR_PBKEN_RESET            ((uint32_t)0x000FFFFB)
+     60          #define PCR_ECCEN_SET              ((uint32_t)0x00000040)
+     61          #define PCR_ECCEN_RESET            ((uint32_t)0x000FFFBF)
+     62          #define PCR_MEMORYTYPE_NAND        ((uint32_t)0x00000008)
+     63          
+     64          /* FMC SDCRx write protection Mask*/
+     65          #define SDCR_WriteProtection_RESET ((uint32_t)0x00007DFF) 
+     66          
+     67          /* FMC SDCMR Mask*/
+     68          #define SDCMR_CTB1_RESET           ((uint32_t)0x003FFFEF)
+     69          #define SDCMR_CTB2_RESET           ((uint32_t)0x003FFFF7)
+     70          #define SDCMR_CTB1_2_RESET         ((uint32_t)0x003FFFE7)
+     71          
+     72          /* Private macro -------------------------------------------------------------*/
+     73          /* Private variables ---------------------------------------------------------*/
+     74          /* Private function prototypes -----------------------------------------------*/
+     75          /* Private functions ---------------------------------------------------------*/
+     76          
+     77          /** @defgroup FMC_Private_Functions
+     78            * @{
+     79            */
+     80          
+     81          /** @defgroup FMC_Group1 NOR/SRAM Controller functions
+     82            * @brief    NOR/SRAM Controller functions 
+     83            *
+     84          @verbatim   
+     85           ===============================================================================
+     86                              ##### NOR and SRAM Controller functions #####
+     87           ===============================================================================  
+     88          
+     89           [..] The following sequence should be followed to configure the FMC to interface
+     90                with SRAM, PSRAM, NOR or OneNAND memory connected to the NOR/SRAM Bank:
+     91           
+     92             (#) Enable the clock for the FMC and associated GPIOs using the following functions:
+     93                    RCC_AHB3PeriphClockCmd(RCC_AHB3Periph_FMC, ENABLE);
+     94                    RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOx, ENABLE);
+     95          
+     96             (#) FMC pins configuration 
+     97                 (++) Connect the involved FMC pins to AF12 using the following function 
+     98                      GPIO_PinAFConfig(GPIOx, GPIO_PinSourcex, GPIO_AF_FMC); 
+     99                 (++) Configure these FMC pins in alternate function mode by calling the function
+    100                      GPIO_Init();    
+    101                 
+    102             (#) Declare a FMC_NORSRAMInitTypeDef structure, for example:
+    103                    FMC_NORSRAMInitTypeDef  FMC_NORSRAMInitStructure;
+    104                and fill the FMC_NORSRAMInitStructure variable with the allowed values of
+    105                the structure member.
+    106                
+    107             (#) Initialize the NOR/SRAM Controller by calling the function
+    108                    FMC_NORSRAMInit(&FMC_NORSRAMInitStructure); 
+    109          
+    110             (#) Then enable the NOR/SRAM Bank, for example:
+    111                    FMC_NORSRAMCmd(FMC_Bank1_NORSRAM2, ENABLE);  
+    112          
+    113             (#) At this stage you can read/write from/to the memory connected to the NOR/SRAM Bank. 
+    114             
+    115          @endverbatim
+    116            * @{
+    117            */
+    118          
+    119          /**
+    120            * @brief  De-initializes the FMC NOR/SRAM Banks registers to their default 
+    121            *   reset values.
+    122            * @param  FMC_Bank: specifies the FMC Bank to be used
+    123            *          This parameter can be one of the following values:
+    124            *            @arg FMC_Bank1_NORSRAM1: FMC Bank1 NOR/SRAM1  
+    125            *            @arg FMC_Bank1_NORSRAM2: FMC Bank1 NOR/SRAM2 
+    126            *            @arg FMC_Bank1_NORSRAM3: FMC Bank1 NOR/SRAM3 
+    127            *            @arg FMC_Bank1_NORSRAM4: FMC Bank1 NOR/SRAM4 
+    128            * @retval None
+    129            */
+    130          void FMC_NORSRAMDeInit(uint32_t FMC_Bank)
+    131          {
+    132            /* Check the parameter */
+    133            assert_param(IS_FMC_NORSRAM_BANK(FMC_Bank));
+    134            
+    135            /* FMC_Bank1_NORSRAM1 */
+    136            if(FMC_Bank == FMC_Bank1_NORSRAM1)
+    137            {
+    138              FMC_Bank1->BTCR[FMC_Bank] = 0x000030DB;    
+    139            }
+    140            /* FMC_Bank1_NORSRAM2,  FMC_Bank1_NORSRAM3 or FMC_Bank1_NORSRAM4 */
+    141            else
+    142            {   
+    143              FMC_Bank1->BTCR[FMC_Bank] = 0x000030D2; 
+    144            }
+    145            FMC_Bank1->BTCR[FMC_Bank + 1] = 0x0FFFFFFF;
+    146            FMC_Bank1E->BWTR[FMC_Bank] = 0x0FFFFFFF;  
+    147          }
+    148          
+    149          /**
+    150            * @brief  Initializes the FMC NOR/SRAM Banks according to the specified
+    151            *         parameters in the FMC_NORSRAMInitStruct.
+    152            * @param  FMC_NORSRAMInitStruct : pointer to a FMC_NORSRAMInitTypeDef structure
+    153            *         that contains the configuration information for the FMC NOR/SRAM 
+    154            *         specified Banks.                       
+    155            * @retval None
+    156            */
+    157          void FMC_NORSRAMInit(FMC_NORSRAMInitTypeDef* FMC_NORSRAMInitStruct)
+    158          {
+    159            uint32_t tmpr = 0;
+    160            
+    161            /* Check the parameters */
+    162            assert_param(IS_FMC_NORSRAM_BANK(FMC_NORSRAMInitStruct->FMC_Bank));
+    163            assert_param(IS_FMC_MUX(FMC_NORSRAMInitStruct->FMC_DataAddressMux));
+    164            assert_param(IS_FMC_MEMORY(FMC_NORSRAMInitStruct->FMC_MemoryType));
+    165            assert_param(IS_FMC_NORSRAM_MEMORY_WIDTH(FMC_NORSRAMInitStruct->FMC_MemoryDataWidth));
+    166            assert_param(IS_FMC_BURSTMODE(FMC_NORSRAMInitStruct->FMC_BurstAccessMode));
+    167            assert_param(IS_FMC_WAIT_POLARITY(FMC_NORSRAMInitStruct->FMC_WaitSignalPolarity));
+    168            assert_param(IS_FMC_WRAP_MODE(FMC_NORSRAMInitStruct->FMC_WrapMode));
+    169            assert_param(IS_FMC_WAIT_SIGNAL_ACTIVE(FMC_NORSRAMInitStruct->FMC_WaitSignalActive));
+    170            assert_param(IS_FMC_WRITE_OPERATION(FMC_NORSRAMInitStruct->FMC_WriteOperation));
+    171            assert_param(IS_FMC_WAITE_SIGNAL(FMC_NORSRAMInitStruct->FMC_WaitSignal));
+    172            assert_param(IS_FMC_EXTENDED_MODE(FMC_NORSRAMInitStruct->FMC_ExtendedMode));
+    173            assert_param(IS_FMC_ASYNWAIT(FMC_NORSRAMInitStruct->FMC_AsynchronousWait));
+    174            assert_param(IS_FMC_WRITE_BURST(FMC_NORSRAMInitStruct->FMC_WriteBurst));
+    175            assert_param(IS_FMC_CONTINOUS_CLOCK(FMC_NORSRAMInitStruct->FMC_ContinousClock));  
+    176            assert_param(IS_FMC_ADDRESS_SETUP_TIME(FMC_NORSRAMInitStruct->FMC_ReadWriteTimingStruct->FMC_AddressSetupTime));
+    177            assert_param(IS_FMC_ADDRESS_HOLD_TIME(FMC_NORSRAMInitStruct->FMC_ReadWriteTimingStruct->FMC_AddressHoldTime));
+    178            assert_param(IS_FMC_DATASETUP_TIME(FMC_NORSRAMInitStruct->FMC_ReadWriteTimingStruct->FMC_DataSetupTime));
+    179            assert_param(IS_FMC_TURNAROUND_TIME(FMC_NORSRAMInitStruct->FMC_ReadWriteTimingStruct->FMC_BusTurnAroundDuration));
+    180            assert_param(IS_FMC_CLK_DIV(FMC_NORSRAMInitStruct->FMC_ReadWriteTimingStruct->FMC_CLKDivision));
+    181            assert_param(IS_FMC_DATA_LATENCY(FMC_NORSRAMInitStruct->FMC_ReadWriteTimingStruct->FMC_DataLatency));
+    182            assert_param(IS_FMC_ACCESS_MODE(FMC_NORSRAMInitStruct->FMC_ReadWriteTimingStruct->FMC_AccessMode)); 
+    183            
+    184            /* NOR/SRAM Bank control register configuration */ 
+    185            FMC_Bank1->BTCR[FMC_NORSRAMInitStruct->FMC_Bank] =   
+    186                      (uint32_t)FMC_NORSRAMInitStruct->FMC_DataAddressMux |
+    187                      FMC_NORSRAMInitStruct->FMC_MemoryType |
+    188                      FMC_NORSRAMInitStruct->FMC_MemoryDataWidth |
+    189                      FMC_NORSRAMInitStruct->FMC_BurstAccessMode |
+    190                      FMC_NORSRAMInitStruct->FMC_WaitSignalPolarity |
+    191                      FMC_NORSRAMInitStruct->FMC_WrapMode |
+    192                      FMC_NORSRAMInitStruct->FMC_WaitSignalActive |
+    193                      FMC_NORSRAMInitStruct->FMC_WriteOperation |
+    194                      FMC_NORSRAMInitStruct->FMC_WaitSignal |
+    195                      FMC_NORSRAMInitStruct->FMC_ExtendedMode |
+    196                      FMC_NORSRAMInitStruct->FMC_AsynchronousWait |
+    197                      FMC_NORSRAMInitStruct->FMC_WriteBurst |
+    198                      FMC_NORSRAMInitStruct->FMC_ContinousClock;
+    199          
+    200                      
+    201            if(FMC_NORSRAMInitStruct->FMC_MemoryType == FMC_MemoryType_NOR)
+    202            {
+    203              FMC_Bank1->BTCR[FMC_NORSRAMInitStruct->FMC_Bank] |= (uint32_t)BCR_FACCEN_SET;
+    204            }
+    205          
+    206            /* Configure Continuous clock feature when bank2..4 is used */
+    207            if((FMC_NORSRAMInitStruct->FMC_ContinousClock == FMC_CClock_SyncAsync) && (FMC_NORSRAMInitStruct->FMC_Bank != FMC_Bank1_NORSRAM1))
+    208            {
+    209              tmpr = (uint32_t)((FMC_Bank1->BTCR[FMC_Bank1_NORSRAM1+1]) & ~(((uint32_t)0x0F) << 20));    
+    210              
+    211              FMC_Bank1->BTCR[FMC_Bank1_NORSRAM1]  |= FMC_NORSRAMInitStruct->FMC_ContinousClock;
+    212              FMC_Bank1->BTCR[FMC_Bank1_NORSRAM1]  |= FMC_BurstAccessMode_Enable;
+    213              FMC_Bank1->BTCR[FMC_Bank1_NORSRAM1+1] = (uint32_t)(tmpr | (((FMC_NORSRAMInitStruct->FMC_ReadWriteTimingStruct->FMC_CLKDivision)-1) << 20));
+    214            }
+    215            
+    216            /* NOR/SRAM Bank timing register configuration */
+    217            FMC_Bank1->BTCR[FMC_NORSRAMInitStruct->FMC_Bank+1] =   
+    218                      (uint32_t)FMC_NORSRAMInitStruct->FMC_ReadWriteTimingStruct->FMC_AddressSetupTime |
+    219                      (FMC_NORSRAMInitStruct->FMC_ReadWriteTimingStruct->FMC_AddressHoldTime << 4) |
+    220                      (FMC_NORSRAMInitStruct->FMC_ReadWriteTimingStruct->FMC_DataSetupTime << 8) |
+    221                      (FMC_NORSRAMInitStruct->FMC_ReadWriteTimingStruct->FMC_BusTurnAroundDuration << 16) |
+    222                      ((FMC_NORSRAMInitStruct->FMC_ReadWriteTimingStruct->FMC_CLKDivision) << 20) |
+    223                      ((FMC_NORSRAMInitStruct->FMC_ReadWriteTimingStruct->FMC_DataLatency) << 24) |
+    224                       FMC_NORSRAMInitStruct->FMC_ReadWriteTimingStruct->FMC_AccessMode;
+    225               
+    226            /* NOR/SRAM Bank timing register for write configuration, if extended mode is used */
+    227            if(FMC_NORSRAMInitStruct->FMC_ExtendedMode == FMC_ExtendedMode_Enable)
+    228            {
+    229              assert_param(IS_FMC_ADDRESS_SETUP_TIME(FMC_NORSRAMInitStruct->FMC_WriteTimingStruct->FMC_AddressSetupTime));
+    230              assert_param(IS_FMC_ADDRESS_HOLD_TIME(FMC_NORSRAMInitStruct->FMC_WriteTimingStruct->FMC_AddressHoldTime));
+    231              assert_param(IS_FMC_DATASETUP_TIME(FMC_NORSRAMInitStruct->FMC_WriteTimingStruct->FMC_DataSetupTime));
+    232              assert_param(IS_FMC_CLK_DIV(FMC_NORSRAMInitStruct->FMC_WriteTimingStruct->FMC_CLKDivision));
+    233              assert_param(IS_FMC_DATA_LATENCY(FMC_NORSRAMInitStruct->FMC_WriteTimingStruct->FMC_DataLatency));
+    234              assert_param(IS_FMC_ACCESS_MODE(FMC_NORSRAMInitStruct->FMC_WriteTimingStruct->FMC_AccessMode));
+    235              
+    236              FMC_Bank1E->BWTR[FMC_NORSRAMInitStruct->FMC_Bank] =   
+    237                         (uint32_t)FMC_NORSRAMInitStruct->FMC_WriteTimingStruct->FMC_AddressSetupTime |
+    238                         (FMC_NORSRAMInitStruct->FMC_WriteTimingStruct->FMC_AddressHoldTime << 4 )|
+    239                         (FMC_NORSRAMInitStruct->FMC_WriteTimingStruct->FMC_DataSetupTime << 8) |
+    240                         ((FMC_NORSRAMInitStruct->FMC_WriteTimingStruct->FMC_CLKDivision) << 20) |
+    241                         ((FMC_NORSRAMInitStruct->FMC_WriteTimingStruct->FMC_DataLatency) << 24) |
+    242                         FMC_NORSRAMInitStruct->FMC_WriteTimingStruct->FMC_AccessMode;
+    243            }
+    244            else
+    245            {
+    246              FMC_Bank1E->BWTR[FMC_NORSRAMInitStruct->FMC_Bank] = 0x0FFFFFFF;
+    247            }
+    248            
+    249          }
+    250          
+    251          /**
+    252            * @brief  Fills each FMC_NORSRAMInitStruct member with its default value.
+    253            * @param  FMC_NORSRAMInitStruct: pointer to a FMC_NORSRAMInitTypeDef structure 
+    254            *         which will be initialized.
+    255            * @retval None
+    256            */
+    257          void FMC_NORSRAMStructInit(FMC_NORSRAMInitTypeDef* FMC_NORSRAMInitStruct)
+    258          {  
+    259            /* Reset NOR/SRAM Init structure parameters values */
+    260            FMC_NORSRAMInitStruct->FMC_Bank = FMC_Bank1_NORSRAM1;
+    261            FMC_NORSRAMInitStruct->FMC_DataAddressMux = FMC_DataAddressMux_Enable;
+    262            FMC_NORSRAMInitStruct->FMC_MemoryType = FMC_MemoryType_SRAM;
+    263            FMC_NORSRAMInitStruct->FMC_MemoryDataWidth = FMC_NORSRAM_MemoryDataWidth_16b;
+    264            FMC_NORSRAMInitStruct->FMC_BurstAccessMode = FMC_BurstAccessMode_Disable;
+    265            FMC_NORSRAMInitStruct->FMC_AsynchronousWait = FMC_AsynchronousWait_Disable;
+    266            FMC_NORSRAMInitStruct->FMC_WaitSignalPolarity = FMC_WaitSignalPolarity_Low;
+    267            FMC_NORSRAMInitStruct->FMC_WrapMode = FMC_WrapMode_Disable;
+    268            FMC_NORSRAMInitStruct->FMC_WaitSignalActive = FMC_WaitSignalActive_BeforeWaitState;
+    269            FMC_NORSRAMInitStruct->FMC_WriteOperation = FMC_WriteOperation_Enable;
+    270            FMC_NORSRAMInitStruct->FMC_WaitSignal = FMC_WaitSignal_Enable;
+    271            FMC_NORSRAMInitStruct->FMC_ExtendedMode = FMC_ExtendedMode_Disable;
+    272            FMC_NORSRAMInitStruct->FMC_WriteBurst = FMC_WriteBurst_Disable;
+    273            FMC_NORSRAMInitStruct->FMC_ContinousClock = FMC_CClock_SyncOnly;
+    274            
+    275            FMC_NORSRAMInitStruct->FMC_ReadWriteTimingStruct->FMC_AddressSetupTime = 15;
+    276            FMC_NORSRAMInitStruct->FMC_ReadWriteTimingStruct->FMC_AddressHoldTime = 15;
+    277            FMC_NORSRAMInitStruct->FMC_ReadWriteTimingStruct->FMC_DataSetupTime = 255;
+    278            FMC_NORSRAMInitStruct->FMC_ReadWriteTimingStruct->FMC_BusTurnAroundDuration = 15;
+    279            FMC_NORSRAMInitStruct->FMC_ReadWriteTimingStruct->FMC_CLKDivision = 15;
+    280            FMC_NORSRAMInitStruct->FMC_ReadWriteTimingStruct->FMC_DataLatency = 15;
+    281            FMC_NORSRAMInitStruct->FMC_ReadWriteTimingStruct->FMC_AccessMode = FMC_AccessMode_A; 
+    282            FMC_NORSRAMInitStruct->FMC_WriteTimingStruct->FMC_AddressSetupTime = 15;
+    283            FMC_NORSRAMInitStruct->FMC_WriteTimingStruct->FMC_AddressHoldTime = 15;
+    284            FMC_NORSRAMInitStruct->FMC_WriteTimingStruct->FMC_DataSetupTime = 255;
+    285            FMC_NORSRAMInitStruct->FMC_WriteTimingStruct->FMC_BusTurnAroundDuration = 15;
+    286            FMC_NORSRAMInitStruct->FMC_WriteTimingStruct->FMC_CLKDivision = 15;
+    287            FMC_NORSRAMInitStruct->FMC_WriteTimingStruct->FMC_DataLatency = 15;
+    288            FMC_NORSRAMInitStruct->FMC_WriteTimingStruct->FMC_AccessMode = FMC_AccessMode_A;
+    289          }
+    290          
+    291          /**
+    292            * @brief  Enables or disables the specified NOR/SRAM Memory Bank.
+    293            * @param  FMC_Bank: specifies the FMC Bank to be used
+    294            *          This parameter can be one of the following values:
+    295            *            @arg FMC_Bank1_NORSRAM1: FMC Bank1 NOR/SRAM1  
+    296            *            @arg FMC_Bank1_NORSRAM2: FMC Bank1 NOR/SRAM2 
+    297            *            @arg FMC_Bank1_NORSRAM3: FMC Bank1 NOR/SRAM3 
+    298            *            @arg FMC_Bank1_NORSRAM4: FMC Bank1 NOR/SRAM4 
+    299            * @param  NewState: new state of the FMC_Bank. This parameter can be: ENABLE or DISABLE.
+    300            * @retval None
+    301            */
+    302          void FMC_NORSRAMCmd(uint32_t FMC_Bank, FunctionalState NewState)
+    303          {
+    304            assert_param(IS_FMC_NORSRAM_BANK(FMC_Bank));
+    305            assert_param(IS_FUNCTIONAL_STATE(NewState));
+    306            
+    307            if (NewState != DISABLE)
+    308            {
+    309              /* Enable the selected NOR/SRAM Bank by setting the PBKEN bit in the BCRx register */
+    310              FMC_Bank1->BTCR[FMC_Bank] |= BCR_MBKEN_SET;
+    311            }
+    312            else
+    313            {
+    314              /* Disable the selected NOR/SRAM Bank by clearing the PBKEN bit in the BCRx register */
+    315              FMC_Bank1->BTCR[FMC_Bank] &= BCR_MBKEN_RESET;
+    316            }
+    317          }
+    318          /**
+    319            * @}
+    320            */
+    321          
+    322          /** @defgroup FMC_Group2 NAND Controller functions
+    323            * @brief    NAND Controller functions 
+    324            *
+    325          @verbatim   
+    326           ===============================================================================
+    327                              ##### NAND Controller functions #####
+    328           ===============================================================================  
+    329          
+    330           [..]  The following sequence should be followed to configure the FMC to interface 
+    331                 with 8-bit or 16-bit NAND memory connected to the NAND Bank:
+    332           
+    333            (#) Enable the clock for the FMC and associated GPIOs using the following functions:
+    334                (++)  RCC_AHB3PeriphClockCmd(RCC_AHB3Periph_FMC, ENABLE);
+    335                (++)  RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOx, ENABLE);
+    336          
+    337            (#) FMC pins configuration 
+    338                (++) Connect the involved FMC pins to AF12 using the following function 
+    339                     GPIO_PinAFConfig(GPIOx, GPIO_PinSourcex, GPIO_AF_FMC); 
+    340                (++) Configure these FMC pins in alternate function mode by calling the function
+    341                     GPIO_Init();    
+    342                 
+    343            (#) Declare a FMC_NANDInitTypeDef structure, for example:
+    344                FMC_NANDInitTypeDef  FMC_NANDInitStructure;
+    345                and fill the FMC_NANDInitStructure variable with the allowed values of
+    346                the structure member.
+    347                
+    348            (#) Initialize the NAND Controller by calling the function
+    349                FMC_NANDInit(&FMC_NANDInitStructure); 
+    350          
+    351            (#) Then enable the NAND Bank, for example:
+    352                FMC_NANDCmd(FMC_Bank3_NAND, ENABLE);  
+    353          
+    354            (#) At this stage you can read/write from/to the memory connected to the NAND Bank. 
+    355             
+    356           [..]
+    357            (@) To enable the Error Correction Code (ECC), you have to use the function
+    358                FMC_NANDECCCmd(FMC_Bank3_NAND, ENABLE);  
+    359           [..]
+    360            (@) and to get the current ECC value you have to use the function
+    361                ECCval = FMC_GetECC(FMC_Bank3_NAND); 
+    362          
+    363          @endverbatim
+    364            * @{
+    365            */
+    366            
+    367          /**
+    368            * @brief  De-initializes the FMC NAND Banks registers to their default reset values.
+    369            * @param  FMC_Bank: specifies the FMC Bank to be used
+    370            *          This parameter can be one of the following values:
+    371            *            @arg FMC_Bank2_NAND: FMC Bank2 NAND 
+    372            *            @arg FMC_Bank3_NAND: FMC Bank3 NAND 
+    373            * @retval None
+    374            */
+    375          void FMC_NANDDeInit(uint32_t FMC_Bank)
+    376          {
+    377            /* Check the parameter */
+    378            assert_param(IS_FMC_NAND_BANK(FMC_Bank));
+    379            
+    380            if(FMC_Bank == FMC_Bank2_NAND)
+    381            {
+    382              /* Set the FMC_Bank2 registers to their reset values */
+    383              FMC_Bank2->PCR2 = 0x00000018;
+    384              FMC_Bank2->SR2 = 0x00000040;
+    385              FMC_Bank2->PMEM2 = 0xFCFCFCFC;
+    386              FMC_Bank2->PATT2 = 0xFCFCFCFC;  
+    387            }
+    388            /* FMC_Bank3_NAND */  
+    389            else
+    390            {
+    391              /* Set the FMC_Bank3 registers to their reset values */
+    392              FMC_Bank3->PCR3 = 0x00000018;
+    393              FMC_Bank3->SR3 = 0x00000040;
+    394              FMC_Bank3->PMEM3 = 0xFCFCFCFC;
+    395              FMC_Bank3->PATT3 = 0xFCFCFCFC; 
+    396            }  
+    397          }
+    398          
+    399          /**
+    400            * @brief  Initializes the FMC NAND Banks according to the specified parameters
+    401            *         in the FMC_NANDInitStruct.
+    402            * @param  FMC_NANDInitStruct : pointer to a FMC_NANDInitTypeDef structure that
+    403            *         contains the configuration information for the FMC NAND specified Banks.                       
+    404            * @retval None
+    405            */
+    406          void FMC_NANDInit(FMC_NANDInitTypeDef* FMC_NANDInitStruct)
+    407          {
+    408            uint32_t tmppcr = 0x00000000, tmppmem = 0x00000000, tmppatt = 0x00000000; 
+    409              
+    410            /* Check the parameters */
+    411            assert_param(IS_FMC_NAND_BANK(FMC_NANDInitStruct->FMC_Bank));
+    412            assert_param(IS_FMC_WAIT_FEATURE(FMC_NANDInitStruct->FMC_Waitfeature));
+    413            assert_param(IS_FMC_NAND_MEMORY_WIDTH(FMC_NANDInitStruct->FMC_MemoryDataWidth));
+    414            assert_param(IS_FMC_ECC_STATE(FMC_NANDInitStruct->FMC_ECC));
+    415            assert_param(IS_FMC_ECCPAGE_SIZE(FMC_NANDInitStruct->FMC_ECCPageSize));
+    416            assert_param(IS_FMC_TCLR_TIME(FMC_NANDInitStruct->FMC_TCLRSetupTime));
+    417            assert_param(IS_FMC_TAR_TIME(FMC_NANDInitStruct->FMC_TARSetupTime));
+    418            assert_param(IS_FMC_SETUP_TIME(FMC_NANDInitStruct->FMC_CommonSpaceTimingStruct->FMC_SetupTime));
+    419            assert_param(IS_FMC_WAIT_TIME(FMC_NANDInitStruct->FMC_CommonSpaceTimingStruct->FMC_WaitSetupTime));
+    420            assert_param(IS_FMC_HOLD_TIME(FMC_NANDInitStruct->FMC_CommonSpaceTimingStruct->FMC_HoldSetupTime));
+    421            assert_param(IS_FMC_HIZ_TIME(FMC_NANDInitStruct->FMC_CommonSpaceTimingStruct->FMC_HiZSetupTime));
+    422            assert_param(IS_FMC_SETUP_TIME(FMC_NANDInitStruct->FMC_AttributeSpaceTimingStruct->FMC_SetupTime));
+    423            assert_param(IS_FMC_WAIT_TIME(FMC_NANDInitStruct->FMC_AttributeSpaceTimingStruct->FMC_WaitSetupTime));
+    424            assert_param(IS_FMC_HOLD_TIME(FMC_NANDInitStruct->FMC_AttributeSpaceTimingStruct->FMC_HoldSetupTime));
+    425            assert_param(IS_FMC_HIZ_TIME(FMC_NANDInitStruct->FMC_AttributeSpaceTimingStruct->FMC_HiZSetupTime));
+    426            
+    427            /* Set the tmppcr value according to FMC_NANDInitStruct parameters */
+    428            tmppcr = (uint32_t)FMC_NANDInitStruct->FMC_Waitfeature |
+    429                      PCR_MEMORYTYPE_NAND |
+    430                      FMC_NANDInitStruct->FMC_MemoryDataWidth |
+    431                      FMC_NANDInitStruct->FMC_ECC |
+    432                      FMC_NANDInitStruct->FMC_ECCPageSize |
+    433                      (FMC_NANDInitStruct->FMC_TCLRSetupTime << 9 )|
+    434                      (FMC_NANDInitStruct->FMC_TARSetupTime << 13);
+    435                      
+    436            /* Set tmppmem value according to FMC_CommonSpaceTimingStructure parameters */
+    437            tmppmem = (uint32_t)FMC_NANDInitStruct->FMC_CommonSpaceTimingStruct->FMC_SetupTime |
+    438                      (FMC_NANDInitStruct->FMC_CommonSpaceTimingStruct->FMC_WaitSetupTime << 8) |
+    439                      (FMC_NANDInitStruct->FMC_CommonSpaceTimingStruct->FMC_HoldSetupTime << 16)|
+    440                      (FMC_NANDInitStruct->FMC_CommonSpaceTimingStruct->FMC_HiZSetupTime << 24); 
+    441                      
+    442            /* Set tmppatt value according to FMC_AttributeSpaceTimingStructure parameters */
+    443            tmppatt = (uint32_t)FMC_NANDInitStruct->FMC_AttributeSpaceTimingStruct->FMC_SetupTime |
+    444                      (FMC_NANDInitStruct->FMC_AttributeSpaceTimingStruct->FMC_WaitSetupTime << 8) |
+    445                      (FMC_NANDInitStruct->FMC_AttributeSpaceTimingStruct->FMC_HoldSetupTime << 16)|
+    446                      (FMC_NANDInitStruct->FMC_AttributeSpaceTimingStruct->FMC_HiZSetupTime << 24);
+    447            
+    448            if(FMC_NANDInitStruct->FMC_Bank == FMC_Bank2_NAND)
+    449            {
+    450              /* FMC_Bank2_NAND registers configuration */
+    451              FMC_Bank2->PCR2 = tmppcr;
+    452              FMC_Bank2->PMEM2 = tmppmem;
+    453              FMC_Bank2->PATT2 = tmppatt;
+    454            }
+    455            else
+    456            {
+    457              /* FMC_Bank3_NAND registers configuration */
+    458              FMC_Bank3->PCR3 = tmppcr;
+    459              FMC_Bank3->PMEM3 = tmppmem;
+    460              FMC_Bank3->PATT3 = tmppatt;
+    461            }
+    462          }
+    463          
+    464          
+    465          /**
+    466            * @brief  Fills each FMC_NANDInitStruct member with its default value.
+    467            * @param  FMC_NANDInitStruct: pointer to a FMC_NANDInitTypeDef structure which
+    468            *         will be initialized.
+    469            * @retval None
+    470            */
+    471          void FMC_NANDStructInit(FMC_NANDInitTypeDef* FMC_NANDInitStruct)
+    472          { 
+    473            /* Reset NAND Init structure parameters values */
+    474            FMC_NANDInitStruct->FMC_Bank = FMC_Bank2_NAND;
+    475            FMC_NANDInitStruct->FMC_Waitfeature = FMC_Waitfeature_Disable;
+    476            FMC_NANDInitStruct->FMC_MemoryDataWidth = FMC_NAND_MemoryDataWidth_16b;
+    477            FMC_NANDInitStruct->FMC_ECC = FMC_ECC_Disable;
+    478            FMC_NANDInitStruct->FMC_ECCPageSize = FMC_ECCPageSize_256Bytes;
+    479            FMC_NANDInitStruct->FMC_TCLRSetupTime = 0x0;
+    480            FMC_NANDInitStruct->FMC_TARSetupTime = 0x0;
+    481            FMC_NANDInitStruct->FMC_CommonSpaceTimingStruct->FMC_SetupTime = 252;
+    482            FMC_NANDInitStruct->FMC_CommonSpaceTimingStruct->FMC_WaitSetupTime = 252;
+    483            FMC_NANDInitStruct->FMC_CommonSpaceTimingStruct->FMC_HoldSetupTime = 252;
+    484            FMC_NANDInitStruct->FMC_CommonSpaceTimingStruct->FMC_HiZSetupTime = 252;
+    485            FMC_NANDInitStruct->FMC_AttributeSpaceTimingStruct->FMC_SetupTime = 252;
+    486            FMC_NANDInitStruct->FMC_AttributeSpaceTimingStruct->FMC_WaitSetupTime = 252;
+    487            FMC_NANDInitStruct->FMC_AttributeSpaceTimingStruct->FMC_HoldSetupTime = 252;
+    488            FMC_NANDInitStruct->FMC_AttributeSpaceTimingStruct->FMC_HiZSetupTime = 252;	  
+    489          }
+    490          
+    491          /**
+    492            * @brief  Enables or disables the specified NAND Memory Bank.
+    493            * @param  FMC_Bank: specifies the FMC Bank to be used
+    494            *          This parameter can be one of the following values:
+    495            *            @arg FMC_Bank2_NAND: FMC Bank2 NAND 
+    496            *            @arg FMC_Bank3_NAND: FMC Bank3 NAND
+    497            * @param  NewState: new state of the FMC_Bank. This parameter can be: ENABLE or DISABLE.
+    498            * @retval None
+    499            */
+    500          void FMC_NANDCmd(uint32_t FMC_Bank, FunctionalState NewState)
+    501          {
+    502            assert_param(IS_FMC_NAND_BANK(FMC_Bank));
+    503            assert_param(IS_FUNCTIONAL_STATE(NewState));
+    504            
+    505            if (NewState != DISABLE)
+    506            {
+    507              /* Enable the selected NAND Bank by setting the PBKEN bit in the PCRx register */
+    508              if(FMC_Bank == FMC_Bank2_NAND)
+    509              {
+    510                FMC_Bank2->PCR2 |= PCR_PBKEN_SET;
+    511              }
+    512              else
+    513              {
+    514                FMC_Bank3->PCR3 |= PCR_PBKEN_SET;
+    515              }
+    516            }
+    517            else
+    518            {
+    519              /* Disable the selected NAND Bank by clearing the PBKEN bit in the PCRx register */
+    520              if(FMC_Bank == FMC_Bank2_NAND)
+    521              {
+    522                FMC_Bank2->PCR2 &= PCR_PBKEN_RESET;
+    523              }
+    524              else
+    525              {
+    526                FMC_Bank3->PCR3 &= PCR_PBKEN_RESET;
+    527              }
+    528            }
+    529          }
+    530          /**
+    531            * @brief  Enables or disables the FMC NAND ECC feature.
+    532            * @param  FMC_Bank: specifies the FMC Bank to be used
+    533            *          This parameter can be one of the following values:
+    534            *            @arg FMC_Bank2_NAND: FMC Bank2 NAND 
+    535            *            @arg FMC_Bank3_NAND: FMC Bank3 NAND
+    536            * @param  NewState: new state of the FMC NAND ECC feature.  
+    537            *          This parameter can be: ENABLE or DISABLE.
+    538            * @retval None
+    539            */
+    540          void FMC_NANDECCCmd(uint32_t FMC_Bank, FunctionalState NewState)
+    541          {
+    542            assert_param(IS_FMC_NAND_BANK(FMC_Bank));
+    543            assert_param(IS_FUNCTIONAL_STATE(NewState));
+    544            
+    545            if (NewState != DISABLE)
+    546            {
+    547              /* Enable the selected NAND Bank ECC function by setting the ECCEN bit in the PCRx register */
+    548              if(FMC_Bank == FMC_Bank2_NAND)
+    549              {
+    550                FMC_Bank2->PCR2 |= PCR_ECCEN_SET;
+    551              }
+    552              else
+    553              {
+    554                FMC_Bank3->PCR3 |= PCR_ECCEN_SET;
+    555              }
+    556            }
+    557            else
+    558            {
+    559              /* Disable the selected NAND Bank ECC function by clearing the ECCEN bit in the PCRx register */
+    560              if(FMC_Bank == FMC_Bank2_NAND)
+    561              {
+    562                FMC_Bank2->PCR2 &= PCR_ECCEN_RESET;
+    563              }
+    564              else
+    565              {
+    566                FMC_Bank3->PCR3 &= PCR_ECCEN_RESET;
+    567              }
+    568            }
+    569          }
+    570          
+    571          /**
+    572            * @brief  Returns the error correction code register value.
+    573            * @param  FMC_Bank: specifies the FMC Bank to be used
+    574            *          This parameter can be one of the following values:
+    575            *            @arg FMC_Bank2_NAND: FMC Bank2 NAND 
+    576            *            @arg FMC_Bank3_NAND: FMC Bank3 NAND
+    577            * @retval The Error Correction Code (ECC) value.
+    578            */
+    579          uint32_t FMC_GetECC(uint32_t FMC_Bank)
+    580          {
+    581            uint32_t eccval = 0x00000000;
+    582            
+    583            if(FMC_Bank == FMC_Bank2_NAND)
+    584            {
+    585              /* Get the ECCR2 register value */
+    586              eccval = FMC_Bank2->ECCR2;
+    587            }
+    588            else
+    589            {
+    590              /* Get the ECCR3 register value */
+    591              eccval = FMC_Bank3->ECCR3;
+    592            }
+    593            /* Return the error correction code value */
+    594            return(eccval);
+    595          }
+    596          /**
+    597            * @}
+    598            */
+    599          
+    600          /** @defgroup FMC_Group3 PCCARD Controller functions
+    601            * @brief    PCCARD Controller functions 
+    602            *
+    603          @verbatim   
+    604           ===============================================================================
+    605                              ##### PCCARD Controller functions #####
+    606           ===============================================================================  
+    607          
+    608           [..]  he following sequence should be followed to configure the FMC to interface 
+    609                 with 16-bit PC Card compatible memory connected to the PCCARD Bank:
+    610           
+    611            (#)  Enable the clock for the FMC and associated GPIOs using the following functions:
+    612                 (++)  RCC_AHB3PeriphClockCmd(RCC_AHB3Periph_FMC, ENABLE);
+    613                 (++)  RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOx, ENABLE);
+    614          
+    615            (#) FMC pins configuration 
+    616                 (++) Connect the involved FMC pins to AF12 using the following function 
+    617                      GPIO_PinAFConfig(GPIOx, GPIO_PinSourcex, GPIO_AF_FMC); 
+    618                 (++) Configure these FMC pins in alternate function mode by calling the function
+    619                      GPIO_Init();    
+    620                 
+    621            (#) Declare a FMC_PCCARDInitTypeDef structure, for example:
+    622                FMC_PCCARDInitTypeDef  FMC_PCCARDInitStructure;
+    623                and fill the FMC_PCCARDInitStructure variable with the allowed values of
+    624                the structure member.
+    625                
+    626            (#) Initialize the PCCARD Controller by calling the function
+    627                FMC_PCCARDInit(&FMC_PCCARDInitStructure); 
+    628          
+    629            (#) Then enable the PCCARD Bank:
+    630                FMC_PCCARDCmd(ENABLE);  
+    631          
+    632            (#) At this stage you can read/write from/to the memory connected to the PCCARD Bank. 
+    633           
+    634          @endverbatim
+    635            * @{
+    636            */
+    637          
+    638          /**
+    639            * @brief  De-initializes the FMC PCCARD Bank registers to their default reset values.
+    640            * @param  None                       
+    641            * @retval None
+    642            */
+    643          void FMC_PCCARDDeInit(void)
+    644          {
+    645            /* Set the FMC_Bank4 registers to their reset values */
+    646            FMC_Bank4->PCR4 = 0x00000018; 
+    647            FMC_Bank4->SR4 = 0x00000000;	
+    648            FMC_Bank4->PMEM4 = 0xFCFCFCFC;
+    649            FMC_Bank4->PATT4 = 0xFCFCFCFC;
+    650            FMC_Bank4->PIO4 = 0xFCFCFCFC;
+    651          }
+    652          
+    653          /**
+    654            * @brief  Initializes the FMC PCCARD Bank according to the specified parameters
+    655            *         in the FMC_PCCARDInitStruct.
+    656            * @param  FMC_PCCARDInitStruct : pointer to a FMC_PCCARDInitTypeDef structure
+    657            *         that contains the configuration information for the FMC PCCARD Bank.                       
+    658            * @retval None
+    659            */
+    660          void FMC_PCCARDInit(FMC_PCCARDInitTypeDef* FMC_PCCARDInitStruct)
+    661          {
+    662            /* Check the parameters */
+    663            assert_param(IS_FMC_WAIT_FEATURE(FMC_PCCARDInitStruct->FMC_Waitfeature));
+    664            assert_param(IS_FMC_TCLR_TIME(FMC_PCCARDInitStruct->FMC_TCLRSetupTime));
+    665            assert_param(IS_FMC_TAR_TIME(FMC_PCCARDInitStruct->FMC_TARSetupTime));
+    666           
+    667            assert_param(IS_FMC_SETUP_TIME(FMC_PCCARDInitStruct->FMC_CommonSpaceTimingStruct->FMC_SetupTime));
+    668            assert_param(IS_FMC_WAIT_TIME(FMC_PCCARDInitStruct->FMC_CommonSpaceTimingStruct->FMC_WaitSetupTime));
+    669            assert_param(IS_FMC_HOLD_TIME(FMC_PCCARDInitStruct->FMC_CommonSpaceTimingStruct->FMC_HoldSetupTime));
+    670            assert_param(IS_FMC_HIZ_TIME(FMC_PCCARDInitStruct->FMC_CommonSpaceTimingStruct->FMC_HiZSetupTime));
+    671            
+    672            assert_param(IS_FMC_SETUP_TIME(FMC_PCCARDInitStruct->FMC_AttributeSpaceTimingStruct->FMC_SetupTime));
+    673            assert_param(IS_FMC_WAIT_TIME(FMC_PCCARDInitStruct->FMC_AttributeSpaceTimingStruct->FMC_WaitSetupTime));
+    674            assert_param(IS_FMC_HOLD_TIME(FMC_PCCARDInitStruct->FMC_AttributeSpaceTimingStruct->FMC_HoldSetupTime));
+    675            assert_param(IS_FMC_HIZ_TIME(FMC_PCCARDInitStruct->FMC_AttributeSpaceTimingStruct->FMC_HiZSetupTime));
+    676            assert_param(IS_FMC_SETUP_TIME(FMC_PCCARDInitStruct->FMC_IOSpaceTimingStruct->FMC_SetupTime));
+    677            assert_param(IS_FMC_WAIT_TIME(FMC_PCCARDInitStruct->FMC_IOSpaceTimingStruct->FMC_WaitSetupTime));
+    678            assert_param(IS_FMC_HOLD_TIME(FMC_PCCARDInitStruct->FMC_IOSpaceTimingStruct->FMC_HoldSetupTime));
+    679            assert_param(IS_FMC_HIZ_TIME(FMC_PCCARDInitStruct->FMC_IOSpaceTimingStruct->FMC_HiZSetupTime));
+    680            
+    681            /* Set the PCR4 register value according to FMC_PCCARDInitStruct parameters */
+    682            FMC_Bank4->PCR4 = (uint32_t)FMC_PCCARDInitStruct->FMC_Waitfeature |
+    683                               FMC_NAND_MemoryDataWidth_16b |  
+    684                               (FMC_PCCARDInitStruct->FMC_TCLRSetupTime << 9) |
+    685                               (FMC_PCCARDInitStruct->FMC_TARSetupTime << 13);
+    686                      
+    687            /* Set PMEM4 register value according to FMC_CommonSpaceTimingStructure parameters */
+    688            FMC_Bank4->PMEM4 = (uint32_t)FMC_PCCARDInitStruct->FMC_CommonSpaceTimingStruct->FMC_SetupTime |
+    689                                (FMC_PCCARDInitStruct->FMC_CommonSpaceTimingStruct->FMC_WaitSetupTime << 8) |
+    690                                (FMC_PCCARDInitStruct->FMC_CommonSpaceTimingStruct->FMC_HoldSetupTime << 16)|
+    691                                (FMC_PCCARDInitStruct->FMC_CommonSpaceTimingStruct->FMC_HiZSetupTime << 24); 
+    692                      
+    693            /* Set PATT4 register value according to FMC_AttributeSpaceTimingStructure parameters */
+    694            FMC_Bank4->PATT4 = (uint32_t)FMC_PCCARDInitStruct->FMC_AttributeSpaceTimingStruct->FMC_SetupTime |
+    695                                (FMC_PCCARDInitStruct->FMC_AttributeSpaceTimingStruct->FMC_WaitSetupTime << 8) |
+    696                                (FMC_PCCARDInitStruct->FMC_AttributeSpaceTimingStruct->FMC_HoldSetupTime << 16)|
+    697                                (FMC_PCCARDInitStruct->FMC_AttributeSpaceTimingStruct->FMC_HiZSetupTime << 24);	
+    698                      
+    699            /* Set PIO4 register value according to FMC_IOSpaceTimingStructure parameters */
+    700            FMC_Bank4->PIO4 = (uint32_t)FMC_PCCARDInitStruct->FMC_IOSpaceTimingStruct->FMC_SetupTime |
+    701                               (FMC_PCCARDInitStruct->FMC_IOSpaceTimingStruct->FMC_WaitSetupTime << 8) |
+    702                               (FMC_PCCARDInitStruct->FMC_IOSpaceTimingStruct->FMC_HoldSetupTime << 16)|
+    703                               (FMC_PCCARDInitStruct->FMC_IOSpaceTimingStruct->FMC_HiZSetupTime << 24);             
+    704          }
+    705          
+    706          /**
+    707            * @brief  Fills each FMC_PCCARDInitStruct member with its default value.
+    708            * @param  FMC_PCCARDInitStruct: pointer to a FMC_PCCARDInitTypeDef structure
+    709            *         which will be initialized.
+    710            * @retval None
+    711            */
+    712          void FMC_PCCARDStructInit(FMC_PCCARDInitTypeDef* FMC_PCCARDInitStruct)
+    713          {
+    714            /* Reset PCCARD Init structure parameters values */
+    715            FMC_PCCARDInitStruct->FMC_Waitfeature = FMC_Waitfeature_Disable;
+    716            FMC_PCCARDInitStruct->FMC_TCLRSetupTime = 0;
+    717            FMC_PCCARDInitStruct->FMC_TARSetupTime = 0;
+    718            FMC_PCCARDInitStruct->FMC_CommonSpaceTimingStruct->FMC_SetupTime = 252;
+    719            FMC_PCCARDInitStruct->FMC_CommonSpaceTimingStruct->FMC_WaitSetupTime = 252;
+    720            FMC_PCCARDInitStruct->FMC_CommonSpaceTimingStruct->FMC_HoldSetupTime = 252;
+    721            FMC_PCCARDInitStruct->FMC_CommonSpaceTimingStruct->FMC_HiZSetupTime = 252;
+    722            FMC_PCCARDInitStruct->FMC_AttributeSpaceTimingStruct->FMC_SetupTime = 252;
+    723            FMC_PCCARDInitStruct->FMC_AttributeSpaceTimingStruct->FMC_WaitSetupTime = 252;
+    724            FMC_PCCARDInitStruct->FMC_AttributeSpaceTimingStruct->FMC_HoldSetupTime = 252;
+    725            FMC_PCCARDInitStruct->FMC_AttributeSpaceTimingStruct->FMC_HiZSetupTime = 252;	
+    726            FMC_PCCARDInitStruct->FMC_IOSpaceTimingStruct->FMC_SetupTime = 252;
+    727            FMC_PCCARDInitStruct->FMC_IOSpaceTimingStruct->FMC_WaitSetupTime = 252;
+    728            FMC_PCCARDInitStruct->FMC_IOSpaceTimingStruct->FMC_HoldSetupTime = 252;
+    729            FMC_PCCARDInitStruct->FMC_IOSpaceTimingStruct->FMC_HiZSetupTime = 252;
+    730          }
+    731          
+    732          /**
+    733            * @brief  Enables or disables the PCCARD Memory Bank.
+    734            * @param  NewState: new state of the PCCARD Memory Bank.  
+    735            *          This parameter can be: ENABLE or DISABLE.
+    736            * @retval None
+    737            */
+    738          void FMC_PCCARDCmd(FunctionalState NewState)
+    739          {
+    740            assert_param(IS_FUNCTIONAL_STATE(NewState));
+    741            
+    742            if (NewState != DISABLE)
+    743            {
+    744              /* Enable the PCCARD Bank by setting the PBKEN bit in the PCR4 register */
+    745              FMC_Bank4->PCR4 |= PCR_PBKEN_SET;
+    746            }
+    747            else
+    748            {
+    749              /* Disable the PCCARD Bank by clearing the PBKEN bit in the PCR4 register */
+    750              FMC_Bank4->PCR4 &= PCR_PBKEN_RESET;
+    751            }
+    752          }
+    753          
+    754          /**
+    755            * @}
+    756            */
+    757          
+    758          /** @defgroup FMC_Group4  SDRAM Controller functions
+    759            * @brief    SDRAM Controller functions
+    760            *
+    761          @verbatim   
+    762           ===============================================================================
+    763                               ##### SDRAM Controller functions ##### 
+    764           ===============================================================================  
+    765            
+    766           [..]  The following sequence should be followed to configure the FMC to interface
+    767                 with SDRAM memory connected to the SDRAM Bank 1 or SDRAM bank 2:
+    768           
+    769            (#) Enable the clock for the FMC and associated GPIOs using the following functions:
+    770                (++) RCC_AHB3PeriphClockCmd(RCC_AHB3Periph_FMC, ENABLE);
+    771                (++) RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOx, ENABLE);
+    772          
+    773            (#) FMC pins configuration 
+    774                (++) Connect the involved FMC pins to AF12 using the following function 
+    775                     GPIO_PinAFConfig(GPIOx, GPIO_PinSourcex, GPIO_AF_FMC); 
+    776                (++) Configure these FMC pins in alternate function mode by calling the function
+    777                     GPIO_Init();    
+    778                 
+    779            (#) Declare a FMC_SDRAMInitTypeDef structure, for example:
+    780                 FMC_SDRAMInitTypeDef  FMC_SDRAMInitStructure;
+    781                and fill the FMC_SDRAMInitStructure variable with the allowed values of
+    782                the structure member.  
+    783                
+    784            (#) Initialize the SDRAM Controller by calling the function
+    785                    FMC_SDRAMInit(&FMC_SDRAMInitStructure);
+    786                    
+    787            (#) Declare a FMC_SDRAMCommandTypeDef structure, for example:
+    788                  FMC_SDRAMCommandTypeDef  FMC_SDRAMCommandStructure;
+    789                and fill the FMC_SDRAMCommandStructure variable with the allowed values of
+    790                the structure member.        
+    791          
+    792            (#) Configure the SDCMR register with the desired command parameters by calling 
+    793                the function FMC_SDRAMCmdConfig(&FMC_SDRAMCommandStructure);  
+    794          
+    795            (#) At this stage, the SDRAM memory is ready for any valid command.
+    796             
+    797          @endverbatim
+    798            * @{
+    799            */
+    800          
+    801          /**
+    802            * @brief  De-initializes the FMC SDRAM Banks registers to their default 
+    803            *         reset values.
+    804            * @param  FMC_Bank: specifies the FMC Bank to be used
+    805            *          This parameter can be one of the following values:
+    806            *            @arg FMC_Bank1_SDRAM: FMC Bank1 SDRAM 
+    807            *            @arg FMC_Bank2_SDRAM: FMC Bank2 SDRAM 
+    808            * @retval None
+    809            */
+    810          void FMC_SDRAMDeInit(uint32_t FMC_Bank)
+    811          {
+    812            /* Check the parameter */
+    813            assert_param(IS_FMC_SDRAM_BANK(FMC_Bank));
+    814            
+    815            FMC_Bank5_6->SDCR[FMC_Bank] = 0x000002D0;
+    816            FMC_Bank5_6->SDTR[FMC_Bank] = 0x0FFFFFFF;    
+    817            FMC_Bank5_6->SDCMR = 0x00000000;
+    818            FMC_Bank5_6->SDRTR = 0x00000000;
+    819            FMC_Bank5_6->SDSR = 0x00000000; 
+    820          }  
+    821          
+    822          /**
+    823            * @brief  Initializes the FMC SDRAM Banks according to the specified
+    824            *         parameters in the FMC_SDRAMInitStruct.
+    825            * @param  FMC_SDRAMInitStruct : pointer to a FMC_SDRAMInitTypeDef structure
+    826            *         that contains the configuration information for the FMC SDRAM 
+    827            *         specified Banks.                       
+    828            * @retval None
+    829            */
+    830          void FMC_SDRAMInit(FMC_SDRAMInitTypeDef* FMC_SDRAMInitStruct)
+    831          { 
+    832            /* temporary registers */
+    833            uint32_t tmpr1 = 0;
+    834            uint32_t tmpr2 = 0;
+    835            uint32_t tmpr3 = 0;
+    836            uint32_t tmpr4 = 0;
+    837            
+    838            /* Check the parameters */
+    839            
+    840            /* Control parameters */
+    841            assert_param(IS_FMC_SDRAM_BANK(FMC_SDRAMInitStruct->FMC_Bank));
+    842            assert_param(IS_FMC_COLUMNBITS_NUMBER(FMC_SDRAMInitStruct->FMC_ColumnBitsNumber)); 
+    843            assert_param(IS_FMC_ROWBITS_NUMBER(FMC_SDRAMInitStruct->FMC_RowBitsNumber));
+    844            assert_param(IS_FMC_SDMEMORY_WIDTH(FMC_SDRAMInitStruct->FMC_SDMemoryDataWidth));
+    845            assert_param(IS_FMC_INTERNALBANK_NUMBER(FMC_SDRAMInitStruct->FMC_InternalBankNumber)); 
+    846            assert_param(IS_FMC_CAS_LATENCY(FMC_SDRAMInitStruct->FMC_CASLatency));
+    847            assert_param(IS_FMC_WRITE_PROTECTION(FMC_SDRAMInitStruct->FMC_WriteProtection));
+    848            assert_param(IS_FMC_SDCLOCK_PERIOD(FMC_SDRAMInitStruct->FMC_SDClockPeriod));
+    849            assert_param(IS_FMC_READ_BURST(FMC_SDRAMInitStruct->FMC_ReadBurst));
+    850            assert_param(IS_FMC_READPIPE_DELAY(FMC_SDRAMInitStruct->FMC_ReadPipeDelay));   
+    851            
+    852            /* Timing parameters */
+    853            assert_param(IS_FMC_LOADTOACTIVE_DELAY(FMC_SDRAMInitStruct->FMC_SDRAMTimingStruct->FMC_LoadToActiveDelay)); 
+    854            assert_param(IS_FMC_EXITSELFREFRESH_DELAY(FMC_SDRAMInitStruct->FMC_SDRAMTimingStruct->FMC_ExitSelfRefreshDelay));
+    855            assert_param(IS_FMC_SELFREFRESH_TIME(FMC_SDRAMInitStruct->FMC_SDRAMTimingStruct->FMC_SelfRefreshTime));
+    856            assert_param(IS_FMC_ROWCYCLE_DELAY(FMC_SDRAMInitStruct->FMC_SDRAMTimingStruct->FMC_RowCycleDelay));
+    857            assert_param(IS_FMC_WRITE_RECOVERY_TIME(FMC_SDRAMInitStruct->FMC_SDRAMTimingStruct->FMC_WriteRecoveryTime)); 
+    858            assert_param(IS_FMC_RP_DELAY(FMC_SDRAMInitStruct->FMC_SDRAMTimingStruct->FMC_RPDelay)); 
+    859            assert_param(IS_FMC_RCD_DELAY(FMC_SDRAMInitStruct->FMC_SDRAMTimingStruct->FMC_RCDDelay));    
+    860            
+    861            /* SDRAM bank control register configuration */ 
+    862            tmpr1 =   (uint32_t)FMC_SDRAMInitStruct->FMC_ColumnBitsNumber |
+    863                       FMC_SDRAMInitStruct->FMC_RowBitsNumber |
+    864                       FMC_SDRAMInitStruct->FMC_SDMemoryDataWidth |
+    865                       FMC_SDRAMInitStruct->FMC_InternalBankNumber |           
+    866                       FMC_SDRAMInitStruct->FMC_CASLatency |
+    867                       FMC_SDRAMInitStruct->FMC_WriteProtection |
+    868                       FMC_SDRAMInitStruct->FMC_SDClockPeriod |
+    869                       FMC_SDRAMInitStruct->FMC_ReadBurst | 
+    870                       FMC_SDRAMInitStruct->FMC_ReadPipeDelay;
+    871                      
+    872            if(FMC_SDRAMInitStruct->FMC_Bank == FMC_Bank1_SDRAM )
+    873            {
+    874              FMC_Bank5_6->SDCR[FMC_SDRAMInitStruct->FMC_Bank] = tmpr1;
+    875            }
+    876            else   /* SDCR2 "don't care" bits configuration */
+    877            {
+    878              tmpr3 = (uint32_t)FMC_SDRAMInitStruct->FMC_SDClockPeriod |
+    879                       FMC_SDRAMInitStruct->FMC_ReadBurst | 
+    880                       FMC_SDRAMInitStruct->FMC_ReadPipeDelay;
+    881              
+    882              FMC_Bank5_6->SDCR[FMC_Bank1_SDRAM] = tmpr3;
+    883              FMC_Bank5_6->SDCR[FMC_SDRAMInitStruct->FMC_Bank] = tmpr1;
+    884            }
+    885            /* SDRAM bank timing register configuration */
+    886            if(FMC_SDRAMInitStruct->FMC_Bank == FMC_Bank1_SDRAM )
+    887            {
+    888              tmpr2 =   (uint32_t)((FMC_SDRAMInitStruct->FMC_SDRAMTimingStruct->FMC_LoadToActiveDelay)-1) |
+    889                      (((FMC_SDRAMInitStruct->FMC_SDRAMTimingStruct->FMC_ExitSelfRefreshDelay)-1) << 4) |
+    890                      (((FMC_SDRAMInitStruct->FMC_SDRAMTimingStruct->FMC_SelfRefreshTime)-1) << 8) |
+    891                      (((FMC_SDRAMInitStruct->FMC_SDRAMTimingStruct->FMC_RowCycleDelay)-1) << 12) |
+    892                      (((FMC_SDRAMInitStruct->FMC_SDRAMTimingStruct->FMC_WriteRecoveryTime)-1) << 16) |
+    893                      (((FMC_SDRAMInitStruct->FMC_SDRAMTimingStruct->FMC_RPDelay)-1) << 20) |
+    894                      (((FMC_SDRAMInitStruct->FMC_SDRAMTimingStruct->FMC_RCDDelay)-1) << 24);
+    895                      
+    896                      FMC_Bank5_6->SDTR[FMC_SDRAMInitStruct->FMC_Bank] = tmpr2;
+    897            }
+    898            else   /* SDTR "don't care bits configuration */
+    899            {
+    900              tmpr2 =   (uint32_t)((FMC_SDRAMInitStruct->FMC_SDRAMTimingStruct->FMC_LoadToActiveDelay)-1) |
+    901                      (((FMC_SDRAMInitStruct->FMC_SDRAMTimingStruct->FMC_ExitSelfRefreshDelay)-1) << 4) |
+    902                      (((FMC_SDRAMInitStruct->FMC_SDRAMTimingStruct->FMC_SelfRefreshTime)-1) << 8) |
+    903                      (((FMC_SDRAMInitStruct->FMC_SDRAMTimingStruct->FMC_WriteRecoveryTime)-1) << 16);
+    904                      
+    905              tmpr4 =   (uint32_t)(((FMC_SDRAMInitStruct->FMC_SDRAMTimingStruct->FMC_RowCycleDelay)-1) << 12) |
+    906                      (((FMC_SDRAMInitStruct->FMC_SDRAMTimingStruct->FMC_RPDelay)-1) << 20);
+    907                      
+    908                      FMC_Bank5_6->SDTR[FMC_Bank1_SDRAM] = tmpr4;
+    909                      FMC_Bank5_6->SDTR[FMC_SDRAMInitStruct->FMC_Bank] = tmpr2;
+    910            }
+    911            
+    912          }
+    913          
+    914          /**
+    915            * @brief  Fills each FMC_SDRAMInitStruct member with its default value.
+    916            * @param  FMC_SDRAMInitStruct: pointer to a FMC_SDRAMInitTypeDef structure 
+    917            *         which will be initialized.
+    918            * @retval None
+    919            */
+    920          void FMC_SDRAMStructInit(FMC_SDRAMInitTypeDef* FMC_SDRAMInitStruct)  
+    921          {  
+    922            /* Reset SDRAM Init structure parameters values */
+    923            FMC_SDRAMInitStruct->FMC_Bank = FMC_Bank1_SDRAM;
+    924            FMC_SDRAMInitStruct->FMC_ColumnBitsNumber = FMC_ColumnBits_Number_8b;
+    925            FMC_SDRAMInitStruct->FMC_RowBitsNumber = FMC_RowBits_Number_11b; 
+    926            FMC_SDRAMInitStruct->FMC_SDMemoryDataWidth = FMC_SDMemory_Width_16b;
+    927            FMC_SDRAMInitStruct->FMC_InternalBankNumber = FMC_InternalBank_Number_4; 
+    928            FMC_SDRAMInitStruct->FMC_CASLatency = FMC_CAS_Latency_1;  
+    929            FMC_SDRAMInitStruct->FMC_WriteProtection = FMC_Write_Protection_Enable;
+    930            FMC_SDRAMInitStruct->FMC_SDClockPeriod = FMC_SDClock_Disable;
+    931            FMC_SDRAMInitStruct->FMC_ReadBurst = FMC_Read_Burst_Disable;
+    932            FMC_SDRAMInitStruct->FMC_ReadPipeDelay = FMC_ReadPipe_Delay_0; 
+    933             
+    934            FMC_SDRAMInitStruct->FMC_SDRAMTimingStruct->FMC_LoadToActiveDelay = 16;
+    935            FMC_SDRAMInitStruct->FMC_SDRAMTimingStruct->FMC_ExitSelfRefreshDelay = 16;
+    936            FMC_SDRAMInitStruct->FMC_SDRAMTimingStruct->FMC_SelfRefreshTime = 16;
+    937            FMC_SDRAMInitStruct->FMC_SDRAMTimingStruct->FMC_RowCycleDelay = 16;
+    938            FMC_SDRAMInitStruct->FMC_SDRAMTimingStruct->FMC_WriteRecoveryTime = 16;
+    939            FMC_SDRAMInitStruct->FMC_SDRAMTimingStruct->FMC_RPDelay = 16;
+    940            FMC_SDRAMInitStruct->FMC_SDRAMTimingStruct->FMC_RCDDelay = 16;
+    941            
+    942          }
+    943          
+    944          /**
+    945            * @brief  Configures the SDRAM memory command issued when the device is accessed.   
+    946            * @param  FMC_SDRAMCommandStruct: pointer to a FMC_SDRAMCommandTypeDef structure 
+    947            *         which will be configured.
+    948            * @retval None
+    949            */
+    950          void FMC_SDRAMCmdConfig(FMC_SDRAMCommandTypeDef* FMC_SDRAMCommandStruct)
+    951          {
+    952            uint32_t tmpr = 0x0;
+    953              
+    954            /* check parameters */
+    955            assert_param(IS_FMC_COMMAND_MODE(FMC_SDRAMCommandStruct->FMC_CommandMode));
+    956            assert_param(IS_FMC_COMMAND_TARGET(FMC_SDRAMCommandStruct->FMC_CommandTarget));
+    957            assert_param(IS_FMC_AUTOREFRESH_NUMBER(FMC_SDRAMCommandStruct->FMC_AutoRefreshNumber));
+    958            assert_param(IS_FMC_MODE_REGISTER(FMC_SDRAMCommandStruct->FMC_ModeRegisterDefinition));
+    959            
+    960            tmpr =   (uint32_t)(FMC_SDRAMCommandStruct->FMC_CommandMode |
+    961                                FMC_SDRAMCommandStruct->FMC_CommandTarget |
+    962                               (((FMC_SDRAMCommandStruct->FMC_AutoRefreshNumber)-1)<<5) |
+    963                               ((FMC_SDRAMCommandStruct->FMC_ModeRegisterDefinition)<<9));
+    964            
+    965            FMC_Bank5_6->SDCMR = tmpr;
+    966          
+    967          }
+    968          
+    969          
+    970          /**
+    971            * @brief  Returns the indicated FMC SDRAM bank mode status.
+    972            * @param  SDRAM_Bank: Defines the FMC SDRAM bank. This parameter can be 
+    973            *                     FMC_Bank1_SDRAM or FMC_Bank2_SDRAM. 
+    974            * @retval The FMC SDRAM bank mode status         
+    975            */
+    976          uint32_t FMC_GetModeStatus(uint32_t SDRAM_Bank)
+    977          {
+    978            uint32_t tmpreg = 0;
+    979            
+    980            /* Check the parameter */
+    981            assert_param(IS_FMC_SDRAM_BANK(SDRAM_Bank));
+    982          
+    983            /* Get the busy flag status */
+    984            if(SDRAM_Bank == FMC_Bank1_SDRAM)
+    985            {
+    986              tmpreg = (uint32_t)(FMC_Bank5_6->SDSR & FMC_SDSR_MODES1); 
+    987            }
+    988            else
+    989            {
+    990              tmpreg = ((uint32_t)(FMC_Bank5_6->SDSR & FMC_SDSR_MODES2) >> 2);
+    991            }
+    992            
+    993            /* Return the mode status */
+    994            return tmpreg;
+    995          }
+    996          
+    997          /**
+    998            * @brief  defines the SDRAM Memory Refresh rate.
+    999            * @param  FMC_Count: specifies the Refresh timer count.       
+   1000            * @retval None
+   1001            */
+   1002          void FMC_SetRefreshCount(uint32_t FMC_Count)
+   1003          {
+   1004            /* check the parameters */
+   1005            assert_param(IS_FMC_REFRESH_COUNT(FMC_Count));
+   1006            
+   1007            FMC_Bank5_6->SDRTR |= (FMC_Count<<1);
+   1008             
+   1009          }
+   1010          
+   1011          /**
+   1012            * @brief  Sets the Number of consecutive SDRAM Memory auto Refresh commands.
+   1013            * @param  FMC_Number: specifies the auto Refresh number.       
+   1014            * @retval None
+   1015            */
+   1016          void FMC_SetAutoRefresh_Number(uint32_t FMC_Number)
+   1017          {
+   1018            /* check the parameters */
+   1019            assert_param(IS_FMC_AUTOREFRESH_NUMBER(FMC_Number));
+   1020            
+   1021            FMC_Bank5_6->SDCMR |= (FMC_Number << 5);   
+   1022          }
+   1023          
+   1024          /**
+   1025            * @brief  Enables or disables write protection to the specified FMC SDRAM Bank.
+   1026            * @param  SDRAM_Bank: Defines the FMC SDRAM bank. This parameter can be 
+   1027            *                     FMC_Bank1_SDRAM or FMC_Bank2_SDRAM.   
+   1028            * @param  NewState: new state of the write protection flag.
+   1029            *          This parameter can be: ENABLE or DISABLE.
+   1030            * @retval None
+   1031            */
+   1032          void FMC_SDRAMWriteProtectionConfig(uint32_t SDRAM_Bank, FunctionalState NewState)
+   1033          {
+   1034            /* Check the parameter */
+   1035            assert_param(IS_FUNCTIONAL_STATE(NewState));
+   1036            assert_param(IS_FMC_SDRAM_BANK(SDRAM_Bank));
+   1037            
+   1038            if (NewState != DISABLE)
+   1039            {
+   1040              FMC_Bank5_6->SDCR[SDRAM_Bank] |= FMC_Write_Protection_Enable;    
+   1041            }
+   1042            else
+   1043            {
+   1044              FMC_Bank5_6->SDCR[SDRAM_Bank] &= SDCR_WriteProtection_RESET;
+   1045            } 
+   1046            
+   1047          }
+   1048          
+   1049          /**
+   1050            * @}
+   1051            */
+   1052          
+   1053          /** @defgroup FMC_Group5  Interrupts and flags management functions
+   1054            * @brief    Interrupts and flags management functions
+   1055            *
+   1056          @verbatim   
+   1057           ===============================================================================
+   1058                       ##### Interrupts and flags management functions #####
+   1059           ===============================================================================  
+   1060          
+   1061          @endverbatim
+   1062            * @{
+   1063            */
+   1064          
+   1065          /**
+   1066            * @brief  Enables or disables the specified FMC interrupts.
+   1067            * @param  FMC_Bank: specifies the FMC Bank to be used
+   1068            *          This parameter can be one of the following values:
+   1069            *            @arg FMC_Bank2_NAND: FMC Bank2 NAND 
+   1070            *            @arg FMC_Bank3_NAND: FMC Bank3 NAND
+   1071            *            @arg FMC_Bank4_PCCARD: FMC Bank4 PCCARD
+   1072            *            @arg FMC_Bank1_SDRAM: FMC Bank1 SDRAM 
+   1073            *            @arg FMC_Bank2_SDRAM: FMC Bank2 SDRAM   
+   1074            * @param  FMC_IT: specifies the FMC interrupt sources to be enabled or disabled.
+   1075            *          This parameter can be any combination of the following values:
+   1076            *            @arg FMC_IT_RisingEdge: Rising edge detection interrupt. 
+   1077            *            @arg FMC_IT_Level: Level edge detection interrupt.
+   1078            *            @arg FMC_IT_FallingEdge: Falling edge detection interrupt.
+   1079            *            @arg FMC_IT_Refresh: Refresh error detection interrupt.  
+   1080            * @param  NewState: new state of the specified FMC interrupts.
+   1081            *          This parameter can be: ENABLE or DISABLE.
+   1082            * @retval None
+   1083            */
+   1084          void FMC_ITConfig(uint32_t FMC_Bank, uint32_t FMC_IT, FunctionalState NewState)
+   1085          {
+   1086            assert_param(IS_FMC_IT_BANK(FMC_Bank));
+   1087            assert_param(IS_FMC_IT(FMC_IT));	
+   1088            assert_param(IS_FUNCTIONAL_STATE(NewState));
+   1089            
+   1090            if (NewState != DISABLE)
+   1091            {
+   1092              /* Enable the selected FMC_Bank2 interrupts */
+   1093              if(FMC_Bank == FMC_Bank2_NAND)
+   1094              {
+   1095                FMC_Bank2->SR2 |= FMC_IT;
+   1096              }
+   1097              /* Enable the selected FMC_Bank3 interrupts */
+   1098              else if (FMC_Bank == FMC_Bank3_NAND)
+   1099              {
+   1100                FMC_Bank3->SR3 |= FMC_IT;
+   1101              }
+   1102              /* Enable the selected FMC_Bank4 interrupts */
+   1103              else if (FMC_Bank == FMC_Bank4_PCCARD)
+   1104              {
+   1105                FMC_Bank4->SR4 |= FMC_IT;    
+   1106              }
+   1107              /* Enable the selected FMC_Bank5_6 interrupt */
+   1108              else
+   1109              {
+   1110                /* Enables the interrupt if the refresh error flag is set */
+   1111                FMC_Bank5_6->SDRTR |= FMC_IT; 
+   1112              }
+   1113            }
+   1114            else
+   1115            {
+   1116              /* Disable the selected FMC_Bank2 interrupts */
+   1117              if(FMC_Bank == FMC_Bank2_NAND)
+   1118              {
+   1119                
+   1120                FMC_Bank2->SR2 &= (uint32_t)~FMC_IT;
+   1121              }
+   1122              /* Disable the selected FMC_Bank3 interrupts */
+   1123              else if (FMC_Bank == FMC_Bank3_NAND)
+   1124              {
+   1125                FMC_Bank3->SR3 &= (uint32_t)~FMC_IT;
+   1126              }
+   1127              /* Disable the selected FMC_Bank4 interrupts */
+   1128              else if(FMC_Bank == FMC_Bank4_PCCARD)
+   1129              {
+   1130                FMC_Bank4->SR4 &= (uint32_t)~FMC_IT;    
+   1131              }
+   1132              /* Disable the selected FMC_Bank5_6 interrupt */
+   1133              else
+   1134              {
+   1135                /* Disables the interrupt if the refresh error flag is not set */
+   1136                FMC_Bank5_6->SDRTR &= (uint32_t)~FMC_IT; 
+   1137              }
+   1138            }
+   1139          }
+   1140          
+   1141          /**
+   1142            * @brief  Checks whether the specified FMC flag is set or not.
+   1143            * @param  FMC_Bank: specifies the FMC Bank to be used
+   1144            *          This parameter can be one of the following values:
+   1145            *            @arg FMC_Bank2_NAND: FMC Bank2 NAND 
+   1146            *            @arg FMC_Bank3_NAND: FMC Bank3 NAND
+   1147            *            @arg FMC_Bank4_PCCARD: FMC Bank4 PCCARD
+   1148            *            @arg FMC_Bank1_SDRAM: FMC Bank1 SDRAM 
+   1149            *            @arg FMC_Bank2_SDRAM: FMC Bank2 SDRAM 
+   1150            *            @arg FMC_Bank1_SDRAM | FMC_Bank2_SDRAM: FMC Bank1 or Bank2 SDRAM    
+   1151            * @param  FMC_FLAG: specifies the flag to check.
+   1152            *          This parameter can be one of the following values:
+   1153            *            @arg FMC_FLAG_RisingEdge: Rising edge detection Flag.
+   1154            *            @arg FMC_FLAG_Level: Level detection Flag.
+   1155            *            @arg FMC_FLAG_FallingEdge: Falling edge detection Flag.
+   1156            *            @arg FMC_FLAG_FEMPT: Fifo empty Flag.
+   1157            *            @arg FMC_FLAG_Refresh: Refresh error Flag.
+   1158            *            @arg FMC_FLAG_Busy: Busy status Flag.     
+   1159            * @retval The new state of FMC_FLAG (SET or RESET).
+   1160            */
+   1161          FlagStatus FMC_GetFlagStatus(uint32_t FMC_Bank, uint32_t FMC_FLAG)
+   1162          {
+   1163            FlagStatus bitstatus = RESET;
+   1164            uint32_t tmpsr = 0x00000000;
+   1165            
+   1166            /* Check the parameters */
+   1167            assert_param(IS_FMC_GETFLAG_BANK(FMC_Bank));
+   1168            assert_param(IS_FMC_GET_FLAG(FMC_FLAG));
+   1169            
+   1170            if(FMC_Bank == FMC_Bank2_NAND)
+   1171            {
+   1172              tmpsr = FMC_Bank2->SR2;
+   1173            }  
+   1174            else if(FMC_Bank == FMC_Bank3_NAND)
+   1175            {
+   1176              tmpsr = FMC_Bank3->SR3;
+   1177            }
+   1178            else if(FMC_Bank == FMC_Bank4_PCCARD)
+   1179            {
+   1180              tmpsr = FMC_Bank4->SR4;
+   1181            }
+   1182            else 
+   1183            {
+   1184              tmpsr = FMC_Bank5_6->SDSR;
+   1185            }
+   1186            
+   1187            /* Get the flag status */
+   1188            if ((tmpsr & FMC_FLAG) != FMC_FLAG )
+   1189            {
+   1190              bitstatus = RESET;
+   1191            }
+   1192            else
+   1193            {
+   1194              bitstatus = SET;
+   1195            }
+   1196            /* Return the flag status */
+   1197            return bitstatus;
+   1198          }
+   1199          
+   1200          /**
+   1201            * @brief  Clears the FMC's pending flags.
+   1202            * @param  FMC_Bank: specifies the FMC Bank to be used
+   1203            *          This parameter can be one of the following values:
+   1204            *            @arg FMC_Bank2_NAND: FMC Bank2 NAND 
+   1205            *            @arg FMC_Bank3_NAND: FMC Bank3 NAND
+   1206            *            @arg FMC_Bank4_PCCARD: FMC Bank4 PCCARD
+   1207            *            @arg FMC_Bank1_SDRAM: FMC Bank1 SDRAM 
+   1208            *            @arg FMC_Bank2_SDRAM: FMC Bank2 SDRAM  
+   1209            * @param  FMC_FLAG: specifies the flag to clear.
+   1210            *          This parameter can be any combination of the following values:
+   1211            *            @arg FMC_FLAG_RisingEdge: Rising edge detection Flag.
+   1212            *            @arg FMC_FLAG_Level: Level detection Flag.
+   1213            *            @arg FMC_FLAG_FallingEdge: Falling edge detection Flag.
+   1214            *            @arg FMC_FLAG_Refresh: Refresh error Flag.  
+   1215            * @retval None
+   1216            */
+   1217          void FMC_ClearFlag(uint32_t FMC_Bank, uint32_t FMC_FLAG)
+   1218          {
+   1219           /* Check the parameters */
+   1220            assert_param(IS_FMC_GETFLAG_BANK(FMC_Bank));
+   1221            assert_param(IS_FMC_CLEAR_FLAG(FMC_FLAG)) ;
+   1222              
+   1223            if(FMC_Bank == FMC_Bank2_NAND)
+   1224            {
+   1225              FMC_Bank2->SR2 &= (~FMC_FLAG); 
+   1226            }  
+   1227            else if(FMC_Bank == FMC_Bank3_NAND)
+   1228            {
+   1229              FMC_Bank3->SR3 &= (~FMC_FLAG);
+   1230            }
+   1231            else if(FMC_Bank == FMC_Bank4_PCCARD)
+   1232            {
+   1233              FMC_Bank4->SR4 &= (~FMC_FLAG);
+   1234            }
+   1235            /* FMC_Bank5_6 SDRAM*/
+   1236            else
+   1237            {
+   1238              FMC_Bank5_6->SDRTR &= (~FMC_FLAG);
+   1239            }
+   1240            
+   1241          }
+   1242          
+   1243          /**
+   1244            * @brief  Checks whether the specified FMC interrupt has occurred or not.
+   1245            * @param  FMC_Bank: specifies the FMC Bank to be used
+   1246            *          This parameter can be one of the following values:
+   1247            *            @arg FMC_Bank2_NAND: FMC Bank2 NAND 
+   1248            *            @arg FMC_Bank3_NAND: FMC Bank3 NAND
+   1249            *            @arg FMC_Bank4_PCCARD: FMC Bank4 PCCARD
+   1250            *            @arg FMC_Bank1_SDRAM: FMC Bank1 SDRAM 
+   1251            *            @arg FMC_Bank2_SDRAM: FMC Bank2 SDRAM   
+   1252            * @param  FMC_IT: specifies the FMC interrupt source to check.
+   1253            *          This parameter can be one of the following values:
+   1254            *            @arg FMC_IT_RisingEdge: Rising edge detection interrupt. 
+   1255            *            @arg FMC_IT_Level: Level edge detection interrupt.
+   1256            *            @arg FMC_IT_FallingEdge: Falling edge detection interrupt.
+   1257            *            @arg FMC_IT_Refresh: Refresh error detection interrupt.    
+   1258            * @retval The new state of FMC_IT (SET or RESET).
+   1259            */
+   1260          ITStatus FMC_GetITStatus(uint32_t FMC_Bank, uint32_t FMC_IT)
+   1261          {
+   1262            ITStatus bitstatus = RESET;
+   1263            uint32_t tmpsr = 0x0;
+   1264            uint32_t tmpsr2 = 0x0;
+   1265            uint32_t itstatus = 0x0;
+   1266            uint32_t itenable = 0x0; 
+   1267            
+   1268            /* Check the parameters */
+   1269            assert_param(IS_FMC_IT_BANK(FMC_Bank));
+   1270            assert_param(IS_FMC_GET_IT(FMC_IT));
+   1271            
+   1272            if(FMC_Bank == FMC_Bank2_NAND)
+   1273            {
+   1274              tmpsr = FMC_Bank2->SR2;
+   1275            }  
+   1276            else if(FMC_Bank == FMC_Bank3_NAND)
+   1277            {
+   1278              tmpsr = FMC_Bank3->SR3;
+   1279            }
+   1280            else if(FMC_Bank == FMC_Bank4_PCCARD)
+   1281            {
+   1282              tmpsr = FMC_Bank4->SR4;
+   1283            }
+   1284            /* FMC_Bank5_6 SDRAM*/
+   1285            else
+   1286            {
+   1287              tmpsr = FMC_Bank5_6->SDRTR;
+   1288              tmpsr2 = FMC_Bank5_6->SDSR;
+   1289            } 
+   1290            
+   1291            /* get the IT enable bit status*/
+   1292            itenable = tmpsr & FMC_IT;
+   1293            
+   1294            /* get the corresponding IT Flag status*/
+   1295            if((FMC_Bank == FMC_Bank1_SDRAM) || (FMC_Bank == FMC_Bank2_SDRAM))
+   1296            {
+   1297              itstatus = tmpsr2 & FMC_SDSR_RE;  
+   1298            }           
+   1299            else
+   1300            {
+   1301              itstatus = tmpsr & (FMC_IT >> 3);  
+   1302            }  
+   1303            
+   1304            if ((itstatus != (uint32_t)RESET)  && (itenable != (uint32_t)RESET))
+   1305            {
+   1306              bitstatus = SET;
+   1307            }
+   1308            else
+   1309            {
+   1310              bitstatus = RESET;
+   1311            }
+   1312            return bitstatus; 
+   1313          }
+   1314          
+   1315          /**
+   1316            * @brief  Clears the FMC's interrupt pending bits.
+   1317            * @param  FMC_Bank: specifies the FMC Bank to be used
+   1318            *          This parameter can be one of the following values:
+   1319            *            @arg FMC_Bank2_NAND: FMC Bank2 NAND 
+   1320            *            @arg FMC_Bank3_NAND: FMC Bank3 NAND
+   1321            *            @arg FMC_Bank4_PCCARD: FMC Bank4 PCCARD
+   1322            *            @arg FMC_Bank1_SDRAM: FMC Bank1 SDRAM 
+   1323            *            @arg FMC_Bank2_SDRAM: FMC Bank2 SDRAM   
+   1324            * @param  FMC_IT: specifies the interrupt pending bit to clear.
+   1325            *          This parameter can be any combination of the following values:
+   1326            *            @arg FMC_IT_RisingEdge: Rising edge detection interrupt. 
+   1327            *            @arg FMC_IT_Level: Level edge detection interrupt.
+   1328            *            @arg FMC_IT_FallingEdge: Falling edge detection interrupt.
+   1329            *            @arg FMC_IT_Refresh: Refresh error detection interrupt.  
+   1330            * @retval None
+   1331            */
+   1332          void FMC_ClearITPendingBit(uint32_t FMC_Bank, uint32_t FMC_IT)
+   1333          {
+   1334            /* Check the parameters */
+   1335            assert_param(IS_FMC_IT_BANK(FMC_Bank));
+   1336            assert_param(IS_FMC_IT(FMC_IT));
+   1337              
+   1338            if(FMC_Bank == FMC_Bank2_NAND)
+   1339            {
+   1340              FMC_Bank2->SR2 &= ~(FMC_IT >> 3); 
+   1341            }  
+   1342            else if(FMC_Bank == FMC_Bank3_NAND)
+   1343            {
+   1344              FMC_Bank3->SR3 &= ~(FMC_IT >> 3);
+   1345            }
+   1346            else if(FMC_Bank == FMC_Bank4_PCCARD)
+   1347            {
+   1348              FMC_Bank4->SR4 &= ~(FMC_IT >> 3);
+   1349            }
+   1350            /* FMC_Bank5_6 SDRAM*/
+   1351            else
+   1352            {
+   1353              FMC_Bank5_6->SDRTR |= FMC_SDRTR_CRE;
+   1354            }
+   1355          }
+   1356          
+   1357          /**
+   1358            * @}
+   1359            */ 
+   1360          
+   1361          /**
+   1362            * @}
+   1363            */ 
+   1364          
+   1365          /**
+   1366            * @}
+   1367            */
+   1368          
+   1369          /**
+   1370            * @}
+   1371            */
+   1372          
+   1373          /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   FMC_ClearFlag
+       0   FMC_ClearITPendingBit
+       0   FMC_GetECC
+       0   FMC_GetFlagStatus
+       8   FMC_GetITStatus
+       0   FMC_GetModeStatus
+       0   FMC_ITConfig
+       0   FMC_NANDCmd
+       0   FMC_NANDDeInit
+       0   FMC_NANDECCCmd
+       8   FMC_NANDInit
+       0   FMC_NANDStructInit
+       0   FMC_NORSRAMCmd
+       0   FMC_NORSRAMDeInit
+       0   FMC_NORSRAMInit
+       0   FMC_NORSRAMStructInit
+       0   FMC_PCCARDCmd
+       0   FMC_PCCARDDeInit
+       0   FMC_PCCARDInit
+       0   FMC_PCCARDStructInit
+       0   FMC_SDRAMCmdConfig
+       0   FMC_SDRAMDeInit
+      12   FMC_SDRAMInit
+       0   FMC_SDRAMStructInit
+       0   FMC_SDRAMWriteProtectionConfig
+       0   FMC_SetAutoRefresh_Number
+       0   FMC_SetRefreshCount
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable22
+       4  ??DataTable22_1
+       4  ??DataTable22_10
+       4  ??DataTable22_11
+       4  ??DataTable22_12
+       4  ??DataTable22_2
+       4  ??DataTable22_3
+       4  ??DataTable22_4
+       4  ??DataTable22_5
+       4  ??DataTable22_6
+       4  ??DataTable22_7
+       4  ??DataTable22_8
+       4  ??DataTable22_9
+      56  FMC_ClearFlag
+      62  FMC_ClearITPendingBit
+      16  FMC_GetECC
+      46  FMC_GetFlagStatus
+      80  FMC_GetITStatus
+      16  FMC_GetModeStatus
+     110  FMC_ITConfig
+      54  FMC_NANDCmd
+      40  FMC_NANDDeInit
+      54  FMC_NANDECCCmd
+     106  FMC_NANDInit
+      46  FMC_NANDStructInit
+      28  FMC_NORSRAMCmd
+      44  FMC_NORSRAMDeInit
+     244  FMC_NORSRAMInit
+      92  FMC_NORSRAMStructInit
+      20  FMC_PCCARDCmd
+      24  FMC_PCCARDDeInit
+     106  FMC_PCCARDInit
+      42  FMC_PCCARDStructInit
+      26  FMC_SDRAMCmdConfig
+      32  FMC_SDRAMDeInit
+     180  FMC_SDRAMInit
+      54  FMC_SDRAMStructInit
+      26  FMC_SDRAMWriteProtectionConfig
+      12  FMC_SetAutoRefresh_Number
+      12  FMC_SetRefreshCount
+
+ 
+ 1 680 bytes in section .text
+ 
+ 1 680 bytes of CODE memory
+
+Errors: none
+Warnings: none

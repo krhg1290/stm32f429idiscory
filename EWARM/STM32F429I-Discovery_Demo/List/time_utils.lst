@@ -1,0 +1,244 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.40.3.8902/W32 for ARM        24/Dec/2016  13:33:49
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\Core\Lib\time_utils.c
+#    Command line =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\Core\Lib\time_utils.c
+#        -D USE_STDPERIPH_DRIVER -D STM32F429_439xx -D USE_STM32F429I_DISCO -D
+#        USE_USB_OTG_HS -D USE_EMBEDDED_PHY -lcN
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\
+#        --diag_suppress Pe111,Pa082 -o
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\
+#        --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.2\arm\INC\c\DLib_Config_Full.h" -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Config\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Devices\STM32F4xx\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\User\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Demo\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Lib\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Test_Program\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\HID\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\Audio\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_OTG_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Common\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\STM32F429i-Discovery\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\fat_fs\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\Config\
+#        -Ohs --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.2\arm\CMSIS\Include\"
+#    List file    =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\time_utils.lst
+#    Object file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\time_utils.o
+#
+###############################################################################
+
+D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\Core\Lib\time_utils.c
+      1          /**
+      2            ******************************************************************************
+      3            * @file    time_utils.c
+      4            * @author  MCD Application Team
+      5            * @version V1.0.1
+      6            * @date    11-November-2013
+      7            * @brief   Utilities for time calculation 
+      8            ******************************************************************************
+      9            * @attention
+     10            *
+     11            * <h2><center>&copy; COPYRIGHT 2012 STMicroelectronics</center></h2>
+     12            *
+     13            * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
+     14            * You may not use this file except in compliance with the License.
+     15            * You may obtain a copy of the License at:
+     16            *
+     17            *        http://www.st.com/software_license_agreement_liberty_v2
+     18            *
+     19            * Unless required by applicable law or agreed to in writing, software 
+     20            * distributed under the License is distributed on an "AS IS" BASIS, 
+     21            * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     22            * See the License for the specific language governing permissions and
+     23            * limitations under the License.
+     24            *
+     25            ******************************************************************************
+     26            */ 
+     27          
+     28          /* Includes ------------------------------------------------------------------*/
+     29          #include "time_utils.h"
+     30          
+     31          /* Private typedef -----------------------------------------------------------*/
+     32          /* Private define ------------------------------------------------------------*/
+     33          /* Private macro -------------------------------------------------------------*/
+     34          /* Private function prototypes -----------------------------------------------*/
+     35          /* Private variables ---------------------------------------------------------*/
+     36          uint8_t  MonLen[12]= {32, 29, 32, 31, 32, 31, 32, 32, 31, 32, 31, 32};
+     37          uint8_t strMonth[][12] = {"January",  "February",  "March",  "April",  "May",  
+     38          "June",  "July",  "August",  "September",  "October", "November",  "December"};
+     39          /* Private functions ---------------------------------------------------------*/
+     40          
+     41          /**
+     42            * @brief  Check whether the passed year is Leap or not.
+     43            * @param  nYear : year to be checked
+     44          * @retval   Bool: check result (1: True, 0 False) 
+     45            */
+     46          uint8_t IsLeapYear(uint16_t nYear)
+     47          {
+     48            if(nYear % 4 != 0) return 0;
+     49            if(nYear % 100 != 0) return 1;
+     50            return (u8)(nYear % 400 == 0);
+     51          }
+     52          
+     53          /**
+     54            * @brief  Get days number in a month
+     55            * @param  nMonth : current month
+     56            * @param  nYear : current year
+     57            * @retval days in a month
+     58            */
+     59          uint8_t GetMaxDays(uint8_t nMonth, uint16_t nYear)
+     60          {
+     61            if(nMonth == 2)
+     62            {
+     63              if(IsLeapYear(nYear))
+     64              {
+     65                return  29;
+     66              }
+     67              else
+     68              {
+     69                return  (MonLen[nMonth - 1] - 1);
+     70              }
+     71            }
+     72            else
+     73            {
+     74              return (MonLen[nMonth - 1] - 1);
+     75            }
+     76          }
+     77          
+     78          
+     79          /**
+     80            * @brief  Determines the days of the month and the day offset in the the week
+     81            * @param  nday : current day
+     82            * @param  nmonth : current month
+     83            * @param  nmonth : current year
+     84            * @param  offset : day offset in the week
+     85            * @param  max : number of days in the month 
+     86            * @retval None
+     87            */
+     88          void GetDateOffset(uint32_t nyear, uint8_t nmonth,uint8_t *offset , uint8_t *max)
+     89          {
+     90            uint32_t a = 0, b = 0, c = 0, s = 0, e = 0, f = 0, g = 0, d = 0;
+     91           
+     92            /* Calculate max */
+     93            
+     94            if(nmonth == 2)
+     95            {
+     96              if(IsLeapYear(nyear))
+     97              {
+     98                *max = 29;
+     99              }
+    100              else
+    101              {
+    102                *max = (MonLen[nmonth - 1] - 1);
+    103              }
+    104            }
+    105            else
+    106            {
+    107              *max = (MonLen[nmonth - 1] - 1);
+    108            } 
+    109            
+    110            if(nmonth < 3)
+    111            {
+    112              a = nyear - 1;
+    113            }
+    114            else
+    115            {
+    116              a = nyear;
+    117            }
+    118            
+    119            b = (a/4) - (a/100) + (a/400);
+    120            c = ((a - 1)/4) - ((a - 1)/100) + ((a - 1)/400);
+    121            s = b - c;
+    122          
+    123            if(nmonth < 3)
+    124            {
+    125              e = 0;
+    126              f =  31 * (nmonth - 1);
+    127            }
+    128            else
+    129            {
+    130              e = s + 1;
+    131              f = 1 + (153*(nmonth - 3) + 2)/5 + 58 + s; 
+    132            }
+    133          
+    134            g = (a + b) % 7;
+    135            d = (f + g - e) % 7;
+    136          
+    137            *offset = d;
+    138          }
+    139          
+    140          /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   GetDateOffset
+       0   GetMaxDays
+       0   IsLeapYear
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable1
+     184  GetDateOffset
+      60  GetMaxDays
+      52  IsLeapYear
+      12  MonLen
+     144  strMonth
+
+ 
+ 156 bytes in section .data
+ 300 bytes in section .text
+ 
+ 300 bytes of CODE memory
+ 156 bytes of DATA memory
+
+Errors: none
+Warnings: none

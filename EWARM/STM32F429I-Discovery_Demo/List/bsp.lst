@@ -1,0 +1,307 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.40.3.8902/W32 for ARM        24/Dec/2016  13:33:35
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\Core\User\bsp.c
+#    Command line =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\Core\User\bsp.c
+#        -D USE_STDPERIPH_DRIVER -D STM32F429_439xx -D USE_STM32F429I_DISCO -D
+#        USE_USB_OTG_HS -D USE_EMBEDDED_PHY -lcN
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\
+#        --diag_suppress Pe111,Pa082 -o
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\
+#        --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.2\arm\INC\c\DLib_Config_Full.h" -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Config\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Devices\STM32F4xx\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\User\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Demo\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Lib\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Test_Program\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\HID\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\Audio\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_OTG_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Common\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\STM32F429i-Discovery\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\fat_fs\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\Config\
+#        -Ohs --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.2\arm\CMSIS\Include\"
+#    List file    =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\bsp.lst
+#    Object file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\bsp.o
+#
+###############################################################################
+
+D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\Core\User\bsp.c
+      1          /**
+      2            ******************************************************************************
+      3            * @file    bsp.c
+      4            * @author  MCD Application Team
+      5            * @version V1.0.1
+      6            * @date    11-November-2013
+      7            * @brief   bsp
+      8            ******************************************************************************
+      9            * @attention
+     10            *
+     11            * <h2><center>&copy; COPYRIGHT 2013 STMicroelectronics</center></h2>
+     12            *
+     13            * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
+     14            * You may not use this file except in compliance with the License.
+     15            * You may obtain a copy of the License at:
+     16            *
+     17            *        http://www.st.com/software_license_agreement_liberty_v2
+     18            *
+     19            * Unless required by applicable law or agreed to in writing, software 
+     20            * distributed under the License is distributed on an "AS IS" BASIS, 
+     21            * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     22            * See the License for the specific language governing permissions and
+     23            * limitations under the License.
+     24            *
+     25            ******************************************************************************
+     26            */
+     27          
+     28          /* Includes ------------------------------------------------------------------*/
+     29          #include "bsp.h"
+     30          #include "rtc.h"
+     31          
+     32          /* Private typedef -----------------------------------------------------------*/
+     33          /* Private define ------------------------------------------------------------*/
+     34          /* Private macro -------------------------------------------------------------*/
+     35          /* Private variables ---------------------------------------------------------*/
+     36          __IO uint32_t TS_Pressed;
+     37          __IO uint32_t TS_Orientation = 0;
+     38          __ALIGN_BEGIN USB_OTG_CORE_HANDLE            USB_OTG_Core __ALIGN_END;
+     39          __ALIGN_BEGIN USBH_HOST                      USB_Host __ALIGN_END;
+     40          
+     41          /* Private function prototypes -----------------------------------------------*/
+     42          uint32_t BSP_TSC_Init(void);
+     43          void Alarm_Init(void);
+     44          
+     45          /* Private functions ---------------------------------------------------------*/
+     46          
+     47          /**
+     48          * @brief  Inititialize the target hardware.
+     49          * @param  None
+     50          * @retval 0: if all initializations are OK.
+     51          */
+     52          uint32_t LowLevel_Init (void)
+     53          {
+     54            GPIO_InitTypeDef GPIO_InitStructure;
+     55            
+     56            /* Configure GPIO PC1 to set L3GD20 Chip Select to Reset */
+     57            RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOC, ENABLE);
+     58            GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
+     59            GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+     60            GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;
+     61            GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+     62            GPIO_InitStructure.GPIO_Pin = GPIO_Pin_1;
+     63            GPIO_Init(GPIOC, &GPIO_InitStructure);
+     64            
+     65            /* Deselect : Chip Select high */
+     66            GPIO_SetBits(GPIOC, GPIO_Pin_1);
+     67            
+     68            /* Initialize the LEDs */
+     69            STM_EVAL_LEDInit(LED3);
+     70            STM_EVAL_LEDInit(LED4);
+     71            
+     72            /*Init Touchscreen */
+     73            BSP_TSC_Init();
+     74            
+     75            /* Initialize the SDRAM */
+     76            SDRAM_Init();
+     77            
+     78            /*Init USB Host */
+     79            USBH_Init(&USB_OTG_Core,
+     80                      USB_OTG_HS_CORE_ID,
+     81                      &USB_Host,
+     82                      &USBH_MSC_cb,
+     83                      &USBH_USR_cb);
+     84            
+     85            /*Init the RTC */
+     86            RTC_Configuration();
+     87            
+     88            /* Initialize the Alarm */
+     89            Alarm_Init();
+     90            
+     91            /* Enable the CRC Module */
+     92            RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_CRC, ENABLE);  
+     93            
+     94            return 0;
+     95          }
+     96          
+     97          
+     98          /**
+     99            * @brief  Initializes the IO Expander registers.
+    100            * @param  None
+    101            * @retval 0: if all initializations are OK.
+    102          */
+    103          uint32_t BSP_TSC_Init(void)
+    104          {
+    105            __disable_irq();   
+    106            IOE_Config();
+    107            __enable_irq ();
+    108            return 0; /* Configuration is OK */
+    109          }
+    110          
+    111          /**
+    112            * @brief  Read the TS data and update the GUI Touch structure
+    113            * @param  None
+    114            * @retval None
+    115            */
+    116          void BSP_Pointer_Update(void)
+    117          {
+    118            GUI_PID_STATE TS_State;
+    119            TP_STATE  *ts;
+    120            static uint8_t prev_state = 0;
+    121            
+    122            portENTER_CRITICAL();
+    123            ts = IOE_TP_GetState();
+    124              portEXIT_CRITICAL();
+    125            
+    126            if(TS_Orientation == 0)
+    127            {
+    128              TS_State.x = ts->X;
+    129              TS_State.y = ts->Y;
+    130            }
+    131            else
+    132            {
+    133              TS_State.y = ts->X;
+    134              TS_State.x = 320 - ts->Y;
+    135            }
+    136            TS_State.Pressed = (ts->TouchDetected == 0x80);
+    137            
+    138            if(prev_state != TS_State.Pressed )
+    139            {
+    140              prev_state = TS_State.Pressed;
+    141              TS_State.Layer = 1;
+    142              GUI_TOUCH_StoreStateEx(&TS_State); 
+    143            }
+    144          }
+    145          
+    146          
+    147          /**
+    148            * @brief  RTC Alarm A Interrupt Configuration
+    149            * @param  None
+    150            * @retval None
+    151          */
+    152          void Alarm_Init(void)
+    153          {
+    154            NVIC_InitTypeDef  NVIC_InitStructure;
+    155            EXTI_InitTypeDef  EXTI_InitStructure;
+    156            
+    157            __disable_irq();
+    158            
+    159            /* EXTI configuration */
+    160            EXTI_ClearITPendingBit(EXTI_Line17);
+    161            EXTI_InitStructure.EXTI_Line = EXTI_Line17;
+    162            EXTI_InitStructure.EXTI_Mode = EXTI_Mode_Interrupt;
+    163            EXTI_InitStructure.EXTI_Trigger = EXTI_Trigger_Rising;
+    164            EXTI_InitStructure.EXTI_LineCmd = ENABLE;
+    165            EXTI_Init(&EXTI_InitStructure);
+    166            
+    167            /* Enable the RTC Alarm Interrupt */
+    168            NVIC_InitStructure.NVIC_IRQChannel = RTC_Alarm_IRQn;
+    169            NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
+    170            NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
+    171            NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+    172            NVIC_Init(&NVIC_InitStructure);
+    173            
+    174            __enable_irq ();
+    175          }
+    176          
+    177          /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   Alarm_Init
+        16   -> EXTI_ClearITPendingBit
+        16   -> EXTI_Init
+        16   -> NVIC_Init
+      24   BSP_Pointer_Update
+        24   -> GUI_TOUCH_StoreStateEx
+        24   -> IOE_TP_GetState
+        24   -> vPortEnterCritical
+        24   -> vPortExitCritical
+       8   BSP_TSC_Init
+         8   -> IOE_Config
+      24   LowLevel_Init
+        24   -> Alarm_Init
+        24   -> GPIO_Init
+        24   -> GPIO_SetBits
+        24   -> IOE_Config
+        24   -> RCC_AHB1PeriphClockCmd
+        24   -> RTC_Configuration
+        24   -> SDRAM_Init
+        24   -> STM_EVAL_LEDInit
+        24   -> USBH_Init
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable1
+       4  ??DataTable1_1
+       4  ??DataTable1_2
+       4  ??DataTable1_3
+       4  ??DataTable1_4
+      78  Alarm_Init
+      86  BSP_Pointer_Update
+      18  BSP_TSC_Init
+     116  LowLevel_Init
+       4  TS_Pressed
+    2836  USB_OTG_Core
+          USB_Host
+       8  prev_state
+          TS_Orientation
+
+ 
+ 2 848 bytes in section .bss
+   318 bytes in section .text
+ 
+   318 bytes of CODE memory
+ 2 848 bytes of DATA memory
+
+Errors: none
+Warnings: none

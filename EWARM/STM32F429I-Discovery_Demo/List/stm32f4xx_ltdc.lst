@@ -1,0 +1,1272 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.40.3.8902/W32 for ARM        24/Dec/2016  13:33:46
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_ltdc.c
+#    Command line =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_ltdc.c
+#        -D USE_STDPERIPH_DRIVER -D STM32F429_439xx -D USE_STM32F429I_DISCO -D
+#        USE_USB_OTG_HS -D USE_EMBEDDED_PHY -lcN
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\
+#        --diag_suppress Pe111,Pa082 -o
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\
+#        --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.2\arm\INC\c\DLib_Config_Full.h" -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Config\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Devices\STM32F4xx\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\User\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Demo\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Lib\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Test_Program\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\HID\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\Audio\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_OTG_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Common\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\STM32F429i-Discovery\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\fat_fs\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\Config\
+#        -Ohs --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.2\arm\CMSIS\Include\"
+#    List file    =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\stm32f4xx_ltdc.lst
+#    Object file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\stm32f4xx_ltdc.o
+#
+###############################################################################
+
+D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_ltdc.c
+      1          /**
+      2            ******************************************************************************
+      3            * @file    stm32f4xx_ltdc.c
+      4            * @author  MCD Application Team
+      5            * @version V1.3.0
+      6            * @date    08-November-2013
+      7            * @brief   This file provides firmware functions to manage the following 
+      8            *          functionalities of the LTDC controller (LTDC) peripheral:
+      9            *           + Initialization and configuration
+     10            *           + Interrupts and flags management
+     11            *           
+     12            *  @verbatim
+     13            
+     14           ===============================================================================
+     15                                ##### How to use this driver #####
+     16           ===============================================================================
+     17              [..]
+     18                  (#) Enable LTDC clock using 
+     19                      RCC_APB2PeriphResetCmd(RCC_APB2Periph_LTDC, ENABLE) function.
+     20                  (#) Configures LTDC
+     21                    (++) Configure the required Pixel clock following the panel datasheet
+     22                    (++) Configure the Synchronous timings: VSYNC, HSYNC, Vertical and 
+     23                        Horizontal back proch, active data area and the front proch 
+     24                        timings 
+     25                    (++) Configure the synchronous signals and clock polarity in the 
+     26                        LTDC_GCR register
+     27                  (#) Configures Layer1/2 parameters
+     28                    (++) The Layer window horizontal and vertical position in the LTDC_LxWHPCR and 
+     29                         LTDC_WVPCR registers. The layer window must be in the active data area.
+     30                    (++) The pixel input format in the LTDC_LxPFCR register
+     31                    (++) The color frame buffer start address in the LTDC_LxCFBAR register
+     32                    (++) The line length and pitch of the color frame buffer in the 
+     33                         LTDC_LxCFBLR register
+     34                    (++) The number of lines of the color frame buffer in 
+     35                         the LTDC_LxCFBLNR register
+     36                    (++) if needed, load the CLUT with the RGB values and the address 
+     37                         in the LTDC_LxCLUTWR register
+     38                    (++) If needed, configure the default color and the blending factors 
+     39                         respectively in the LTDC_LxDCCR and LTDC_LxBFCR registers 
+     40          
+     41                    (++) If needed, Dithering and color keying can be be enabled respectively 
+     42                         in the LTDC_GCR and LTDC_LxCKCR registers. It can be also enabled 
+     43                         on the fly.    
+     44                  (#) Enable Layer1/2 and if needed the CLUT in the LTDC_LxCR register 
+     45            
+     46                  (#) Reload the shadow registers to active register through 
+     47                      the LTDC_SRCR register.
+     48                    -@- All layer parameters can be be modified on the fly except the CLUT. 
+     49                        The new configuration has to be either reloaded immediately 
+     50                        or during vertical blanking period by configuring the LTDC_SRCR register.              
+     51                  (#) Call the LTDC_Cmd() to enable the LTDC controller.
+     52          
+     53              @endverbatim
+     54            
+     55            ******************************************************************************
+     56            * @attention
+     57            *
+     58            * THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS
+     59            * WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE
+     60            * TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY
+     61            * DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING
+     62            * FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE
+     63            * CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.
+     64            *
+     65            * <h2><center>&copy; COPYRIGHT 2013 STMicroelectronics</center></h2>
+     66            ******************************************************************************
+     67            */ 
+     68          
+     69          /* Includes ------------------------------------------------------------------*/
+     70          #include "stm32f4xx_ltdc.h"
+     71          #include "stm32f4xx_rcc.h"
+     72          
+     73          /** @addtogroup STM32F4xx_StdPeriph_Driver
+     74            * @{
+     75            */
+     76          
+     77          /** @defgroup LTDC 
+     78            * @brief LTDC driver modules
+     79            * @{
+     80            */
+     81          
+     82          /* Private typedef -----------------------------------------------------------*/
+     83          /* Private define ------------------------------------------------------------*/
+     84          /* Private macro -------------------------------------------------------------*/
+     85          /* Private variables ---------------------------------------------------------*/
+     86          /* Private function prototypes -----------------------------------------------*/
+     87          /* Private functions ---------------------------------------------------------*/
+     88          
+     89          #define GCR_MASK                     ((uint32_t)0x0FFE888F)  /* LTDC GCR Mask */
+     90          
+     91          
+     92          /** @defgroup LTDC_Private_Functions
+     93            * @{
+     94            */
+     95          
+     96          /** @defgroup LTDC_Group1 Initialization and Configuration functions
+     97           *  @brief   Initialization and Configuration functions 
+     98           *
+     99          @verbatim
+    100           ===============================================================================
+    101                      ##### Initialization and Configuration functions #####
+    102           ===============================================================================
+    103              [..]  This section provides functions allowing to:
+    104                (+) Initialize and configure the LTDC
+    105                (+) Enable or Disable Dither
+    106                (+) Define the position of the line interrupt
+    107                (+) reload layers registers with new parameters
+    108                (+) Initialize and configure layer1 and layer2
+    109                (+) Set and configure the color keying functionality
+    110                (+) Configure and Enables or disables CLUT 
+    111                
+    112          @endverbatim
+    113            * @{
+    114            */
+    115          
+    116          /**
+    117            * @brief  Deinitializes the LTDC peripheral registers to their default reset
+    118            *         values.
+    119            * @param  None
+    120            * @retval None
+    121            */
+    122          
+    123          void LTDC_DeInit(void)
+    124          {
+    125            /* Enable LTDC reset state */
+    126            RCC_APB2PeriphResetCmd(RCC_APB2Periph_LTDC, ENABLE);
+    127            /* Release LTDC from reset state */
+    128            RCC_APB2PeriphResetCmd(RCC_APB2Periph_LTDC, DISABLE);
+    129          }
+    130          
+    131          /**
+    132            * @brief  Initializes the LTDC peripheral according to the specified parameters
+    133            *         in the LTDC_InitStruct.
+    134            * @note   This function can be used only when the LTDC is disabled.
+    135            * @param  LTDC_InitStruct: pointer to a LTDC_InitTypeDef structure that contains
+    136            *         the configuration information for the specified LTDC peripheral.
+    137            * @retval None
+    138            */
+    139          
+    140          void LTDC_Init(LTDC_InitTypeDef* LTDC_InitStruct)
+    141          {
+    142            uint32_t horizontalsync = 0;
+    143            uint32_t accumulatedHBP = 0;
+    144            uint32_t accumulatedactiveW = 0;
+    145            uint32_t totalwidth = 0;
+    146            uint32_t backgreen = 0;
+    147            uint32_t backred = 0;
+    148          
+    149            /* Check function parameters */
+    150            assert_param(IS_LTDC_HSYNC(LTDC_InitStruct->LTDC_HorizontalSync));
+    151            assert_param(IS_LTDC_VSYNC(LTDC_InitStruct->LTDC_VerticalSync));
+    152            assert_param(IS_LTDC_AHBP(LTDC_InitStruct->LTDC_AccumulatedHBP));
+    153            assert_param(IS_LTDC_AVBP(LTDC_InitStruct->LTDC_AccumulatedVBP));
+    154            assert_param(IS_LTDC_AAH(LTDC_InitStruct->LTDC_AccumulatedActiveH));
+    155            assert_param(IS_LTDC_AAW(LTDC_InitStruct->LTDC_AccumulatedActiveW));
+    156            assert_param(IS_LTDC_TOTALH(LTDC_InitStruct->LTDC_TotalHeigh));
+    157            assert_param(IS_LTDC_TOTALW(LTDC_InitStruct->LTDC_TotalWidth));
+    158            assert_param(IS_LTDC_HSPOL(LTDC_InitStruct->LTDC_HSPolarity));
+    159            assert_param(IS_LTDC_VSPOL(LTDC_InitStruct->LTDC_VSPolarity));
+    160            assert_param(IS_LTDC_DEPOL(LTDC_InitStruct->LTDC_DEPolarity));
+    161            assert_param(IS_LTDC_PCPOL(LTDC_InitStruct->LTDC_PCPolarity));
+    162            assert_param(IS_LTDC_BackBlueValue(LTDC_InitStruct->LTDC_BackgroundBlueValue));
+    163            assert_param(IS_LTDC_BackGreenValue(LTDC_InitStruct->LTDC_BackgroundGreenValue));
+    164            assert_param(IS_LTDC_BackRedValue(LTDC_InitStruct->LTDC_BackgroundRedValue));
+    165          
+    166            /* Sets Synchronization size */
+    167            LTDC->SSCR &= ~(LTDC_SSCR_VSH | LTDC_SSCR_HSW);
+    168            horizontalsync = (LTDC_InitStruct->LTDC_HorizontalSync << 16);
+    169            LTDC->SSCR |= (horizontalsync | LTDC_InitStruct->LTDC_VerticalSync);
+    170          
+    171            /* Sets Accumulated Back porch */
+    172            LTDC->BPCR &= ~(LTDC_BPCR_AVBP | LTDC_BPCR_AHBP);
+    173            accumulatedHBP = (LTDC_InitStruct->LTDC_AccumulatedHBP << 16);
+    174            LTDC->BPCR |= (accumulatedHBP | LTDC_InitStruct->LTDC_AccumulatedVBP);
+    175          
+    176            /* Sets Accumulated Active Width */
+    177            LTDC->AWCR &= ~(LTDC_AWCR_AAH | LTDC_AWCR_AAW);
+    178            accumulatedactiveW = (LTDC_InitStruct->LTDC_AccumulatedActiveW << 16);
+    179            LTDC->AWCR |= (accumulatedactiveW | LTDC_InitStruct->LTDC_AccumulatedActiveH);
+    180          
+    181            /* Sets Total Width */
+    182            LTDC->TWCR &= ~(LTDC_TWCR_TOTALH | LTDC_TWCR_TOTALW);
+    183            totalwidth = (LTDC_InitStruct->LTDC_TotalWidth << 16);
+    184            LTDC->TWCR |= (totalwidth | LTDC_InitStruct->LTDC_TotalHeigh);
+    185          
+    186            LTDC->GCR &= (uint32_t)GCR_MASK;
+    187            LTDC->GCR |=  (uint32_t)(LTDC_InitStruct->LTDC_HSPolarity | LTDC_InitStruct->LTDC_VSPolarity | \
+    188                                     LTDC_InitStruct->LTDC_DEPolarity | LTDC_InitStruct->LTDC_PCPolarity);
+    189          
+    190            /* sets the background color value */
+    191            backgreen = (LTDC_InitStruct->LTDC_BackgroundGreenValue << 8);
+    192            backred = (LTDC_InitStruct->LTDC_BackgroundRedValue << 16);
+    193          
+    194            LTDC->BCCR &= ~(LTDC_BCCR_BCBLUE | LTDC_BCCR_BCGREEN | LTDC_BCCR_BCRED);
+    195            LTDC->BCCR |= (backred | backgreen | LTDC_InitStruct->LTDC_BackgroundBlueValue);
+    196          }
+    197          
+    198          /**
+    199            * @brief  Fills each LTDC_InitStruct member with its default value.
+    200            * @param  LTDC_InitStruct: pointer to a LTDC_InitTypeDef structure which will
+    201            *         be initialized.
+    202            * @retval None
+    203            */
+    204          
+    205          void LTDC_StructInit(LTDC_InitTypeDef* LTDC_InitStruct)
+    206          {
+    207            /*--------------- Reset LTDC init structure parameters values ----------------*/
+    208            LTDC_InitStruct->LTDC_HSPolarity = LTDC_HSPolarity_AL;      /*!< Initialize the LTDC_HSPolarity member */ 
+    209            LTDC_InitStruct->LTDC_VSPolarity = LTDC_VSPolarity_AL;      /*!< Initialize the LTDC_VSPolarity member */
+    210            LTDC_InitStruct->LTDC_DEPolarity = LTDC_DEPolarity_AL;      /*!< Initialize the LTDC_DEPolarity member */
+    211            LTDC_InitStruct->LTDC_PCPolarity = LTDC_PCPolarity_IPC;     /*!< Initialize the LTDC_PCPolarity member */
+    212            LTDC_InitStruct->LTDC_HorizontalSync = 0x00;                /*!< Initialize the LTDC_HorizontalSync member */
+    213            LTDC_InitStruct->LTDC_VerticalSync = 0x00;                  /*!< Initialize the LTDC_VerticalSync member */
+    214            LTDC_InitStruct->LTDC_AccumulatedHBP = 0x00;                /*!< Initialize the LTDC_AccumulatedHBP member */
+    215            LTDC_InitStruct->LTDC_AccumulatedVBP = 0x00;                /*!< Initialize the LTDC_AccumulatedVBP member */
+    216            LTDC_InitStruct->LTDC_AccumulatedActiveW = 0x00;            /*!< Initialize the LTDC_AccumulatedActiveW member */
+    217            LTDC_InitStruct->LTDC_AccumulatedActiveH = 0x00;            /*!< Initialize the LTDC_AccumulatedActiveH member */
+    218            LTDC_InitStruct->LTDC_TotalWidth = 0x00;                    /*!< Initialize the LTDC_TotalWidth member */
+    219            LTDC_InitStruct->LTDC_TotalHeigh = 0x00;                    /*!< Initialize the LTDC_TotalHeigh member */
+    220            LTDC_InitStruct->LTDC_BackgroundRedValue = 0x00;            /*!< Initialize the LTDC_BackgroundRedValue member */
+    221            LTDC_InitStruct->LTDC_BackgroundGreenValue = 0x00;          /*!< Initialize the LTDC_BackgroundGreenValue member */
+    222            LTDC_InitStruct->LTDC_BackgroundBlueValue = 0x00;           /*!< Initialize the LTDC_BackgroundBlueValue member */
+    223          }
+    224          
+    225          /**
+    226            * @brief  Enables or disables the LTDC Controller.
+    227            * @param  NewState: new state of the LTDC peripheral.
+    228            *   This parameter can be: ENABLE or DISABLE.
+    229            * @retval None
+    230            */
+    231          
+    232          void LTDC_Cmd(FunctionalState NewState)
+    233          {
+    234            /* Check the parameters */
+    235            assert_param(IS_FUNCTIONAL_STATE(NewState));
+    236          
+    237            if (NewState != DISABLE)
+    238            {
+    239              /* Enable LTDC by setting LTDCEN bit */
+    240              LTDC->GCR |= (uint32_t)LTDC_GCR_LTDCEN;
+    241            }
+    242            else
+    243            {
+    244              /* Disable LTDC by clearing LTDCEN bit */
+    245              LTDC->GCR &= ~(uint32_t)LTDC_GCR_LTDCEN;
+    246            }
+    247          }
+    248          
+    249          /**
+    250            * @brief  Enables or disables Dither.
+    251            * @param  NewState: new state of the Dither.
+    252            *   This parameter can be: ENABLE or DISABLE.
+    253            * @retval None
+    254            */
+    255          
+    256          void LTDC_DitherCmd(FunctionalState NewState)
+    257          {
+    258            /* Check the parameters */
+    259            assert_param(IS_FUNCTIONAL_STATE(NewState));
+    260          
+    261            if (NewState != DISABLE)
+    262            {
+    263              /* Enable Dither by setting DTEN bit */
+    264              LTDC->GCR |= (uint32_t)LTDC_GCR_DTEN;
+    265            }
+    266            else
+    267            {
+    268              /* Disable Dither by clearing DTEN bit */
+    269              LTDC->GCR &= ~(uint32_t)LTDC_GCR_DTEN;
+    270            }
+    271          }
+    272          
+    273          /**
+    274            * @brief  Get the dither RGB width.
+    275            * @param  LTDC_RGB_InitStruct: pointer to a LTDC_RGBTypeDef structure that contains
+    276            *         the Dither RGB width.
+    277            * @retval None
+    278            */
+    279          
+    280          LTDC_RGBTypeDef LTDC_GetRGBWidth(void)
+    281          {
+    282            LTDC_RGBTypeDef LTDC_RGB_InitStruct;
+    283          
+    284            LTDC->GCR &= (uint32_t)GCR_MASK;
+    285          
+    286            LTDC_RGB_InitStruct.LTDC_BlueWidth = (uint32_t)((LTDC->GCR >> 4) & 0x7);
+    287            LTDC_RGB_InitStruct.LTDC_GreenWidth = (uint32_t)((LTDC->GCR >> 8) & 0x7);
+    288            LTDC_RGB_InitStruct.LTDC_RedWidth = (uint32_t)((LTDC->GCR >> 12) & 0x7);
+    289          
+    290            return LTDC_RGB_InitStruct;
+    291          }
+    292          
+    293          /**
+    294            * @brief  Fills each LTDC_RGBStruct member with its default value.
+    295            * @param  LTDC_RGB_InitStruct: pointer to a LTDC_RGBTypeDef structure which will
+    296            *         be initialized.
+    297            * @retval None
+    298            */
+    299          
+    300          void LTDC_RGBStructInit(LTDC_RGBTypeDef* LTDC_RGB_InitStruct)
+    301          {
+    302            LTDC_RGB_InitStruct->LTDC_BlueWidth = 0x02;
+    303            LTDC_RGB_InitStruct->LTDC_GreenWidth = 0x02;
+    304            LTDC_RGB_InitStruct->LTDC_RedWidth = 0x02;
+    305          }
+    306          
+    307          
+    308          /**
+    309            * @brief  Define the position of the line interrupt .
+    310            * @param  LTDC_LIPositionConfig: Line Interrupt Position.
+    311            * @retval None
+    312            */
+    313          
+    314          void LTDC_LIPConfig(uint32_t LTDC_LIPositionConfig)
+    315          {
+    316            /* Check the parameters */
+    317            assert_param(IS_LTDC_LIPOS(LTDC_LIPositionConfig));
+    318          
+    319            /* Sets the Line Interrupt position */
+    320            LTDC->LIPCR = (uint32_t)LTDC_LIPositionConfig;
+    321          }
+    322          
+    323          /**
+    324            * @brief  reload layers registers with new parameters 
+    325            * @param  LTDC_Reload: specifies the type of reload.
+    326            *   This parameter can be one of the following values:
+    327            *     @arg LTDC_IMReload: Vertical blanking reload.
+    328            *     @arg LTDC_VBReload: Immediate reload.  
+    329            * @retval None
+    330            */
+    331          
+    332          void LTDC_ReloadConfig(uint32_t LTDC_Reload)
+    333          {
+    334            /* Check the parameters */
+    335            assert_param(IS_LTDC_RELOAD(LTDC_Reload));
+    336          
+    337            /* Sets the Reload type */
+    338            LTDC->SRCR = (uint32_t)LTDC_Reload;
+    339          }
+    340          
+    341          
+    342          /**
+    343            * @brief  Initializes the LTDC Layer according to the specified parameters
+    344            *         in the LTDC_LayerStruct.
+    345            * @note   This function can be used only when the LTDC is disabled.
+    346            * @param  LTDC_layerx: Select the layer to be configured, this parameter can be 
+    347            *         one of the following values: LTDC_Layer1, LTDC_Layer2    
+    348            * @param  LTDC_LayerStruct: pointer to a LTDC_LayerTypeDef structure that contains
+    349            *         the configuration information for the specified LTDC peripheral.
+    350            * @retval None
+    351            */
+    352          
+    353          void LTDC_LayerInit(LTDC_Layer_TypeDef* LTDC_Layerx, LTDC_Layer_InitTypeDef* LTDC_Layer_InitStruct)
+    354          {
+    355          
+    356            uint32_t whsppos = 0;
+    357            uint32_t wvsppos = 0;
+    358            uint32_t dcgreen = 0;
+    359            uint32_t dcred = 0;
+    360            uint32_t dcalpha = 0;
+    361            uint32_t cfbp = 0;
+    362          
+    363          /* Check the parameters */
+    364            assert_param(IS_LTDC_Pixelformat(LTDC_Layer_InitStruct->LTDC_PixelFormat));
+    365            assert_param(IS_LTDC_BlendingFactor1(LTDC_Layer_InitStruct->LTDC_BlendingFactor_1));
+    366            assert_param(IS_LTDC_BlendingFactor2(LTDC_Layer_InitStruct->LTDC_BlendingFactor_2));
+    367            assert_param(IS_LTDC_HCONFIGST(LTDC_Layer_InitStruct->LTDC_HorizontalStart));
+    368            assert_param(IS_LTDC_HCONFIGSP(LTDC_Layer_InitStruct->LTDC_HorizontalStop));
+    369            assert_param(IS_LTDC_VCONFIGST(LTDC_Layer_InitStruct->LTDC_VerticalStart));
+    370            assert_param(IS_LTDC_VCONFIGSP(LTDC_Layer_InitStruct->LTDC_VerticalStop));  
+    371            assert_param(IS_LTDC_DEFAULTCOLOR(LTDC_Layer_InitStruct->LTDC_DefaultColorBlue));
+    372            assert_param(IS_LTDC_DEFAULTCOLOR(LTDC_Layer_InitStruct->LTDC_DefaultColorGreen));
+    373            assert_param(IS_LTDC_DEFAULTCOLOR(LTDC_Layer_InitStruct->LTDC_DefaultColorRed));
+    374            assert_param(IS_LTDC_DEFAULTCOLOR(LTDC_Layer_InitStruct->LTDC_DefaultColorAlpha));
+    375            assert_param(IS_LTDC_CFBP(LTDC_Layer_InitStruct->LTDC_CFBPitch));
+    376            assert_param(IS_LTDC_CFBLL(LTDC_Layer_InitStruct->LTDC_CFBLineLength));
+    377            assert_param(IS_LTDC_CFBLNBR(LTDC_Layer_InitStruct->LTDC_CFBLineNumber));
+    378          
+    379            /* Configures the horizontal start and stop position */
+    380            whsppos = LTDC_Layer_InitStruct->LTDC_HorizontalStop << 16;
+    381            LTDC_Layerx->WHPCR &= ~(LTDC_LxWHPCR_WHSTPOS | LTDC_LxWHPCR_WHSPPOS);
+    382            LTDC_Layerx->WHPCR = (LTDC_Layer_InitStruct->LTDC_HorizontalStart | whsppos);
+    383          
+    384            /* Configures the vertical start and stop position */
+    385            wvsppos = LTDC_Layer_InitStruct->LTDC_VerticalStop << 16;
+    386            LTDC_Layerx->WVPCR &= ~(LTDC_LxWVPCR_WVSTPOS | LTDC_LxWVPCR_WVSPPOS);
+    387            LTDC_Layerx->WVPCR  = (LTDC_Layer_InitStruct->LTDC_VerticalStart | wvsppos);
+    388          
+    389            /* Specifies the pixel format */
+    390            LTDC_Layerx->PFCR &= ~(LTDC_LxPFCR_PF);
+    391            LTDC_Layerx->PFCR = (LTDC_Layer_InitStruct->LTDC_PixelFormat);
+    392          
+    393            /* Configures the default color values */
+    394            dcgreen = (LTDC_Layer_InitStruct->LTDC_DefaultColorGreen << 8);
+    395            dcred = (LTDC_Layer_InitStruct->LTDC_DefaultColorRed << 16);
+    396            dcalpha = (LTDC_Layer_InitStruct->LTDC_DefaultColorAlpha << 24);
+    397            LTDC_Layerx->DCCR &=  ~(LTDC_LxDCCR_DCBLUE | LTDC_LxDCCR_DCGREEN | LTDC_LxDCCR_DCRED | LTDC_LxDCCR_DCALPHA);
+    398            LTDC_Layerx->DCCR = (LTDC_Layer_InitStruct->LTDC_DefaultColorBlue | dcgreen | \
+    399                                  dcred | dcalpha);
+    400          
+    401            /* Specifies the constant alpha value */      
+    402            LTDC_Layerx->CACR &= ~(LTDC_LxCACR_CONSTA);
+    403            LTDC_Layerx->CACR = (LTDC_Layer_InitStruct->LTDC_ConstantAlpha);
+    404          
+    405            /* Specifies the blending factors */
+    406            LTDC_Layerx->BFCR &= ~(LTDC_LxBFCR_BF2 | LTDC_LxBFCR_BF1);
+    407            LTDC_Layerx->BFCR = (LTDC_Layer_InitStruct->LTDC_BlendingFactor_1 | LTDC_Layer_InitStruct->LTDC_BlendingFactor_2);
+    408          
+    409            /* Configures the color frame buffer start address */
+    410            LTDC_Layerx->CFBAR &= ~(LTDC_LxCFBAR_CFBADD);
+    411            LTDC_Layerx->CFBAR = (LTDC_Layer_InitStruct->LTDC_CFBStartAdress);
+    412          
+    413            /* Configures the color frame buffer pitch in byte */
+    414            cfbp = (LTDC_Layer_InitStruct->LTDC_CFBPitch << 16);
+    415            LTDC_Layerx->CFBLR  &= ~(LTDC_LxCFBLR_CFBLL | LTDC_LxCFBLR_CFBP);
+    416            LTDC_Layerx->CFBLR  = (LTDC_Layer_InitStruct->LTDC_CFBLineLength | cfbp);
+    417          
+    418            /* Configures the frame buffer line number */
+    419            LTDC_Layerx->CFBLNR  &= ~(LTDC_LxCFBLNR_CFBLNBR);
+    420            LTDC_Layerx->CFBLNR  = (LTDC_Layer_InitStruct->LTDC_CFBLineNumber);
+    421          
+    422          }
+    423          
+    424          /**
+    425            * @brief  Fills each LTDC_Layer_InitStruct member with its default value.
+    426            * @param  LTDC_Layer_InitStruct: pointer to a LTDC_LayerTypeDef structure which will
+    427            *         be initialized.
+    428            * @retval None
+    429            */
+    430          
+    431          void LTDC_LayerStructInit(LTDC_Layer_InitTypeDef * LTDC_Layer_InitStruct)
+    432          {
+    433            /*--------------- Reset Layer structure parameters values -------------------*/
+    434          
+    435            /*!< Initialize the horizontal limit member */
+    436            LTDC_Layer_InitStruct->LTDC_HorizontalStart = 0x00;
+    437            LTDC_Layer_InitStruct->LTDC_HorizontalStop = 0x00;
+    438          
+    439            /*!< Initialize the vertical limit member */
+    440            LTDC_Layer_InitStruct->LTDC_VerticalStart = 0x00;
+    441            LTDC_Layer_InitStruct->LTDC_VerticalStop = 0x00;
+    442          
+    443            /*!< Initialize the pixel format member */
+    444            LTDC_Layer_InitStruct->LTDC_PixelFormat = LTDC_Pixelformat_ARGB8888;
+    445          
+    446            /*!< Initialize the constant alpha value */
+    447            LTDC_Layer_InitStruct->LTDC_ConstantAlpha = 0xFF;
+    448          
+    449            /*!< Initialize the default color values */
+    450            LTDC_Layer_InitStruct->LTDC_DefaultColorBlue = 0x00;
+    451            LTDC_Layer_InitStruct->LTDC_DefaultColorGreen = 0x00;
+    452            LTDC_Layer_InitStruct->LTDC_DefaultColorRed = 0x00;
+    453            LTDC_Layer_InitStruct->LTDC_DefaultColorAlpha = 0x00;
+    454          
+    455            /*!< Initialize the blending factors */
+    456            LTDC_Layer_InitStruct->LTDC_BlendingFactor_1 = LTDC_BlendingFactor1_PAxCA;
+    457            LTDC_Layer_InitStruct->LTDC_BlendingFactor_2 = LTDC_BlendingFactor2_PAxCA;
+    458          
+    459            /*!< Initialize the frame buffer start address */
+    460            LTDC_Layer_InitStruct->LTDC_CFBStartAdress = 0x00;
+    461          
+    462            /*!< Initialize the frame buffer pitch and line length */
+    463            LTDC_Layer_InitStruct->LTDC_CFBLineLength = 0x00;
+    464            LTDC_Layer_InitStruct->LTDC_CFBPitch = 0x00;
+    465          
+    466            /*!< Initialize the frame buffer line number */
+    467            LTDC_Layer_InitStruct->LTDC_CFBLineNumber = 0x00;
+    468          }
+    469          
+    470          
+    471          /**
+    472            * @brief  Enables or disables the LTDC_Layer Controller.
+    473            * @param  LTDC_layerx: Select the layer to be configured, this parameter can be 
+    474            *         one of the following values: LTDC_Layer1, LTDC_Layer2
+    475            * @param  NewState: new state of the LTDC_Layer peripheral.
+    476            *   This parameter can be: ENABLE or DISABLE.
+    477            * @retval None
+    478            */
+    479          
+    480          void LTDC_LayerCmd(LTDC_Layer_TypeDef* LTDC_Layerx, FunctionalState NewState)
+    481          {
+    482            /* Check the parameters */
+    483            assert_param(IS_FUNCTIONAL_STATE(NewState));
+    484          
+    485            if (NewState != DISABLE)
+    486            {
+    487              /* Enable LTDC_Layer by setting LEN bit */
+    488              LTDC_Layerx->CR |= (uint32_t)LTDC_LxCR_LEN;
+    489            }
+    490            else
+    491            {
+    492              /* Disable LTDC_Layer by clearing LEN bit */
+    493              LTDC_Layerx->CR &= ~(uint32_t)LTDC_LxCR_LEN;
+    494            }
+    495          }
+    496          
+    497          
+    498          /**
+    499            * @brief  Get the current position.
+    500            * @param  LTDC_Pos_InitStruct: pointer to a LTDC_PosTypeDef structure that contains
+    501            *         the current position.
+    502            * @retval None
+    503            */
+    504          
+    505          LTDC_PosTypeDef LTDC_GetPosStatus(void)
+    506          {
+    507            LTDC_PosTypeDef LTDC_Pos_InitStruct;
+    508          
+    509            LTDC->CPSR &= ~(LTDC_CPSR_CYPOS | LTDC_CPSR_CXPOS);
+    510          
+    511            LTDC_Pos_InitStruct.LTDC_POSX = (uint32_t)(LTDC->CPSR >> 16);
+    512            LTDC_Pos_InitStruct.LTDC_POSY = (uint32_t)(LTDC->CPSR & 0xFFFF);
+    513          
+    514            return LTDC_Pos_InitStruct;
+    515          }
+    516          
+    517          /**
+    518            * @brief  Fills each LTDC_Pos_InitStruct member with its default value.
+    519            * @param  LTDC_Pos_InitStruct: pointer to a LTDC_PosTypeDef structure which will
+    520            *         be initialized.
+    521            * @retval None
+    522            */
+    523          
+    524          void LTDC_PosStructInit(LTDC_PosTypeDef* LTDC_Pos_InitStruct)
+    525          {
+    526            LTDC_Pos_InitStruct->LTDC_POSX = 0x00;
+    527            LTDC_Pos_InitStruct->LTDC_POSY = 0x00;
+    528          }
+    529          
+    530          /**
+    531            * @brief  Checks whether the specified LTDC's flag is set or not.
+    532            * @param  LTDC_CD: specifies the flag to check.
+    533            *   This parameter can be one of the following values:
+    534            *     @arg LTDC_CD_VDES: vertical data enable current status.
+    535            *     @arg LTDC_CD_HDES: horizontal data enable current status.
+    536            *     @arg LTDC_CD_VSYNC:  Vertical Synchronization current status.
+    537            *     @arg LTDC_CD_HSYNC:  Horizontal Synchronization current status.
+    538            * @retval The new state of LTDC_CD (SET or RESET).
+    539            */
+    540          
+    541          FlagStatus LTDC_GetCDStatus(uint32_t LTDC_CD)
+    542          {
+    543            FlagStatus bitstatus;
+    544          
+    545            /* Check the parameters */
+    546            assert_param(IS_LTDC_GET_CD(LTDC_CD));
+    547          
+    548            if ((LTDC->CDSR & LTDC_CD) != (uint32_t)RESET)
+    549            {
+    550              bitstatus = SET;
+    551            }
+    552            else
+    553            {
+    554              bitstatus = RESET;
+    555            }
+    556            return bitstatus;
+    557          }
+    558          
+    559          /**
+    560            * @brief  Set and configure the color keying.
+    561            * @param  LTDC_colorkeying_InitStruct: pointer to a LTDC_ColorKeying_InitTypeDef 
+    562            *         structure that contains the color keying configuration.
+    563            * @param  LTDC_layerx: Select the layer to be configured, this parameter can be 
+    564            *         one of the following values: LTDC_Layer1, LTDC_Layer2   
+    565            * @retval None
+    566            */
+    567          
+    568          void LTDC_ColorKeyingConfig(LTDC_Layer_TypeDef* LTDC_Layerx, LTDC_ColorKeying_InitTypeDef* LTDC_colorkeying_InitStruct, FunctionalState NewState)
+    569          { 
+    570            uint32_t ckgreen = 0;
+    571            uint32_t ckred = 0;
+    572          
+    573            /* Check the parameters */
+    574            assert_param(IS_FUNCTIONAL_STATE(NewState));
+    575            assert_param(IS_LTDC_CKEYING(LTDC_colorkeying_InitStruct->LTDC_ColorKeyBlue));
+    576            assert_param(IS_LTDC_CKEYING(LTDC_colorkeying_InitStruct->LTDC_ColorKeyGreen));
+    577            assert_param(IS_LTDC_CKEYING(LTDC_colorkeying_InitStruct->LTDC_ColorKeyRed));
+    578            
+    579            if (NewState != DISABLE)
+    580            {
+    581              /* Enable LTDC color keying by setting COLKEN bit */
+    582              LTDC_Layerx->CR |= (uint32_t)LTDC_LxCR_COLKEN;
+    583              
+    584              /* Sets the color keying values */
+    585              ckgreen = (LTDC_colorkeying_InitStruct->LTDC_ColorKeyGreen << 8);
+    586              ckred = (LTDC_colorkeying_InitStruct->LTDC_ColorKeyRed << 16);
+    587              LTDC_Layerx->CKCR  &= ~(LTDC_LxCKCR_CKBLUE | LTDC_LxCKCR_CKGREEN | LTDC_LxCKCR_CKRED);
+    588              LTDC_Layerx->CKCR |= (LTDC_colorkeying_InitStruct->LTDC_ColorKeyBlue | ckgreen | ckred);
+    589            }
+    590            else
+    591            {
+    592              /* Disable LTDC color keying by clearing COLKEN bit */
+    593              LTDC_Layerx->CR &= ~(uint32_t)LTDC_LxCR_COLKEN;
+    594            }
+    595            
+    596            /* Reload shadow register */
+    597            LTDC->SRCR = LTDC_IMReload;
+    598          }
+    599          
+    600          /**
+    601            * @brief  Fills each LTDC_colorkeying_InitStruct member with its default value.
+    602            * @param  LTDC_colorkeying_InitStruct: pointer to a LTDC_ColorKeying_InitTypeDef structure which will
+    603            *         be initialized.
+    604            * @retval None
+    605            */
+    606          
+    607          void LTDC_ColorKeyingStructInit(LTDC_ColorKeying_InitTypeDef* LTDC_colorkeying_InitStruct)
+    608          {
+    609            /*!< Initialize the color keying values */
+    610            LTDC_colorkeying_InitStruct->LTDC_ColorKeyBlue = 0x00;
+    611            LTDC_colorkeying_InitStruct->LTDC_ColorKeyGreen = 0x00;
+    612            LTDC_colorkeying_InitStruct->LTDC_ColorKeyRed = 0x00;
+    613          }
+    614          
+    615          
+    616          /**
+    617            * @brief  Enables or disables CLUT.
+    618            * @param  NewState: new state of CLUT.
+    619            * @param  LTDC_layerx: Select the layer to be configured, this parameter can be 
+    620            *         one of the following values: LTDC_Layer1, LTDC_Layer2  
+    621            *   This parameter can be: ENABLE or DISABLE.
+    622            * @retval None
+    623            */
+    624          
+    625          void LTDC_CLUTCmd(LTDC_Layer_TypeDef* LTDC_Layerx, FunctionalState NewState)
+    626          {
+    627            /* Check the parameters */
+    628            assert_param(IS_FUNCTIONAL_STATE(NewState));
+    629          
+    630            if (NewState != DISABLE)
+    631            {
+    632              /* Enable CLUT by setting CLUTEN bit */
+    633              LTDC_Layerx->CR |= (uint32_t)LTDC_LxCR_CLUTEN;
+    634            }
+    635            else
+    636            {
+    637              /* Disable CLUT by clearing CLUTEN bit */
+    638              LTDC_Layerx->CR &= ~(uint32_t)LTDC_LxCR_CLUTEN;
+    639            }
+    640            
+    641            /* Reload shadow register */
+    642            LTDC->SRCR = LTDC_IMReload;
+    643          }
+    644          
+    645          /**
+    646            * @brief  configure the CLUT.
+    647            * @param  LTDC_CLUT_InitStruct: pointer to a LTDC_CLUT_InitTypeDef structure that contains
+    648            *         the CLUT configuration.
+    649            * @param  LTDC_layerx: Select the layer to be configured, this parameter can be 
+    650            *         one of the following values: LTDC_Layer1, LTDC_Layer2   
+    651            * @retval None
+    652            */
+    653          
+    654          void LTDC_CLUTInit(LTDC_Layer_TypeDef* LTDC_Layerx, LTDC_CLUT_InitTypeDef* LTDC_CLUT_InitStruct)
+    655          {  
+    656            uint32_t green = 0;
+    657            uint32_t red = 0;
+    658            uint32_t clutadd = 0;
+    659          
+    660            /* Check the parameters */
+    661            assert_param(IS_LTDC_CLUTWR(LTDC_CLUT_InitStruct->LTDC_CLUTAdress));
+    662            assert_param(IS_LTDC_CLUTWR(LTDC_CLUT_InitStruct->LTDC_RedValue));
+    663            assert_param(IS_LTDC_CLUTWR(LTDC_CLUT_InitStruct->LTDC_GreenValue));
+    664            assert_param(IS_LTDC_CLUTWR(LTDC_CLUT_InitStruct->LTDC_BlueValue));
+    665              
+    666            /* Specifies the CLUT address and RGB value */
+    667            green = (LTDC_CLUT_InitStruct->LTDC_GreenValue << 8);
+    668            red = (LTDC_CLUT_InitStruct->LTDC_RedValue << 16);
+    669            clutadd = (LTDC_CLUT_InitStruct->LTDC_CLUTAdress << 24);
+    670            LTDC_Layerx->CLUTWR  = (clutadd | LTDC_CLUT_InitStruct->LTDC_BlueValue | \
+    671                                        green | red);
+    672          }
+    673          
+    674          /**
+    675            * @brief  Fills each LTDC_CLUT_InitStruct member with its default value.
+    676            * @param  LTDC_CLUT_InitStruct: pointer to a LTDC_CLUT_InitTypeDef structure which will
+    677            *         be initialized.
+    678            * @retval None
+    679            */
+    680          
+    681          void LTDC_CLUTStructInit(LTDC_CLUT_InitTypeDef* LTDC_CLUT_InitStruct)
+    682          {
+    683            /*!< Initialize the CLUT adress and RGB values */
+    684            LTDC_CLUT_InitStruct->LTDC_CLUTAdress = 0x00;
+    685            LTDC_CLUT_InitStruct->LTDC_BlueValue = 0x00;
+    686            LTDC_CLUT_InitStruct->LTDC_GreenValue = 0x00;
+    687            LTDC_CLUT_InitStruct->LTDC_RedValue = 0x00;
+    688          }
+    689          
+    690          
+    691          /**
+    692            * @brief  reconfigure the layer position.
+    693            * @param  OffsetX: horizontal offset from start active width .
+    694            * @param  OffsetY: vertical offset from start active height.   
+    695            * @param  LTDC_layerx: Select the layer to be configured, this parameter can be 
+    696            *         one of the following values: LTDC_Layer1, LTDC_Layer2   
+    697            * @retval Reload of the shadow registers values must be applied after layer 
+    698            *         position reconfiguration.
+    699            */
+    700          
+    701          void LTDC_LayerPosition(LTDC_Layer_TypeDef* LTDC_Layerx, uint16_t OffsetX, uint16_t OffsetY)
+    702          {
+    703            
+    704            uint32_t tempreg, temp;
+    705            uint32_t horizontal_start;
+    706            uint32_t horizontal_stop;
+    707            uint32_t vertical_start;
+    708            uint32_t vertical_stop;
+    709            
+    710            LTDC_Layerx->WHPCR &= ~(LTDC_LxWHPCR_WHSTPOS | LTDC_LxWHPCR_WHSPPOS);
+    711            LTDC_Layerx->WVPCR &= ~(LTDC_LxWVPCR_WVSTPOS | LTDC_LxWVPCR_WVSPPOS);
+    712            
+    713            /* Reconfigures the horizontal and vertical start position */
+    714            tempreg = LTDC->BPCR;
+    715            horizontal_start = (tempreg >> 16) + 1 + OffsetX;
+    716            vertical_start = (tempreg & 0xFFFF) + 1 + OffsetY;
+    717            
+    718            /* Reconfigures the horizontal and vertical stop position */
+    719            /* Get the number of byte per pixel */
+    720            
+    721            tempreg = LTDC_Layerx->PFCR;
+    722            
+    723            if (tempreg == LTDC_Pixelformat_ARGB8888)
+    724            {
+    725              temp = 4;
+    726            }
+    727            else if (tempreg == LTDC_Pixelformat_RGB888)
+    728            {
+    729              temp = 3;
+    730            }
+    731            else if ((tempreg == LTDC_Pixelformat_ARGB4444) || 
+    732                    (tempreg == LTDC_Pixelformat_RGB565)    ||  
+    733                    (tempreg == LTDC_Pixelformat_ARGB1555)  ||
+    734                    (tempreg == LTDC_Pixelformat_AL88))
+    735            {
+    736              temp = 2;  
+    737            }
+    738            else
+    739            {
+    740              temp = 1;
+    741            }  
+    742              
+    743            tempreg = LTDC_Layerx->CFBLR;
+    744            horizontal_stop = (((tempreg & 0x1FFF) - 3)/temp) + horizontal_start - 1;
+    745            
+    746            tempreg = LTDC_Layerx->CFBLNR;
+    747            vertical_stop = (tempreg & 0x7FF) + vertical_start - 1;  
+    748            
+    749            LTDC_Layerx->WHPCR = horizontal_start | (horizontal_stop << 16);
+    750            LTDC_Layerx->WVPCR = vertical_start | (vertical_stop << 16);  
+    751          }
+    752            
+    753          /**
+    754            * @brief  reconfigure constant alpha.
+    755            * @param  ConstantAlpha: constant alpha value.
+    756            * @param  LTDC_layerx: Select the layer to be configured, this parameter can be 
+    757            *         one of the following values: LTDC_Layer1, LTDC_Layer2    
+    758            * @retval Reload of the shadow registers values must be applied after constant 
+    759            *         alpha reconfiguration.         
+    760            */
+    761          
+    762          void LTDC_LayerAlpha(LTDC_Layer_TypeDef* LTDC_Layerx, uint8_t ConstantAlpha)
+    763          {  
+    764            /* reconfigure the constant alpha value */      
+    765            LTDC_Layerx->CACR = ConstantAlpha;
+    766          }
+    767          
+    768          /**
+    769            * @brief  reconfigure layer address.
+    770            * @param  Address: The color frame buffer start address.
+    771            * @param  LTDC_layerx: Select the layer to be configured, this parameter can be 
+    772            *         one of the following values: LTDC_Layer1, LTDC_Layer2     
+    773            * @retval Reload of the shadow registers values must be applied after layer 
+    774            *         address reconfiguration.
+    775            */
+    776          
+    777          void LTDC_LayerAddress(LTDC_Layer_TypeDef* LTDC_Layerx, uint32_t Address)
+    778          {
+    779            /* Reconfigures the color frame buffer start address */
+    780            LTDC_Layerx->CFBAR = Address;
+    781          }
+    782            
+    783          /**
+    784            * @brief  reconfigure layer size.
+    785            * @param  Width: layer window width.
+    786            * @param  Height: layer window height.   
+    787            * @param  LTDC_layerx: Select the layer to be configured, this parameter can be 
+    788            *         one of the following values: LTDC_Layer1, LTDC_Layer2   
+    789            * @retval Reload of the shadow registers values must be applied after layer 
+    790            *         size reconfiguration.
+    791            */
+    792          
+    793          void LTDC_LayerSize(LTDC_Layer_TypeDef* LTDC_Layerx, uint32_t Width, uint32_t Height)
+    794          {
+    795          
+    796            uint8_t temp;
+    797            uint32_t tempreg;
+    798            uint32_t horizontal_start;
+    799            uint32_t horizontal_stop;
+    800            uint32_t vertical_start;
+    801            uint32_t vertical_stop;  
+    802            
+    803            tempreg = LTDC_Layerx->PFCR;
+    804            
+    805            if (tempreg == LTDC_Pixelformat_ARGB8888)
+    806            {
+    807              temp = 4;
+    808            }
+    809            else if (tempreg == LTDC_Pixelformat_RGB888)
+    810            {
+    811              temp = 3;
+    812            }
+    813            else if ((tempreg == LTDC_Pixelformat_ARGB4444) || \
+    814                    (tempreg == LTDC_Pixelformat_RGB565)    || \
+    815                    (tempreg == LTDC_Pixelformat_ARGB1555)  || \
+    816                    (tempreg == LTDC_Pixelformat_AL88))
+    817            {
+    818              temp = 2;  
+    819            }
+    820            else
+    821            {
+    822              temp = 1;
+    823            }
+    824          
+    825            /* update horizontal and vertical stop */
+    826            tempreg = LTDC_Layerx->WHPCR;
+    827            horizontal_start = (tempreg & 0x1FFF);
+    828            horizontal_stop = Width + horizontal_start - 1;  
+    829          
+    830            tempreg = LTDC_Layerx->WVPCR;
+    831            vertical_start = (tempreg & 0x1FFF);
+    832            vertical_stop = Height + vertical_start - 1;  
+    833            
+    834            LTDC_Layerx->WHPCR = horizontal_start | (horizontal_stop << 16);
+    835            LTDC_Layerx->WVPCR = vertical_start | (vertical_stop << 16);  
+    836          
+    837            /* Reconfigures the color frame buffer pitch in byte */
+    838            LTDC_Layerx->CFBLR  = ((Width * temp) << 16) | ((Width * temp) + 3);  
+    839          
+    840            /* Reconfigures the frame buffer line number */
+    841            LTDC_Layerx->CFBLNR  = Height;  
+    842            
+    843          }
+    844          
+    845          /**
+    846            * @brief  reconfigure layer pixel format.
+    847            * @param  PixelFormat: reconfigure the pixel format, this parameter can be 
+    848            *         one of the following values:@ref LTDC_Pixelformat.   
+    849            * @param  LTDC_layerx: Select the layer to be configured, this parameter can be 
+    850            *         one of the following values: LTDC_Layer1, LTDC_Layer2   
+    851            * @retval Reload of the shadow registers values must be applied after layer 
+    852            *         pixel format reconfiguration.
+    853            */
+    854          
+    855          void LTDC_LayerPixelFormat(LTDC_Layer_TypeDef* LTDC_Layerx, uint32_t PixelFormat)
+    856          {
+    857          
+    858            uint8_t temp;
+    859            uint32_t tempreg;
+    860            
+    861            tempreg = LTDC_Layerx->PFCR;
+    862            
+    863            if (tempreg == LTDC_Pixelformat_ARGB8888)
+    864            {
+    865              temp = 4;
+    866            }
+    867            else if (tempreg == LTDC_Pixelformat_RGB888)
+    868            {
+    869              temp = 3;
+    870            }
+    871            else if ((tempreg == LTDC_Pixelformat_ARGB4444) || \
+    872                    (tempreg == LTDC_Pixelformat_RGB565)    || \
+    873                    (tempreg == LTDC_Pixelformat_ARGB1555)  || \
+    874                    (tempreg == LTDC_Pixelformat_AL88))  
+    875            {
+    876              temp = 2;  
+    877            }
+    878            else
+    879            {
+    880              temp = 1;
+    881            }
+    882            
+    883            tempreg = (LTDC_Layerx->CFBLR >> 16);
+    884            tempreg = (tempreg / temp); 
+    885            
+    886            if (PixelFormat == LTDC_Pixelformat_ARGB8888)
+    887            {
+    888              temp = 4;
+    889            }
+    890            else if (PixelFormat == LTDC_Pixelformat_RGB888)
+    891            {
+    892              temp = 3;
+    893            }
+    894            else if ((PixelFormat == LTDC_Pixelformat_ARGB4444) || \
+    895                    (PixelFormat == LTDC_Pixelformat_RGB565)    || \
+    896                    (PixelFormat == LTDC_Pixelformat_ARGB1555)  || \
+    897                    (PixelFormat == LTDC_Pixelformat_AL88))
+    898            {
+    899              temp = 2;  
+    900            }
+    901            else
+    902            {
+    903              temp = 1;
+    904            }
+    905            
+    906            /* Reconfigures the color frame buffer pitch in byte */
+    907            LTDC_Layerx->CFBLR  = ((tempreg * temp) << 16) | ((tempreg * temp) + 3);  
+    908          
+    909            /* Reconfigures the color frame buffer start address */
+    910            LTDC_Layerx->PFCR = PixelFormat;
+    911              
+    912          }
+    913              
+    914          /**
+    915            * @}
+    916            */
+    917          
+    918          /** @defgroup LTDC_Group2 Interrupts and flags management functions
+    919           *  @brief   Interrupts and flags management functions
+    920           *
+    921          @verbatim
+    922           ===============================================================================
+    923                      ##### Interrupts and flags management functions #####
+    924           ===============================================================================
+    925          
+    926              [..] This section provides functions allowing to configure the LTDC Interrupts 
+    927                   and to get the status and clear flags and Interrupts pending bits.
+    928            
+    929              [..] The LTDC provides 4 Interrupts sources and 4 Flags
+    930              
+    931              *** Flags ***
+    932              =============
+    933              [..]
+    934                (+) LTDC_FLAG_LI:   Line Interrupt flag.
+    935                (+) LTDC_FLAG_FU:   FIFO Underrun Interrupt flag.
+    936                (+) LTDC_FLAG_TERR: Transfer Error Interrupt flag.
+    937                (+) LTDC_FLAG_RR:   Register Reload interrupt flag.
+    938                
+    939              *** Interrupts ***
+    940              ==================
+    941              [..]
+    942                (+) LTDC_IT_LI: Line Interrupt is generated when a programmed line 
+    943                                is reached. The line interrupt position is programmed in 
+    944                                the LTDC_LIPR register.
+    945                (+) LTDC_IT_FU: FIFO Underrun interrupt is generated when a pixel is requested 
+    946                                from an empty layer FIFO
+    947                (+) LTDC_IT_TERR: Transfer Error interrupt is generated when an AHB bus 
+    948                                  error occurs during data transfer.
+    949                (+) LTDC_IT_RR: Register Reload interrupt is generated when the shadow 
+    950                                registers reload was performed during the vertical blanking 
+    951                                period.
+    952                         
+    953          @endverbatim
+    954            * @{
+    955            */
+    956          
+    957          /**
+    958            * @brief  Enables or disables the specified LTDC's interrupts.
+    959            * @param  LTDC_IT: specifies the LTDC interrupts sources to be enabled or disabled.
+    960            *   This parameter can be any combination of the following values:
+    961            *     @arg LTDC_IT_LI: Line Interrupt Enable.
+    962            *     @arg LTDC_IT_FU: FIFO Underrun Interrupt Enable.
+    963            *     @arg LTDC_IT_TERR: Transfer Error Interrupt Enable.
+    964            *     @arg LTDC_IT_RR: Register Reload interrupt enable.  
+    965            * @param NewState: new state of the specified LTDC interrupts.
+    966            *   This parameter can be: ENABLE or DISABLE.
+    967            * @retval None
+    968            */
+    969          void LTDC_ITConfig(uint32_t LTDC_IT, FunctionalState NewState)
+    970          {
+    971            /* Check the parameters */
+    972            assert_param(IS_LTDC_IT(LTDC_IT));
+    973            assert_param(IS_FUNCTIONAL_STATE(NewState));
+    974          
+    975            if (NewState != DISABLE)
+    976            {
+    977              LTDC->IER |= LTDC_IT;
+    978            }
+    979            else
+    980            {
+    981              LTDC->IER &= (uint32_t)~LTDC_IT;
+    982            }
+    983          }
+    984          
+    985          /**
+    986            * @brief  Checks whether the specified LTDC's flag is set or not.
+    987            * @param  LTDC_FLAG: specifies the flag to check.
+    988            *   This parameter can be one of the following values:
+    989            *     @arg LTDC_FLAG_LI:    Line Interrupt flag.
+    990            *     @arg LTDC_FLAG_FU:   FIFO Underrun Interrupt flag.
+    991            *     @arg LTDC_FLAG_TERR: Transfer Error Interrupt flag.
+    992            *     @arg LTDC_FLAG_RR:   Register Reload interrupt flag.
+    993            * @retval The new state of LTDC_FLAG (SET or RESET).
+    994            */
+    995          FlagStatus LTDC_GetFlagStatus(uint32_t LTDC_FLAG)
+    996          {
+    997            FlagStatus bitstatus = RESET;
+    998          
+    999            /* Check the parameters */
+   1000            assert_param(IS_LTDC_FLAG(LTDC_FLAG));
+   1001          
+   1002            if ((LTDC->ISR & LTDC_FLAG) != (uint32_t)RESET)
+   1003            {
+   1004              bitstatus = SET;
+   1005            }
+   1006            else
+   1007            {
+   1008              bitstatus = RESET;
+   1009            }
+   1010            return bitstatus;
+   1011          }
+   1012          
+   1013          /**
+   1014            * @brief  Clears the LTDC's pending flags.
+   1015            * @param  LTDC_FLAG: specifies the flag to clear.
+   1016            *   This parameter can be any combination of the following values:
+   1017            *     @arg LTDC_FLAG_LI:    Line Interrupt flag.
+   1018            *     @arg LTDC_FLAG_FU:   FIFO Underrun Interrupt flag.
+   1019            *     @arg LTDC_FLAG_TERR: Transfer Error Interrupt flag.
+   1020            *     @arg LTDC_FLAG_RR:   Register Reload interrupt flag.  
+   1021            * @retval None
+   1022            */
+   1023          void LTDC_ClearFlag(uint32_t LTDC_FLAG)
+   1024          {
+   1025            /* Check the parameters */
+   1026            assert_param(IS_LTDC_FLAG(LTDC_FLAG));
+   1027          
+   1028            /* Clear the corresponding LTDC flag */
+   1029            LTDC->ICR = (uint32_t)LTDC_FLAG;
+   1030          }
+   1031          
+   1032          /**
+   1033            * @brief  Checks whether the specified LTDC's interrupt has occurred or not.
+   1034            * @param  LTDC_IT: specifies the LTDC interrupts sources to check.
+   1035            *   This parameter can be one of the following values:
+   1036            *     @arg LTDC_IT_LI:    Line Interrupt Enable.
+   1037            *     @arg LTDC_IT_FU:   FIFO Underrun Interrupt Enable.
+   1038            *     @arg LTDC_IT_TERR: Transfer Error Interrupt Enable.
+   1039            *     @arg LTDC_IT_RR:   Register Reload interrupt Enable.
+   1040            * @retval The new state of the LTDC_IT (SET or RESET).
+   1041            */
+   1042          ITStatus LTDC_GetITStatus(uint32_t LTDC_IT)
+   1043          {
+   1044            ITStatus bitstatus = RESET;
+   1045          
+   1046            /* Check the parameters */
+   1047            assert_param(IS_LTDC_IT(LTDC_IT));
+   1048          
+   1049            if ((LTDC->ISR & LTDC_IT) != (uint32_t)RESET)
+   1050            {
+   1051              bitstatus = SET;
+   1052            }
+   1053            else
+   1054            {
+   1055              bitstatus = RESET;
+   1056            }
+   1057          
+   1058            if (((LTDC->IER & LTDC_IT) != (uint32_t)RESET) && (bitstatus != (uint32_t)RESET))
+   1059            {
+   1060              bitstatus = SET;
+   1061            }
+   1062            else
+   1063            {
+   1064              bitstatus = RESET;
+   1065            }
+   1066            return bitstatus;
+   1067          }
+   1068          
+   1069          
+   1070          /**
+   1071            * @brief  Clears the LTDC's interrupt pending bits.
+   1072            * @param  LTDC_IT: specifies the interrupt pending bit to clear.
+   1073            *   This parameter can be any combination of the following values:
+   1074            *     @arg LTDC_IT_LIE:    Line Interrupt.
+   1075            *     @arg LTDC_IT_FUIE:   FIFO Underrun Interrupt.
+   1076            *     @arg LTDC_IT_TERRIE: Transfer Error Interrupt.
+   1077            *     @arg LTDC_IT_RRIE:   Register Reload interrupt.
+   1078            * @retval None
+   1079            */
+   1080          void LTDC_ClearITPendingBit(uint32_t LTDC_IT)
+   1081          {
+   1082            /* Check the parameters */
+   1083            assert_param(IS_LTDC_IT(LTDC_IT));
+   1084          
+   1085            /* Clear the corresponding LTDC Interrupt */
+   1086            LTDC->ICR = (uint32_t)LTDC_IT;
+   1087          }
+   1088          /**
+   1089            * @}
+   1090            */
+   1091          
+   1092          /**
+   1093            * @}
+   1094            */ 
+   1095          
+   1096          /**
+   1097            * @}
+   1098            */ 
+   1099          
+   1100          /**
+   1101            * @}
+   1102            */ 
+   1103          
+   1104          /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   LTDC_CLUTCmd
+       0   LTDC_CLUTInit
+       0   LTDC_CLUTStructInit
+       0   LTDC_ClearFlag
+       0   LTDC_ClearITPendingBit
+       0   LTDC_Cmd
+       0   LTDC_ColorKeyingConfig
+       0   LTDC_ColorKeyingStructInit
+       8   LTDC_DeInit
+         0   -> RCC_APB2PeriphResetCmd
+         8   -> RCC_APB2PeriphResetCmd
+       0   LTDC_DitherCmd
+       0   LTDC_GetCDStatus
+       0   LTDC_GetFlagStatus
+       0   LTDC_GetITStatus
+       0   LTDC_GetPosStatus
+      12   LTDC_GetRGBWidth
+       0   LTDC_ITConfig
+       8   LTDC_Init
+       0   LTDC_LIPConfig
+       0   LTDC_LayerAddress
+       0   LTDC_LayerAlpha
+       0   LTDC_LayerCmd
+       8   LTDC_LayerInit
+       0   LTDC_LayerPixelFormat
+       8   LTDC_LayerPosition
+      12   LTDC_LayerSize
+       0   LTDC_LayerStructInit
+       0   LTDC_PosStructInit
+       0   LTDC_RGBStructInit
+       0   LTDC_ReloadConfig
+       0   LTDC_StructInit
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable16
+       4  ??DataTable16_1
+       4  ??DataTable16_10
+       4  ??DataTable16_11
+       4  ??DataTable16_12
+       4  ??DataTable16_2
+       4  ??DataTable16_3
+       4  ??DataTable16_4
+       4  ??DataTable16_5
+       4  ??DataTable16_6
+       4  ??DataTable16_7
+       4  ??DataTable16_8
+       4  ??DataTable16_9
+      24  LTDC_CLUTCmd
+      24  LTDC_CLUTInit
+      12  LTDC_CLUTStructInit
+       6  LTDC_ClearFlag
+       6  LTDC_ClearITPendingBit
+      22  LTDC_Cmd
+      70  LTDC_ColorKeyingConfig
+      10  LTDC_ColorKeyingStructInit
+      30  LTDC_DeInit
+      22  LTDC_DitherCmd
+      16  LTDC_GetCDStatus
+      16  LTDC_GetFlagStatus
+      26  LTDC_GetITStatus
+      32  LTDC_GetPosStatus
+      52  LTDC_GetRGBWidth
+      18  LTDC_ITConfig
+     152  LTDC_Init
+       6  LTDC_LIPConfig
+       4  LTDC_LayerAddress
+       4  LTDC_LayerAlpha
+      18  LTDC_LayerCmd
+     150  LTDC_LayerInit
+      96  LTDC_LayerPixelFormat
+     118  LTDC_LayerPosition
+      88  LTDC_LayerSize
+      48  LTDC_LayerStructInit
+       8  LTDC_PosStructInit
+      10  LTDC_RGBStructInit
+       6  LTDC_ReloadConfig
+      34  LTDC_StructInit
+
+ 
+ 1 180 bytes in section .text
+ 
+ 1 180 bytes of CODE memory
+
+Errors: none
+Warnings: none

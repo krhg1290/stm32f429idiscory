@@ -1,0 +1,1302 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.40.3.8902/W32 for ARM        24/Dec/2016  13:33:36
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\Core\Demo\demo_clock.c
+#    Command line =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\Core\Demo\demo_clock.c
+#        -D USE_STDPERIPH_DRIVER -D STM32F429_439xx -D USE_STM32F429I_DISCO -D
+#        USE_USB_OTG_HS -D USE_EMBEDDED_PHY -lcN
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\
+#        --diag_suppress Pe111,Pa082 -o
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\
+#        --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.2\arm\INC\c\DLib_Config_Full.h" -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Config\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Devices\STM32F4xx\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\User\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Demo\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Lib\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Test_Program\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\HID\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\Audio\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_OTG_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Common\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\STM32F429i-Discovery\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\fat_fs\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\Config\
+#        -Ohs --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.2\arm\CMSIS\Include\"
+#    List file    =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\demo_clock.lst
+#    Object file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\demo_clock.o
+#
+###############################################################################
+
+D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\Core\Demo\demo_clock.c
+      1          /**
+      2            ******************************************************************************
+      3            * @file    demo_clock.c
+      4            * @author  MCD Application Team
+      5            * @version V1.0.1
+      6            * @date    11-November-2013  
+      7            * @brief   Clock/Calendar/Alarm functions
+      8            ******************************************************************************
+      9            * @attention
+     10            *
+     11            * <h2><center>&copy; COPYRIGHT 2013 STMicroelectronics</center></h2>
+     12            *
+     13            * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
+     14            * You may not use this file except in compliance with the License.
+     15            * You may obtain a copy of the License at:
+     16            *
+     17            *        http://www.st.com/software_license_agreement_liberty_v2
+     18            *
+     19            * Unless required by applicable law or agreed to in writing, software 
+     20            * distributed under the License is distributed on an "AS IS" BASIS, 
+     21            * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     22            * See the License for the specific language governing permissions and
+     23            * limitations under the License.
+     24            *
+     25            ******************************************************************************
+     26            */
+     27          
+     28          /* Includes ------------------------------------------------------------------*/
+     29          #include "global_includes.h"
+     30          #include "DIALOG.h"
+     31          #include "time_utils.h"
+     32          #include "calendar.h"
+     33          #include "Res\clock_res.c"
+     34          #include "Res\alarmclock.c"
+     35          
+     36          /* Private typedef -----------------------------------------------------------*/
+     37          /* Private define ------------------------------------------------------------*/
+     38          #define ID_FRAMEWIN_CLOCK           (GUI_ID_USER + 0x01)
+     39          #define ID_CALENDAR                 (GUI_ID_USER + 0x02)
+     40          #define ID_TEXT_DATE                (GUI_ID_USER + 0x03)
+     41          #define ID_BUTTON_CLOSE_CLOCK       (GUI_ID_USER + 0x04)
+     42          #define ID_BUTTON_SETTINGS_CLOCK    (GUI_ID_USER + 0x05)
+     43          #define ID_TEXT_CLOCK               (GUI_ID_USER + 0x07)
+     44          
+     45          #define ID_FRAMEWIN_SETTINGS        (GUI_ID_USER + 0x08)
+     46          #define ID_CLOSE_SETTINGS           (GUI_ID_USER + 0x15)
+     47          #define ID_SET_SETTINGS             (GUI_ID_USER + 0x16)
+     48          
+     49          #define ID_CLOCK_HOUR                (GUI_ID_USER + 0x20)
+     50          #define ID_CLOCK_MIN                 (GUI_ID_USER + 0x21)
+     51          #define ID_CLOCK_SEC                 (GUI_ID_USER + 0x22)
+     52          
+     53          #define ID_CLOCK_DAY                 (GUI_ID_USER + 0x23)
+     54          #define ID_CLOCK_MONTH               (GUI_ID_USER + 0x24)
+     55          #define ID_CLOCK_YEAR                (GUI_ID_USER + 0x25)
+     56          
+     57          #define ID_CLOCK_AHOUR               (GUI_ID_USER + 0x26)
+     58          #define ID_CLOCK_AMIN                (GUI_ID_USER + 0x27)
+     59          #define ID_CLOCK_ASEC                (GUI_ID_USER + 0x28)
+     60          
+     61          #define ID_CLOCK_CHECK_DATE          (GUI_ID_USER + 0x29)
+     62          #define ID_CLOCK_CHECK_TIME          (GUI_ID_USER + 0x2A)
+     63          #define ID_CLOCK_CHECK_ALARM         (GUI_ID_USER + 0x2B)
+     64          
+     65          #define ID_FRAMEWIN_INFO         (GUI_ID_USER + 0x02)
+     66          #define ID_ALARM                 (GUI_ID_USER + 0x03)
+     67          #define ID_IMAGE_INFO            (GUI_ID_USER + 0x04)
+     68          #define ID_TIME                  (GUI_ID_USER + 0x05)
+     69          #define ID_BUTTON_INFO_CLOSE     (GUI_ID_USER + 0x06)
+     70          
+     71          /* Private macro -------------------------------------------------------------*/
+     72          /* Private variables ---------------------------------------------------------*/
+     73          static const GUI_WIDGET_CREATE_INFO _aDialog[] = {
+     74            { FRAMEWIN_CreateIndirect, "Clock", ID_FRAMEWIN_CLOCK, 0, 0, 240, 320-20, WM_CF_STAYONTOP, 0 },
+     75            { TEXT_CreateIndirect, "", ID_TEXT_DATE, 75, 30, 130, 23, 0, 0, TEXT_CF_HCENTER },
+     76            { TEXT_CreateIndirect, "", ID_TEXT_CLOCK, 60, 0, 160, 60, 0, 0, 0 },  
+     77            { BUTTON_CreateIndirect, "Close", ID_BUTTON_CLOSE_CLOCK, 30, 230, 80, 24, 0, 0, 0 },
+     78            { BUTTON_CreateIndirect, "Settings", ID_BUTTON_SETTINGS_CLOCK, 130, 230, 80, 24, 0, 0, 0},
+     79          };
+     80          
+     81          static const GUI_WIDGET_CREATE_INFO _aDialogSettingsCreate[] = {
+     82            { FRAMEWIN_CreateIndirect, "Settings", ID_FRAMEWIN_SETTINGS, 0, 0, 240, 320-20, FRAMEWIN_CF_MOVEABLE|WM_CF_STAYONTOP, 0},
+     83            { BUTTON_CreateIndirect, "Cancel", ID_CLOSE_SETTINGS, 30, 240, 80, 24, 0, 0, 0 },
+     84            { BUTTON_CreateIndirect, "Apply", ID_SET_SETTINGS, 30, 210, 80, 24, 0, 0, 0},
+     85          };
+     86          
+     87          /* Array of keys */
+     88          static int _aKey[] = {GUI_KEY_DELETE, GUI_KEY_TAB, GUI_KEY_LEFT, GUI_KEY_RIGHT};
+     89          
+     90          /* Dialog resource of numpad */
+     91          static const GUI_WIDGET_CREATE_INFO _aDialogNumPad[] = {
+     92            /*  Function                 Text      Id                 Px   Py   Dx   Dy */
+     93            { WINDOW_CreateIndirect,   0,        0, 240-95, 320-130,  95, 130},
+     94            { BUTTON_CreateIndirect,   "7",      GUI_ID_USER +  7,   5,   5,  25,  20},
+     95            { BUTTON_CreateIndirect,   "8",      GUI_ID_USER +  8,  35,   5,  25,  20},
+     96            { BUTTON_CreateIndirect,   "9",      GUI_ID_USER +  9,  65,   5,  25,  20},
+     97            { BUTTON_CreateIndirect,   "4",      GUI_ID_USER +  4,   5,  30,  25,  20},
+     98            { BUTTON_CreateIndirect,   "5",      GUI_ID_USER +  5,  35,  30,  25,  20},
+     99            { BUTTON_CreateIndirect,   "6",      GUI_ID_USER +  6,  65,  30,  25,  20},
+    100            { BUTTON_CreateIndirect,   "1",      GUI_ID_USER +  1,   5,  55,  25,  20},
+    101            { BUTTON_CreateIndirect,   "2",      GUI_ID_USER +  2,  35,  55,  25,  20},
+    102            { BUTTON_CreateIndirect,   "3",      GUI_ID_USER +  3,  65,  55,  25,  20},
+    103            { BUTTON_CreateIndirect,   "0",      GUI_ID_USER +  0,   5,  80,  25,  20},
+    104            { BUTTON_CreateIndirect,   ".",      GUI_ID_USER + 10,  35,  80,  25,  20},
+    105            { BUTTON_CreateIndirect,   "Del",    GUI_ID_USER + 11,  65,  80,  25,  20},
+    106            { BUTTON_CreateIndirect,   "Tab",    GUI_ID_USER + 12,   5, 105,  25,  20},
+    107            { BUTTON_CreateIndirect,   0,        GUI_ID_USER + 13,  35, 105,  25,  20},
+    108            { BUTTON_CreateIndirect,   0,        GUI_ID_USER + 14,  65, 105,  25,  20},
+    109          };
+    110          
+    111          static const GUI_WIDGET_CREATE_INFO _aDialogAlarm_V[] = {
+    112            { FRAMEWIN_CreateIndirect, "Alarm", ID_FRAMEWIN_INFO, 0, 20, 240, 300, 0, 0 },
+    113            { IMAGE_CreateIndirect, "Image", ID_IMAGE_INFO, 70, 35, 100, 100, 0, 0, 0 },
+    114            { TEXT_CreateIndirect, "!!! ALARM !!!", ID_ALARM, 77, 160, 100, 30, 0, 0, 0 },
+    115            { TEXT_CreateIndirect, "", ID_TIME, 74, 200, 93, 30, 0, 0, 0 },
+    116            { BUTTON_CreateIndirect, "Close", ID_BUTTON_INFO_CLOSE, 90, 240, 60, 30, 0, 0, 0 },  
+    117          };
+    118          
+    119          static const GUI_WIDGET_CREATE_INFO _aDialogAlarm_H[] = {
+    120            { FRAMEWIN_CreateIndirect, "Alarm", ID_FRAMEWIN_INFO, 0, 0, 320, 240, 0, 0 },
+    121            { IMAGE_CreateIndirect, "Image", ID_IMAGE_INFO, 23, 50, 100, 100, 0, 0, 0 },
+    122            { TEXT_CreateIndirect, "!!! ALARM !!!", ID_ALARM, 174, 37, 89, 22, 0, 0x0, 0 },
+    123            { TEXT_CreateIndirect, "", ID_TIME, 174, 88, 93, 30, 0, 0x0, 0 },
+    124            { BUTTON_CreateIndirect, "Close", ID_BUTTON_INFO_CLOSE, 186, 148, 60, 30, 0, 0x0, 0 },  
+    125          };
+    126          
+    127          WM_HWIN   hNumPad;
+    128          WM_HWIN  ALARM_hWin;
+    129          
+    130          __IO uint32_t alarm_set = 0;
+    131          extern __IO uint8_t alarm_now;
+    132          extern __IO uint32_t TS_Orientation;
+    133          /* Private function prototypes -----------------------------------------------*/
+    134          RTC_AlarmTypeDef  RTC_AlarmStructure;
+    135          
+    136          /* Private functions ---------------------------------------------------------*/
+    137          
+    138          /**
+    139            * @brief  Callback function of the numpad
+    140            * @param  pMsg: pointer to a data structure of type WM_MESSAGE
+    141            * @retval None
+    142            */
+    143          static void _cbDialogNumPad(WM_MESSAGE * pMsg) {
+    144            GUI_RECT r;
+    145            int i, NCode, Id, Pressed = 0;
+    146            WM_HWIN hDlg, hItem;
+    147            hDlg = pMsg->hWin;
+    148            switch (pMsg->MsgId) {
+    149            case WM_PAINT:
+    150              WM_GetClientRect(&r);
+    151              GUI_SetColor(0x000000);
+    152              GUI_DrawRect(r.x0, r.y0, r.x1, r.y1);          /* Draw rectangle around it */
+    153              /* Draw the bright sides */
+    154              GUI_SetColor(0xffffff);
+    155              GUI_DrawHLine(r.y0 + 1, r.x0 + 1, r.x1 - 2);   /* Draw top line */
+    156              GUI_DrawVLine(r.x0 + 1, r.y0 + 1, r.y1 - 2);
+    157              /* Draw the dark sides */
+    158              GUI_SetColor(0x555555);
+    159              GUI_DrawHLine(r.y1-1, r.x0 + 1, r.x1 - 1);
+    160              GUI_DrawVLine(r.x1-1, r.y0 + 1, r.y1 - 2);
+    161              break;
+    162            case WM_INIT_DIALOG:
+    163              for (i = 0; i < GUI_COUNTOF(_aDialogNumPad) - 1; i++) {
+    164                hItem = WM_GetDialogItem(hDlg, GUI_ID_USER + i);
+    165                BUTTON_SetFocussable(hItem, 0);                       /* Set all buttons non focussable */
+    166                switch (i) {
+    167                case 13:
+    168                  BUTTON_SetBitmapEx(hItem, 0, &_bmArrowLeft, 7, 7);  /* Set bitmap for arrow left button (unpressed) */
+    169                  BUTTON_SetBitmapEx(hItem, 1, &_bmArrowLeft, 7, 7);  /* Set bitmap for arrow left button (pressed) */
+    170                  break;
+    171                case 14:
+    172                  BUTTON_SetBitmapEx(hItem, 0, &_bmArrowRight, 7, 7); /* Set bitmap for arrow right button (unpressed) */
+    173                  BUTTON_SetBitmapEx(hItem, 1, &_bmArrowRight, 7, 7); /* Set bitmap for arrow right button (pressed) */
+    174                  break;
+    175                }
+    176              }
+    177              hItem = WM_GetDialogItem(hDlg, GUI_ID_USER + 12);
+    178              break;
+    179            case WM_NOTIFY_PARENT:
+    180              Id    = WM_GetId(pMsg->hWinSrc);      /* Id of widget */
+    181              NCode = pMsg->Data.v;                 /* Notification code */
+    182              switch (NCode) {
+    183              case WM_NOTIFICATION_CLICKED:
+    184                Pressed = 1;
+    185              case WM_NOTIFICATION_RELEASED:
+    186                if ((Id >= GUI_ID_USER) && (Id <= (GUI_ID_USER + GUI_COUNTOF(_aDialogNumPad) - 1))) {
+    187                  int Key;
+    188                  if (Id < GUI_ID_USER + 11) {
+    189                    char acBuffer[10];
+    190                    BUTTON_GetText(pMsg->hWinSrc, acBuffer, sizeof(acBuffer)); /* Get the text of the button */
+    191                    Key = acBuffer[0];
+    192                  } else {
+    193                    Key = _aKey[Id - GUI_ID_USER - 11];                        /* Get the text from the array */
+    194                  }
+    195                  GUI_SendKeyMsg(Key, Pressed);                                /* Send a key message to the focussed window */
+    196                }
+    197                break;
+    198              }
+    199            default:
+    200              WM_DefaultProc(pMsg);
+    201            }
+    202          }
+    203          
+    204          /**
+    205            * @brief  Callback function of the Settings dialog
+    206            * @param  pMsg: pointer to a data structure of type WM_MESSAGE
+    207            * @retval None
+    208            */
+    209          static void _cbDialogSettings(WM_MESSAGE * pMsg) {
+    210            WM_HWIN hItem;
+    211            int Id, NCode, idx;
+    212            static int8_t sec, min, hour;
+    213            static int8_t asec, amin, ahour;
+    214            static int8_t day, month, max_days;
+    215            static int16_t  year;
+    216            SPINBOX_Handle   hSpin;
+    217            DROPDOWN_Handle  hDropMonth; 
+    218            TEXT_Handle     hText  ;
+    219            static  CALENDAR_DATE   current_date;
+    220            RTC_TimeTypeDef   RTC_TimeStructure;
+    221            RTC_DateTypeDef   RTC_DateStructure;
+    222            static uint8_t TempStr[50];  
+    223            
+    224            switch (pMsg->MsgId) {
+    225            case WM_INIT_DIALOG:
+    226              
+    227              /* Get Clock setting from RTC */
+    228              RTC_GetTime(RTC_Format_BIN, &RTC_TimeStructure);
+    229              
+    230              sec    =  RTC_TimeStructure.RTC_Seconds;
+    231              min    =  RTC_TimeStructure.RTC_Minutes;
+    232              hour   =  RTC_TimeStructure.RTC_Hours;
+    233              
+    234              RTC_GetAlarm(RTC_Format_BIN, RTC_Alarm_A, &RTC_AlarmStructure);
+    235              
+    236              asec  = RTC_AlarmStructure.RTC_AlarmTime.RTC_Seconds;
+    237              amin  = RTC_AlarmStructure.RTC_AlarmTime.RTC_Minutes;
+    238              ahour = RTC_AlarmStructure.RTC_AlarmTime.RTC_Hours;
+    239              
+    240              RTC_GetDate(RTC_Format_BIN, &RTC_DateStructure);
+    241              
+    242              year =  RTC_DateStructure.RTC_Year + 2000;
+    243              month =  RTC_DateStructure.RTC_Month;
+    244              day =  RTC_DateStructure.RTC_Date;
+    245              
+    246              max_days = GetMaxDays(month, year);
+    247              
+    248              /* Update the dialog items */
+    249              hItem = pMsg->hWin;
+    250              FRAMEWIN_SetFont(hItem, GUI_FONT_13B_ASCII);
+    251              
+    252              /* Date */
+    253              
+    254              hText = TEXT_CreateEx(20, 20, 100, 25, pMsg->hWin, WM_CF_SHOW,0, 0x11F," Date : ");
+    255              TEXT_SetFont(hText, GUI_FONT_13B_ASCII);
+    256              TEXT_SetTextColor(hText, 0x00804000);
+    257              
+    258              hSpin = SPINBOX_CreateEx(20, 35, 40, 18, pMsg->hWin, WM_CF_SHOW, ID_CLOCK_DAY, 1, max_days);
+    259              SPINBOX_SetFont(hSpin, GUI_FONT_13B_ASCII);
+    260              SPINBOX_SetTextColor(hSpin, SPINBOX_CI_ENABLED, 0x00804000);
+    261              SPINBOX_EnableBlink(hSpin, 250, 1);
+    262                
+    263                
+    264              SPINBOX_SetValue(hSpin, day);
+    265              
+    266              hDropMonth = DROPDOWN_CreateEx(65, 35, 80, 160, pMsg->hWin, WM_CF_SHOW, 0,  ID_CLOCK_MONTH);
+    267              DROPDOWN_SetFont(hDropMonth, GUI_FONT_13B_ASCII);
+    268              DROPDOWN_SetTextColor(hDropMonth, DROPDOWN_CI_UNSEL, 0x00804000);
+    269              DROPDOWN_SetTextColor(hDropMonth, DROPDOWN_CI_SEL, 0x00804000);    
+    270              
+    271              for (idx = 0; idx < 12; idx++ )
+    272              {
+    273                DROPDOWN_AddString (hDropMonth, (char *)strMonth[idx]);
+    274              }
+    275              
+    276              DROPDOWN_SetSel(hDropMonth, month - 1);
+    277              
+    278              hSpin = SPINBOX_CreateEx(150, 35, 50, 18, pMsg->hWin, WM_CF_SHOW, ID_CLOCK_YEAR, 2000, 2099);
+    279              SPINBOX_SetFont(hSpin, GUI_FONT_13B_ASCII);
+    280              SPINBOX_SetTextColor(hSpin, SPINBOX_CI_ENABLED, 0x00804000);  
+    281              SPINBOX_EnableBlink(hSpin, 250, 1);
+    282              SPINBOX_SetValue(hSpin, year);
+    283              
+    284              hItem = CHECKBOX_Create(205, 37, 20, 26, pMsg->hWin, ID_CLOCK_CHECK_DATE ,WM_CF_SHOW);
+    285              CHECKBOX_SetState(hItem, 1);
+    286              
+    287              /* Time */
+    288              
+    289              hText = TEXT_CreateEx(20, 50 + 20, 100, 25, pMsg->hWin, WM_CF_SHOW,0, 0x123," Time : ");
+    290              TEXT_SetFont(hText, GUI_FONT_13B_ASCII);
+    291              TEXT_SetTextColor(hText, 0x00804000);    
+    292              
+    293              hSpin = SPINBOX_CreateEx(20, 65 + 20, 40, 18, pMsg->hWin, WM_CF_SHOW, ID_CLOCK_HOUR, 0,23);
+    294              SPINBOX_SetFont(hSpin, GUI_FONT_13B_ASCII);
+    295              SPINBOX_SetTextColor(hSpin, SPINBOX_CI_ENABLED, 0x00804000);      
+    296              SPINBOX_SetValue(hSpin, hour);
+    297              SPINBOX_EnableBlink(hSpin, 250, 1);
+    298              
+    299              hSpin = SPINBOX_CreateEx(75, 65 + 20, 40, 18, pMsg->hWin, WM_CF_SHOW, ID_CLOCK_MIN, 0, 59);
+    300              SPINBOX_SetFont(hSpin, GUI_FONT_13B_ASCII);  
+    301              SPINBOX_SetTextColor(hSpin, SPINBOX_CI_ENABLED, 0x00804000);  
+    302              SPINBOX_SetValue(hSpin, min);
+    303              SPINBOX_EnableBlink(hSpin, 250, 1);
+    304              
+    305              hSpin = SPINBOX_CreateEx(130, 65 + 20, 40, 18, pMsg->hWin, WM_CF_SHOW, ID_CLOCK_SEC, 0, 59);
+    306              SPINBOX_SetFont(hSpin, GUI_FONT_13B_ASCII);  
+    307              SPINBOX_SetTextColor(hSpin, SPINBOX_CI_ENABLED, 0x00804000);  
+    308              SPINBOX_SetValue(hSpin, sec);
+    309              SPINBOX_EnableBlink(hSpin, 250, 1);
+    310              
+    311              
+    312              hItem = CHECKBOX_Create(205, 65 + 20, 20, 26, pMsg->hWin, ID_CLOCK_CHECK_TIME ,WM_CF_SHOW);
+    313              CHECKBOX_SetState(hItem, 1);
+    314              
+    315              /* Alarm */
+    316              
+    317              hText = TEXT_CreateEx(20, 78 + 40, 100, 25, pMsg->hWin, WM_CF_SHOW,0, 0x126," Alarm : ");
+    318              TEXT_SetFont(hText, GUI_FONT_13B_ASCII);
+    319              TEXT_SetTextColor(hText, 0x00804000);    
+    320              
+    321              hSpin = SPINBOX_CreateEx(20, 93 + 40, 40, 18, pMsg->hWin, WM_CF_SHOW, ID_CLOCK_AHOUR, 0,23);
+    322              SPINBOX_SetFont(hSpin, GUI_FONT_13B_ASCII);
+    323              SPINBOX_SetTextColor(hSpin, SPINBOX_CI_ENABLED, 0x00804000);      
+    324              SPINBOX_SetValue(hSpin, ahour);
+    325              SPINBOX_EnableBlink(hSpin, 250, 1);
+    326              
+    327              
+    328              hSpin = SPINBOX_CreateEx(75, 93 + 40, 40, 18, pMsg->hWin, WM_CF_SHOW, ID_CLOCK_AMIN, 0, 59);
+    329              SPINBOX_SetFont(hSpin, GUI_FONT_13B_ASCII); 
+    330              SPINBOX_SetTextColor(hSpin, SPINBOX_CI_ENABLED, 0x00804000);  
+    331              SPINBOX_SetValue(hSpin, amin);
+    332              SPINBOX_EnableBlink(hSpin, 250, 1);
+    333                  
+    334              hSpin = SPINBOX_CreateEx(130, 93 + 40, 40, 18, pMsg->hWin, WM_CF_SHOW, ID_CLOCK_ASEC, 0, 59);
+    335              SPINBOX_SetFont(hSpin, GUI_FONT_13B_ASCII);  
+    336              SPINBOX_SetTextColor(hSpin, SPINBOX_CI_ENABLED, 0x00804000);  
+    337              SPINBOX_SetValue(hSpin, asec);
+    338              hItem = CHECKBOX_Create(205, 93 + 40, 20, 26, pMsg->hWin, ID_CLOCK_CHECK_ALARM ,WM_CF_SHOW);
+    339              CHECKBOX_SetState(hItem, 1);
+    340              SPINBOX_EnableBlink(hSpin, 250, 1);
+    341              
+    342              break;
+    343              
+    344            case WM_NOTIFY_PARENT:
+    345              Id    = WM_GetId(pMsg->hWinSrc);
+    346              NCode = pMsg->Data.v;
+    347              switch(Id) {
+    348                
+    349              case ID_CLOSE_SETTINGS: /* Notifications sent by 'Close' */
+    350                switch(NCode) {
+    351                case WM_NOTIFICATION_RELEASED:
+    352                  /* Exit */
+    353                  GUI_EndDialog(pMsg->hWin, 0);
+    354                  GUI_EndDialog (hNumPad, 0);
+    355                  break;
+    356                }
+    357                break;
+    358              case ID_SET_SETTINGS: /* Notifications sent by 'Apply' */
+    359                switch(NCode) {
+    360                case WM_NOTIFICATION_RELEASED:
+    361                  
+    362                  if(CHECKBOX_GetState( WM_GetDialogItem(WM_GetParent(pMsg->hWin), ID_CLOCK_CHECK_DATE)))
+    363                  { 
+    364                    current_date.Year = year =  SPINBOX_GetValue (WM_GetDialogItem(pMsg->hWin, ID_CLOCK_YEAR));
+    365                    current_date.Month = month = DROPDOWN_GetSel (WM_GetDialogItem(pMsg->hWin, ID_CLOCK_MONTH)) + 1;
+    366                    current_date.Day = day =  SPINBOX_GetValue (WM_GetDialogItem(pMsg->hWin, ID_CLOCK_DAY)); 
+    367                    
+    368                    
+    369                    RTC_DateStructure.RTC_Year  = year - 2000;
+    370                    RTC_DateStructure.RTC_Month = month;
+    371                    RTC_DateStructure.RTC_Date  = day;
+    372                    RTC_DateStructure.RTC_WeekDay = 0;
+    373                    RTC_SetDate(RTC_Format_BIN, &RTC_DateStructure);
+    374                    
+    375                    hItem = WM_GetDialogItem(WM_GetParent(pMsg->hWin), ID_CALENDAR);
+    376                    CALENDAR_SetDate(hItem, &current_date);
+    377                    CALENDAR_SetSel(hItem, &current_date);
+    378                    
+    379                    /* Date */
+    380                    hItem = WM_GetDialogItem(WM_GetParent(pMsg->hWin), ID_TEXT_DATE);    
+    381                    sprintf((char *)TempStr, "%02d, %s, %04d",day , strMonth[month-1], year);
+    382                    TEXT_SetText(hItem, (char *)TempStr);
+    383                  }
+    384                  
+    385                  if(CHECKBOX_GetState( WM_GetDialogItem(WM_GetParent(pMsg->hWin), ID_CLOCK_CHECK_TIME)))
+    386                  {
+    387                    /* Save new param in RTC */
+    388                    sec    =  SPINBOX_GetValue (WM_GetDialogItem(pMsg->hWin, ID_CLOCK_SEC));
+    389                    min    =  SPINBOX_GetValue (WM_GetDialogItem(pMsg->hWin, ID_CLOCK_MIN));
+    390                    hour   =  SPINBOX_GetValue (WM_GetDialogItem(pMsg->hWin, ID_CLOCK_HOUR));
+    391                    
+    392                    RTC_TimeStructure.RTC_Seconds = sec;
+    393                    RTC_TimeStructure.RTC_Minutes = min;
+    394                    RTC_TimeStructure.RTC_Hours   = hour;
+    395                    RTC_SetTime(RTC_Format_BIN, &RTC_TimeStructure);
+    396                  }
+    397                  
+    398                  if(CHECKBOX_GetState( WM_GetDialogItem(WM_GetParent(pMsg->hWin), ID_CLOCK_CHECK_ALARM)))
+    399                  {
+    400                    asec  = SPINBOX_GetValue (WM_GetDialogItem(pMsg->hWin, ID_CLOCK_ASEC));
+    401                    amin  = SPINBOX_GetValue (WM_GetDialogItem(pMsg->hWin, ID_CLOCK_AMIN));
+    402                    ahour = SPINBOX_GetValue (WM_GetDialogItem(pMsg->hWin, ID_CLOCK_AHOUR));
+    403                    
+    404                    /* Disable the Alarm A */
+    405                    RTC_AlarmCmd(RTC_Alarm_A, DISABLE);
+    406                    
+    407                    /* Disable the RTC Alarm A Interrupt */
+    408                    RTC_ITConfig(RTC_IT_ALRA, DISABLE);
+    409                    
+    410                    STM_EVAL_LEDOff(LED4);
+    411                    
+    412                    RTC_AlarmStructure.RTC_AlarmTime.RTC_Seconds = asec;
+    413                    RTC_AlarmStructure.RTC_AlarmTime.RTC_Minutes = amin;
+    414                    RTC_AlarmStructure.RTC_AlarmTime.RTC_Hours = ahour;
+    415                    RTC_AlarmStructure.RTC_AlarmDateWeekDaySel = RTC_AlarmDateWeekDaySel_Date;
+    416                    RTC_AlarmStructure.RTC_AlarmDateWeekDay = day;
+    417                    RTC_SetAlarm(RTC_Format_BIN, RTC_Alarm_A, &RTC_AlarmStructure);
+    418                    
+    419                    /* Enable the RTC Alarm A Interrupt */
+    420                    RTC_ITConfig(RTC_IT_ALRA, ENABLE);
+    421                    
+    422                    /* Enable the alarm  A */
+    423                    RTC_AlarmCmd(RTC_Alarm_A, ENABLE);
+    424                    
+    425                    alarm_set = 1;
+    426                  }
+    427                  
+    428                  /* Exit */
+    429                  WM_InvalidateWindow(WM_GetParent(pMsg->hWin));
+    430                  GUI_EndDialog(pMsg->hWin, 0);
+    431                  GUI_EndDialog (hNumPad, 0);
+    432                  break;
+    433                }
+    434                break;
+    435              }
+    436              break;
+    437            default:
+    438              WM_DefaultProc(pMsg);
+    439              break;
+    440            }
+    441          }
+    442          
+    443          /**
+    444            * @brief  Callback function of the Clock window
+    445            * @param  pMsg: pointer to a data structure of type WM_MESSAGE
+    446            * @retval None
+    447            */
+    448          static void _cbClockWindow(WM_MESSAGE * pMsg) {
+    449            WM_HWIN hItem;
+    450            static WM_HTIMER hTimerTime;  
+    451            RTC_TimeTypeDef   RTC_TimeStructure;
+    452            RTC_DateTypeDef   RTC_DateStructure;
+    453            uint8_t sec, min, hour, day, month;
+    454            uint16_t year;
+    455            static uint8_t TempStr[50];
+    456            static  CALENDAR_DATE   current_date;
+    457            
+    458            switch (pMsg->MsgId) 
+    459            {
+    460              
+    461            case WM_CREATE:
+    462              RTC_GetDate(RTC_Format_BIN, &RTC_DateStructure);
+    463              current_date.Year = RTC_DateStructure.RTC_Year + 2000;
+    464              current_date.Month = RTC_DateStructure.RTC_Month;
+    465              current_date.Day = RTC_DateStructure.RTC_Date;
+    466              /* Create timer */
+    467              hTimerTime = WM_CreateTimer(pMsg->hWin, 0, 1000, 0);        
+    468              break;
+    469              
+    470            case WM_TIMER:
+    471              /* Write date and clock */
+    472              RTC_GetTime(RTC_Format_BIN, &RTC_TimeStructure);
+    473              sec    =  RTC_TimeStructure.RTC_Seconds;
+    474              min    =  RTC_TimeStructure.RTC_Minutes;
+    475              hour   =  RTC_TimeStructure.RTC_Hours;
+    476              
+    477              RTC_GetDate(RTC_Format_BIN, &RTC_DateStructure);
+    478              year =  RTC_DateStructure.RTC_Year + 2000;
+    479              month =  RTC_DateStructure.RTC_Month;
+    480              day =  RTC_DateStructure.RTC_Date;  
+    481              
+    482              if((current_date.Day != day) ||(current_date.Month != month)
+    483                 ||(current_date.Year != year))
+    484              {
+    485                current_date.Year = year =  RTC_DateStructure.RTC_Year + 2000;
+    486                current_date.Month = month =  RTC_DateStructure.RTC_Month;
+    487                current_date.Day = day =  RTC_DateStructure.RTC_Date;
+    488                
+    489                hItem = WM_GetDialogItem(WM_GetParent(pMsg->hWin), ID_TEXT_DATE);    
+    490                sprintf((char *)TempStr, "%02d, %s, %04d",day , strMonth[month-1], year);
+    491                TEXT_SetText(hItem, (char *)TempStr);
+    492                
+    493                hItem = WM_GetDialogItem(WM_GetParent(pMsg->hWin), ID_CALENDAR);
+    494                CALENDAR_SetDate(hItem, &current_date);
+    495                CALENDAR_SetSel(hItem, &current_date);
+    496                WM_InvalidateWindow(hItem);
+    497              }
+    498              
+    499              hItem = WM_GetDialogItem(WM_GetParent(pMsg->hWin), ID_TEXT_CLOCK);
+    500              sprintf((char *)TempStr, "%02d:%02d:%02d",hour , min, sec);
+    501              TEXT_SetText(hItem, (char *)TempStr);
+    502              
+    503              WM_InvalidateWindow(pMsg->hWin);
+    504              WM_RestartTimer(pMsg->Data.v, 0);
+    505              
+    506              break; 
+    507              
+    508            case WM_DELETE:
+    509              WM_DeleteTimer(hTimerTime);
+    510              break;
+    511              
+    512            default:
+    513              WM_DefaultProc(pMsg);
+    514            }
+    515          }
+    516          
+    517          /**
+    518            * @brief  Callback routine of the dialog
+    519            * @param  pMsg: pointer to a data structure of type WM_MESSAGE
+    520            * @retval None
+    521            */
+    522          static void _cbDialog(WM_MESSAGE * pMsg) {
+    523            WM_HWIN  hItem;
+    524            int Id, NCode;
+    525            RTC_TimeTypeDef   RTC_TimeStructure;
+    526            RTC_DateTypeDef   RTC_DateStructure;
+    527            uint8_t sec, min, hour, day, month;
+    528            uint16_t year;
+    529            uint8_t offset, max;
+    530            static uint8_t TempStr[50];
+    531            
+    532            switch (pMsg->MsgId) {
+    533              
+    534            case WM_PAINT:
+    535              break;
+    536              
+    537            case WM_INIT_DIALOG:
+    538              
+    539              RTC_GetTime(RTC_Format_BIN, &RTC_TimeStructure);
+    540              sec    =  RTC_TimeStructure.RTC_Seconds;
+    541              min    =  RTC_TimeStructure.RTC_Minutes;
+    542              hour   =  RTC_TimeStructure.RTC_Hours;
+    543              
+    544              RTC_GetDate(RTC_Format_BIN, &RTC_DateStructure);
+    545              year =  RTC_DateStructure.RTC_Year + 2000;
+    546              month =  RTC_DateStructure.RTC_Month;
+    547              day =  RTC_DateStructure.RTC_Date;
+    548              
+    549              /* Initialization of 'System Information' */
+    550              hItem = pMsg->hWin;
+    551              FRAMEWIN_SetFont(hItem, GUI_FONT_13B_ASCII);
+    552              
+    553              /* Initialization of 'Close' */
+    554              hItem = WM_GetDialogItem(pMsg->hWin, ID_BUTTON_CLOSE_CLOCK);
+    555              BUTTON_SetFont(hItem, GUI_FONT_13B_ASCII);
+    556              
+    557              /* Set date in text mode */
+    558              hItem = WM_GetDialogItem(pMsg->hWin, ID_TEXT_DATE);
+    559              TEXT_SetFont(hItem, GUI_FONT_13B_1);
+    560              TEXT_SetTextColor(hItem, 0x00804000);
+    561              
+    562              WM_CreateWindowAsChild(80, 45, 354, 23, pMsg->hWin, WM_CF_SHOW | WM_CF_HASTRANS, _cbClockWindow , 0);
+    563              
+    564              hItem = WM_GetDialogItem(pMsg->hWin, ID_TEXT_CLOCK);
+    565              TEXT_SetFont(hItem, &GUI_FontBauhaus9332);
+    566              TEXT_SetTextColor(hItem, 0x00804000);   
+    567              
+    568              /* Set Init values */
+    569              hItem = WM_GetDialogItem(pMsg->hWin, ID_TEXT_DATE);
+    570              
+    571              /* Write date and clock */
+    572              sprintf((char *)TempStr, "%02d, %s, %04d",day , strMonth[month-1], year);
+    573              TEXT_SetText(hItem, (char *)TempStr);
+    574              
+    575              hItem = WM_GetDialogItem(pMsg->hWin, ID_TEXT_CLOCK);
+    576              sprintf((char *)TempStr, "%02d:%02d:%02d",hour , min, sec);
+    577              TEXT_SetText(hItem, (char *)TempStr);
+    578              
+    579              GetDateOffset (year, month, &offset , &max);
+    580              
+    581              CALENDAR_SetDefaultSize(CALENDAR_SI_HEADER, 25 );
+    582              CALENDAR_SetDefaultSize(CALENDAR_SI_CELL_X, 30 );
+    583              CALENDAR_SetDefaultSize(CALENDAR_SI_CELL_Y, 20 );
+    584              
+    585              CALENDAR_SetDefaultFont(CALENDAR_FI_CONTENT,GUI_FONT_16B_1 );
+    586              CALENDAR_SetDefaultFont(CALENDAR_FI_HEADER, GUI_FONT_16B_1) ;    
+    587              
+    588              CALENDAR_Create(pMsg->hWin, 15, 70, year, month, day, 2, ID_CALENDAR, WM_CF_SHOW);
+    589              
+    590              WM_InvalidateWindow(pMsg->hWin);    
+    591              break;
+    592              
+    593            case WM_NOTIFY_PARENT:
+    594              Id    = WM_GetId(pMsg->hWinSrc);    /* Id of widget */
+    595              NCode = pMsg->Data.v;               /* Notification code */
+    596              switch (NCode) {
+    597              case WM_NOTIFICATION_RELEASED:      /* React only if released */
+    598                switch (Id) {
+    599                case ID_BUTTON_CLOSE_CLOCK:
+    600                  GUI_EndDialog(pMsg->hWin, 0);
+    601                  break;
+    602                  
+    603                case ID_BUTTON_SETTINGS_CLOCK:
+    604                  GUI_CreateDialogBox(_aDialogSettingsCreate, GUI_COUNTOF(_aDialogSettingsCreate), &_cbDialogSettings, pMsg->hWin, 0, 0);
+    605                  hNumPad = GUI_CreateDialogBox(_aDialogNumPad, 
+    606                                                GUI_COUNTOF(_aDialogNumPad), 
+    607                                                _cbDialogNumPad, WM_GetDesktopWindowEx(1), 0, 0); /* Create the numpad dialog */
+    608                  WM_SetStayOnTop(hNumPad, 1);        
+    609                  break;
+    610                }
+    611                
+    612                break;
+    613                
+    614              case WM_NOTIFICATION_CHILD_DELETED:
+    615                WM_NotifyParent(WM_GetParent(pMsg->hWin), 0x500);
+    616                break; 
+    617              }
+    618              break;
+    619              
+    620            default:
+    621              WM_DefaultProc(pMsg);
+    622              break;
+    623            }
+    624          }
+    625          
+    626          
+    627          /**
+    628            * @brief  Callback routine of the alarm dialog
+    629            * @param  pMsg: pointer to a data structure of type WM_MESSAGE
+    630            * @retval None
+    631            */
+    632          static void _cbAlarmDialog(WM_MESSAGE * pMsg) {
+    633            WM_HWIN hItem;
+    634            int Id, NCode;
+    635            char temp[50];
+    636            uint8_t asec, amin, ahour;
+    637            
+    638            switch (pMsg->MsgId) {
+    639            case WM_INIT_DIALOG:
+    640              
+    641              /* Initialization of 'Alarm' */
+    642              hItem = pMsg->hWin;
+    643              FRAMEWIN_SetFont(hItem, GUI_FONT_13HB_ASCII);
+    644              
+    645              hItem = WM_GetDialogItem(pMsg->hWin, ID_ALARM);
+    646              TEXT_SetFont(hItem, GUI_FONT_13HB_ASCII);
+    647              
+    648              /* Initialization of 'Image' */
+    649              hItem = WM_GetDialogItem(pMsg->hWin, ID_IMAGE_INFO);
+    650              IMAGE_SetBitmap(hItem, &bmalarmclock);
+    651              
+    652              /* Initialization of 'Time' */
+    653              hItem = WM_GetDialogItem(pMsg->hWin, ID_TIME);
+    654              ahour = RTC_AlarmStructure.RTC_AlarmTime.RTC_Hours;
+    655              amin = RTC_AlarmStructure.RTC_AlarmTime.RTC_Minutes;
+    656              asec = RTC_AlarmStructure.RTC_AlarmTime.RTC_Seconds;
+    657              sprintf (temp, "%02d:%02d:%02d", ahour, amin, asec);
+    658              TEXT_SetText(hItem, temp);
+    659              TEXT_SetFont(hItem, GUI_FONT_24B_ASCII);
+    660              TEXT_SetTextColor(hItem, GUI_BROWN);
+    661              
+    662              /* Initialization of 'Close' */
+    663              hItem = WM_GetDialogItem(pMsg->hWin, ID_BUTTON_INFO_CLOSE);
+    664              BUTTON_SetFont(hItem, GUI_FONT_13HB_ASCII);
+    665              break;
+    666              
+    667            case WM_NOTIFY_PARENT:
+    668              Id    = WM_GetId(pMsg->hWinSrc);    /* Id of widget */
+    669              NCode = pMsg->Data.v;               /* Notification code */
+    670              switch (NCode) {
+    671              case WM_NOTIFICATION_RELEASED:      /* React only if released */
+    672                switch (Id) {
+    673                case ID_BUTTON_INFO_CLOSE:
+    674                  GUI_EndDialog(pMsg->hWin, 0);
+    675                  STM_EVAL_LEDOff(LED4);
+    676                  alarm_set=0;
+    677                  break;
+    678                }
+    679                break;
+    680              }
+    681              break;
+    682              
+    683            default:
+    684              WM_DefaultProc(pMsg);
+    685              break;
+    686            }
+    687          }
+    688          
+    689          /**
+    690            * @brief  ALARM_BackgroundProcess
+    691            * @param  None
+    692            * @retval None
+    693            */
+    694          void ALARM_BackgroundProcess (void)
+    695          {
+    696             
+    697              if (alarm_now == 0)
+    698              {
+    699               
+    700                if (TS_Orientation == 1)
+    701                {
+    702                  ALARM_hWin = GUI_CreateDialogBox(_aDialogAlarm_H, GUI_COUNTOF(_aDialogAlarm_H), _cbAlarmDialog, WM_GetDesktopWindowEx(1), 0, 0);
+    703                }
+    704                else
+    705                {
+    706                  ALARM_hWin = GUI_CreateDialogBox(_aDialogAlarm_V, GUI_COUNTOF(_aDialogAlarm_V), _cbAlarmDialog, WM_GetDesktopWindowEx(1), 0, 0);
+    707                }
+    708                WM_SetStayOnTop(ALARM_hWin, 1);
+    709                alarm_now = 1;
+    710              }
+    711          }
+    712          /**
+    713            * @brief  DEMO_Clock
+    714            * @param  hWin: Window handle
+    715            * @retval None
+    716            */
+    717          void DEMO_Clock(WM_HWIN hWin)
+    718          {
+    719            GUI_CreateDialogBox(_aDialog, GUI_COUNTOF(_aDialog), _cbDialog, hWin, 0, 0);
+    720          }
+    721          /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      24   ALARM_BackgroundProcess
+        24   -> GUI_CreateDialogBox
+        24   -> WM_GetDesktopWindowEx
+        24   -> WM_SetStayOnTop
+      16   DEMO_Clock
+        16   -> GUI_CreateDialogBox
+      72   _cbAlarmDialog
+        72   -> BUTTON_SetFont
+        72   -> FRAMEWIN_SetFont
+        72   -> GUI_EndDialog
+        72   -> IMAGE_SetBitmap
+        72   -> STM_EVAL_LEDOff
+        72   -> TEXT_SetFont
+        72   -> TEXT_SetText
+        72   -> TEXT_SetTextColor
+        16   -> WM_DefaultProc
+        72   -> WM_GetDialogItem
+        72   -> WM_GetId
+        72   -> sprintf
+      56   _cbClockWindow
+        56   -> CALENDAR_SetDate
+        56   -> CALENDAR_SetSel
+        56   -> RTC_GetDate
+        56   -> RTC_GetTime
+        56   -> TEXT_SetText
+        56   -> WM_CreateTimer
+        56   -> WM_DefaultProc
+        56   -> WM_DeleteTimer
+        56   -> WM_GetDialogItem
+        56   -> WM_GetParent
+        56   -> WM_InvalidateWindow
+        56   -> WM_RestartTimer
+        56   -> sprintf
+      72   _cbDialog
+        72   -> BUTTON_SetFont
+        72   -> CALENDAR_Create
+        72   -> CALENDAR_SetDefaultFont
+        72   -> CALENDAR_SetDefaultSize
+        72   -> FRAMEWIN_SetFont
+        72   -> GUI_CreateDialogBox
+        72   -> GUI_EndDialog
+        72   -> GetDateOffset
+        72   -> RTC_GetDate
+        72   -> RTC_GetTime
+        72   -> TEXT_SetFont
+        72   -> TEXT_SetText
+        72   -> TEXT_SetTextColor
+        72   -> WM_CreateWindowAsChild
+        36   -> WM_DefaultProc
+        72   -> WM_GetDesktopWindowEx
+        72   -> WM_GetDialogItem
+        72   -> WM_GetId
+        72   -> WM_GetParent
+        72   -> WM_InvalidateWindow
+        72   -> WM_NotifyParent
+        72   -> WM_SetStayOnTop
+        72   -> sprintf
+      48   _cbDialogNumPad
+        48   -> BUTTON_GetText
+        48   -> BUTTON_SetBitmapEx
+        48   -> BUTTON_SetFocussable
+        48   -> GUI_DrawHLine
+        48   -> GUI_DrawRect
+        48   -> GUI_DrawVLine
+        48   -> GUI_SendKeyMsg
+        48   -> GUI_SetColor
+        48   -> WM_DefaultProc
+        48   -> WM_GetClientRect
+        48   -> WM_GetDialogItem
+        48   -> WM_GetId
+      64   _cbDialogSettings
+        64   -> CALENDAR_SetDate
+        64   -> CALENDAR_SetSel
+        64   -> CHECKBOX_Create
+        64   -> CHECKBOX_GetState
+        64   -> CHECKBOX_SetState
+        64   -> DROPDOWN_AddString
+        64   -> DROPDOWN_CreateEx
+        64   -> DROPDOWN_GetSel
+        64   -> DROPDOWN_SetFont
+        64   -> DROPDOWN_SetSel
+        64   -> DROPDOWN_SetTextColor
+        64   -> FRAMEWIN_SetFont
+        64   -> GUI_EndDialog
+        64   -> GetMaxDays
+        64   -> RTC_AlarmCmd
+        64   -> RTC_GetAlarm
+        64   -> RTC_GetDate
+        64   -> RTC_GetTime
+        64   -> RTC_ITConfig
+        64   -> RTC_SetAlarm
+        64   -> RTC_SetDate
+        64   -> RTC_SetTime
+        64   -> SPINBOX_CreateEx
+        64   -> SPINBOX_EnableBlink
+        64   -> SPINBOX_GetValue
+        64   -> SPINBOX_SetFont
+        64   -> SPINBOX_SetTextColor
+        64   -> SPINBOX_SetValue
+        64   -> STM_EVAL_LEDOff
+        64   -> TEXT_CreateEx
+        64   -> TEXT_SetFont
+        64   -> TEXT_SetText
+        64   -> TEXT_SetTextColor
+        32   -> WM_DefaultProc
+        64   -> WM_GetDialogItem
+        64   -> WM_GetId
+        64   -> WM_GetParent
+        64   -> WM_InvalidateWindow
+        64   -> sprintf
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable324
+       4  ??DataTable324_1
+       4  ??DataTable324_2
+       4  ??DataTable325
+       4  ??DataTable325_1
+       4  ??DataTable325_2
+       4  ??DataTable325_3
+       4  ??DataTable325_4
+       4  ??DataTable326
+       4  ??DataTable326_1
+       4  ??DataTable326_10
+       4  ??DataTable326_11
+       4  ??DataTable326_12
+       4  ??DataTable326_13
+       4  ??DataTable326_14
+       4  ??DataTable326_15
+       4  ??DataTable326_16
+       4  ??DataTable326_2
+       4  ??DataTable326_3
+       4  ??DataTable326_4
+       4  ??DataTable326_5
+       4  ??DataTable326_6
+       4  ??DataTable326_7
+       4  ??DataTable326_8
+       4  ??DataTable326_9
+       8  ?_0
+       1  ?_1
+       2  ?_10
+       2  ?_11
+       2  ?_12
+       2  ?_13
+       2  ?_14
+       2  ?_15
+       2  ?_16
+       4  ?_17
+       4  ?_18
+       8  ?_19
+       8  ?_2
+       8  ?_20
+      16  ?_21
+      12  ?_22
+      12  ?_23
+      12  ?_24
+      16  ?_25
+      16  ?_26
+      12  ?_3
+       8  ?_4
+       8  ?_5
+       2  ?_6
+       2  ?_7
+       2  ?_8
+       2  ?_9
+      86  ALARM_BackgroundProcess
+       4  ALARM_hWin
+      26  DEMO_Clock
+      36  GUI_FontBauhaus9332
+    1928  GUI_FontBauhaus9332_CharInfo
+      12  GUI_FontBauhaus9332_Prop1
+      12  GUI_FontBauhaus9332_Prop10
+      12  GUI_FontBauhaus9332_Prop11
+      12  GUI_FontBauhaus9332_Prop12
+      12  GUI_FontBauhaus9332_Prop13
+      12  GUI_FontBauhaus9332_Prop14
+      12  GUI_FontBauhaus9332_Prop15
+      12  GUI_FontBauhaus9332_Prop16
+      12  GUI_FontBauhaus9332_Prop17
+      12  GUI_FontBauhaus9332_Prop18
+      12  GUI_FontBauhaus9332_Prop19
+      12  GUI_FontBauhaus9332_Prop2
+      12  GUI_FontBauhaus9332_Prop20
+      12  GUI_FontBauhaus9332_Prop21
+      12  GUI_FontBauhaus9332_Prop22
+      12  GUI_FontBauhaus9332_Prop23
+      12  GUI_FontBauhaus9332_Prop24
+      12  GUI_FontBauhaus9332_Prop25
+      12  GUI_FontBauhaus9332_Prop26
+      12  GUI_FontBauhaus9332_Prop27
+      12  GUI_FontBauhaus9332_Prop28
+      12  GUI_FontBauhaus9332_Prop29
+      12  GUI_FontBauhaus9332_Prop3
+      12  GUI_FontBauhaus9332_Prop30
+      12  GUI_FontBauhaus9332_Prop31
+      12  GUI_FontBauhaus9332_Prop32
+      12  GUI_FontBauhaus9332_Prop33
+      12  GUI_FontBauhaus9332_Prop34
+      12  GUI_FontBauhaus9332_Prop35
+      12  GUI_FontBauhaus9332_Prop36
+      12  GUI_FontBauhaus9332_Prop37
+      12  GUI_FontBauhaus9332_Prop4
+      12  GUI_FontBauhaus9332_Prop5
+      12  GUI_FontBauhaus9332_Prop6
+      12  GUI_FontBauhaus9332_Prop7
+      12  GUI_FontBauhaus9332_Prop8
+      12  GUI_FontBauhaus9332_Prop9
+     152  RTC_AlarmStructure
+          current_date
+          sec
+          min
+          hour
+          asec
+          amin
+          ahour
+          day
+          month
+          max_days
+          year
+          hNumPad
+          alarm_set
+          TempStr
+          TempStr
+      12  _PalArrow
+       8  _aColorsArrow
+     140  _aDialog
+     140  _aDialogAlarm_H
+     140  _aDialogAlarm_V
+     448  _aDialogNumPad
+      84  _aDialogSettingsCreate
+      16  _aKey
+      12  _acArrowLeft
+      12  _acArrowRight
+   40000  _acalarmclock
+      20  _bmArrowLeft
+      20  _bmArrowRight
+     192  _cbAlarmDialog
+     358  _cbClockWindow
+     562  _cbDialog
+     380  _cbDialogNumPad
+    1668  _cbDialogSettings
+     128  acGUI_FontBauhaus9332_0020
+     224  acGUI_FontBauhaus9332_0021
+     256  acGUI_FontBauhaus9332_0022
+     320  acGUI_FontBauhaus9332_0023
+     288  acGUI_FontBauhaus9332_0024
+     448  acGUI_FontBauhaus9332_0025
+     384  acGUI_FontBauhaus9332_0026
+     128  acGUI_FontBauhaus9332_0027
+     192  acGUI_FontBauhaus9332_0028
+     192  acGUI_FontBauhaus9332_0029
+     256  acGUI_FontBauhaus9332_002A
+     352  acGUI_FontBauhaus9332_002B
+     192  acGUI_FontBauhaus9332_002C
+     128  acGUI_FontBauhaus9332_002D
+     192  acGUI_FontBauhaus9332_002E
+     192  acGUI_FontBauhaus9332_002F
+     288  acGUI_FontBauhaus9332_0030
+     288  acGUI_FontBauhaus9332_0031
+     288  acGUI_FontBauhaus9332_0032
+     288  acGUI_FontBauhaus9332_0033
+     288  acGUI_FontBauhaus9332_0034
+     288  acGUI_FontBauhaus9332_0035
+     288  acGUI_FontBauhaus9332_0036
+     288  acGUI_FontBauhaus9332_0037
+     288  acGUI_FontBauhaus9332_0038
+     288  acGUI_FontBauhaus9332_0039
+     192  acGUI_FontBauhaus9332_003A
+     192  acGUI_FontBauhaus9332_003B
+     256  acGUI_FontBauhaus9332_003C
+     352  acGUI_FontBauhaus9332_003D
+     256  acGUI_FontBauhaus9332_003E
+     256  acGUI_FontBauhaus9332_003F
+     352  acGUI_FontBauhaus9332_0040
+     288  acGUI_FontBauhaus9332_0041
+     288  acGUI_FontBauhaus9332_0042
+     352  acGUI_FontBauhaus9332_0043
+     352  acGUI_FontBauhaus9332_0044
+     256  acGUI_FontBauhaus9332_0045
+     256  acGUI_FontBauhaus9332_0046
+     288  acGUI_FontBauhaus9332_0047
+     288  acGUI_FontBauhaus9332_0048
+     160  acGUI_FontBauhaus9332_0049
+     160  acGUI_FontBauhaus9332_004A
+     320  acGUI_FontBauhaus9332_004B
+     160  acGUI_FontBauhaus9332_004C
+     384  acGUI_FontBauhaus9332_004D
+     288  acGUI_FontBauhaus9332_004E
+     352  acGUI_FontBauhaus9332_004F
+     288  acGUI_FontBauhaus9332_0050
+     352  acGUI_FontBauhaus9332_0051
+     288  acGUI_FontBauhaus9332_0052
+     224  acGUI_FontBauhaus9332_0053
+     256  acGUI_FontBauhaus9332_0054
+     288  acGUI_FontBauhaus9332_0055
+     256  acGUI_FontBauhaus9332_0056
+     384  acGUI_FontBauhaus9332_0057
+     256  acGUI_FontBauhaus9332_0058
+     256  acGUI_FontBauhaus9332_0059
+     256  acGUI_FontBauhaus9332_005A
+     192  acGUI_FontBauhaus9332_005B
+     192  acGUI_FontBauhaus9332_005C
+     192  acGUI_FontBauhaus9332_005D
+     256  acGUI_FontBauhaus9332_005E
+     256  acGUI_FontBauhaus9332_005F
+     256  acGUI_FontBauhaus9332_0060
+     288  acGUI_FontBauhaus9332_0061
+     288  acGUI_FontBauhaus9332_0062
+     288  acGUI_FontBauhaus9332_0063
+     288  acGUI_FontBauhaus9332_0064
+     288  acGUI_FontBauhaus9332_0065
+     192  acGUI_FontBauhaus9332_0066
+     288  acGUI_FontBauhaus9332_0067
+     256  acGUI_FontBauhaus9332_0068
+     160  acGUI_FontBauhaus9332_0069
+     192  acGUI_FontBauhaus9332_006A
+     256  acGUI_FontBauhaus9332_006B
+     160  acGUI_FontBauhaus9332_006C
+     384  acGUI_FontBauhaus9332_006D
+     256  acGUI_FontBauhaus9332_006E
+     288  acGUI_FontBauhaus9332_006F
+     288  acGUI_FontBauhaus9332_0070
+     288  acGUI_FontBauhaus9332_0071
+     160  acGUI_FontBauhaus9332_0072
+     192  acGUI_FontBauhaus9332_0073
+     160  acGUI_FontBauhaus9332_0074
+     256  acGUI_FontBauhaus9332_0075
+     192  acGUI_FontBauhaus9332_0076
+     384  acGUI_FontBauhaus9332_0077
+     256  acGUI_FontBauhaus9332_0078
+     256  acGUI_FontBauhaus9332_0079
+     256  acGUI_FontBauhaus9332_007A
+     192  acGUI_FontBauhaus9332_007B
+     256  acGUI_FontBauhaus9332_007C
+     192  acGUI_FontBauhaus9332_007D
+     320  acGUI_FontBauhaus9332_007E
+     128  acGUI_FontBauhaus9332_00A0
+     224  acGUI_FontBauhaus9332_00A1
+     288  acGUI_FontBauhaus9332_00A2
+     288  acGUI_FontBauhaus9332_00A3
+     352  acGUI_FontBauhaus9332_00A4
+     288  acGUI_FontBauhaus9332_00A5
+     256  acGUI_FontBauhaus9332_00A6
+     256  acGUI_FontBauhaus9332_00A7
+     256  acGUI_FontBauhaus9332_00A8
+     352  acGUI_FontBauhaus9332_00A9
+     192  acGUI_FontBauhaus9332_00AA
+     192  acGUI_FontBauhaus9332_00AB
+     256  acGUI_FontBauhaus9332_00AC
+     128  acGUI_FontBauhaus9332_00AD
+     352  acGUI_FontBauhaus9332_00AE
+     192  acGUI_FontBauhaus9332_00B0
+     352  acGUI_FontBauhaus9332_00B1
+     192  acGUI_FontBauhaus9332_00B2
+     192  acGUI_FontBauhaus9332_00B3
+     256  acGUI_FontBauhaus9332_00B4
+     256  acGUI_FontBauhaus9332_00B5
+     352  acGUI_FontBauhaus9332_00B6
+     256  acGUI_FontBauhaus9332_00B8
+     192  acGUI_FontBauhaus9332_00B9
+     192  acGUI_FontBauhaus9332_00BA
+     192  acGUI_FontBauhaus9332_00BB
+     416  acGUI_FontBauhaus9332_00BC
+     416  acGUI_FontBauhaus9332_00BD
+     416  acGUI_FontBauhaus9332_00BE
+     256  acGUI_FontBauhaus9332_00BF
+     288  acGUI_FontBauhaus9332_00C0
+     288  acGUI_FontBauhaus9332_00C1
+     288  acGUI_FontBauhaus9332_00C2
+     288  acGUI_FontBauhaus9332_00C3
+     288  acGUI_FontBauhaus9332_00C4
+     288  acGUI_FontBauhaus9332_00C5
+     384  acGUI_FontBauhaus9332_00C6
+     352  acGUI_FontBauhaus9332_00C7
+     256  acGUI_FontBauhaus9332_00C8
+     256  acGUI_FontBauhaus9332_00C9
+     256  acGUI_FontBauhaus9332_00CA
+     256  acGUI_FontBauhaus9332_00CB
+     160  acGUI_FontBauhaus9332_00CC
+     160  acGUI_FontBauhaus9332_00CD
+     160  acGUI_FontBauhaus9332_00CE
+     160  acGUI_FontBauhaus9332_00CF
+     352  acGUI_FontBauhaus9332_00D0
+     288  acGUI_FontBauhaus9332_00D1
+     352  acGUI_FontBauhaus9332_00D2
+     352  acGUI_FontBauhaus9332_00D3
+     352  acGUI_FontBauhaus9332_00D4
+     352  acGUI_FontBauhaus9332_00D5
+     352  acGUI_FontBauhaus9332_00D6
+     352  acGUI_FontBauhaus9332_00D7
+     352  acGUI_FontBauhaus9332_00D8
+     288  acGUI_FontBauhaus9332_00D9
+     288  acGUI_FontBauhaus9332_00DA
+     288  acGUI_FontBauhaus9332_00DB
+     288  acGUI_FontBauhaus9332_00DC
+     256  acGUI_FontBauhaus9332_00DD
+     288  acGUI_FontBauhaus9332_00DE
+     288  acGUI_FontBauhaus9332_00DF
+     288  acGUI_FontBauhaus9332_00E0
+     288  acGUI_FontBauhaus9332_00E1
+     288  acGUI_FontBauhaus9332_00E2
+     288  acGUI_FontBauhaus9332_00E3
+     288  acGUI_FontBauhaus9332_00E4
+     288  acGUI_FontBauhaus9332_00E5
+     416  acGUI_FontBauhaus9332_00E6
+     288  acGUI_FontBauhaus9332_00E7
+     288  acGUI_FontBauhaus9332_00E8
+     288  acGUI_FontBauhaus9332_00E9
+     288  acGUI_FontBauhaus9332_00EA
+     288  acGUI_FontBauhaus9332_00EB
+     160  acGUI_FontBauhaus9332_00EC
+     160  acGUI_FontBauhaus9332_00ED
+     160  acGUI_FontBauhaus9332_00EE
+     160  acGUI_FontBauhaus9332_00EF
+     288  acGUI_FontBauhaus9332_00F0
+     256  acGUI_FontBauhaus9332_00F1
+     288  acGUI_FontBauhaus9332_00F2
+     288  acGUI_FontBauhaus9332_00F3
+     288  acGUI_FontBauhaus9332_00F4
+     288  acGUI_FontBauhaus9332_00F5
+     288  acGUI_FontBauhaus9332_00F6
+     352  acGUI_FontBauhaus9332_00F7
+     288  acGUI_FontBauhaus9332_00F8
+     256  acGUI_FontBauhaus9332_00F9
+     256  acGUI_FontBauhaus9332_00FA
+     256  acGUI_FontBauhaus9332_00FB
+     256  acGUI_FontBauhaus9332_00FC
+     256  acGUI_FontBauhaus9332_00FD
+     288  acGUI_FontBauhaus9332_00FE
+     256  acGUI_FontBauhaus9332_00FF
+     160  acGUI_FontBauhaus9332_0131
+     448  acGUI_FontBauhaus9332_0152
+     416  acGUI_FontBauhaus9332_0153
+     224  acGUI_FontBauhaus9332_0160
+     192  acGUI_FontBauhaus9332_0161
+     256  acGUI_FontBauhaus9332_0178
+     288  acGUI_FontBauhaus9332_0192
+     256  acGUI_FontBauhaus9332_02C6
+     256  acGUI_FontBauhaus9332_02C7
+     256  acGUI_FontBauhaus9332_02C9
+     256  acGUI_FontBauhaus9332_02D8
+     256  acGUI_FontBauhaus9332_02D9
+     256  acGUI_FontBauhaus9332_02DA
+     256  acGUI_FontBauhaus9332_02DB
+     256  acGUI_FontBauhaus9332_02DC
+     256  acGUI_FontBauhaus9332_02DD
+     320  acGUI_FontBauhaus9332_03C0
+     256  acGUI_FontBauhaus9332_2013
+     320  acGUI_FontBauhaus9332_2014
+     192  acGUI_FontBauhaus9332_2018
+     192  acGUI_FontBauhaus9332_2019
+     192  acGUI_FontBauhaus9332_201A
+     320  acGUI_FontBauhaus9332_201C
+     320  acGUI_FontBauhaus9332_201D
+     320  acGUI_FontBauhaus9332_201E
+     256  acGUI_FontBauhaus9332_2020
+     256  acGUI_FontBauhaus9332_2021
+     320  acGUI_FontBauhaus9332_2022
+     544  acGUI_FontBauhaus9332_2026
+     640  acGUI_FontBauhaus9332_2030
+     128  acGUI_FontBauhaus9332_2039
+     128  acGUI_FontBauhaus9332_203A
+     288  acGUI_FontBauhaus9332_20AC
+     384  acGUI_FontBauhaus9332_2122
+     320  acGUI_FontBauhaus9332_2126
+     256  acGUI_FontBauhaus9332_2202
+     320  acGUI_FontBauhaus9332_2206
+     320  acGUI_FontBauhaus9332_220F
+     320  acGUI_FontBauhaus9332_2211
+      64  acGUI_FontBauhaus9332_2215
+     192  acGUI_FontBauhaus9332_2219
+     320  acGUI_FontBauhaus9332_221A
+     320  acGUI_FontBauhaus9332_221E
+     256  acGUI_FontBauhaus9332_222B
+     256  acGUI_FontBauhaus9332_2248
+     256  acGUI_FontBauhaus9332_2260
+     256  acGUI_FontBauhaus9332_2264
+     256  acGUI_FontBauhaus9332_2265
+     320  acGUI_FontBauhaus9332_25CA
+     288  acGUI_FontBauhaus9332_F001
+     288  acGUI_FontBauhaus9332_F002
+     128  acGUI_FontBauhaus9332_FFFF
+      20  bmalarmclock
+      68  current_date
+          hTimerTime
+          TempStr
+
+ 
+     224 bytes in section .bss
+      16 bytes in section .data
+ 107 707 bytes in section .rodata
+   4 296 bytes in section .text
+ 
+   4 296 bytes of CODE  memory
+ 107 707 bytes of CONST memory
+     240 bytes of DATA  memory
+
+Errors: none
+Warnings: none

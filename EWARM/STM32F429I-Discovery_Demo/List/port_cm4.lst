@@ -1,0 +1,368 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.40.3.8902/W32 for ARM        24/Dec/2016  13:33:41
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Utilities\Third_Party\FreeRTOS\Source\portable\IAR\ARM_CM4F\port_cm4.c
+#    Command line =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Utilities\Third_Party\FreeRTOS\Source\portable\IAR\ARM_CM4F\port_cm4.c
+#        -D USE_STDPERIPH_DRIVER -D STM32F429_439xx -D USE_STM32F429I_DISCO -D
+#        USE_USB_OTG_HS -D USE_EMBEDDED_PHY -lcN
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\
+#        --diag_suppress Pe111,Pa082 -o
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\
+#        --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.2\arm\INC\c\DLib_Config_Full.h" -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Config\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Devices\STM32F4xx\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\User\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Demo\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Lib\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Test_Program\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\HID\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\Audio\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_OTG_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Common\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\STM32F429i-Discovery\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\fat_fs\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\Config\
+#        -Ohs --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.2\arm\CMSIS\Include\"
+#    List file    =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\port_cm4.lst
+#    Object file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\port_cm4.o
+#
+###############################################################################
+
+D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Utilities\Third_Party\FreeRTOS\Source\portable\IAR\ARM_CM4F\port_cm4.c
+      1          /*
+      2              FreeRTOS V7.1.1 - Copyright (C) 2012 Real Time Engineers Ltd.
+      3          	
+      4          
+      5              ***************************************************************************
+      6               *                                                                       *
+      7               *    FreeRTOS tutorial books are available in pdf and paperback.        *
+      8               *    Complete, revised, and edited pdf reference manuals are also       *
+      9               *    available.                                                         *
+     10               *                                                                       *
+     11               *    Purchasing FreeRTOS documentation will not only help you, by       *
+     12               *    ensuring you get running as quickly as possible and with an        *
+     13               *    in-depth knowledge of how to use FreeRTOS, it will also help       *
+     14               *    the FreeRTOS project to continue with its mission of providing     *
+     15               *    professional grade, cross platform, de facto standard solutions    *
+     16               *    for microcontrollers - completely free of charge!                  *
+     17               *                                                                       *
+     18               *    >>> See http://www.FreeRTOS.org/Documentation for details. <<<     *
+     19               *                                                                       *
+     20               *    Thank you for using FreeRTOS, and thank you for your support!      *
+     21               *                                                                       *
+     22              ***************************************************************************
+     23          
+     24          
+     25              This file is part of the FreeRTOS distribution.
+     26          
+     27              FreeRTOS is free software; you can redistribute it and/or modify it under
+     28              the terms of the GNU General Public License (version 2) as published by the
+     29              Free Software Foundation AND MODIFIED BY the FreeRTOS exception.
+     30              >>>NOTE<<< The modification to the GPL is included to allow you to
+     31              distribute a combined work that includes FreeRTOS without being obliged to
+     32              provide the source code for proprietary components outside of the FreeRTOS
+     33              kernel.  FreeRTOS is distributed in the hope that it will be useful, but
+     34              WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+     35              or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for
+     36              more details. You should have received a copy of the GNU General Public
+     37              License and the FreeRTOS license exception along with FreeRTOS; if not it
+     38              can be viewed here: http://www.freertos.org/a00114.html and also obtained
+     39              by writing to Richard Barry, contact details for whom are available on the
+     40              FreeRTOS WEB site.
+     41          
+     42              1 tab == 4 spaces!
+     43              
+     44              ***************************************************************************
+     45               *                                                                       *
+     46               *    Having a problem?  Start by reading the FAQ "My application does   *
+     47               *    not run, what could be wrong?                                      *
+     48               *                                                                       *
+     49               *    http://www.FreeRTOS.org/FAQHelp.html                               *
+     50               *                                                                       *
+     51              ***************************************************************************
+     52          
+     53              
+     54              http://www.FreeRTOS.org - Documentation, training, latest information, 
+     55              license and contact details.
+     56              
+     57              http://www.FreeRTOS.org/plus - A selection of FreeRTOS ecosystem products,
+     58              including FreeRTOS+Trace - an indispensable productivity tool.
+     59          
+     60              Real Time Engineers ltd license FreeRTOS to High Integrity Systems, who sell 
+     61              the code with commercial support, indemnification, and middleware, under 
+     62              the OpenRTOS brand: http://www.OpenRTOS.com.  High Integrity Systems also
+     63              provide a safety engineered and independently SIL3 certified version under 
+     64              the SafeRTOS brand: http://www.SafeRTOS.com.
+     65          */
+     66          
+     67          /*-----------------------------------------------------------
+     68           * Implementation of functions defined in portable.h for the ARM CM4F port.
+     69           *----------------------------------------------------------*/
+     70          
+     71          /* Scheduler includes. */
+     72          #include "FreeRTOS.h"
+     73          #include "task.h"
+     74          
+     75          #ifndef __ARMVFP__
+     76          	#error This port can only be used when the project options are configured to enable hardware floating point support.
+     77          #endif
+     78          
+     79          /* Constants required to manipulate the NVIC. */
+     80          #define portNVIC_SYSTICK_CTRL		( ( volatile unsigned long * ) 0xe000e010 )
+     81          #define portNVIC_SYSTICK_LOAD		( ( volatile unsigned long * ) 0xe000e014 )
+     82          #define portNVIC_INT_CTRL			( ( volatile unsigned long * ) 0xe000ed04 )
+     83          #define portNVIC_SYSPRI2			( ( volatile unsigned long * ) 0xe000ed20 )
+     84          #define portNVIC_SYSTICK_CLK		0x00000004
+     85          #define portNVIC_SYSTICK_INT		0x00000002
+     86          #define portNVIC_SYSTICK_ENABLE		0x00000001
+     87          #define portNVIC_PENDSVSET			0x10000000
+     88          #define portNVIC_PENDSV_PRI			( ( ( unsigned long ) configKERNEL_INTERRUPT_PRIORITY ) << 16 )
+     89          #define portNVIC_SYSTICK_PRI		( ( ( unsigned long ) configKERNEL_INTERRUPT_PRIORITY ) << 24 )
+     90          
+     91          /* Constants required to manipulate the VFP. */
+     92          #define portFPCCR					( ( volatile unsigned long * ) 0xe000ef34 ) /* Floating point context control register. */
+     93          #define portASPEN_AND_LSPEN_BITS	( 0x3UL << 30UL )
+     94          
+     95          /* Constants required to set up the initial stack. */
+     96          #define portINITIAL_XPSR			( 0x01000000 )
+     97          #define portINITIAL_EXEC_RETURN		( 0xfffffffd )
+     98          
+     99          /* Each task maintains its own interrupt status in the critical nesting
+    100          variable. */
+    101          static unsigned portBASE_TYPE uxCriticalNesting = 0xaaaaaaaa;
+    102          
+    103          /*
+    104           * Setup the timer to generate the tick interrupts.
+    105           */
+    106          static void prvSetupTimerInterrupt( void );
+    107          
+    108          /*
+    109           * Exception handlers.
+    110           */
+    111          void xPortSysTickHandler( void );
+    112          
+    113          /*
+    114           * Start first task is a separate function so it can be tested in isolation.
+    115           */
+    116          extern void vPortStartFirstTask( void );
+    117          
+    118          /*
+    119           * Functions defined in portasm.s to enable the VFP.
+    120           */
+    121          extern void vPortEnableVFP( void );
+    122          
+    123          /*-----------------------------------------------------------*/
+    124          
+    125          /*
+    126           * See header file for description.
+    127           */
+    128          portSTACK_TYPE *pxPortInitialiseStack( portSTACK_TYPE *pxTopOfStack, pdTASK_CODE pxCode, void *pvParameters )
+    129          {
+    130          	/* Simulate the stack frame as it would be created by a context switch
+    131          	interrupt. */
+    132          	
+    133          	/* Offset added to account for the way the MCU uses the stack on entry/exit
+    134          	of interrupts, and to ensure alignment. */
+    135          	pxTopOfStack--;
+    136          		
+    137          	*pxTopOfStack = portINITIAL_XPSR;	/* xPSR */
+    138          	pxTopOfStack--;
+    139          	*pxTopOfStack = ( portSTACK_TYPE ) pxCode;	/* PC */
+    140          	pxTopOfStack--;
+    141          	*pxTopOfStack = 0;	/* LR */
+    142          	
+    143          	/* Save code space by skipping register initialisation. */
+    144          	pxTopOfStack -= 5;	/* R12, R3, R2 and R1. */
+    145          	*pxTopOfStack = ( portSTACK_TYPE ) pvParameters;	/* R0 */
+    146          
+    147          	/* A save method is being used that requires each task to maintain its
+    148          	own exec return value. */
+    149          	pxTopOfStack--;
+    150          	*pxTopOfStack = portINITIAL_EXEC_RETURN;
+    151          
+    152          	pxTopOfStack -= 8;	/* R11, R10, R9, R8, R7, R6, R5 and R4. */
+    153          	
+    154          	return pxTopOfStack;
+    155          }
+    156          /*-----------------------------------------------------------*/
+    157          
+    158          /*
+    159           * See header file for description.
+    160           */
+    161          portBASE_TYPE xPortStartScheduler( void )
+    162          {
+    163          	/* Make PendSV and SysTick the lowest priority interrupts. */
+    164          	*(portNVIC_SYSPRI2) |= portNVIC_PENDSV_PRI;
+    165          	*(portNVIC_SYSPRI2) |= portNVIC_SYSTICK_PRI;
+    166          
+    167          	/* Start the timer that generates the tick ISR.  Interrupts are disabled
+    168          	here already. */
+    169          	prvSetupTimerInterrupt();
+    170          	
+    171          	/* Initialise the critical nesting count ready for the first task. */
+    172          	uxCriticalNesting = 0;
+    173          
+    174          	/* Ensure the VFP is enabled - it should be anyway. */
+    175          	vPortEnableVFP();
+    176          	
+    177          	/* Lazy save always. */
+    178          	*( portFPCCR ) |= portASPEN_AND_LSPEN_BITS;
+    179          	
+    180          	/* Start the first task. */
+    181          	vPortStartFirstTask();
+    182          
+    183          	/* Should not get here! */
+    184          	return 0;
+    185          }
+    186          /*-----------------------------------------------------------*/
+    187          
+    188          void vPortEndScheduler( void )
+    189          {
+    190          	/* It is unlikely that the CM4F port will require this function as there
+    191          	is nothing to return to.  */
+    192          }
+    193          /*-----------------------------------------------------------*/
+    194          
+    195          void vPortYieldFromISR( void )
+    196          {
+    197          	/* Set a PendSV to request a context switch. */
+    198          	*(portNVIC_INT_CTRL) = portNVIC_PENDSVSET;
+    199          }
+    200          /*-----------------------------------------------------------*/
+    201          
+    202          void vPortEnterCritical( void )
+    203          {
+    204          	portDISABLE_INTERRUPTS();
+    205          	uxCriticalNesting++;
+    206          }
+    207          /*-----------------------------------------------------------*/
+    208          
+    209          void vPortExitCritical( void )
+    210          {
+    211          	uxCriticalNesting--;
+    212          	if( uxCriticalNesting == 0 )
+    213          	{
+    214          		portENABLE_INTERRUPTS();
+    215          	}
+    216          }
+    217          /*-----------------------------------------------------------*/
+    218          
+    219          void xPortSysTickHandler( void )
+    220          {
+    221          unsigned long ulDummy;
+    222          
+    223          	/* If using preemption, also force a context switch. */
+    224          	#if configUSE_PREEMPTION == 1
+    225          		*(portNVIC_INT_CTRL) = portNVIC_PENDSVSET;	
+    226          	#endif
+    227          
+    228          	ulDummy = portSET_INTERRUPT_MASK_FROM_ISR();
+    229          	{
+    230          		vTaskIncrementTick();
+    231          	}
+    232          	portCLEAR_INTERRUPT_MASK_FROM_ISR( ulDummy );
+    233          }
+    234          /*-----------------------------------------------------------*/
+    235          
+    236          /*
+    237           * Setup the systick timer to generate the tick interrupts at the required
+    238           * frequency.
+    239           */
+    240          void prvSetupTimerInterrupt( void )
+    241          {
+    242          	/* Configure SysTick to interrupt at the requested rate. */
+    243          	*(portNVIC_SYSTICK_LOAD) = ( configCPU_CLOCK_HZ / configTICK_RATE_HZ ) - 1UL;
+    244          	*(portNVIC_SYSTICK_CTRL) = portNVIC_SYSTICK_CLK | portNVIC_SYSTICK_INT | portNVIC_SYSTICK_ENABLE;
+    245          }
+    246          /*-----------------------------------------------------------*/
+    247          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   pxPortInitialiseStack
+       0   vPortEndScheduler
+       8   vPortEnterCritical
+         8   -> vPortSetInterruptMask
+       0   vPortExitCritical
+         0   -> vPortClearInterruptMask
+       0   vPortYieldFromISR
+       8   xPortStartScheduler
+         8   -> vPortEnableVFP
+         8   -> vPortStartFirstTask
+       8   xPortSysTickHandler
+         0   -> vPortClearInterruptMask
+         8   -> vPortSetInterruptMask
+         8   -> vTaskIncrementTick
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable4
+       4  ??DataTable4_1
+       4  ??DataTable4_2
+       4  ??DataTable4_3
+      32  pxPortInitialiseStack
+       4  uxCriticalNesting
+       2  vPortEndScheduler
+      20  vPortEnterCritical
+      16  vPortExitCritical
+      10  vPortYieldFromISR
+      66  xPortStartScheduler
+      30  xPortSysTickHandler
+
+ 
+   4 bytes in section .data
+ 192 bytes in section .text
+ 
+ 192 bytes of CODE memory
+   4 bytes of DATA memory
+
+Errors: none
+Warnings: none

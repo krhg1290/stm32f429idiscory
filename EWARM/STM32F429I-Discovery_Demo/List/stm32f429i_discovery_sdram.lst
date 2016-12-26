@@ -1,0 +1,553 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.40.3.8902/W32 for ARM        24/Dec/2016  13:33:43
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Utilities\STM32F429I-Discovery\stm32f429i_discovery_sdram.c
+#    Command line =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Utilities\STM32F429I-Discovery\stm32f429i_discovery_sdram.c
+#        -D USE_STDPERIPH_DRIVER -D STM32F429_439xx -D USE_STM32F429I_DISCO -D
+#        USE_USB_OTG_HS -D USE_EMBEDDED_PHY -lcN
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\
+#        --diag_suppress Pe111,Pa082 -o
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\
+#        --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.2\arm\INC\c\DLib_Config_Full.h" -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Config\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Devices\STM32F4xx\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\User\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Demo\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Lib\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Test_Program\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\HID\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\Audio\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_OTG_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Common\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\STM32F429i-Discovery\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\fat_fs\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\Config\
+#        -Ohs --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.2\arm\CMSIS\Include\"
+#    List file    =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\stm32f429i_discovery_sdram.lst
+#    Object file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\stm32f429i_discovery_sdram.o
+#
+###############################################################################
+
+D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Utilities\STM32F429I-Discovery\stm32f429i_discovery_sdram.c
+      1          /**
+      2            ******************************************************************************
+      3            * @file    stm32f429i_discovery_sdram.c
+      4            * @author  MCD Application Team
+      5            * @version V1.0.1
+      6            * @date    28-October-2013
+      7            * @brief   This file provides a set of functions needed to drive the
+      8            *          IS42S16400J SDRAM memory mounted on STM32F429I-DISCO Kit.    
+      9            ******************************************************************************
+     10            * @attention
+     11            *
+     12            * <h2><center>&copy; COPYRIGHT 2013 STMicroelectronics</center></h2>
+     13            *
+     14            * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
+     15            * You may not use this file except in compliance with the License.
+     16            * You may obtain a copy of the License at:
+     17            *
+     18            *        http://www.st.com/software_license_agreement_liberty_v2
+     19            *
+     20            * Unless required by applicable law or agreed to in writing, software 
+     21            * distributed under the License is distributed on an "AS IS" BASIS, 
+     22            * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     23            * See the License for the specific language governing permissions and
+     24            * limitations under the License.
+     25            *
+     26            ******************************************************************************
+     27            */
+     28          
+     29          /* Includes ------------------------------------------------------------------*/
+     30          #include "stm32f429i_discovery_sdram.h"
+     31          #include "stm32f4xx_fmc.h"
+     32          /** @addtogroup Utilities
+     33            * @{
+     34            */ 
+     35          
+     36          /** @addtogroup STM32F4_DISCOVERY
+     37            * @{
+     38            */ 
+     39          
+     40          /** @addtogroup STM32429I_DISCO
+     41            * @{
+     42            */
+     43            
+     44          /** @addtogroup STM32429I_DISCO_SDRAM
+     45            * @brief     This file provides a set of functions needed to drive the 
+     46            *            IS42S16400J SDRAM memory mounted on STM32429I-DISCO board.
+     47            * @{
+     48            */ 
+     49          
+     50          /** @defgroup STM32429I_DISCO_SDRAM_Private_Functions
+     51            * @{
+     52            */
+     53          
+     54          #ifndef USE_Delay
+     55          static void delay(__IO uint32_t nCount);
+     56          #endif /* USE_Delay*/
+     57          
+     58          /**
+     59            * @brief  Configures the FMC and GPIOs to interface with the SDRAM memory.
+     60            *         This function must be called before any read/write operation
+     61            *         on the SDRAM.
+     62            * @param  None
+     63            * @retval None
+     64            */
+     65          void SDRAM_Init(void)
+     66          {
+     67            FMC_SDRAMInitTypeDef  FMC_SDRAMInitStructure;
+     68            FMC_SDRAMTimingInitTypeDef  FMC_SDRAMTimingInitStructure; 
+     69            
+     70            /* GPIO configuration for FMC SDRAM bank */
+     71            SDRAM_GPIOConfig();
+     72            
+     73            /* Enable FMC clock */
+     74            RCC_AHB3PeriphClockCmd(RCC_AHB3Periph_FMC, ENABLE);
+     75           
+     76          /* FMC Configuration ---------------------------------------------------------*/
+     77          /* FMC SDRAM Bank configuration */   
+     78            /* Timing configuration for 90 Mhz of SD clock frequency (180Mhz/2) */
+     79            /* TMRD: 2 Clock cycles */
+     80            FMC_SDRAMTimingInitStructure.FMC_LoadToActiveDelay    = 2;      
+     81            /* TXSR: min=70ns (7x11.11ns) */
+     82            FMC_SDRAMTimingInitStructure.FMC_ExitSelfRefreshDelay = 7;
+     83            /* TRAS: min=42ns (4x11.11ns) max=120k (ns) */
+     84            FMC_SDRAMTimingInitStructure.FMC_SelfRefreshTime      = 4;
+     85            /* TRC:  min=70 (7x11.11ns) */        
+     86            FMC_SDRAMTimingInitStructure.FMC_RowCycleDelay        = 7;         
+     87            /* TWR:  min=1+ 7ns (1+1x11.11ns) */
+     88            FMC_SDRAMTimingInitStructure.FMC_WriteRecoveryTime    = 2;      
+     89            /* TRP:  20ns => 2x11.11ns */
+     90            FMC_SDRAMTimingInitStructure.FMC_RPDelay              = 2;                
+     91            /* TRCD: 20ns => 2x11.11ns */
+     92            FMC_SDRAMTimingInitStructure.FMC_RCDDelay             = 2;
+     93          
+     94          /* FMC SDRAM control configuration */
+     95            FMC_SDRAMInitStructure.FMC_Bank = FMC_Bank2_SDRAM;
+     96            /* Row addressing: [7:0] */
+     97            FMC_SDRAMInitStructure.FMC_ColumnBitsNumber = FMC_ColumnBits_Number_8b;
+     98            /* Column addressing: [11:0] */
+     99            FMC_SDRAMInitStructure.FMC_RowBitsNumber = FMC_RowBits_Number_12b;
+    100            FMC_SDRAMInitStructure.FMC_SDMemoryDataWidth = SDRAM_MEMORY_WIDTH;
+    101            FMC_SDRAMInitStructure.FMC_InternalBankNumber = FMC_InternalBank_Number_4;
+    102            FMC_SDRAMInitStructure.FMC_CASLatency = SDRAM_CAS_LATENCY; 
+    103            FMC_SDRAMInitStructure.FMC_WriteProtection = FMC_Write_Protection_Disable;
+    104            FMC_SDRAMInitStructure.FMC_SDClockPeriod = SDCLOCK_PERIOD;  
+    105            FMC_SDRAMInitStructure.FMC_ReadBurst = SDRAM_READBURST;
+    106            FMC_SDRAMInitStructure.FMC_ReadPipeDelay = FMC_ReadPipe_Delay_1;
+    107            FMC_SDRAMInitStructure.FMC_SDRAMTimingStruct = &FMC_SDRAMTimingInitStructure;
+    108            
+    109            /* FMC SDRAM bank initialization */
+    110            FMC_SDRAMInit(&FMC_SDRAMInitStructure); 
+    111            
+    112            /* FMC SDRAM device initialization sequence */
+    113            SDRAM_InitSequence(); 
+    114            
+    115          }
+    116          
+    117          /**
+    118            * @brief  Configures all SDRAM memory I/Os pins. 
+    119            * @param  None. 
+    120            * @retval None.
+    121            */
+    122          void SDRAM_GPIOConfig(void)
+    123          {
+    124            GPIO_InitTypeDef GPIO_InitStructure;
+    125            
+    126            /* Enable GPIOs clock */
+    127            RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOB | RCC_AHB1Periph_GPIOC | RCC_AHB1Periph_GPIOD |
+    128                                   RCC_AHB1Periph_GPIOE | RCC_AHB1Periph_GPIOF | RCC_AHB1Periph_GPIOG, ENABLE);
+    129                                      
+    130          /*-- GPIOs Configuration -----------------------------------------------------*/
+    131          /*
+    132           +-------------------+--------------------+--------------------+--------------------+
+    133           +                       SDRAM pins assignment                                      +
+    134           +-------------------+--------------------+--------------------+--------------------+
+    135           | PD0  <-> FMC_D2   | PE0  <-> FMC_NBL0  | PF0  <-> FMC_A0    | PG0  <-> FMC_A10   |
+    136           | PD1  <-> FMC_D3   | PE1  <-> FMC_NBL1  | PF1  <-> FMC_A1    | PG1  <-> FMC_A11   |
+    137           | PD8  <-> FMC_D13  | PE7  <-> FMC_D4    | PF2  <-> FMC_A2    | PG8  <-> FMC_SDCLK |
+    138           | PD9  <-> FMC_D14  | PE8  <-> FMC_D5    | PF3  <-> FMC_A3    | PG15 <-> FMC_NCAS  |
+    139           | PD10 <-> FMC_D15  | PE9  <-> FMC_D6    | PF4  <-> FMC_A4    |--------------------+ 
+    140           | PD14 <-> FMC_D0   | PE10 <-> FMC_D7    | PF5  <-> FMC_A5    |   
+    141           | PD15 <-> FMC_D1   | PE11 <-> FMC_D8    | PF11 <-> FMC_NRAS  | 
+    142           +-------------------| PE12 <-> FMC_D9    | PF12 <-> FMC_A6    | 
+    143                               | PE13 <-> FMC_D10   | PF13 <-> FMC_A7    |    
+    144                               | PE14 <-> FMC_D11   | PF14 <-> FMC_A8    |
+    145                               | PE15 <-> FMC_D12   | PF15 <-> FMC_A9    |
+    146           +-------------------+--------------------+--------------------+
+    147           | PB5 <-> FMC_SDCKE1| 
+    148           | PB6 <-> FMC_SDNE1 | 
+    149           | PC0 <-> FMC_SDNWE |
+    150           +-------------------+  
+    151            
+    152          */
+    153            
+    154            /* Common GPIO configuration */
+    155            GPIO_InitStructure.GPIO_Mode  = GPIO_Mode_AF;
+    156            GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+    157            GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+    158            GPIO_InitStructure.GPIO_PuPd  = GPIO_PuPd_NOPULL;
+    159          
+    160            /* GPIOB configuration */
+    161            GPIO_PinAFConfig(GPIOB, GPIO_PinSource5 , GPIO_AF_FMC);
+    162            GPIO_PinAFConfig(GPIOB, GPIO_PinSource6 , GPIO_AF_FMC);
+    163            
+    164            GPIO_InitStructure.GPIO_Pin = GPIO_Pin_5  | GPIO_Pin_6;      
+    165          
+    166            GPIO_Init(GPIOB, &GPIO_InitStructure);  
+    167          
+    168            /* GPIOC configuration */
+    169            GPIO_PinAFConfig(GPIOC, GPIO_PinSource0 , GPIO_AF_FMC);
+    170            
+    171            GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0;      
+    172          
+    173            GPIO_Init(GPIOC, &GPIO_InitStructure);  
+    174            
+    175            /* GPIOD configuration */
+    176            GPIO_PinAFConfig(GPIOD, GPIO_PinSource0, GPIO_AF_FMC);
+    177            GPIO_PinAFConfig(GPIOD, GPIO_PinSource1, GPIO_AF_FMC);
+    178            GPIO_PinAFConfig(GPIOD, GPIO_PinSource8, GPIO_AF_FMC);
+    179            GPIO_PinAFConfig(GPIOD, GPIO_PinSource9, GPIO_AF_FMC);
+    180            GPIO_PinAFConfig(GPIOD, GPIO_PinSource10, GPIO_AF_FMC);
+    181            GPIO_PinAFConfig(GPIOD, GPIO_PinSource14, GPIO_AF_FMC);
+    182            GPIO_PinAFConfig(GPIOD, GPIO_PinSource15, GPIO_AF_FMC);
+    183          
+    184            GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0 | GPIO_Pin_1  | GPIO_Pin_8 |
+    185                                          GPIO_Pin_9 | GPIO_Pin_10 | GPIO_Pin_14 |
+    186                                          GPIO_Pin_15;
+    187          
+    188            GPIO_Init(GPIOD, &GPIO_InitStructure);
+    189          
+    190            /* GPIOE configuration */
+    191            GPIO_PinAFConfig(GPIOE, GPIO_PinSource0 , GPIO_AF_FMC);
+    192            GPIO_PinAFConfig(GPIOE, GPIO_PinSource1 , GPIO_AF_FMC);
+    193            GPIO_PinAFConfig(GPIOE, GPIO_PinSource7 , GPIO_AF_FMC);
+    194            GPIO_PinAFConfig(GPIOE, GPIO_PinSource8 , GPIO_AF_FMC);
+    195            GPIO_PinAFConfig(GPIOE, GPIO_PinSource9 , GPIO_AF_FMC);
+    196            GPIO_PinAFConfig(GPIOE, GPIO_PinSource10 , GPIO_AF_FMC);
+    197            GPIO_PinAFConfig(GPIOE, GPIO_PinSource11 , GPIO_AF_FMC);
+    198            GPIO_PinAFConfig(GPIOE, GPIO_PinSource12 , GPIO_AF_FMC);
+    199            GPIO_PinAFConfig(GPIOE, GPIO_PinSource13 , GPIO_AF_FMC);
+    200            GPIO_PinAFConfig(GPIOE, GPIO_PinSource14 , GPIO_AF_FMC);
+    201            GPIO_PinAFConfig(GPIOE, GPIO_PinSource15 , GPIO_AF_FMC);
+    202          
+    203            GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0  | GPIO_Pin_1  | GPIO_Pin_7 |
+    204                                          GPIO_Pin_8  | GPIO_Pin_9  | GPIO_Pin_10 |
+    205                                          GPIO_Pin_11 | GPIO_Pin_12 | GPIO_Pin_13 |
+    206                                          GPIO_Pin_14 | GPIO_Pin_15;
+    207          
+    208            GPIO_Init(GPIOE, &GPIO_InitStructure);
+    209          
+    210            /* GPIOF configuration */
+    211            GPIO_PinAFConfig(GPIOF, GPIO_PinSource0 , GPIO_AF_FMC);
+    212            GPIO_PinAFConfig(GPIOF, GPIO_PinSource1 , GPIO_AF_FMC);
+    213            GPIO_PinAFConfig(GPIOF, GPIO_PinSource2 , GPIO_AF_FMC);
+    214            GPIO_PinAFConfig(GPIOF, GPIO_PinSource3 , GPIO_AF_FMC);
+    215            GPIO_PinAFConfig(GPIOF, GPIO_PinSource4 , GPIO_AF_FMC);
+    216            GPIO_PinAFConfig(GPIOF, GPIO_PinSource5 , GPIO_AF_FMC);
+    217            GPIO_PinAFConfig(GPIOF, GPIO_PinSource11 , GPIO_AF_FMC);
+    218            GPIO_PinAFConfig(GPIOF, GPIO_PinSource12 , GPIO_AF_FMC);
+    219            GPIO_PinAFConfig(GPIOF, GPIO_PinSource13 , GPIO_AF_FMC);
+    220            GPIO_PinAFConfig(GPIOF, GPIO_PinSource14 , GPIO_AF_FMC);
+    221            GPIO_PinAFConfig(GPIOF, GPIO_PinSource15 , GPIO_AF_FMC);
+    222          
+    223            GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0  | GPIO_Pin_1 | GPIO_Pin_2 | 
+    224                                          GPIO_Pin_3  | GPIO_Pin_4 | GPIO_Pin_5 |
+    225                                          GPIO_Pin_11 | GPIO_Pin_12 | GPIO_Pin_13 |
+    226                                          GPIO_Pin_14 | GPIO_Pin_15;      
+    227          
+    228            GPIO_Init(GPIOF, &GPIO_InitStructure);
+    229          
+    230            /* GPIOG configuration */
+    231            GPIO_PinAFConfig(GPIOG, GPIO_PinSource0 , GPIO_AF_FMC);
+    232            GPIO_PinAFConfig(GPIOG, GPIO_PinSource1 , GPIO_AF_FMC);
+    233            GPIO_PinAFConfig(GPIOG, GPIO_PinSource4 , GPIO_AF_FMC);
+    234            GPIO_PinAFConfig(GPIOG, GPIO_PinSource5 , GPIO_AF_FMC);
+    235            GPIO_PinAFConfig(GPIOG, GPIO_PinSource8 , GPIO_AF_FMC);
+    236            GPIO_PinAFConfig(GPIOG, GPIO_PinSource15 , GPIO_AF_FMC);
+    237            
+    238          
+    239            GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0 | GPIO_Pin_1 | GPIO_Pin_4 |
+    240                                          GPIO_Pin_5 | GPIO_Pin_8 | GPIO_Pin_15;
+    241          
+    242            GPIO_Init(GPIOG, &GPIO_InitStructure);    
+    243          }
+    244          
+    245          /**
+    246            * @brief  Executes the SDRAM memory initialization sequence. 
+    247            * @param  None. 
+    248            * @retval None.
+    249            */
+    250          void SDRAM_InitSequence(void)
+    251          {
+    252            FMC_SDRAMCommandTypeDef FMC_SDRAMCommandStructure;
+    253            uint32_t tmpr = 0;
+    254            
+    255          /* Step 3 --------------------------------------------------------------------*/
+    256            /* Configure a clock configuration enable command */
+    257            FMC_SDRAMCommandStructure.FMC_CommandMode = FMC_Command_Mode_CLK_Enabled;
+    258            FMC_SDRAMCommandStructure.FMC_CommandTarget = FMC_Command_Target_bank2;
+    259            FMC_SDRAMCommandStructure.FMC_AutoRefreshNumber = 1;
+    260            FMC_SDRAMCommandStructure.FMC_ModeRegisterDefinition = 0;
+    261            /* Wait until the SDRAM controller is ready */ 
+    262            while(FMC_GetFlagStatus(FMC_Bank2_SDRAM, FMC_FLAG_Busy) != RESET)
+    263            {
+    264            }
+    265            /* Send the command */
+    266            FMC_SDRAMCmdConfig(&FMC_SDRAMCommandStructure);  
+    267            
+    268          /* Step 4 --------------------------------------------------------------------*/
+    269            /* Insert 100 ms delay */
+    270            __Delay(10);
+    271              
+    272          /* Step 5 --------------------------------------------------------------------*/
+    273            /* Configure a PALL (precharge all) command */ 
+    274            FMC_SDRAMCommandStructure.FMC_CommandMode = FMC_Command_Mode_PALL;
+    275            FMC_SDRAMCommandStructure.FMC_CommandTarget = FMC_Command_Target_bank2;
+    276            FMC_SDRAMCommandStructure.FMC_AutoRefreshNumber = 1;
+    277            FMC_SDRAMCommandStructure.FMC_ModeRegisterDefinition = 0;
+    278            /* Wait until the SDRAM controller is ready */ 
+    279            while(FMC_GetFlagStatus(FMC_Bank2_SDRAM, FMC_FLAG_Busy) != RESET)
+    280            {
+    281            }
+    282            /* Send the command */
+    283            FMC_SDRAMCmdConfig(&FMC_SDRAMCommandStructure);
+    284            
+    285          /* Step 6 --------------------------------------------------------------------*/
+    286            /* Configure a Auto-Refresh command */ 
+    287            FMC_SDRAMCommandStructure.FMC_CommandMode = FMC_Command_Mode_AutoRefresh;
+    288            FMC_SDRAMCommandStructure.FMC_CommandTarget = FMC_Command_Target_bank2;
+    289            FMC_SDRAMCommandStructure.FMC_AutoRefreshNumber = 4;
+    290            FMC_SDRAMCommandStructure.FMC_ModeRegisterDefinition = 0;
+    291            /* Wait until the SDRAM controller is ready */ 
+    292            while(FMC_GetFlagStatus(FMC_Bank2_SDRAM, FMC_FLAG_Busy) != RESET)
+    293            {
+    294            }
+    295            /* Send the  first command */
+    296            FMC_SDRAMCmdConfig(&FMC_SDRAMCommandStructure);
+    297            
+    298            /* Wait until the SDRAM controller is ready */ 
+    299            while(FMC_GetFlagStatus(FMC_Bank2_SDRAM, FMC_FLAG_Busy) != RESET)
+    300            {
+    301            }
+    302            /* Send the second command */
+    303            FMC_SDRAMCmdConfig(&FMC_SDRAMCommandStructure);
+    304            
+    305          /* Step 7 --------------------------------------------------------------------*/
+    306            /* Program the external memory mode register */
+    307            tmpr = (uint32_t)SDRAM_MODEREG_BURST_LENGTH_2          |
+    308                             SDRAM_MODEREG_BURST_TYPE_SEQUENTIAL   |
+    309                             SDRAM_MODEREG_CAS_LATENCY_3           |
+    310                             SDRAM_MODEREG_OPERATING_MODE_STANDARD |
+    311                             SDRAM_MODEREG_WRITEBURST_MODE_SINGLE;
+    312            
+    313            /* Configure a load Mode register command*/ 
+    314            FMC_SDRAMCommandStructure.FMC_CommandMode = FMC_Command_Mode_LoadMode;
+    315            FMC_SDRAMCommandStructure.FMC_CommandTarget = FMC_Command_Target_bank2;
+    316            FMC_SDRAMCommandStructure.FMC_AutoRefreshNumber = 1;
+    317            FMC_SDRAMCommandStructure.FMC_ModeRegisterDefinition = tmpr;
+    318            /* Wait until the SDRAM controller is ready */ 
+    319            while(FMC_GetFlagStatus(FMC_Bank2_SDRAM, FMC_FLAG_Busy) != RESET)
+    320            {
+    321            }
+    322            /* Send the command */
+    323            FMC_SDRAMCmdConfig(&FMC_SDRAMCommandStructure);
+    324            
+    325          /* Step 8 --------------------------------------------------------------------*/
+    326          
+    327            /* Set the refresh rate counter */
+    328            /* (15.62 us x Freq) - 20 */
+    329            /* Set the device refresh counter */
+    330            FMC_SetRefreshCount(1386);
+    331            /* Wait until the SDRAM controller is ready */ 
+    332            while(FMC_GetFlagStatus(FMC_Bank2_SDRAM, FMC_FLAG_Busy) != RESET)
+    333            {
+    334            }
+    335          }
+    336          
+    337          
+    338          /**
+    339            * @brief  Writes a Entire-word buffer to the SDRAM memory. 
+    340            * @param  pBuffer: pointer to buffer. 
+    341            * @param  uwWriteAddress: SDRAM memory internal address from which the data will be 
+    342            *         written.
+    343            * @param  uwBufferSize: number of words to write. 
+    344            * @retval None.
+    345            */
+    346          void SDRAM_WriteBuffer(uint32_t* pBuffer, uint32_t uwWriteAddress, uint32_t uwBufferSize)
+    347          {
+    348            __IO uint32_t write_pointer = (uint32_t)uwWriteAddress;
+    349          
+    350            /* Disable write protection */
+    351            FMC_SDRAMWriteProtectionConfig(FMC_Bank2_SDRAM, DISABLE);
+    352            
+    353            /* Wait until the SDRAM controller is ready */ 
+    354            while(FMC_GetFlagStatus(FMC_Bank2_SDRAM, FMC_FLAG_Busy) != RESET)
+    355            {
+    356            }
+    357          
+    358            /* While there is data to write */
+    359            for (; uwBufferSize != 0; uwBufferSize--) 
+    360            {
+    361              /* Transfer data to the memory */
+    362              *(uint32_t *) (SDRAM_BANK_ADDR + write_pointer) = *pBuffer++;
+    363          
+    364              /* Increment the address*/
+    365              write_pointer += 4;
+    366            }
+    367              
+    368          }
+    369          
+    370          /**
+    371            * @brief  Reads data buffer from the SDRAM memory. 
+    372            * @param  pBuffer: pointer to buffer. 
+    373            * @param  ReadAddress: SDRAM memory internal address from which the data will be 
+    374            *         read.
+    375            * @param  uwBufferSize: number of words to write. 
+    376            * @retval None.
+    377            */
+    378          void SDRAM_ReadBuffer(uint32_t* pBuffer, uint32_t uwReadAddress, uint32_t uwBufferSize)
+    379          {
+    380            __IO uint32_t write_pointer = (uint32_t)uwReadAddress;
+    381            
+    382             
+    383            /* Wait until the SDRAM controller is ready */ 
+    384            while(FMC_GetFlagStatus(FMC_Bank2_SDRAM, FMC_FLAG_Busy) != RESET)
+    385            {
+    386            }
+    387            
+    388            /* Read data */
+    389            for(; uwBufferSize != 0x00; uwBufferSize--)
+    390            {
+    391             *pBuffer++ = *(__IO uint32_t *)(SDRAM_BANK_ADDR + write_pointer );
+    392              
+    393             /* Increment the address*/
+    394              write_pointer += 4;
+    395            } 
+    396          }
+    397          
+    398          #ifndef USE_Delay
+    399          /**
+    400            * @brief  Inserts a delay time.
+    401            * @param  nCount: specifies the delay time length.
+    402            * @retval None
+    403            */
+    404          static void delay(__IO uint32_t nCount)
+    405          {
+    406            __IO uint32_t index = 0; 
+    407            for(index = (100000 * nCount); index != 0; index--)
+    408            {
+    409            }
+    410          }
+    411          #endif /* USE_Delay */
+    412          
+    413          
+    414          /**
+    415            * @}
+    416            */
+    417          
+    418          /**
+    419            * @}
+    420            */
+    421          
+    422          /**
+    423            * @}
+    424            */
+    425          
+    426          /**
+    427            * @}
+    428            */  
+    429          
+    430          /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   SDRAM_GPIOConfig
+        16   -> GPIO_Init
+        16   -> GPIO_PinAFConfig
+        16   -> RCC_AHB1PeriphClockCmd
+      80   SDRAM_Init
+        80   -> FMC_SDRAMInit
+        80   -> RCC_AHB3PeriphClockCmd
+        80   -> SDRAM_GPIOConfig
+        80   -> SDRAM_InitSequence
+      32   SDRAM_InitSequence
+        32   -> FMC_GetFlagStatus
+        32   -> FMC_SDRAMCmdConfig
+        32   -> FMC_SetRefreshCount
+      16   SDRAM_ReadBuffer
+        16   -> FMC_GetFlagStatus
+      16   SDRAM_WriteBuffer
+        16   -> FMC_GetFlagStatus
+        16   -> FMC_SDRAMWriteProtectionConfig
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable1
+       4  ??DataTable1_1
+       4  ??DataTable1_2
+       4  ??DataTable1_3
+       4  ??DataTable1_4
+       4  ??DataTable1_5
+       4  ??DataTable1_6
+     504  SDRAM_GPIOConfig
+     104  SDRAM_Init
+     248  SDRAM_InitSequence
+     136  SDRAM_ReadBuffer
+     148  SDRAM_WriteBuffer
+
+ 
+ 1 168 bytes in section .text
+ 
+ 1 168 bytes of CODE memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,347 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.40.3.8902/W32 for ARM        26/Dec/2016  11:51:20
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\Core\User\main.c
+#    Command line =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\Core\User\main.c
+#        -D USE_STDPERIPH_DRIVER -D STM32F429_439xx -D USE_STM32F429I_DISCO -D
+#        USE_USB_OTG_HS -D USE_EMBEDDED_PHY -lcN
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\
+#        --diag_suppress Pe111,Pa082 -o
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\
+#        --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.2\arm\INC\c\DLib_Config_Full.h" -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Config\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Devices\STM32F4xx\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\User\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Demo\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Lib\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Test_Program\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\HID\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\Audio\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_OTG_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Common\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\STM32F429i-Discovery\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\fat_fs\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\Config\
+#        -Ohs --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.2\arm\CMSIS\Include\"
+#    List file    =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\main.lst
+#    Object file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\main.o
+#
+###############################################################################
+
+D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\Core\User\main.c
+      1          /**
+      2            ******************************************************************************
+      3            * @file    main.c
+      4            * @author  MCD Application Team
+      5            * @version V1.0.1
+      6            * @date    11-November-2013
+      7            * @brief   Main program body
+      8            ******************************************************************************
+      9            * @attention
+     10            *
+     11            * <h2><center>&copy; COPYRIGHT 2013 STMicroelectronics</center></h2>
+     12            *
+     13            * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
+     14            * You may not use this file except in compliance with the License.
+     15            * You may obtain a copy of the License at:
+     16            *
+     17            *        http://www.st.com/software_license_agreement_liberty_v2
+     18            *
+     19            * Unless required by applicable law or agreed to in writing, software 
+     20            * distributed under the License is distributed on an "AS IS" BASIS, 
+     21            * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     22            * See the License for the specific language governing permissions and
+     23            * limitations under the License.
+     24            *
+     25            ******************************************************************************
+     26            */
+     27          
+     28          /* Includes ------------------------------------------------------------------*/
+     29          #include "bsp.h"
+     30          #include "timers.h "
+     31          #include "test_program.h"
+     32          #include <stddef.h>
+     33          
+     34          /* Private typedef -----------------------------------------------------------*/
+     35          /* Private define ------------------------------------------------------------*/
+     36          #define Background_Task_PRIO    ( tskIDLE_PRIORITY  + 10 )
+     37          #define Background_Task_STACK   ( 512 )
+     38          
+     39          #define LED_Task_PRIO    ( tskIDLE_PRIORITY  + 10 )
+     40          #define LED_Task_STACK   ( 512 )
+     41          
+     42          #define Demo_Task_PRIO          ( tskIDLE_PRIORITY  + 9 )
+     43          #define Demo_Task_STACK         ( 3048 )
+     44          
+     45          /* Private macro -------------------------------------------------------------*/
+     46          /* Private variables ---------------------------------------------------------*/
+     47          xTaskHandle                   Task_Handle;
+     48          xTaskHandle                   Demo_Handle;
+     49          xTaskHandle                   LED_Handle;
+     50          xTimerHandle                  TouchScreenTimer;
+     51          
+     52          uint32_t demo_mode = 0;
+     53          
+     54          extern WM_HWIN  ALARM_hWin;
+     55          
+     56          /* Private function prototypes -----------------------------------------------*/
+     57          static void Background_Task(void * pvParameters);
+     58          static void Demo_Task(void * pvParameters);
+     59          static void vTimerCallback( xTimerHandle pxTimer );
+     60          static void LED_Task(void * pvParameters);
+     61          extern void DEMO_Starup(void);
+     62          extern void DEMO_MainMenu(void);
+     63          extern void ALARM_BackgroundProcess (void);
+     64          
+     65          /* Private functions ---------------------------------------------------------*/
+     66          
+     67          /**
+     68            * @brief  Main program.
+     69            * @param  None
+     70            * @retval None
+     71            */ 
+     72          int main(void)
+     73          { 
+     74            
+     75            /* Setup SysTick Timer for 1 msec interrupts.*/
+     76            if (SysTick_Config(SystemCoreClock / 1000))
+     77            { 
+     78              /* Capture error */ 
+     79              while (1);
+     80            }
+     81          
+     82            
+     83            
+     84            /* Create background task */
+     85            xTaskCreate(Background_Task,
+     86                        (signed char const*)"BK_GND",
+     87                        Background_Task_STACK,
+     88                        NULL,
+     89                        Background_Task_PRIO,
+     90                        &Task_Handle);
+     91          
+     92          
+     93            /* Start the FreeRTOS scheduler */
+     94            vTaskStartScheduler();
+     95          }
+     96          
+     97          
+     98          /**
+     99            * @brief  Background task
+    100            * @param  pvParameters not used
+    101            * @retval None
+    102            */
+    103          static void Background_Task(void * pvParameters)
+    104          {
+    105              
+    106            /* Initialize the BSP layer */
+    107            LowLevel_Init();
+    108          
+    109            xTaskCreate(LED_Task,
+    110                        (signed char const*)"LED_DEMO",
+    111                        LED_Task_STACK,
+    112                        NULL,
+    113                        LED_Task_PRIO,
+    114                        &LED_Handle);
+    115          
+    116            
+    117            /* Run the background task */
+    118            
+    119            while (1)
+    120            {
+    121          
+    122              /* Handle USB Host background process */
+    123              USBH_USR_BackgroundProcess();
+    124              
+    125              /* Handle ALARM background process */
+    126              ALARM_BackgroundProcess();
+    127              /* This task is handled periodically, each 10 mS */
+    128              vTaskDelay(10);
+    129            }
+    130          }
+    131          
+    132          static void LED_Task(void * pvParameters){
+    133            
+    134            uint32_t ticks = 0;
+    135            
+    136            
+    137            while (1)
+    138            {
+    139              if(ticks++ > 10)
+    140              {
+    141                ticks = 0;
+    142                STM_EVAL_LEDToggle(LED3);
+    143              }
+    144              
+    145              vTaskDelay(10);
+    146              
+    147            }
+    148            
+    149            
+    150            
+    151          }
+    152          
+    153          
+    154          /**
+    155            * @brief  Demonstration task
+    156            * @param  pvParameters not used
+    157            * @retval None
+    158            */
+    159          static void Demo_Task(void * pvParameters)
+    160          {  
+    161            /* Change Skin */
+    162            PROGBAR_SetDefaultSkin(PROGBAR_SKIN_FLEX);
+    163            RADIO_SetDefaultSkin(RADIO_SKIN_FLEX);
+    164            SCROLLBAR_SetDefaultSkin(SCROLLBAR_SKIN_FLEX);
+    165            SLIDER_SetDefaultSkin(SLIDER_SKIN_FLEX);
+    166            SPINBOX_SetDefaultSkin(SPINBOX_SKIN_FLEX);
+    167            BUTTON_SetDefaultSkin(BUTTON_SKIN_FLEX);
+    168            
+    169            /* Setup layer configuration during startup */
+    170            GUI_SetBkColor(GUI_TRANSPARENT);
+    171            GUI_SelectLayer(1);
+    172            GUI_Clear();
+    173            GUI_SetBkColor(GUI_TRANSPARENT); 
+    174            GUI_SelectLayer(0);
+    175          
+    176            /* Run the Startup frame */
+    177            DEMO_Starup();
+    178            
+    179            /* Show the main menu */
+    180            DEMO_MainMenu();
+    181          }
+    182          
+    183          
+    184          /**
+    185            * @brief  Timer callback
+    186            * @param  pxTimer 
+    187            * @retval None
+    188            */
+    189          static void vTimerCallback( xTimerHandle pxTimer )
+    190          {
+    191             BSP_Pointer_Update();
+    192          }
+    193          
+    194          /**
+    195            * @brief  Error callback function
+    196            * @param  None
+    197            * @retval None
+    198            */
+    199          void vApplicationMallocFailedHook( void )
+    200          {
+    201            while (1)
+    202            {}
+    203          }
+    204          
+    205          #ifdef  USE_FULL_ASSERT
+    206          /**
+    207            * @brief  Reports the name of the source file and the source line number
+    208            *   where the assert_param error has occurred.
+    209            * @param  file: pointer to the source file name
+    210            * @param  line: assert_param error line source number
+    211            * @retval None
+    212            */
+    213          void assert_failed(uint8_t* file, uint32_t line)
+    214          {
+    215            /* User can add his own implementation to report the file name and line number,
+    216               ex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
+    217          
+    218            /* Infinite loop */
+    219            while (1)
+    220            {}
+    221          }
+    222          #endif
+    223          
+    224          /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      24   Background_Task
+        24   -> ALARM_BackgroundProcess
+        24   -> LowLevel_Init
+        24   -> USBH_USR_BackgroundProcess
+        24   -> vTaskDelay
+        24   -> xTaskGenericCreate
+       8   LED_Task
+         8   -> STM_EVAL_LEDToggle
+         8   -> vTaskDelay
+      24   main
+        24   -> vTaskStartScheduler
+        24   -> xTaskGenericCreate
+       0   vApplicationMallocFailedHook
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable3
+       4  ??DataTable3_1
+       4  ??DataTable3_2
+       4  ??DataTable3_3
+       8  ?_0
+      12  ?_1
+      56  Background_Task
+       4  Demo_Handle
+       4  LED_Handle
+      28  LED_Task
+       4  Task_Handle
+       4  TouchScreenTimer
+       4  demo_mode
+      86  main
+       2  vApplicationMallocFailedHook
+
+ 
+  20 bytes in section .bss
+ 208 bytes in section .text
+ 
+ 208 bytes of CODE memory
+  20 bytes of DATA memory
+
+Errors: none
+Warnings: 2

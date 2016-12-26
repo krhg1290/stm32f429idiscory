@@ -1,0 +1,447 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.40.3.8902/W32 for ARM        24/Dec/2016  13:33:51
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\Core\Test_Program\usbd_desc.c
+#    Command line =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\Core\Test_Program\usbd_desc.c
+#        -D USE_STDPERIPH_DRIVER -D STM32F429_439xx -D USE_STM32F429I_DISCO -D
+#        USE_USB_OTG_HS -D USE_EMBEDDED_PHY -lcN
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\
+#        --diag_suppress Pe111,Pa082 -o
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\
+#        --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.2\arm\INC\c\DLib_Config_Full.h" -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Config\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Devices\STM32F4xx\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\User\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Demo\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Lib\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Test_Program\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\HID\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\Audio\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_OTG_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Common\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\STM32F429i-Discovery\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\fat_fs\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\Config\
+#        -Ohs --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.2\arm\CMSIS\Include\"
+#    List file    =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\usbd_desc.lst
+#    Object file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\usbd_desc.o
+#
+###############################################################################
+
+D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\Core\Test_Program\usbd_desc.c
+      1          /**
+      2            ******************************************************************************
+      3            * @file    usbd_desc.c
+      4            * @author  MCD Application Team
+      5            * @version V1.0.1
+      6            * @date    11-November-2013
+      7            * @brief   This file provides the USBD descriptors and string formating method.
+      8            ******************************************************************************
+      9            * @attention
+     10            *
+     11            * <h2><center>&copy; COPYRIGHT 2013 STMicroelectronics</center></h2>
+     12            *
+     13            * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
+     14            * You may not use this file except in compliance with the License.
+     15            * You may obtain a copy of the License at:
+     16            *
+     17            *        http://www.st.com/software_license_agreement_liberty_v2
+     18            *
+     19            * Unless required by applicable law or agreed to in writing, software 
+     20            * distributed under the License is distributed on an "AS IS" BASIS, 
+     21            * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     22            * See the License for the specific language governing permissions and
+     23            * limitations under the License.
+     24            *
+     25            ******************************************************************************
+     26            */ 
+     27          
+     28          /* Includes ------------------------------------------------------------------*/
+     29          #include "usbd_core.h"
+     30          #include "usbd_desc.h"
+     31          #include "usbd_req.h"
+     32          #include "usbd_conf.h"
+     33          #include "usb_regs.h"
+     34          
+     35          /** @addtogroup STM32_USB_OTG_DEVICE_LIBRARY
+     36            * @{
+     37            */
+     38          
+     39          
+     40          /** @defgroup USBD_DESC 
+     41            * @brief USBD descriptors module
+     42            * @{
+     43            */ 
+     44          
+     45          /** @defgroup USBD_DESC_Private_TypesDefinitions
+     46            * @{
+     47            */ 
+     48          /**
+     49            * @}
+     50            */ 
+     51          
+     52          
+     53          /** @defgroup USBD_DESC_Private_Defines
+     54            * @{
+     55            */ 
+     56          
+     57          #define USBD_VID                     0x0483
+     58          #define USBD_PID                     0x5710
+     59          
+     60          #define USBD_LANGID_STRING            0x409
+     61          #define USBD_MANUFACTURER_STRING      "STMicroelectronics"
+     62          
+     63          #define USBD_PRODUCT_HS_STRING        "Joystick in HS mode"
+     64          #define USBD_SERIALNUMBER_HS_STRING   "00000000011B"
+     65          
+     66          #define USBD_PRODUCT_FS_STRING        "Joystick in FS Mode"
+     67          #define USBD_SERIALNUMBER_FS_STRING   "00000000011C"
+     68          
+     69          #define USBD_CONFIGURATION_HS_STRING  "HID Config"
+     70          #define USBD_INTERFACE_HS_STRING      "HID Interface"
+     71          
+     72          #define USBD_CONFIGURATION_FS_STRING  "HID Config"
+     73          #define USBD_INTERFACE_FS_STRING      "HID Interface"
+     74          /**
+     75            * @}
+     76            */ 
+     77          
+     78          
+     79          /** @defgroup USBD_DESC_Private_Macros
+     80            * @{
+     81            */ 
+     82          /**
+     83            * @}
+     84            */ 
+     85          
+     86          
+     87          /** @defgroup USBD_DESC_Private_Variables
+     88            * @{
+     89            */ 
+     90          
+     91          USBD_DEVICE USR_desc =
+     92          {
+     93            USBD_USR_DeviceDescriptor,
+     94            USBD_USR_LangIDStrDescriptor, 
+     95            USBD_USR_ManufacturerStrDescriptor,
+     96            USBD_USR_ProductStrDescriptor,
+     97            USBD_USR_SerialStrDescriptor,
+     98            USBD_USR_ConfigStrDescriptor,
+     99            USBD_USR_InterfaceStrDescriptor,
+    100            
+    101          };
+    102          
+    103          #ifdef USB_OTG_HS_INTERNAL_DMA_ENABLED
+    104            #if defined ( __ICCARM__ ) /*!< IAR Compiler */
+    105              #pragma data_alignment=4   
+    106            #endif
+    107          #endif /* USB_OTG_HS_INTERNAL_DMA_ENABLED */
+    108          /* USB Standard Device Descriptor */
+    109          __ALIGN_BEGIN uint8_t USBD_DeviceDesc[USB_SIZ_DEVICE_DESC] __ALIGN_END =
+    110            {
+    111              0x12,                       /*bLength */
+    112              USB_DEVICE_DESCRIPTOR_TYPE, /*bDescriptorType*/
+    113              0x00,                       /*bcdUSB */
+    114              0x02,
+    115              0x00,                       /*bDeviceClass*/
+    116              0x00,                       /*bDeviceSubClass*/
+    117              0x00,                       /*bDeviceProtocol*/
+    118              USB_OTG_MAX_EP0_SIZE,      /*bMaxPacketSize*/
+    119              LOBYTE(USBD_VID),           /*idVendor*/
+    120              HIBYTE(USBD_VID),           /*idVendor*/
+    121              LOBYTE(USBD_PID),           /*idVendor*/
+    122              HIBYTE(USBD_PID),           /*idVendor*/
+    123              0x00,                       /*bcdDevice rel. 2.00*/
+    124              0x02,
+    125              USBD_IDX_MFC_STR,           /*Index of manufacturer  string*/
+    126              USBD_IDX_PRODUCT_STR,       /*Index of product string*/
+    127              USBD_IDX_SERIAL_STR,        /*Index of serial number string*/
+    128              USBD_CFG_MAX_NUM            /*bNumConfigurations*/
+    129            } ; /* USB_DeviceDescriptor */
+    130          
+    131          #ifdef USB_OTG_HS_INTERNAL_DMA_ENABLED
+    132            #if defined ( __ICCARM__ ) /*!< IAR Compiler */
+    133              #pragma data_alignment=4   
+    134            #endif
+    135          #endif /* USB_OTG_HS_INTERNAL_DMA_ENABLED */
+    136          /* USB Standard Device Descriptor */
+    137          __ALIGN_BEGIN uint8_t USBD_DeviceQualifierDesc[USB_LEN_DEV_QUALIFIER_DESC] __ALIGN_END =
+    138          {
+    139            USB_LEN_DEV_QUALIFIER_DESC,
+    140            USB_DESC_TYPE_DEVICE_QUALIFIER,
+    141            0x00,
+    142            0x02,
+    143            0x00,
+    144            0x00,
+    145            0x00,
+    146            0x40,
+    147            0x01,
+    148            0x00,
+    149          };
+    150          
+    151          #ifdef USB_OTG_HS_INTERNAL_DMA_ENABLED
+    152            #if defined ( __ICCARM__ ) /*!< IAR Compiler */
+    153              #pragma data_alignment=4   
+    154            #endif
+    155          #endif /* USB_OTG_HS_INTERNAL_DMA_ENABLED */
+    156          /* USB Standard Device Descriptor */
+    157          __ALIGN_BEGIN uint8_t USBD_LangIDDesc[USB_SIZ_STRING_LANGID] __ALIGN_END =
+    158          {
+    159               USB_SIZ_STRING_LANGID,         
+    160               USB_DESC_TYPE_STRING,       
+    161               LOBYTE(USBD_LANGID_STRING),
+    162               HIBYTE(USBD_LANGID_STRING), 
+    163          };
+    164          /**
+    165            * @}
+    166            */ 
+    167          
+    168          
+    169          /** @defgroup USBD_DESC_Private_FunctionPrototypes
+    170            * @{
+    171            */ 
+    172          /**
+    173            * @}
+    174            */ 
+    175          
+    176          
+    177          /** @defgroup USBD_DESC_Private_Functions
+    178            * @{
+    179            */ 
+    180          
+    181          /**
+    182          * @brief  USBD_USR_DeviceDescriptor 
+    183          *         return the device descriptor
+    184          * @param  speed : current device speed
+    185          * @param  length : pointer to data length variable
+    186          * @retval pointer to descriptor buffer
+    187          */
+    188          uint8_t *  USBD_USR_DeviceDescriptor( uint8_t speed , uint16_t *length)
+    189          {
+    190            *length = sizeof(USBD_DeviceDesc);
+    191            return USBD_DeviceDesc;
+    192          }
+    193          
+    194          /**
+    195          * @brief  USBD_USR_LangIDStrDescriptor 
+    196          *         return the LangID string descriptor
+    197          * @param  speed : current device speed
+    198          * @param  length : pointer to data length variable
+    199          * @retval pointer to descriptor buffer
+    200          */
+    201          uint8_t *  USBD_USR_LangIDStrDescriptor( uint8_t speed , uint16_t *length)
+    202          {
+    203            *length =  sizeof(USBD_LangIDDesc);  
+    204            return USBD_LangIDDesc;
+    205          }
+    206          
+    207          
+    208          /**
+    209          * @brief  USBD_USR_ProductStrDescriptor 
+    210          *         return the product string descriptor
+    211          * @param  speed : current device speed
+    212          * @param  length : pointer to data length variable
+    213          * @retval pointer to descriptor buffer
+    214          */
+    215          uint8_t *  USBD_USR_ProductStrDescriptor( uint8_t speed , uint16_t *length)
+    216          {
+    217           
+    218            
+    219            if(speed == 0)
+    220            {   
+    221              USBD_GetString ((uint8_t *)USBD_PRODUCT_HS_STRING, (uint8_t *) USBD_StrDesc,(uint16_t *) length);
+    222            }
+    223            else
+    224            {
+    225              USBD_GetString ((uint8_t *)USBD_PRODUCT_FS_STRING,(uint8_t *) USBD_StrDesc,(uint16_t *) length);    
+    226            }
+    227            return USBD_StrDesc;
+    228          }
+    229          
+    230          /**
+    231          * @brief  USBD_USR_ManufacturerStrDescriptor 
+    232          *         return the manufacturer string descriptor
+    233          * @param  speed : current device speed
+    234          * @param  length : pointer to data length variable
+    235          * @retval pointer to descriptor buffer
+    236          */
+    237          uint8_t *  USBD_USR_ManufacturerStrDescriptor( uint8_t speed , uint16_t *length)
+    238          {
+    239            USBD_GetString ((uint8_t *)USBD_MANUFACTURER_STRING,(uint8_t *) USBD_StrDesc,(uint16_t *) length);
+    240            return USBD_StrDesc;
+    241          }
+    242          
+    243          /**
+    244          * @brief  USBD_USR_SerialStrDescriptor 
+    245          *         return the serial number string descriptor
+    246          * @param  speed : current device speed
+    247          * @param  length : pointer to data length variable
+    248          * @retval pointer to descriptor buffer
+    249          */
+    250          uint8_t *  USBD_USR_SerialStrDescriptor( uint8_t speed , uint16_t *length)
+    251          {
+    252            if(speed  == USB_OTG_SPEED_HIGH)
+    253            {    
+    254              USBD_GetString ((uint8_t *)USBD_SERIALNUMBER_HS_STRING,(uint8_t *) USBD_StrDesc,(uint16_t *) length);
+    255            }
+    256            else
+    257            {
+    258              USBD_GetString ((uint8_t *)USBD_SERIALNUMBER_FS_STRING,(uint8_t *) USBD_StrDesc,(uint16_t *) length);    
+    259            }
+    260            return USBD_StrDesc;
+    261          }
+    262          
+    263          /**
+    264          * @brief  USBD_USR_ConfigStrDescriptor 
+    265          *         return the configuration string descriptor
+    266          * @param  speed : current device speed
+    267          * @param  length : pointer to data length variable
+    268          * @retval pointer to descriptor buffer
+    269          */
+    270          uint8_t *  USBD_USR_ConfigStrDescriptor( uint8_t speed , uint16_t *length)
+    271          {
+    272            if(speed  == USB_OTG_SPEED_HIGH)
+    273            {  
+    274              USBD_GetString ((uint8_t *)USBD_CONFIGURATION_HS_STRING,(uint8_t *) USBD_StrDesc,(uint16_t *) length);
+    275            }
+    276            else
+    277            {
+    278              USBD_GetString ((uint8_t *)USBD_CONFIGURATION_FS_STRING,(uint8_t *) USBD_StrDesc,(uint16_t *) length); 
+    279            }
+    280            return USBD_StrDesc;  
+    281          }
+    282          
+    283          
+    284          /**
+    285          * @brief  USBD_USR_InterfaceStrDescriptor 
+    286          *         return the interface string descriptor
+    287          * @param  speed : current device speed
+    288          * @param  length : pointer to data length variable
+    289          * @retval pointer to descriptor buffer
+    290          */
+    291          uint8_t *  USBD_USR_InterfaceStrDescriptor( uint8_t speed , uint16_t *length)
+    292          {
+    293            if(speed == 0)
+    294            {
+    295              USBD_GetString ((uint8_t *)USBD_INTERFACE_HS_STRING,(uint8_t *) USBD_StrDesc,(uint16_t *) length);
+    296            }
+    297            else
+    298            {
+    299              USBD_GetString ((uint8_t *)USBD_INTERFACE_FS_STRING,(uint8_t *) USBD_StrDesc,(uint16_t *) length);
+    300            }
+    301            return USBD_StrDesc;  
+    302          }
+    303          
+    304          /**
+    305            * @}
+    306            */ 
+    307          
+    308          
+    309          /**
+    310            * @}
+    311            */ 
+    312          
+    313          
+    314          /**
+    315            * @}
+    316            */ 
+    317          
+    318          /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+    319          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   USBD_USR_ConfigStrDescriptor
+         8   -> USBD_GetString
+       0   USBD_USR_DeviceDescriptor
+       8   USBD_USR_InterfaceStrDescriptor
+         8   -> USBD_GetString
+       0   USBD_USR_LangIDStrDescriptor
+       8   USBD_USR_ManufacturerStrDescriptor
+         8   -> USBD_GetString
+       8   USBD_USR_ProductStrDescriptor
+         8   -> USBD_GetString
+       8   USBD_USR_SerialStrDescriptor
+         8   -> USBD_GetString
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable13
+       4  ??DataTable13_1
+       4  ??DataTable13_2
+      20  ?_0
+      20  ?_1
+      20  ?_2
+      16  ?_3
+      16  ?_4
+      12  ?_5
+      16  ?_6
+      20  USBD_DeviceDesc
+      12  USBD_DeviceQualifierDesc
+       4  USBD_LangIDDesc
+      20  USBD_USR_ConfigStrDescriptor
+       8  USBD_USR_DeviceDescriptor
+      20  USBD_USR_InterfaceStrDescriptor
+       8  USBD_USR_LangIDStrDescriptor
+      20  USBD_USR_ManufacturerStrDescriptor
+      28  USBD_USR_ProductStrDescriptor
+      28  USBD_USR_SerialStrDescriptor
+      28  USR_desc
+
+ 
+  64 bytes in section .data
+ 264 bytes in section .text
+ 
+ 264 bytes of CODE memory
+  64 bytes of DATA memory
+
+Errors: none
+Warnings: none

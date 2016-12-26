@@ -1,0 +1,1658 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.40.3.8902/W32 for ARM        24/Dec/2016  13:33:43
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Utilities\STM32F429I-Discovery\stm32f429i_discovery_ioe.c
+#    Command line =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Utilities\STM32F429I-Discovery\stm32f429i_discovery_ioe.c
+#        -D USE_STDPERIPH_DRIVER -D STM32F429_439xx -D USE_STM32F429I_DISCO -D
+#        USE_USB_OTG_HS -D USE_EMBEDDED_PHY -lcN
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\
+#        --diag_suppress Pe111,Pa082 -o
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\
+#        --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.2\arm\INC\c\DLib_Config_Full.h" -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Config\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Devices\STM32F4xx\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\User\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Demo\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Lib\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Test_Program\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\HID\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\Audio\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_OTG_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Common\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\STM32F429i-Discovery\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\fat_fs\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\Config\
+#        -Ohs --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.2\arm\CMSIS\Include\"
+#    List file    =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\stm32f429i_discovery_ioe.lst
+#    Object file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\stm32f429i_discovery_ioe.o
+#
+###############################################################################
+
+D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Utilities\STM32F429I-Discovery\stm32f429i_discovery_ioe.c
+      1          /**
+      2            ******************************************************************************
+      3            * @file    stm32f429i_discovery_ioe.c
+      4            * @author  MCD Application Team
+      5            * @version V1.0.1
+      6            * @date    28-October-2013
+      7            * @brief   This file provides a set of functions needed to manage the STMPE811
+      8            *          IO Expander device mounted on STM32F429I-DISCO Kit.
+      9            ******************************************************************************
+     10            * @attention
+     11            *
+     12            * <h2><center>&copy; COPYRIGHT 2013 STMicroelectronics</center></h2>
+     13            *
+     14            * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
+     15            * You may not use this file except in compliance with the License.
+     16            * You may obtain a copy of the License at:
+     17            *
+     18            *        http://www.st.com/software_license_agreement_liberty_v2
+     19            *
+     20            * Unless required by applicable law or agreed to in writing, software 
+     21            * distributed under the License is distributed on an "AS IS" BASIS, 
+     22            * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     23            * See the License for the specific language governing permissions and
+     24            * limitations under the License.
+     25            *
+     26            ******************************************************************************
+     27            */ 
+     28          
+     29            /* File Info : ---------------------------------------------------------------
+     30            
+     31              Note:
+     32              -----
+     33              - This driver uses the DMA method for sending and receiving data on I2C bus
+     34                which allow higher efficiency and reliability of the communication.  
+     35            
+     36              SUPPORTED FEATURES:
+     37                - Touch Panel Features: Single point mode (Polling/Interrupt)
+     38            ----------------------------------------------------------------------------*/
+     39          
+     40          /* Includes ------------------------------------------------------------------*/
+     41          #include "stm32f429i_discovery_ioe.h"
+     42          
+     43          /** @addtogroup Utilities
+     44            * @{
+     45            */
+     46          
+     47          /** @addtogroup STM32F4_DISCOVERY
+     48            * @{
+     49            */ 
+     50          
+     51          /** @addtogroup STM32F429I_DISCOVERY
+     52            * @{
+     53            */
+     54              
+     55          /** @defgroup STM32F429I_DISCOVERY_IOE 
+     56            * @brief  This file includes the IO Expander driver for STMPE811 IO Expander 
+     57            *         devices.
+     58            * @{
+     59            */ 
+     60            
+     61          
+     62          /** @defgroup STM32F429I_DISCOVERY_IOE_Private_TypesDefinitions
+     63            * @{
+     64            */ 
+     65          /**
+     66            * @}
+     67            */ 
+     68          
+     69          
+     70          /** @defgroup STM32F429I_DISCOVERY_IOE_Private_Defines
+     71            * @{
+     72            */ 
+     73          #define TIMEOUT_MAX    0x3000 /*<! The value of the maximal timeout for I2C waiting loops */
+     74          /**
+     75            * @}
+     76            */ 
+     77          
+     78          
+     79          /** @defgroup STM32F429I_DISCOVERY_IOE_Private_Macros
+     80            * @{
+     81            */ 
+     82          /**
+     83            * @}
+     84            */ 
+     85          
+     86          /** @defgroup STM32F429I_DISCOVERY_IOE_Private_Variables
+     87            * @{
+     88            */ 
+     89          TP_STATE TP_State;              /* The global structure holding the TS state */
+     90          
+     91          uint32_t IOE_TimeOut = TIMEOUT_MAX; /* Value of Timeout when I2C communication fails */
+     92          /**
+     93            * @}
+     94            */ 
+     95          
+     96          
+     97          /** @defgroup STM32F429I_DISCOVERY_IOE_Private_FunctionPrototypes
+     98            * @{
+     99            */ 
+    100          static uint16_t IOE_TP_Read_X(void);
+    101          static uint16_t IOE_TP_Read_Y(void);
+    102          static uint16_t IOE_TP_Read_Z(void);
+    103          static void     IOE_GPIO_Config(void);
+    104          static void     IOE_I2C_Config(void);
+    105          static void     IOE_DMA_Config(IOE_DMADirection_TypeDef Direction, uint8_t* buffer);
+    106          
+    107          #ifndef USE_Delay
+    108          static void delay(__IO uint32_t nCount);
+    109          #endif /* USE_Delay */
+    110          /**
+    111            * @}
+    112            */ 
+    113          
+    114          
+    115          /** @defgroup STM32F429I_DISCOVERY_IOE_Private_Functions
+    116            * @{
+    117            */ 
+    118          
+    119          
+    120          /**
+    121            * @brief  Initializes and Configures the IO_Expander Touch Panel Functionality 
+    122            *         and configures all STM32F429I_DISCO necessary
+    123            *         hardware (GPIOs, APB clocks ..).
+    124            * @param  None
+    125            * @retval IOE_OK if all initializations done correctly. Other value if error.
+    126            */
+    127          uint8_t IOE_Config(void)
+    128          {
+    129            /* Configure the needed pins */
+    130            IOE_GPIO_Config(); 
+    131            
+    132            /* I2C initialization */
+    133            IOE_I2C_Config();
+    134              
+    135            /* Read IO Expander ID  */
+    136            if(IOE_IsOperational())
+    137            {
+    138              return IOE_NOT_OPERATIONAL;
+    139            }
+    140            
+    141            /* Generate IO Expander Software reset */
+    142            IOE_Reset(); 
+    143            
+    144            /* IO Expander configuration */
+    145            /* Touch Panel controller and ADC configuration */
+    146            IOE_FnctCmd(IOE_ADC_FCT, ENABLE);
+    147            IOE_TP_Config();
+    148          
+    149            /* Configuration is OK */
+    150            return IOE_OK; 
+    151          }
+    152          
+    153          /**
+    154            * @brief  Enables the touch Panel interrupt.
+    155            * @param  None
+    156            * @retval IOE_OK: if all initializations are OK. Other value if error.
+    157            */
+    158          uint8_t IOE_TPITConfig(void)
+    159          {    
+    160            /* Enable the Global interrupt */  
+    161            IOE_GITCmd(ENABLE);     
+    162                    
+    163            /* Enable the Global GPIO Interrupt */
+    164            IOE_GITConfig((uint8_t)(IOE_GIT_TOUCH | IOE_GIT_FTH | IOE_GIT_FOV), ENABLE);    
+    165              
+    166            /* Read the GPIO_IT_STA to clear all pending bits if any */
+    167            I2C_ReadDeviceRegister(IOE_REG_GPIO_INT_STA); 
+    168            
+    169            /* If all OK return IOE_OK */
+    170            return IOE_OK;
+    171          }
+    172          
+    173          /**
+    174            * @brief  Returns Status and positions of the Touch Panel.
+    175            * @param  None
+    176            * @retval Pointer to TP_STATE structure holding Touch Panel information.
+    177            */
+    178          TP_STATE* IOE_TP_GetState(void)
+    179          {
+    180            uint32_t xDiff, yDiff , x , y;
+    181            static uint32_t _x = 0, _y = 0;
+    182            
+    183            /* Check if the Touch detect event happened */
+    184            TP_State.TouchDetected = (I2C_ReadDeviceRegister(IOE_REG_TP_CTRL) & 0x80);
+    185            
+    186            if(TP_State.TouchDetected) 
+    187            {
+    188              x = IOE_TP_Read_X();
+    189              y = IOE_TP_Read_Y();
+    190              xDiff = x > _x? (x - _x): (_x - x);
+    191              yDiff = y > _y? (y - _y): (_y - y);       
+    192              if (xDiff + yDiff > 5)
+    193              {
+    194                _x = x;
+    195                _y = y;       
+    196              }
+    197            }  
+    198            /* Update the X position */
+    199            TP_State.X = _x;
+    200              
+    201            /* Update the Y position */  
+    202            TP_State.Y = _y;
+    203            /* Update the Z Pression index */  
+    204            TP_State.Z = IOE_TP_Read_Z();  
+    205            
+    206            /* Clear the interrupt pending bit and enable the FIFO again */
+    207            I2C_WriteDeviceRegister(IOE_REG_FIFO_STA, 0x01);
+    208            I2C_WriteDeviceRegister(IOE_REG_FIFO_STA, 0x00);
+    209            
+    210            /* Return pointer to the updated structure */
+    211            return &TP_State; 
+    212          }
+    213          
+    214          /**
+    215            * @brief  Checks the selected Global interrupt source pending bit
+    216            * @param  Global_IT: the Global interrupt source to be checked, could be:
+    217            *   @arg  Global_IT_ADC : ADC interrupt    
+    218            *   @arg  Global_IT_FE : Touch Panel Controller FIFO Error interrupt
+    219            *   @arg  Global_IT_FF : Touch Panel Controller FIFO Full interrupt      
+    220            *   @arg  Global_IT_FOV : Touch Panel Controller FIFO Overrun interrupt     
+    221            *   @arg  Global_IT_FTH : Touch Panel Controller FIFO Threshold interrupt   
+    222            *   @arg  Global_IT_TOUCH : Touch Panel Controller Touch Detected interrupt      
+    223            * @retval Status of the checked flag. Could be SET or RESET.
+    224            */
+    225          FlagStatus IOE_GetGITStatus(uint8_t Global_IT)
+    226          {
+    227            __IO uint8_t tmp = 0;
+    228           
+    229            /* Get the Interrupt status */
+    230            tmp = I2C_ReadDeviceRegister(IOE_REG_INT_STA);
+    231            
+    232            if ((tmp & (uint8_t)Global_IT) != 0)
+    233            {
+    234              return SET;
+    235            }
+    236            else
+    237            {
+    238              return RESET;
+    239            }
+    240          }
+    241          
+    242          /**
+    243            * @brief  Clears the selected Global interrupt pending bit(s)
+    244            * @param  Global_IT: the Global interrupt to be cleared, could be any combination
+    245            *         of the following values:   
+    246            *   @arg  Global_IT_ADC : ADC interrupt    
+    247            *   @arg  Global_IT_FE : Touch Panel Controller FIFO Error interrupt
+    248            *   @arg  Global_IT_FF : Touch Panel Controller FIFO Full interrupt      
+    249            *   @arg  Global_IT_FOV : Touch Panel Controller FIFO Overrun interrupt     
+    250            *   @arg  Global_IT_FTH : Touch Panel Controller FIFO Threshold interrupt   
+    251            *   @arg  Global_IT_TOUCH : Touch Panel Controller Touch Detected interrupt 
+    252            * @retval IOE_OK: if all initializations are OK. Other value if error.
+    253            */
+    254          uint8_t IOE_ClearGITPending(uint8_t Global_IT)
+    255          {
+    256            /* Write 1 to the bits that have to be cleared */
+    257            I2C_WriteDeviceRegister(IOE_REG_INT_STA, Global_IT); 
+    258          
+    259            /* If all OK return IOE_OK */
+    260            return IOE_OK;
+    261          }
+    262          
+    263          
+    264          /**
+    265            * @brief  Checks if the IOE device is correctly configured and 
+    266            *         communicates correctly ont the I2C bus.
+    267            * @param  None
+    268            * @retval IOE_OK if IOE is operational. Other value if failure.
+    269            */
+    270          uint8_t IOE_IsOperational(void)
+    271          {
+    272            /* Return Error if the ID is not correct */
+    273            if( IOE_ReadID() != (uint16_t)STMPE811_ID )
+    274            {
+    275              /* Check if a Timeout occurred */
+    276              if (IOE_TimeOut == 0)
+    277              {
+    278                return(IOE_TimeoutUserCallback());
+    279              }
+    280              else
+    281              {
+    282                return IOE_FAILURE; /* ID is not Correct */
+    283              }
+    284            } 
+    285            else 
+    286            {
+    287              return IOE_OK; /* ID is correct */
+    288            }
+    289          }
+    290          
+    291          /**
+    292            * @brief  Resets the IO Expander by Software (SYS_CTRL1, RESET bit).
+    293            * @param  None
+    294            * @retval IOE_OK: if all initializations are OK. Other value if error.
+    295            */
+    296          uint8_t IOE_Reset(void)
+    297          {
+    298            /* Power Down the IO_Expander */
+    299            I2C_WriteDeviceRegister(IOE_REG_SYS_CTRL1, 0x02);
+    300          
+    301            /* wait for a delay to insure registers erasing */
+    302            _delay_(2); 
+    303            
+    304            /* Power On the Codec after the power off => all registers are reinitialized*/
+    305            I2C_WriteDeviceRegister(IOE_REG_SYS_CTRL1, 0x00);
+    306            
+    307            /* If all OK return IOE_OK */
+    308            return IOE_OK;    
+    309          }
+    310          
+    311          /**
+    312            * @brief  Reads the IOE device ID.
+    313            * @param  None
+    314            * @retval The Device ID (two bytes).
+    315            */
+    316          uint16_t IOE_ReadID(void)
+    317          {
+    318            uint16_t tmp = 0;
+    319          
+    320            /* Read device ID  */
+    321            tmp = I2C_ReadDeviceRegister(0);
+    322            tmp = (uint32_t)(tmp << 8);
+    323            tmp |= (uint32_t)I2C_ReadDeviceRegister(1);
+    324            
+    325            /* Return the ID */
+    326            return (uint16_t)tmp;
+    327          }
+    328          
+    329          /**
+    330            * @brief  Configures the selected IO Expander functionalities.
+    331            * @param  Fct: the functions to be configured. could be any 
+    332            *         combination of the following values:
+    333            *   @arg  IOE_IO_FCT : IO function
+    334            *   @arg  IOE_TP_FCT : Touch Panel function
+    335            *   @arg  IOE_ADC_FCT : ADC function
+    336            * @param  NewState: can be ENABLE pr DISABLE   
+    337            * @retval IOE_OK: if all initializations are OK. Other value if error.
+    338            */
+    339          uint8_t IOE_FnctCmd(uint8_t Fct, FunctionalState NewState)
+    340          {
+    341            uint8_t tmp = 0;
+    342            
+    343            /* Get the register value */
+    344            tmp = I2C_ReadDeviceRegister(IOE_REG_SYS_CTRL2);
+    345            
+    346            if (NewState != DISABLE)
+    347            {
+    348              /* Set the Functionalities to be Enabled */    
+    349              tmp &= ~(uint8_t)Fct;
+    350            }
+    351            else
+    352            {
+    353              /* Set the Functionalities to be Disabled */    
+    354              tmp |= (uint8_t)Fct;  
+    355            }
+    356            
+    357            /* Set the register value */
+    358            I2C_WriteDeviceRegister(IOE_REG_SYS_CTRL2, tmp);
+    359            
+    360            /* If all OK return IOE_OK */
+    361            return IOE_OK;    
+    362          }
+    363          
+    364          
+    365          /**
+    366            * @brief  Enables or disables the Global interrupt.
+    367            * @param  NewState: could be ENABLE or DISABLE.        
+    368            * @retval IOE_OK: if all initializations are OK. Other value if error.
+    369            */
+    370          uint8_t IOE_GITCmd(FunctionalState NewState)
+    371          {
+    372            uint8_t tmp = 0;
+    373            
+    374            /* Read the Interrupt Control register  */
+    375            tmp = I2C_ReadDeviceRegister(IOE_REG_INT_CTRL);
+    376            
+    377            if (NewState != DISABLE)
+    378            {
+    379              /* Set the global interrupts to be Enabled */    
+    380              tmp |= (uint8_t)IOE_GIT_EN;
+    381            }
+    382            else
+    383            {
+    384              /* Set the global interrupts to be Disabled */    
+    385              tmp &= ~(uint8_t)IOE_GIT_EN;
+    386            }  
+    387            
+    388            /* Write Back the Interrupt Control register */
+    389            I2C_WriteDeviceRegister(IOE_REG_INT_CTRL, tmp);
+    390          
+    391            /* If all OK return IOE_OK */
+    392            return IOE_OK;     
+    393          }
+    394          
+    395          /**
+    396            * @brief  Configures the selected source to generate or not a global interrupt
+    397            * @param Global_IT: the interrupt source to be configured, could be:
+    398            *   @arg  Global_IT_ADC : ADC interrupt     
+    399            *   @arg  Global_IT_FE : Touch Panel Controller FIFO Error interrupt
+    400            *   @arg  Global_IT_FF : Touch Panel Controller FIFO Full interrupt      
+    401            *   @arg  Global_IT_FOV : Touch Panel Controller FIFO Overrun interrupt     
+    402            *   @arg  Global_IT_FTH : Touch Panel Controller FIFO Threshold interrupt   
+    403            *   @arg  Global_IT_TOUCH : Touch Panel Controller Touch Detected interrupt 
+    404            * @param  NewState: can be ENABLE pr DISABLE   
+    405            * @retval IOE_OK: if all initializations are OK. Other value if error.
+    406            */
+    407          uint8_t IOE_GITConfig(uint8_t Global_IT, FunctionalState NewState)
+    408          {
+    409            uint8_t tmp = 0;
+    410            
+    411            /* Get the current value of the INT_EN register */
+    412            tmp = I2C_ReadDeviceRegister(IOE_REG_INT_EN);
+    413            
+    414            if (NewState != DISABLE)
+    415            {
+    416              /* Set the interrupts to be Enabled */    
+    417              tmp |= (uint8_t)Global_IT;  
+    418            }
+    419            else
+    420            {
+    421              /* Set the interrupts to be Disabled */    
+    422              tmp &= ~(uint8_t)Global_IT;
+    423            }
+    424            /* Set the register */
+    425            I2C_WriteDeviceRegister(IOE_REG_INT_EN, tmp);
+    426            
+    427            /* If all OK return IOE_OK */
+    428            return IOE_OK;  
+    429          }
+    430          
+    431          /**
+    432            * @brief  Configures the touch Panel Controller (Single point detection)
+    433            * @param  None
+    434            * @retval IOE_OK if all initializations are OK. Other value if error.
+    435            */
+    436          uint8_t IOE_TP_Config(void)
+    437          { 
+    438            /* Enable touch Panel functionality */
+    439            IOE_FnctCmd(IOE_TP_FCT, ENABLE);
+    440            
+    441            /* Select Sample Time, bit number and ADC Reference */
+    442            I2C_WriteDeviceRegister(IOE_REG_ADC_CTRL1, 0x49);
+    443            
+    444            /* Wait for ~20 ms */
+    445            _delay_(2);  
+    446            
+    447            /* Select the ADC clock speed: 3.25 MHz */
+    448            I2C_WriteDeviceRegister(IOE_REG_ADC_CTRL2, 0x01);
+    449            
+    450            /* Select TSC pins in non default mode */  
+    451            IOE_IOAFConfig((uint8_t)TOUCH_IO_ALL, DISABLE);
+    452            
+    453            /* Select 2 nF filter capacitor */
+    454            I2C_WriteDeviceRegister(IOE_REG_TP_CFG, 0x9A);   
+    455            
+    456            /* Select single point reading  */
+    457            I2C_WriteDeviceRegister(IOE_REG_FIFO_TH, 0x01);
+    458            
+    459            /* Write 0x01 to clear the FIFO memory content. */
+    460            I2C_WriteDeviceRegister(IOE_REG_FIFO_STA, 0x01);
+    461            
+    462            /* Write 0x00 to put the FIFO back into operation mode  */
+    463            I2C_WriteDeviceRegister(IOE_REG_FIFO_STA, 0x00);
+    464            
+    465            /* set the data format for Z value: 7 fractional part and 1 whole part */
+    466            I2C_WriteDeviceRegister(IOE_REG_TP_FRACT_XYZ, 0x01);
+    467            
+    468            /* set the driving capability of the device for TSC pins: 50mA */
+    469            I2C_WriteDeviceRegister(IOE_REG_TP_I_DRIVE, 0x01);
+    470            
+    471            /* Use no tracking index, touch-panel controller operation mode (XYZ) and 
+    472               enable the TSC */
+    473            I2C_WriteDeviceRegister(IOE_REG_TP_CTRL, 0x03);
+    474            
+    475            /*  Clear all the status pending bits */
+    476            I2C_WriteDeviceRegister(IOE_REG_INT_STA, 0xFF); 
+    477            
+    478            /* Initialize the TS structure to their default values */ 
+    479            TP_State.TouchDetected = TP_State.X = TP_State.Y = TP_State.Z = 0;
+    480            
+    481            /* All configuration done */
+    482            return IOE_OK;  
+    483          }
+    484          
+    485          /**
+    486            * @brief  Configures the selected pin to be in Alternate function or not.
+    487            * @param  IO_Pin: IO_Pin_x, Where x can be from 0 to 7.   
+    488            * @param  NewState: State of the AF for the selected pin, could be 
+    489            *         ENABLE or DISABLE.       
+    490            * @retval IOE_OK: if all initializations are OK. Other value if error.
+    491            */
+    492          uint8_t IOE_IOAFConfig(uint8_t IO_Pin, FunctionalState NewState)
+    493          {
+    494            uint8_t tmp = 0;
+    495            
+    496            /* Get the current state of the GPIO_AF register */
+    497            tmp = I2C_ReadDeviceRegister(IOE_REG_GPIO_AF);
+    498            
+    499            if (NewState != DISABLE)
+    500            {
+    501              /* Enable the selected pins alternate function */
+    502              tmp |= (uint8_t)IO_Pin;
+    503            }
+    504            else
+    505            {
+    506              /* Disable the selected pins alternate function */   
+    507              tmp &= ~(uint8_t)IO_Pin;   
+    508            }
+    509            
+    510            /* Write back the new value in GPIO_AF register */  
+    511            I2C_WriteDeviceRegister(IOE_REG_GPIO_AF, tmp);  
+    512          
+    513            /* If all OK return IOE_OK */
+    514            return IOE_OK;
+    515          }
+    516          
+    517          /**
+    518            * @brief  Writes a value in a register of the device through I2C.
+    519            * @param  RegisterAddr: The target register address
+    520            * @param  RegisterValue: The target register value to be written 
+    521            * @retval IOE_OK: if all operations are OK. Other value if error.
+    522            */
+    523          uint8_t I2C_DMA_WriteDeviceRegister(uint8_t RegisterAddr, uint8_t RegisterValue)
+    524          {
+    525            uint32_t read_verif = 0;  
+    526            uint8_t IOE_BufferTX = 0;
+    527            
+    528            /* Get Value to be written */
+    529            IOE_BufferTX = RegisterValue;
+    530            
+    531            /* Configure DMA Peripheral */
+    532            IOE_DMA_Config(IOE_DMA_TX, (uint8_t*)(&IOE_BufferTX));
+    533            
+    534            /* Enable the I2C peripheral */
+    535            I2C_GenerateSTART(IOE_I2C, ENABLE);
+    536            
+    537            /* Test on SB Flag */
+    538            IOE_TimeOut = TIMEOUT_MAX;
+    539            while (I2C_GetFlagStatus(IOE_I2C,I2C_FLAG_SB) == RESET) 
+    540            {
+    541              if (IOE_TimeOut-- == 0) return(IOE_TimeoutUserCallback());
+    542            }
+    543            
+    544            /* Transmit the slave address and enable writing operation */
+    545            I2C_Send7bitAddress(IOE_I2C, IOE_ADDR, I2C_Direction_Transmitter);
+    546            
+    547            /* Test on ADDR Flag */
+    548            IOE_TimeOut = TIMEOUT_MAX;
+    549            while (!I2C_CheckEvent(IOE_I2C, I2C_EVENT_MASTER_TRANSMITTER_MODE_SELECTED))
+    550            {
+    551              if (IOE_TimeOut-- == 0) return(IOE_TimeoutUserCallback());
+    552            }
+    553            
+    554            /* Transmit the first address for r/w operations */
+    555            I2C_SendData(IOE_I2C, RegisterAddr);
+    556            
+    557            /* Test on TXE FLag (data dent) */
+    558            IOE_TimeOut = TIMEOUT_MAX;
+    559            while ((!I2C_GetFlagStatus(IOE_I2C,I2C_FLAG_TXE)) && (!I2C_GetFlagStatus(IOE_I2C,I2C_FLAG_BTF)))  
+    560            {
+    561              if (IOE_TimeOut-- == 0) return(IOE_TimeoutUserCallback());
+    562            }
+    563            
+    564            /* Enable I2C DMA request */
+    565            I2C_DMACmd(IOE_I2C,ENABLE);
+    566            
+    567            /* Enable DMA TX Channel */
+    568            DMA_Cmd(IOE_DMA_TX_STREAM, ENABLE);
+    569            
+    570            /* Wait until DMA Transfer Complete */
+    571            IOE_TimeOut = TIMEOUT_MAX;
+    572            while (!DMA_GetFlagStatus(IOE_DMA_TX_STREAM,IOE_DMA_TX_TCFLAG))
+    573            {
+    574              if (IOE_TimeOut-- == 0) return(IOE_TimeoutUserCallback());
+    575            }  
+    576            
+    577            /* Wait until BTF Flag is set before generating STOP */
+    578            IOE_TimeOut = 0xFF * TIMEOUT_MAX;
+    579            while ((!I2C_GetFlagStatus(IOE_I2C,I2C_FLAG_BTF)))  
+    580            {
+    581              if (IOE_TimeOut-- == 0) return(IOE_TimeoutUserCallback());
+    582            }
+    583            
+    584            /* Send STOP Condition */
+    585            I2C_GenerateSTOP(IOE_I2C, ENABLE);
+    586            
+    587            /* Disable DMA TX Channel */
+    588            DMA_Cmd(IOE_DMA_TX_STREAM, DISABLE);
+    589            
+    590            /* Disable I2C DMA request */  
+    591            I2C_DMACmd(IOE_I2C,DISABLE);
+    592            
+    593            /* Clear DMA TX Transfer Complete Flag */
+    594            DMA_ClearFlag(IOE_DMA_TX_STREAM,IOE_DMA_TX_TCFLAG);
+    595            
+    596          #ifdef VERIFY_WRITTENDATA
+    597            /* Verify (if needed) that the loaded data is correct  */
+    598            
+    599            /* Read the just written register*/
+    600            read_verif = I2C_ReadDeviceRegister(RegisterAddr);
+    601            /* Load the register and verify its value  */
+    602            if (read_verif != RegisterValue)
+    603            {
+    604              /* Control data wrongly transferred */
+    605              read_verif = IOE_FAILURE;
+    606            }
+    607            else
+    608            {
+    609              /* Control data correctly transferred */
+    610              read_verif = 0;
+    611            }
+    612          #endif
+    613            
+    614            /* Return the verifying value: 0 (Passed) or 1 (Failed) */
+    615            return read_verif;
+    616          }
+    617          
+    618          /**
+    619            * @brief  Reads a register of the device through I2C.
+    620            * @param  RegisterAddr: The target register address (between 00x and 0x24)
+    621            * @retval The value of the read register (0xAA if Timeout occurred)   
+    622            */
+    623          uint8_t I2C_DMA_ReadDeviceRegister(uint8_t RegisterAddr)
+    624          {
+    625            uint8_t IOE_BufferRX[2] = {0x00, 0x00};  
+    626            
+    627            /* Configure DMA Peripheral */
+    628            IOE_DMA_Config(IOE_DMA_RX, (uint8_t*)IOE_BufferRX);
+    629            
+    630            /* Enable DMA NACK automatic generation */
+    631            I2C_DMALastTransferCmd(IOE_I2C, ENABLE);
+    632            
+    633            /* Enable the I2C peripheral */
+    634            I2C_GenerateSTART(IOE_I2C, ENABLE);
+    635            
+    636            /* Test on SB Flag */
+    637            IOE_TimeOut = TIMEOUT_MAX;
+    638            while (!I2C_GetFlagStatus(IOE_I2C,I2C_FLAG_SB)) 
+    639            {
+    640              if (IOE_TimeOut-- == 0) return(IOE_TimeoutUserCallback());
+    641            }
+    642            
+    643            /* Send device address for write */
+    644            I2C_Send7bitAddress(IOE_I2C, IOE_ADDR, I2C_Direction_Transmitter);
+    645            
+    646            /* Test on ADDR Flag */
+    647            IOE_TimeOut = TIMEOUT_MAX;
+    648            while (!I2C_CheckEvent(IOE_I2C, I2C_EVENT_MASTER_TRANSMITTER_MODE_SELECTED)) 
+    649            {
+    650              if (IOE_TimeOut-- == 0) return(IOE_TimeoutUserCallback());
+    651            }
+    652            
+    653            /* Send the device's internal address to write to */
+    654            I2C_SendData(IOE_I2C, RegisterAddr);  
+    655            
+    656            /* Test on TXE FLag (data dent) */
+    657            IOE_TimeOut = TIMEOUT_MAX;
+    658            while ((!I2C_GetFlagStatus(IOE_I2C,I2C_FLAG_TXE)) && (!I2C_GetFlagStatus(IOE_I2C,I2C_FLAG_BTF)))  
+    659            {
+    660              if (IOE_TimeOut-- == 0) return(IOE_TimeoutUserCallback());
+    661            }
+    662            
+    663            /* Send START condition a second time */  
+    664            I2C_GenerateSTART(IOE_I2C, ENABLE);
+    665            
+    666            /* Test on SB Flag */
+    667            IOE_TimeOut = TIMEOUT_MAX;
+    668            while (!I2C_GetFlagStatus(IOE_I2C,I2C_FLAG_SB)) 
+    669            {
+    670              if (IOE_TimeOut-- == 0) return(IOE_TimeoutUserCallback());
+    671            }
+    672            
+    673            /* Send IOExpander address for read */
+    674            I2C_Send7bitAddress(IOE_I2C, IOE_ADDR, I2C_Direction_Receiver);
+    675            
+    676            /* Test on ADDR Flag */
+    677            IOE_TimeOut = TIMEOUT_MAX;
+    678            while (!I2C_CheckEvent(IOE_I2C, I2C_EVENT_MASTER_RECEIVER_MODE_SELECTED))   
+    679            {
+    680              if (IOE_TimeOut-- == 0) return(IOE_TimeoutUserCallback());
+    681            }
+    682              
+    683            /* Enable I2C DMA request */
+    684            I2C_DMACmd(IOE_I2C,ENABLE);
+    685            
+    686            /* Enable DMA RX Channel */
+    687            DMA_Cmd(IOE_DMA_RX_STREAM, ENABLE);
+    688            
+    689            /* Wait until DMA Transfer Complete */
+    690            IOE_TimeOut = 2 * TIMEOUT_MAX;
+    691            while (!DMA_GetFlagStatus(IOE_DMA_RX_STREAM,IOE_DMA_RX_TCFLAG))
+    692            {
+    693              if (IOE_TimeOut-- == 0) return(IOE_TimeoutUserCallback());
+    694            }        
+    695            
+    696            /* Send STOP Condition */
+    697            I2C_GenerateSTOP(IOE_I2C, ENABLE);
+    698            
+    699            /* Disable DMA RX Channel */
+    700            DMA_Cmd(IOE_DMA_RX_STREAM, DISABLE);
+    701            
+    702            /* Disable I2C DMA request */  
+    703            I2C_DMACmd(IOE_I2C,DISABLE);
+    704            
+    705            /* Clear DMA RX Transfer Complete Flag */
+    706           DMA_ClearFlag(IOE_DMA_RX_STREAM,IOE_DMA_RX_TCFLAG);
+    707            
+    708            /* return a pointer to the IOE_Buffer */
+    709            return (uint8_t)IOE_BufferRX[0];
+    710          }
+    711          
+    712          
+    713          /**
+    714            * @brief  Reads a buffer of 2 bytes from the device registers.
+    715            * @param  RegisterAddr: The target register address (between 00x and 0x24)
+    716            * @retval A pointer to the buffer containing the two returned bytes (in halfword).  
+    717            */
+    718          uint16_t I2C_DMA_ReadDataBuffer(uint32_t RegisterAddr)
+    719          { 
+    720            uint8_t tmp= 0;
+    721            uint8_t IOE_BufferRX[2] = {0x00, 0x00};  
+    722            
+    723            /* Configure DMA Peripheral */
+    724            IOE_DMA_Config(IOE_DMA_RX, (uint8_t*)IOE_BufferRX);
+    725            
+    726            /* Enable DMA NACK automatic generation */
+    727            I2C_DMALastTransferCmd(IOE_I2C, ENABLE);
+    728            
+    729            /* Enable the I2C peripheral */
+    730            I2C_GenerateSTART(IOE_I2C, ENABLE);
+    731            
+    732            /* Test on SB Flag */
+    733            IOE_TimeOut = TIMEOUT_MAX;
+    734            while (!I2C_GetFlagStatus(IOE_I2C,I2C_FLAG_SB)) 
+    735            {
+    736              if (IOE_TimeOut-- == 0) return(IOE_TimeoutUserCallback());
+    737            }
+    738            
+    739            /* Send device address for write */
+    740            I2C_Send7bitAddress(IOE_I2C, IOE_ADDR, I2C_Direction_Transmitter);
+    741            
+    742            /* Test on ADDR Flag */
+    743            IOE_TimeOut = TIMEOUT_MAX;
+    744            while (!I2C_CheckEvent(IOE_I2C, I2C_EVENT_MASTER_TRANSMITTER_MODE_SELECTED))
+    745            {
+    746              if (IOE_TimeOut-- == 0) return(IOE_TimeoutUserCallback());
+    747            }
+    748            
+    749            /* Send the device's internal address to write to */
+    750            I2C_SendData(IOE_I2C, RegisterAddr);  
+    751            
+    752            /* Test on TXE FLag (data dent) */
+    753            IOE_TimeOut = TIMEOUT_MAX;
+    754            while ((!I2C_GetFlagStatus(IOE_I2C,I2C_FLAG_TXE)) && (!I2C_GetFlagStatus(IOE_I2C,I2C_FLAG_BTF)))  
+    755            {
+    756              if (IOE_TimeOut-- == 0) return(IOE_TimeoutUserCallback());
+    757            }
+    758            
+    759            /* Send START condition a second time */  
+    760            I2C_GenerateSTART(IOE_I2C, ENABLE);
+    761            
+    762            /* Test on SB Flag */
+    763            IOE_TimeOut = TIMEOUT_MAX;
+    764            while (!I2C_GetFlagStatus(IOE_I2C,I2C_FLAG_SB)) 
+    765            {
+    766              if (IOE_TimeOut-- == 0) return(IOE_TimeoutUserCallback());
+    767            }
+    768            
+    769            /* Send IO Expander address for read */
+    770            I2C_Send7bitAddress(IOE_I2C, IOE_ADDR, I2C_Direction_Receiver);
+    771            
+    772            /* Test on ADDR Flag */
+    773            IOE_TimeOut = TIMEOUT_MAX;
+    774            while (!I2C_CheckEvent(IOE_I2C, I2C_EVENT_MASTER_RECEIVER_MODE_SELECTED))   
+    775            {
+    776              if (IOE_TimeOut-- == 0) return(IOE_TimeoutUserCallback());
+    777            }
+    778            
+    779            /* Enable I2C DMA request */
+    780            I2C_DMACmd(IOE_I2C,ENABLE);
+    781            
+    782            /* Enable DMA RX Channel */
+    783            DMA_Cmd(IOE_DMA_RX_STREAM, ENABLE);
+    784            
+    785            /* Wait until DMA Transfer Complete */
+    786            IOE_TimeOut = 2 * TIMEOUT_MAX;
+    787            while (!DMA_GetFlagStatus(IOE_DMA_RX_STREAM, IOE_DMA_RX_TCFLAG))
+    788            {
+    789              if (IOE_TimeOut-- == 0) return(IOE_TimeoutUserCallback());
+    790            }        
+    791            
+    792            /* Send STOP Condition */
+    793            I2C_GenerateSTOP(IOE_I2C, ENABLE);
+    794            
+    795            /* Disable DMA RX Channel */
+    796            DMA_Cmd(IOE_DMA_RX_STREAM, DISABLE);
+    797            
+    798            /* Disable I2C DMA request */  
+    799            I2C_DMACmd(IOE_I2C,DISABLE);
+    800            
+    801            /* Clear DMA RX Transfer Complete Flag */
+    802            DMA_ClearFlag(IOE_DMA_RX_STREAM,IOE_DMA_RX_TCFLAG);
+    803            
+    804            /* Reorganize received data */  
+    805            tmp = IOE_BufferRX[0];
+    806            IOE_BufferRX[0] = IOE_BufferRX[1];
+    807            IOE_BufferRX[1] = tmp;
+    808            
+    809            /* return the data */
+    810            return (uint16_t) ((uint16_t)IOE_BufferRX[0] | (uint16_t)IOE_BufferRX[1]<< 8);
+    811          }
+    812          
+    813          
+    814          /**
+    815            * @brief  Return Touch Panel X position value
+    816            * @param  None
+    817            * @retval X position.
+    818            */
+    819          static uint16_t IOE_TP_Read_X(void)
+    820          {
+    821            int32_t x, xr;
+    822            
+    823            /* Read x value from DATA_X register */
+    824            x = I2C_ReadDataBuffer(IOE_REG_TP_DATA_X);
+    825            
+    826            /* x value first correction */
+    827            if(x <= 3000)
+    828            {
+    829            x = 3870 - x;
+    830            }
+    831            else
+    832            {
+    833             x = 3800 - x;
+    834            }
+    835            
+    836            /* x value second correction */  
+    837            xr = x / 15;
+    838            
+    839            /* return x position value */
+    840            if(xr <= 0)
+    841            {
+    842              xr = 0;
+    843            }
+    844            else if (xr > 240)
+    845            {
+    846              xr = 239;
+    847            }
+    848            else 
+    849            {}
+    850            return (uint16_t)(xr); 
+    851          }
+    852          
+    853          /**
+    854            * @brief  Return Touch Panel Y position value
+    855            * @param  None
+    856            * @retval Y position.
+    857            */
+    858          static uint16_t IOE_TP_Read_Y(void)
+    859          {
+    860            int32_t y, yr;
+    861            
+    862            /* Read y value from DATA_Y register */
+    863            y = I2C_ReadDataBuffer(IOE_REG_TP_DATA_Y);
+    864            
+    865            /* y value first correction */
+    866          
+    867            y -= 360;  
+    868            
+    869            /* y value second correction */
+    870            yr = y / 11;
+    871            
+    872            /* return y position value */
+    873            if(yr <= 0)
+    874            {
+    875              yr = 0;
+    876            }
+    877            else if (yr > 320)
+    878            {
+    879              yr = 319;
+    880            }
+    881            else
+    882            {}
+    883            return (uint16_t)(yr); 
+    884          }
+    885          
+    886          /**
+    887            * @brief  Return Touch Panel Z position value
+    888            * @param  None
+    889            * @retval Z position.
+    890            */
+    891          static uint16_t IOE_TP_Read_Z(void)
+    892          {
+    893            uint32_t z;
+    894            
+    895            /* Read z value from DATA_Z register */
+    896            z = I2C_ReadDataBuffer(IOE_REG_TP_DATA_Z);
+    897          
+    898            /* return z position value */
+    899            if(z <= 0)
+    900              z = 0;
+    901            return (uint16_t)(z); 
+    902          }
+    903          
+    904          /**
+    905            * @brief  Initializes the GPIO pins used by the IO expander.
+    906            * @param  None
+    907            * @retval None
+    908            */
+    909          static void IOE_GPIO_Config(void)
+    910          {
+    911            GPIO_InitTypeDef GPIO_InitStructure;
+    912            
+    913            /* Enable IOE_I2C and IOE_I2C_GPIO_PORT & Alternate Function clocks */
+    914            RCC_APB1PeriphClockCmd(IOE_I2C_CLK, ENABLE);
+    915            RCC_AHB1PeriphClockCmd(IOE_I2C_SCL_GPIO_CLK | IOE_I2C_SDA_GPIO_CLK |
+    916                                   IOE_IT_GPIO_CLK, ENABLE);
+    917            RCC_APB2PeriphClockCmd(RCC_APB2Periph_SYSCFG, ENABLE);
+    918            
+    919            /* Reset IOE_I2C IP */
+    920            RCC_APB1PeriphResetCmd(IOE_I2C_CLK, ENABLE);
+    921            /* Release reset signal of IOE_I2C IP */
+    922            RCC_APB1PeriphResetCmd(IOE_I2C_CLK, DISABLE);
+    923          
+    924            /* Connect PXx to I2C_SCL*/
+    925            GPIO_PinAFConfig(IOE_I2C_SCL_GPIO_PORT, IOE_I2C_SCL_SOURCE, IOE_I2C_SCL_AF);
+    926            /* Connect PXx to I2C_SDA*/
+    927            GPIO_PinAFConfig(IOE_I2C_SDA_GPIO_PORT, IOE_I2C_SDA_SOURCE, IOE_I2C_SDA_AF); 
+    928              
+    929            /* IOE_I2C SCL and SDA pins configuration */
+    930            GPIO_InitStructure.GPIO_Pin = IOE_I2C_SCL_PIN;
+    931            GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF;
+    932            GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+    933            GPIO_InitStructure.GPIO_OType = GPIO_OType_OD;
+    934            GPIO_InitStructure.GPIO_PuPd  = GPIO_PuPd_NOPULL;
+    935            GPIO_Init(IOE_I2C_SCL_GPIO_PORT, &GPIO_InitStructure);
+    936          
+    937            GPIO_InitStructure.GPIO_Pin = IOE_I2C_SDA_PIN;
+    938            GPIO_Init(IOE_I2C_SDA_GPIO_PORT, &GPIO_InitStructure);
+    939            
+    940          }
+    941          
+    942          /**
+    943            * @brief  Configure the I2C Peripheral used to communicate with IO_Expanders.
+    944            * @param  None
+    945            * @retval None
+    946            */
+    947          static void IOE_I2C_Config(void)
+    948          {
+    949            I2C_InitTypeDef I2C_InitStructure;
+    950          
+    951            /* If the I2C peripheral is already enabled, don't reconfigure it */
+    952            if ((IOE_I2C->CR1 & I2C_CR1_PE) == 0)
+    953            {   
+    954              /* IOE_I2C configuration */
+    955              I2C_InitStructure.I2C_Mode = I2C_Mode_I2C;
+    956              I2C_InitStructure.I2C_DutyCycle = I2C_DutyCycle_2;
+    957              I2C_InitStructure.I2C_OwnAddress1 = 0x00;
+    958              I2C_InitStructure.I2C_Ack = I2C_Ack_Enable;
+    959              I2C_InitStructure.I2C_AcknowledgedAddress = I2C_AcknowledgedAddress_7bit;
+    960              I2C_InitStructure.I2C_ClockSpeed = I2C_SPEED;
+    961            
+    962              /* Initialize the I2C peripheral */
+    963              I2C_Init(IOE_I2C, &I2C_InitStructure);
+    964            
+    965              /* Enable the I2C peripheral */
+    966              I2C_Cmd(IOE_I2C, ENABLE);
+    967            }   
+    968          }
+    969          
+    970          /**
+    971            * @brief  Configure the DMA Peripheral used to handle communication via I2C.
+    972            * @param  None
+    973            * @retval None
+    974            */
+    975          static void IOE_DMA_Config(IOE_DMADirection_TypeDef Direction, uint8_t* buffer)
+    976          {
+    977            DMA_InitTypeDef DMA_InitStructure;
+    978            
+    979            RCC_AHB1PeriphClockCmd(IOE_DMA_CLK, ENABLE);
+    980            
+    981            /* Initialize the DMA_Channel member */
+    982            DMA_InitStructure.DMA_Channel = IOE_DMA_CHANNEL;
+    983            
+    984            /* Initialize the DMA_PeripheralBaseAddr member */
+    985            DMA_InitStructure.DMA_PeripheralBaseAddr = IOE_I2C_DR;
+    986            
+    987            /* Initialize the DMA_Memory0BaseAddr member */
+    988            DMA_InitStructure.DMA_Memory0BaseAddr = (uint32_t)buffer;
+    989            
+    990            /* Initialize the DMA_PeripheralInc member */
+    991            DMA_InitStructure.DMA_PeripheralInc = DMA_PeripheralInc_Disable;
+    992            
+    993            /* Initialize the DMA_MemoryInc member */
+    994            DMA_InitStructure.DMA_MemoryInc = DMA_MemoryInc_Enable;
+    995            
+    996            /* Initialize the DMA_PeripheralDataSize member */
+    997            DMA_InitStructure.DMA_PeripheralDataSize = DMA_PeripheralDataSize_Byte;
+    998            
+    999            /* Initialize the DMA_MemoryDataSize member */
+   1000            DMA_InitStructure.DMA_MemoryDataSize = DMA_MemoryDataSize_Byte;
+   1001            
+   1002            /* Initialize the DMA_Mode member */
+   1003            DMA_InitStructure.DMA_Mode = DMA_Mode_Normal;
+   1004            
+   1005            /* Initialize the DMA_Priority member */
+   1006            DMA_InitStructure.DMA_Priority = DMA_Priority_Low;
+   1007            
+   1008            /* Initialize the DMA_FIFOMode member */
+   1009            DMA_InitStructure.DMA_FIFOMode = DMA_FIFOMode_Enable;
+   1010            
+   1011            /* Initialize the DMA_FIFOThreshold member */
+   1012            DMA_InitStructure.DMA_FIFOThreshold = DMA_FIFOThreshold_1QuarterFull;
+   1013            
+   1014            /* Initialize the DMA_MemoryBurst member */
+   1015            DMA_InitStructure.DMA_MemoryBurst = DMA_MemoryBurst_Single;
+   1016            
+   1017            /* Initialize the DMA_PeripheralBurst member */
+   1018            DMA_InitStructure.DMA_PeripheralBurst = DMA_PeripheralBurst_Single;
+   1019            
+   1020            /* If using DMA for Reception */
+   1021            if (Direction == IOE_DMA_RX)
+   1022            {    
+   1023              /* Initialize the DMA_DIR member */
+   1024              DMA_InitStructure.DMA_DIR = DMA_DIR_PeripheralToMemory;
+   1025              
+   1026              /* Initialize the DMA_BufferSize member */
+   1027              DMA_InitStructure.DMA_BufferSize = 2;
+   1028              
+   1029              DMA_DeInit(IOE_DMA_RX_STREAM);
+   1030              
+   1031              DMA_Init(IOE_DMA_RX_STREAM, &DMA_InitStructure);
+   1032            }
+   1033            /* If using DMA for Transmission */
+   1034            else if (Direction == IOE_DMA_TX)
+   1035            { 
+   1036              /* Initialize the DMA_DIR member */
+   1037              DMA_InitStructure.DMA_DIR = DMA_DIR_MemoryToPeripheral;
+   1038              
+   1039              /* Initialize the DMA_BufferSize member */
+   1040              DMA_InitStructure.DMA_BufferSize = 1;
+   1041              
+   1042              DMA_DeInit(IOE_DMA_TX_STREAM);
+   1043              
+   1044              DMA_Init(IOE_DMA_TX_STREAM, &DMA_InitStructure);
+   1045            }
+   1046          }
+   1047          
+   1048          /**
+   1049            * @brief  Writes a value in a register of the device through I2C.
+   1050            * @param  RegisterAddr: The target register address
+   1051            * @param  RegisterValue: The target register value to be written 
+   1052            * @retval IOE_OK: if all operations are OK. Other value if error.
+   1053            */
+   1054          uint8_t I2C_WriteDeviceRegister(uint8_t RegisterAddr, uint8_t RegisterValue)
+   1055          {
+   1056            uint32_t read_verif = 0;
+   1057          
+   1058            /* Begin the configuration sequence */
+   1059            I2C_GenerateSTART(IOE_I2C, ENABLE);
+   1060          
+   1061            /* Test on EV5 and clear it */
+   1062            IOE_TimeOut = TIMEOUT_MAX;
+   1063            while (!I2C_GetFlagStatus(IOE_I2C, I2C_FLAG_SB))
+   1064            {
+   1065              if (IOE_TimeOut-- == 0) return(IOE_TimeoutUserCallback());
+   1066            }
+   1067          
+   1068            /* Transmit the slave address and enable writing operation */
+   1069            I2C_Send7bitAddress(IOE_I2C, IOE_ADDR, I2C_Direction_Transmitter);
+   1070            
+   1071            /* Test on EV6 and clear it */
+   1072            IOE_TimeOut = TIMEOUT_MAX;  
+   1073            while (!I2C_GetFlagStatus(IOE_I2C, I2C_FLAG_ADDR))
+   1074            {
+   1075              if (IOE_TimeOut-- == 0) return(IOE_TimeoutUserCallback());
+   1076            }
+   1077            
+   1078            /* Read status register 2 to clear ADDR flag */
+   1079            IOE_I2C->SR2;
+   1080            
+   1081            /* Test on EV8_1 and clear it */
+   1082            IOE_TimeOut = TIMEOUT_MAX;
+   1083            while (!I2C_GetFlagStatus(IOE_I2C, I2C_FLAG_TXE))
+   1084            {
+   1085              if (IOE_TimeOut-- == 0) return(IOE_TimeoutUserCallback());
+   1086            }
+   1087            
+   1088            /* Transmit the first address for r/w operations */
+   1089            I2C_SendData(IOE_I2C, RegisterAddr);
+   1090            
+   1091            /* Test on EV8 and clear it */
+   1092            IOE_TimeOut = TIMEOUT_MAX;
+   1093            while (!I2C_GetFlagStatus(IOE_I2C, I2C_FLAG_TXE))
+   1094            {
+   1095              if (IOE_TimeOut-- == 0) return(IOE_TimeoutUserCallback());
+   1096            }
+   1097            
+   1098            /* Prepare the register value to be sent */
+   1099            I2C_SendData(IOE_I2C, RegisterValue);
+   1100            
+   1101            /* Test on EV8_2 and clear it */
+   1102            IOE_TimeOut = TIMEOUT_MAX;
+   1103            while ((!I2C_GetFlagStatus(IOE_I2C, I2C_FLAG_TXE)) || (!I2C_GetFlagStatus(IOE_I2C, I2C_FLAG_BTF)))
+   1104            {
+   1105              if (IOE_TimeOut-- == 0) return(IOE_TimeoutUserCallback());
+   1106            }
+   1107            
+   1108            /* End the configuration sequence */
+   1109            I2C_GenerateSTOP(IOE_I2C, ENABLE);
+   1110            
+   1111          #ifdef VERIFY_WRITTENDATA
+   1112            /* Verify (if needed) that the loaded data is correct  */
+   1113            
+   1114            /* Read the just written register*/
+   1115            read_verif = IOE_I2C_ReadDeviceRegister(RegisterAddr);
+   1116          
+   1117            /* Load the register and verify its value  */
+   1118            if (read_verif != RegisterValue)
+   1119            {
+   1120              /* Control data wrongly transferred */
+   1121              read_verif = IOE_FAILURE;
+   1122            }
+   1123            else
+   1124            {
+   1125              /* Control data correctly transferred */
+   1126              read_verif = 0;
+   1127            }
+   1128          #endif
+   1129            
+   1130            /* Return the verifying value: 0 (Passed) or 1 (Failed) */
+   1131            return read_verif;
+   1132            
+   1133          }
+   1134          
+   1135          /**
+   1136            * @brief  Reads a register of the device through I2C without DMA.
+   1137            * @param  RegisterAddr: The target register address (between 00x and 0x24)
+   1138            * @retval The value of the read register (0xAA if Timeout occurred)   
+   1139            */ 
+   1140          uint8_t I2C_ReadDeviceRegister(uint8_t RegisterAddr)
+   1141          {
+   1142            uint8_t tmp = 0;
+   1143            
+   1144            /* Enable the I2C peripheral */
+   1145            I2C_GenerateSTART(IOE_I2C, ENABLE);
+   1146            
+   1147              /* Test on EV5 and clear it */
+   1148            IOE_TimeOut = TIMEOUT_MAX;
+   1149            while (!I2C_GetFlagStatus(IOE_I2C, I2C_FLAG_SB))
+   1150            {
+   1151              if (IOE_TimeOut-- == 0) return(IOE_TimeoutUserCallback());
+   1152            }
+   1153            /* Disable Acknowledgement */
+   1154            I2C_AcknowledgeConfig(IOE_I2C, DISABLE);
+   1155            
+   1156            /* Transmit the slave address and enable writing operation */
+   1157            I2C_Send7bitAddress(IOE_I2C, IOE_ADDR, I2C_Direction_Transmitter);
+   1158            
+   1159            /* Test on EV6 and clear it */
+   1160            IOE_TimeOut = TIMEOUT_MAX;  
+   1161            while (!I2C_GetFlagStatus(IOE_I2C, I2C_FLAG_ADDR))
+   1162            {
+   1163              if (IOE_TimeOut-- == 0) return(IOE_TimeoutUserCallback());
+   1164            }
+   1165            
+   1166            /* Read status register 2 to clear ADDR flag */
+   1167            IOE_I2C->SR2;
+   1168            
+   1169            /* Test on EV8 and clear it */
+   1170            IOE_TimeOut = TIMEOUT_MAX;
+   1171            while (!I2C_GetFlagStatus(IOE_I2C, I2C_FLAG_TXE))
+   1172            {
+   1173              if (IOE_TimeOut-- == 0) return(IOE_TimeoutUserCallback());
+   1174            }
+   1175            
+   1176            /* Transmit the first address for r/w operations */
+   1177            I2C_SendData(IOE_I2C, RegisterAddr);
+   1178            
+   1179            /* Test on EV8 and clear it */
+   1180            IOE_TimeOut = TIMEOUT_MAX;
+   1181            while ((!I2C_GetFlagStatus(IOE_I2C, I2C_FLAG_TXE)) || (!I2C_GetFlagStatus(IOE_I2C, I2C_FLAG_BTF)))
+   1182            {
+   1183              if (IOE_TimeOut-- == 0) return(IOE_TimeoutUserCallback());
+   1184            }
+   1185            
+   1186            /* Regenerate a start condition */
+   1187            I2C_GenerateSTART(IOE_I2C, ENABLE);
+   1188            
+   1189            /* Test on EV5 and clear it */
+   1190            IOE_TimeOut = TIMEOUT_MAX;
+   1191            while (!I2C_GetFlagStatus(IOE_I2C, I2C_FLAG_SB))
+   1192            {
+   1193              if (IOE_TimeOut-- == 0) return(IOE_TimeoutUserCallback());
+   1194            }
+   1195            
+   1196            /* Transmit the slave address and enable writing operation */
+   1197            I2C_Send7bitAddress(IOE_I2C, IOE_ADDR, I2C_Direction_Receiver);
+   1198            
+   1199            /* Test on EV6 and clear it */
+   1200            IOE_TimeOut = TIMEOUT_MAX;
+   1201            while (!I2C_GetFlagStatus(IOE_I2C, I2C_FLAG_ADDR))
+   1202            {
+   1203              if (IOE_TimeOut-- == 0) return(IOE_TimeoutUserCallback());
+   1204            }
+   1205            
+   1206              /* Read status register 2 to clear ADDR flag */
+   1207            IOE_I2C->SR2;
+   1208            
+   1209            /* Test on EV7 and clear it */
+   1210            IOE_TimeOut = TIMEOUT_MAX;
+   1211            while (!I2C_GetFlagStatus(IOE_I2C, I2C_FLAG_RXNE))
+   1212            {
+   1213              if (IOE_TimeOut-- == 0) return(IOE_TimeoutUserCallback());
+   1214            }
+   1215            
+   1216            /* End the configuration sequence */
+   1217            I2C_GenerateSTOP(IOE_I2C, ENABLE);
+   1218            
+   1219            /* Load the register value */
+   1220            tmp = I2C_ReceiveData(IOE_I2C);
+   1221            
+   1222            /* Enable Acknowledgement */
+   1223            I2C_AcknowledgeConfig(IOE_I2C, ENABLE);
+   1224            
+   1225            /* Return the read value */
+   1226            return tmp;
+   1227            
+   1228          }
+   1229          
+   1230          /**
+   1231            * @brief  Reads a buffer of 2 bytes from the device registers.
+   1232            * @param  RegisterAddr: The target register adress (between 00x and 0x24)
+   1233            * @retval The data in the buffer containing the two returned bytes (in halfword).   
+   1234            */
+   1235          uint16_t I2C_ReadDataBuffer(uint32_t RegisterAddr)
+   1236          {
+   1237            uint8_t IOE_BufferRX[2] = {0x00, 0x00};  
+   1238            
+   1239            /* Enable the I2C peripheral */
+   1240            I2C_GenerateSTART(IOE_I2C, ENABLE);
+   1241           
+   1242            /* Test on EV5 and clear it */
+   1243            IOE_TimeOut = TIMEOUT_MAX;
+   1244            while (!I2C_GetFlagStatus(IOE_I2C, I2C_FLAG_SB))
+   1245            {
+   1246              if (IOE_TimeOut-- == 0) return(IOE_TimeoutUserCallback());
+   1247            }
+   1248             
+   1249            /* Send device address for write */
+   1250            I2C_Send7bitAddress(IOE_I2C, IOE_ADDR, I2C_Direction_Transmitter);
+   1251            
+   1252            /* Test on EV6 and clear it */
+   1253            IOE_TimeOut = TIMEOUT_MAX;  
+   1254            while (!I2C_GetFlagStatus(IOE_I2C, I2C_FLAG_ADDR))
+   1255            {
+   1256              if (IOE_TimeOut-- == 0) return(IOE_TimeoutUserCallback());
+   1257            }
+   1258            
+   1259            /* Read status register 2 to clear ADDR flag */
+   1260            IOE_I2C->SR2;
+   1261            
+   1262            /* Test on EV8 and clear it */
+   1263            IOE_TimeOut = TIMEOUT_MAX;
+   1264            while (!I2C_GetFlagStatus(IOE_I2C, I2C_FLAG_TXE))
+   1265            {
+   1266              if (IOE_TimeOut-- == 0) return(IOE_TimeoutUserCallback());
+   1267            }
+   1268            
+   1269            /* Send the device's internal address to write to */
+   1270            I2C_SendData(IOE_I2C, RegisterAddr);  
+   1271              
+   1272            /* Send START condition a second time */  
+   1273            I2C_GenerateSTART(IOE_I2C, ENABLE);
+   1274            
+   1275            /* Test on EV5 and clear it */
+   1276            IOE_TimeOut = TIMEOUT_MAX;
+   1277            while (!I2C_GetFlagStatus(IOE_I2C, I2C_FLAG_SB))
+   1278            {
+   1279              if (IOE_TimeOut-- == 0) return(IOE_TimeoutUserCallback());
+   1280            }
+   1281            
+   1282            /* Send IO Expander address for read */
+   1283            I2C_Send7bitAddress(IOE_I2C, IOE_ADDR, I2C_Direction_Receiver);
+   1284            
+   1285            /* Test on EV6 and clear it */
+   1286            IOE_TimeOut = TIMEOUT_MAX;
+   1287            while (!I2C_GetFlagStatus(IOE_I2C, I2C_FLAG_ADDR))
+   1288            {
+   1289              if (IOE_TimeOut-- == 0) return(IOE_TimeoutUserCallback());
+   1290            }
+   1291           
+   1292            /* Disable Acknowledgement and set Pos bit */
+   1293            I2C_AcknowledgeConfig(IOE_I2C, DISABLE);       
+   1294            I2C_NACKPositionConfig(IOE_I2C, I2C_NACKPosition_Next);
+   1295            
+   1296            /* Read status register 2 to clear ADDR flag */
+   1297            IOE_I2C->SR2;
+   1298          
+   1299            /* Test on EV7 and clear it */
+   1300            IOE_TimeOut = TIMEOUT_MAX;
+   1301            while (!I2C_GetFlagStatus(IOE_I2C, I2C_FLAG_BTF))
+   1302            {
+   1303              if (IOE_TimeOut-- == 0) return(IOE_TimeoutUserCallback());
+   1304            }
+   1305           
+   1306            /* Send STOP Condition */
+   1307            I2C_GenerateSTOP(IOE_I2C, ENABLE);
+   1308             
+   1309            /* Read the first byte from the IO Expander */
+   1310            IOE_BufferRX[1] = I2C_ReceiveData(IOE_I2C);
+   1311              
+   1312            /* Read the second byte from the IO Expander */
+   1313            IOE_BufferRX[0] = I2C_ReceiveData(IOE_I2C);
+   1314                                                   
+   1315            /* Enable Acknowledgement and reset POS bit to be ready for another reception */
+   1316            I2C_AcknowledgeConfig(IOE_I2C, ENABLE);
+   1317            I2C_NACKPositionConfig(IOE_I2C, I2C_NACKPosition_Current);
+   1318             
+   1319            /* return the data */
+   1320            return ((uint16_t) IOE_BufferRX[0] | ((uint16_t)IOE_BufferRX[1]<< 8));
+   1321          }
+   1322          
+   1323          #ifndef USE_TIMEOUT_USER_CALLBACK 
+   1324          /**
+   1325            * @brief  IOE_TIMEOUT_UserCallback
+   1326            * @param  None
+   1327            * @retval 0
+   1328            */
+   1329          uint8_t IOE_TimeoutUserCallback(void)
+   1330          {
+   1331            I2C_InitTypeDef I2C_InitStructure;
+   1332          
+   1333            I2C_GenerateSTOP(IOE_I2C, ENABLE);
+   1334            I2C_SoftwareResetCmd(IOE_I2C, ENABLE);
+   1335            I2C_SoftwareResetCmd(IOE_I2C, DISABLE);
+   1336            
+   1337            IOE_GPIO_Config();
+   1338          
+   1339            /* CODEC_I2C peripheral configuration */
+   1340            I2C_DeInit(IOE_I2C);
+   1341            I2C_InitStructure.I2C_Mode = I2C_Mode_I2C;
+   1342            I2C_InitStructure.I2C_DutyCycle = I2C_DutyCycle_2;
+   1343            I2C_InitStructure.I2C_OwnAddress1 = 0x00;
+   1344            I2C_InitStructure.I2C_Ack = I2C_Ack_Enable;
+   1345            I2C_InitStructure.I2C_AcknowledgedAddress = I2C_AcknowledgedAddress_7bit;
+   1346            I2C_InitStructure.I2C_ClockSpeed = I2C_SPEED;
+   1347            
+   1348            /* Enable the I2C peripheral */
+   1349            I2C_Cmd(IOE_I2C, ENABLE);  
+   1350            I2C_Init(IOE_I2C, &I2C_InitStructure);
+   1351            
+   1352            return 0;
+   1353          }
+   1354          #endif /* !USE_TIMEOUT_USER_CALLBACK */
+   1355          
+   1356          #ifndef USE_Delay
+   1357          /**
+   1358            * @brief  Inserts a delay time.
+   1359            * @param  nCount: specifies the delay time length.
+   1360            * @retval None
+   1361            */
+   1362          static void delay(__IO uint32_t nCount)
+   1363          {
+   1364            __IO uint32_t index = 0; 
+   1365            for(index = (100000 * nCount); index != 0; index--)
+   1366            {
+   1367            }
+   1368          }
+   1369          #endif /* USE_Delay */
+   1370          /**
+   1371            * @}
+   1372            */ 
+   1373          
+   1374          /**
+   1375            * @}
+   1376            */ 
+   1377          
+   1378          /**
+   1379            * @}
+   1380            */ 
+   1381          
+   1382          /**
+   1383            * @}
+   1384            */ 
+   1385          
+   1386          /**
+   1387            * @}
+   1388            */      
+   1389          /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      96   I2C_DMA_ReadDataBuffer
+        96   -> DMA_ClearFlag
+        96   -> DMA_Cmd
+        96   -> DMA_DeInit
+        96   -> DMA_GetFlagStatus
+        96   -> DMA_Init
+        96   -> I2C_CheckEvent
+        96   -> I2C_DMACmd
+        96   -> I2C_DMALastTransferCmd
+        96   -> I2C_GenerateSTART
+        96   -> I2C_GenerateSTOP
+        96   -> I2C_GetFlagStatus
+        96   -> I2C_Send7bitAddress
+        96   -> I2C_SendData
+        96   -> IOE_TimeoutUserCallback
+        96   -> RCC_AHB1PeriphClockCmd
+      96   I2C_DMA_ReadDeviceRegister
+        96   -> DMA_ClearFlag
+        96   -> DMA_Cmd
+        96   -> DMA_DeInit
+        96   -> DMA_GetFlagStatus
+        96   -> DMA_Init
+        96   -> I2C_CheckEvent
+        96   -> I2C_DMACmd
+        96   -> I2C_DMALastTransferCmd
+        96   -> I2C_GenerateSTART
+        96   -> I2C_GenerateSTOP
+        96   -> I2C_GetFlagStatus
+        96   -> I2C_Send7bitAddress
+        96   -> I2C_SendData
+        96   -> IOE_TimeoutUserCallback
+        96   -> RCC_AHB1PeriphClockCmd
+      96   I2C_DMA_WriteDeviceRegister
+        96   -> DMA_ClearFlag
+        96   -> DMA_Cmd
+        96   -> DMA_DeInit
+        96   -> DMA_GetFlagStatus
+        96   -> DMA_Init
+        96   -> I2C_CheckEvent
+        96   -> I2C_DMACmd
+        96   -> I2C_GenerateSTART
+        96   -> I2C_GenerateSTOP
+        96   -> I2C_GetFlagStatus
+        96   -> I2C_Send7bitAddress
+        96   -> I2C_SendData
+        96   -> IOE_TimeoutUserCallback
+        96   -> RCC_AHB1PeriphClockCmd
+      32   I2C_ReadDataBuffer
+        32   -> I2C_AcknowledgeConfig
+        32   -> I2C_GenerateSTART
+        32   -> I2C_GenerateSTOP
+        32   -> I2C_GetFlagStatus
+        32   -> I2C_NACKPositionConfig
+        32   -> I2C_ReceiveData
+        32   -> I2C_Send7bitAddress
+        32   -> I2C_SendData
+      32   I2C_ReadDeviceRegister
+        32   -> I2C_AcknowledgeConfig
+        32   -> I2C_GenerateSTART
+        32   -> I2C_GenerateSTOP
+        32   -> I2C_GetFlagStatus
+        32   -> I2C_ReceiveData
+        32   -> I2C_Send7bitAddress
+        32   -> I2C_SendData
+      32   I2C_WriteDeviceRegister
+        32   -> I2C_GenerateSTART
+        32   -> I2C_GenerateSTOP
+        32   -> I2C_GetFlagStatus
+        32   -> I2C_Send7bitAddress
+        32   -> I2C_SendData
+       8   IOE_ClearGITPending
+         8   -> I2C_WriteDeviceRegister
+      32   IOE_Config
+        32   -> I2C_Cmd
+        32   -> I2C_Init
+        32   -> I2C_ReadDeviceRegister
+        32   -> I2C_WriteDeviceRegister
+        32   -> IOE_GPIO_Config
+        32   -> IOE_TP_Config
+        32   -> IOE_TimeoutUserCallback
+      16   IOE_FnctCmd
+        16   -> I2C_ReadDeviceRegister
+        16   -> I2C_WriteDeviceRegister
+       8   IOE_GITCmd
+         8   -> I2C_ReadDeviceRegister
+         8   -> I2C_WriteDeviceRegister
+      16   IOE_GITConfig
+        16   -> I2C_ReadDeviceRegister
+        16   -> I2C_WriteDeviceRegister
+      24   IOE_GPIO_Config
+        24   -> GPIO_Init
+        24   -> GPIO_PinAFConfig
+        24   -> RCC_AHB1PeriphClockCmd
+        24   -> RCC_APB1PeriphClockCmd
+        24   -> RCC_APB1PeriphResetCmd
+        24   -> RCC_APB2PeriphClockCmd
+      16   IOE_GetGITStatus
+        16   -> I2C_ReadDeviceRegister
+      16   IOE_IOAFConfig
+        16   -> I2C_ReadDeviceRegister
+        16   -> I2C_WriteDeviceRegister
+       8   IOE_IsOperational
+         8   -> I2C_ReadDeviceRegister
+         8   -> IOE_TimeoutUserCallback
+       8   IOE_ReadID
+         8   -> I2C_ReadDeviceRegister
+      16   IOE_Reset
+        16   -> I2C_WriteDeviceRegister
+       8   IOE_TPITConfig
+         8   -> I2C_ReadDeviceRegister
+         8   -> I2C_WriteDeviceRegister
+      16   IOE_TP_Config
+        16   -> I2C_ReadDeviceRegister
+        16   -> I2C_WriteDeviceRegister
+      16   IOE_TP_GetState
+        16   -> I2C_ReadDataBuffer
+        16   -> I2C_ReadDeviceRegister
+        16   -> I2C_WriteDeviceRegister
+      24   IOE_TimeoutUserCallback
+        24   -> I2C_Cmd
+        24   -> I2C_DeInit
+        24   -> I2C_GenerateSTOP
+        24   -> I2C_Init
+        24   -> I2C_SoftwareResetCmd
+        24   -> IOE_GPIO_Config
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable14
+       4  ??DataTable14_1
+       4  ??DataTable14_10
+       4  ??DataTable14_11
+       4  ??DataTable14_12
+       4  ??DataTable14_13
+       4  ??DataTable14_14
+       4  ??DataTable14_15
+       4  ??DataTable14_16
+       4  ??DataTable14_17
+       4  ??DataTable14_18
+       4  ??DataTable14_2
+       4  ??DataTable14_3
+       4  ??DataTable14_4
+       4  ??DataTable14_5
+       4  ??DataTable14_6
+       4  ??DataTable14_7
+       4  ??DataTable14_8
+       4  ??DataTable14_9
+       2  ?_0
+       2  ?_1
+     428  I2C_DMA_ReadDataBuffer
+     408  I2C_DMA_ReadDeviceRegister
+     352  I2C_DMA_WriteDeviceRegister
+     292  I2C_ReadDataBuffer
+     298  I2C_ReadDeviceRegister
+     224  I2C_WriteDeviceRegister
+      18  IOE_ClearGITPending
+     230  IOE_Config
+      38  IOE_FnctCmd
+      32  IOE_GITCmd
+      38  IOE_GITConfig
+     136  IOE_GPIO_Config
+      42  IOE_GetGITStatus
+      38  IOE_IOAFConfig
+      54  IOE_IsOperational
+      22  IOE_ReadID
+      92  IOE_Reset
+      48  IOE_TPITConfig
+     198  IOE_TP_Config
+     172  IOE_TP_GetState
+       4  IOE_TimeOut
+     102  IOE_TimeoutUserCallback
+      16  TP_State
+          _x
+          _y
+
+ 
+    16 bytes in section .bss
+     4 bytes in section .data
+     4 bytes in section .rodata
+ 3 338 bytes in section .text
+ 
+ 3 338 bytes of CODE  memory
+     4 bytes of CONST memory
+    20 bytes of DATA  memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,227 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.40.3.8902/W32 for ARM        24/Dec/2016  13:33:39
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Libraries\STemWinLibrary522_4x9i\Config\GUIConf.c
+#    Command line =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Libraries\STemWinLibrary522_4x9i\Config\GUIConf.c
+#        -D USE_STDPERIPH_DRIVER -D STM32F429_439xx -D USE_STM32F429I_DISCO -D
+#        USE_USB_OTG_HS -D USE_EMBEDDED_PHY -lcN
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\
+#        --diag_suppress Pe111,Pa082 -o
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\
+#        --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.2\arm\INC\c\DLib_Config_Full.h" -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Config\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Devices\STM32F4xx\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\User\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Demo\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Lib\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Test_Program\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\HID\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\Audio\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_OTG_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Common\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\STM32F429i-Discovery\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\fat_fs\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\Config\
+#        -Ohs --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.2\arm\CMSIS\Include\"
+#    List file    =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\GUIConf.lst
+#    Object file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\GUIConf.o
+#
+###############################################################################
+
+D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Libraries\STemWinLibrary522_4x9i\Config\GUIConf.c
+      1          /*********************************************************************
+      2          *          Portions COPYRIGHT 2013 STMicroelectronics                *
+      3          *          Portions SEGGER Microcontroller GmbH & Co. KG             *
+      4          *        Solutions for real time microcontroller applications        *
+      5          **********************************************************************
+      6          *                                                                    *
+      7          *        (c) 1996 - 2012  SEGGER Microcontroller GmbH & Co. KG       *
+      8          *                                                                    *
+      9          *        Internet: www.segger.com    Support:  support@segger.com    *
+     10          *                                                                    *
+     11          **********************************************************************
+     12          
+     13          ** emWin V5.22 - Graphical user interface for embedded applications **
+     14          All  Intellectual Property rights  in the Software belongs to  SEGGER.
+     15          emWin is protected by  international copyright laws.  Knowledge of the
+     16          source code may not be used to write a similar product.  This file may
+     17          only be used in accordance with the following terms:
+     18          
+     19          The software  has been  licensed to  STMicroelectronics  International
+     20          N.V. whose  registered office  is situated at Plan-les-Ouates, Geneva,
+     21          39 Chemin du Champ des Filles,  Switzerland solely for the purposes of
+     22          creating libraries for  STMicroelectronics  ARM Cortex™-M-based 32-bit
+     23          microcontroller    products,    sublicensed    and    distributed   by
+     24          STMicroelectronics  under  the  terms  and  conditions of the End User
+     25          License Agreement supplied with  the software. The use of the software
+     26          on a stand-alone basis  or for any purpose other  than to operate with
+     27          the specified  microcontroller is prohibited and subject to a separate
+     28          license agreement.
+     29          
+     30          Full source code is available at: www.segger.com
+     31          
+     32          We appreciate your understanding and fairness.
+     33          ----------------------------------------------------------------------
+     34          File        : GUIConf.c
+     35          Purpose     : Display controller initialization
+     36          ---------------------------END-OF-HEADER------------------------------
+     37          */
+     38          
+     39          /**
+     40            ******************************************************************************
+     41            * @attention
+     42            *
+     43            * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
+     44            * You may not use this file except in compliance with the License.
+     45            * You may obtain a copy of the License at:
+     46            *
+     47            *        http://www.st.com/software_license_agreement_liberty_v2
+     48            *
+     49            * Unless required by applicable law or agreed to in writing, software 
+     50            * distributed under the License is distributed on an "AS IS" BASIS, 
+     51            * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     52            * See the License for the specific language governing permissions and
+     53            * limitations under the License.
+     54            *
+     55            ******************************************************************************
+     56            */
+     57          
+     58          #include "GUI.h"
+     59          
+     60          /*********************************************************************
+     61          *
+     62          *       Defines, configurable
+     63          *
+     64          **********************************************************************
+     65          */
+     66          
+     67          //
+     68          // Define the available number of bytes available for the GUI
+     69          //
+     70          
+     71          #define GUI_NUMBYTES  (1024 * 126)    // x KByte
+     72          
+     73          /*********************************************************************
+     74          *
+     75          *       Static data
+     76          *
+     77          **********************************************************************
+     78          */
+     79          #if defined ( __CC_ARM   ) 
+     80            U32 HeapMem[1024 * 1024] __attribute__((at(0xD0100000)));
+     81          #elif defined ( __ICCARM__ ) 
+     82            #pragma location=0xD0100000
+     83            static __no_init U32 HeapMem[1024 * 1024];
+     84          #elif defined   (  __GNUC__  ) 
+     85            U32 HeapMem[1024 * 1024] __attribute__((section(".HeapMemSection")));
+     86          #endif
+     87          
+     88          U32 extMem[GUI_NUMBYTES / 4];
+     89          
+     90          /*********************************************************************
+     91          *
+     92          *       Public code
+     93          *
+     94          **********************************************************************
+     95          */
+     96          
+     97          /*********************************************************************
+     98          *
+     99          *       Get_ExtMemHeap
+    100          *
+    101          * Purpose:
+    102          *   Allocate heap from external memory
+    103          */
+    104          U32* Get_ExtMemHeap (void)
+    105          {
+    106            return HeapMem;
+    107          }
+    108          
+    109          /*********************************************************************
+    110          *
+    111          *       GUI_X_Config
+    112          *
+    113          * Purpose:
+    114          *   Called during the initialization process in order to set up the
+    115          *   available memory for the GUI.
+    116          */
+    117          void GUI_X_Config(void)
+    118          {
+    119            GUI_ALLOC_AssignMemory(extMem, GUI_NUMBYTES);
+    120          }
+    121          
+    122          /*************************** End of file ****************************/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   GUI_X_Config
+         0   -> GUI_ALLOC_AssignMemory
+       0   Get_ExtMemHeap
+
+
+   Section sizes:
+
+   Bytes    Function/Label
+   -----    --------------
+         4  ??DataTable1
+         4  ??DataTable1_1
+        10  GUI_X_Config
+         4  Get_ExtMemHeap
+   4194304  HeapMem
+    129024  extMem
+
+ 
+   129 024 bytes in section .bss
+ 4 194 304 bytes in section .noinit (abs)
+        22 bytes in section .text
+ 
+      22 bytes of CODE memory
+ 129 024 bytes of DATA memory (+ 4 194 304 bytes shared)
+
+Errors: none
+Warnings: none

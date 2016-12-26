@@ -1,0 +1,930 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.40.3.8902/W32 for ARM        24/Dec/2016  13:33:37
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\Core\Demo\demo_image.c
+#    Command line =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\Core\Demo\demo_image.c
+#        -D USE_STDPERIPH_DRIVER -D STM32F429_439xx -D USE_STM32F429I_DISCO -D
+#        USE_USB_OTG_HS -D USE_EMBEDDED_PHY -lcN
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\
+#        --diag_suppress Pe111,Pa082 -o
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\
+#        --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.2\arm\INC\c\DLib_Config_Full.h" -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Config\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Devices\STM32F4xx\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\User\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Demo\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Lib\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Test_Program\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\HID\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\Audio\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_OTG_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Common\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\STM32F429i-Discovery\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\fat_fs\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\Config\
+#        -Ohs --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.2\arm\CMSIS\Include\"
+#    List file    =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\demo_image.lst
+#    Object file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\demo_image.o
+#
+###############################################################################
+
+D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\Core\Demo\demo_image.c
+      1          /**
+      2            ******************************************************************************
+      3            * @file    demo_image.c
+      4            * @author  MCD Application Team
+      5            * @version V1.0.1
+      6            * @date    11-November-2013 
+      7            * @brief   Image Browser functions
+      8            ******************************************************************************
+      9            * @attention
+     10            *
+     11            * <h2><center>&copy; COPYRIGHT 2013 STMicroelectronics</center></h2>
+     12            *
+     13            * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
+     14            * You may not use this file except in compliance with the License.
+     15            * You may obtain a copy of the License at:
+     16            *
+     17            *        http://www.st.com/software_license_agreement_liberty_v2
+     18            *
+     19            * Unless required by applicable law or agreed to in writing, software 
+     20            * distributed under the License is distributed on an "AS IS" BASIS, 
+     21            * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     22            * See the License for the specific language governing permissions and
+     23            * limitations under the License.
+     24            *
+     25            ******************************************************************************
+     26            */
+     27          
+     28          /* Includes ------------------------------------------------------------------*/
+     29          #include "global_includes.h"
+     30          #include "DIALOG.h"
+     31          #include "file_utils.h"
+     32          #include "str_utils.h"
+     33          #include "Res\common_res.h"
+     34          #include "string.h"
+     35          
+     36          /* External variables --------------------------------------------------------*/
+     37          extern __IO uint32_t TS_Orientation;
+     38          
+     39          /* Private typedef -----------------------------------------------------------*/
+     40          /* Private defines -----------------------------------------------------------*/
+     41          #define ID_FRAMEWIN_IMAGE   (GUI_ID_USER + 0x00)
+     42          #define ID_IMAGE_FILE       (GUI_ID_USER + 0x01)
+     43          #define PLAY_BUTTON     (GUI_ID_USER + 0x03)
+     44          #define PREV_BUTTON     (GUI_ID_USER + 0x04)
+     45          #define NEXT_BUTTON     (GUI_ID_USER + 0x05)
+     46          #define MODE_BUTTON     (GUI_ID_USER + 0x06)
+     47          
+     48          /* Private macros ------------------------------------------------------------*/
+     49          /* Private variables ---------------------------------------------------------*/
+     50          static const GUI_WIDGET_CREATE_INFO _aDialogCreate[] = {
+     51            { FRAMEWIN_CreateIndirect, "Image Browser", ID_FRAMEWIN_IMAGE, 0, 0, 320, 240, WM_CF_STAYONTOP, 0},
+     52            { TEXT_CreateIndirect, "No File Found", ID_IMAGE_FILE, 20, 2, 179, 23, 0, 0, 0 },
+     53            { BUTTON_CreateIndirect, "", PREV_BUTTON, 20 , 190 , 80, 24, 0, 0, 0 },
+     54            { BUTTON_CreateIndirect, "", NEXT_BUTTON, 116 , 190 , 80, 24, 0, 0, 0 },
+     55            { BUTTON_CreateIndirect, "", MODE_BUTTON, 212 , 190 , 80, 24, 0, 0, 0 },
+     56          };
+     57          
+     58          static uint32_t _acBuffer[128];
+     59          FIL Image_File;
+     60          WM_HWIN  IMAGE_hWin, vFrame;
+     61          static WM_HWIN  bkparent ;
+     62          __IO uint32_t Image_browse_mode = 0;
+     63          __IO uint32_t IMAGE_Enlarge = 0;
+     64          __IO uint32_t Index;
+     65          __IO uint32_t new_display = 1;
+     66          
+     67          /* Private function prototypes -----------------------------------------------*/
+     68          /* Private functions ---------------------------------------------------------*/
+     69          
+     70          /**
+     71            * @brief  _GetJPEGFileList
+     72            * @param  path: pointer to an array of type char
+     73            * @retval None
+     74            */
+     75          static void _GetJPEGFileList(char* path) 
+     76          {
+     77            FRESULT res;
+     78            FILINFO fno;
+     79            DIR dir;
+     80            char *fn;
+     81          #if _USE_LFN
+     82            static char lfn[_MAX_LFN];
+     83            fno.lfname = lfn;
+     84            fno.lfsize = sizeof(lfn);
+     85          #endif
+     86            FILEMGR_FileList.ptr = 0;
+     87            FILEMGR_FileList.idx = 0;
+     88            
+     89            res = f_opendir(&dir, path);
+     90            if (res == FR_OK)
+     91            {
+     92              for (;;)
+     93              {
+     94                res = f_readdir(&dir, &fno);
+     95                if (res != FR_OK || fno.fname[0] == 0)
+     96                {
+     97                  break;
+     98                }
+     99                if (fno.fname[0] == '.')
+    100                {
+    101                  continue;
+    102                }
+    103          #if _USE_LFN
+    104                fn = *fno.lfname ? fno.lfname : fno.fname;
+    105          #else
+    106                fn = fno.fname;
+    107          #endif
+    108                if (fno.fattrib & AM_DIR)
+    109                {
+    110                  continue;
+    111                }
+    112                else
+    113                {
+    114                  if ((check_filename_ext(fn, "jpg"))|| (check_filename_ext(fn, "JPG")))
+    115                  {
+    116                    if (FILEMGR_FileList.ptr < FILELIST_DEPDTH)
+    117                    {
+    118                      strncpy((char *)FILEMGR_FileList.file[FILEMGR_FileList.ptr++].line, fn, 128);
+    119                    }
+    120                  }
+    121                }
+    122              }
+    123            }
+    124          }
+    125          
+    126          /**
+    127            * @brief  _EffectLineV0 transition effect
+    128            * @param  xSize: x size of the image (int)
+    129            *         ySize: y size of the image (int)
+    130            *         Delay: transition delay (int)
+    131            * @retval None
+    132            */
+    133          static void _EffectLineV0(int xSize, int ySize, int Delay) {
+    134            int i, j;
+    135            
+    136            GUI_SetColor(GUI_BLACK);
+    137            for (i = 0; i < 32; i++)
+    138            {
+    139              for (j = i; j < ySize; j += 32)
+    140              {
+    141                GUI_DrawHLine(j, 0, xSize - 1);
+    142              }
+    143              GUI_X_Delay(Delay);
+    144            }
+    145          }
+    146          
+    147          /**
+    148            * @brief  _EffectLineV1 transition effect
+    149            * @param  xSize: x size of the image (int)
+    150            *         ySize: y size of the image (int)
+    151            *         Delay: transition delay (int)
+    152            * @retval None
+    153            */
+    154          static void _EffectLineV1(int xSize, int ySize, int Delay) {
+    155            int i, j;
+    156            
+    157            GUI_SetColor(GUI_BLACK);
+    158            for (i = 31; i >= 0; i--)
+    159            {
+    160              for (j = i; j < ySize; j += 32)
+    161              {
+    162                GUI_DrawHLine(j, 0, xSize - 1);
+    163              }
+    164              GUI_X_Delay(Delay);
+    165            }
+    166          }
+    167          
+    168          /**
+    169            * @brief  _EffectLineH0 transition effect
+    170            * @param  xSize: x size of the image (int)
+    171            *         ySize: y size of the image (int)
+    172            *         Delay: transition delay (int)
+    173            * @retval None
+    174            */
+    175          static void _EffectLineH0(int xSize, int ySize, int Delay) {
+    176            int i, j;
+    177            
+    178            GUI_SetColor(GUI_BLACK);
+    179            for (i = 0; i < 32; i++)
+    180            {
+    181              for (j = i; j < xSize; j += 32)
+    182              {
+    183                GUI_DrawVLine(j, 0, ySize - 1);
+    184              }
+    185              GUI_X_Delay(Delay);
+    186            }
+    187          }
+    188          
+    189          /**
+    190            * @brief  _EffectLineH1 transition effect
+    191            * @param  xSize: x size of the image (int)
+    192            *         ySize: y size of the image (int)
+    193            *         Delay: transition delay (int)
+    194            * @retval None
+    195            */
+    196          static void _EffectLineH1(int xSize, int ySize, int Delay) {
+    197            int i, j;
+    198            
+    199            GUI_SetColor(GUI_BLACK);
+    200            for (i = 31; i >= 0; i--)
+    201            {
+    202              for (j = i; j < xSize; j += 32)
+    203              {
+    204                GUI_DrawVLine(j, 0, ySize - 1);
+    205              }
+    206              GUI_X_Delay(Delay);
+    207            }
+    208          }
+    209          
+    210          /**
+    211            * @brief  _EffectLineHV0 transition effect
+    212            * @param  xSize: x size of the image (int)
+    213            *         ySize: y size of the image (int)
+    214            *         Delay: transition delay (int)
+    215            * @retval None
+    216            */
+    217          static void _EffectLineHV0(int xSize, int ySize, int Delay) {
+    218            int i, j;
+    219            
+    220            GUI_SetColor(GUI_BLACK);
+    221            for (i = 0; i < 32; i++) {
+    222              for (j = i; j < ySize; j += 32)
+    223              {
+    224                GUI_DrawHLine(j, 0, xSize - 1);
+    225              }
+    226              for (j = i; j < xSize; j += 32)
+    227              {
+    228                GUI_DrawVLine(j, 0, ySize - 1);
+    229              }
+    230              GUI_X_Delay(Delay);
+    231            }
+    232          }
+    233          
+    234          /**
+    235            * @brief  _EffectLineHV1 transition effect
+    236            * @param  xSize: x size of the image (int)
+    237            *         ySize: y size of the image (int)
+    238            *         Delay: transition delay (int)
+    239            * @retval None
+    240            */
+    241          static void _EffectLineHV1(int xSize, int ySize, int Delay) {
+    242            int i, j;
+    243            
+    244            GUI_SetColor(GUI_BLACK);
+    245            
+    246            for (i = 31; i >= 0; i--) {
+    247              for (j = i; j < ySize; j += 32)
+    248              {
+    249                GUI_DrawHLine(j, 0, xSize - 1);
+    250              }
+    251              for (j = i; j < xSize; j += 32)
+    252              {
+    253                GUI_DrawVLine(j, 0, ySize - 1);
+    254              }
+    255              GUI_X_Delay(Delay);
+    256            }
+    257          }
+    258          
+    259          /* Array of effect functions */
+    260          static void (* _apFunc[])(int xSize, int ySize, int Delay) = {
+    261            _EffectLineV0,
+    262            _EffectLineV1,
+    263            _EffectLineH0,
+    264            _EffectLineH1,
+    265            _EffectLineHV0,
+    266            _EffectLineHV1,
+    267          };
+    268          
+    269          /**
+    270            * @brief  Display the next image in the list
+    271            * @param  None
+    272            * @retval None
+    273            */
+    274          static void goto_next_file (void)
+    275          {
+    276            FRESULT res = FR_OK;
+    277            
+    278            if(FILEMGR_FileList.ptr > 0)
+    279            {
+    280              f_close(&Image_File);
+    281              FILEMGR_FileList.idx ++;
+    282              
+    283              if (FILEMGR_FileList.idx == FILEMGR_FileList.ptr)
+    284              {
+    285                FILEMGR_FileList.idx = 0;
+    286              }
+    287              
+    288              res = f_open(&Image_File, (char const *)FILEMGR_FileList.file[FILEMGR_FileList.idx ].line, FA_OPEN_EXISTING | FA_READ);
+    289              if ( res != FR_OK)
+    290              {
+    291                /* Error open file */
+    292              }
+    293            }
+    294            else
+    295            {
+    296              /* No file */
+    297            } 
+    298          }
+    299          
+    300          /**
+    301            * @brief  Display the previous image in the list
+    302            * @param  None
+    303            * @retval None
+    304            */
+    305          static void goto_previous_file (void)
+    306          {
+    307            FRESULT res = FR_OK;
+    308            
+    309            if(FILEMGR_FileList.ptr > 0)
+    310            {
+    311              f_close(&Image_File); 
+    312              FILEMGR_FileList.idx --;
+    313              
+    314              if (FILEMGR_FileList.idx < 0 )
+    315              {
+    316                FILEMGR_FileList.idx = FILEMGR_FileList.ptr - 1;
+    317              }
+    318              
+    319              res = f_open(&Image_File, (char const *)FILEMGR_FileList.file[FILEMGR_FileList.idx ].line, FA_OPEN_EXISTING | FA_READ);
+    320              if ( res != FR_OK)
+    321              {
+    322                /* Error open file */
+    323              }
+    324            }
+    325            else
+    326            {
+    327              /* no file */
+    328            } 
+    329          }
+    330          
+    331          /**
+    332            * @brief  called one time at the beginning to retrieve overhead
+    333            *         information and, after this, several times to retrieve the actual image data
+    334            * @param  p: application defined void pointer
+    335            *         ppData: pointer to the location the requested data resides in
+    336            *         NumBytesReq: number of requested bytes.
+    337            *         Off: defines the offset to use for reading the source data
+    338            * @retval The number of bytes which were actually read (int)
+    339            */
+    340          static int _GetData(void * p, const U8 ** ppData, unsigned NumBytesReq, U32 Off)
+    341          {
+    342            unsigned int NumBytesRead;
+    343            FIL * phFile;
+    344            
+    345            phFile = (FIL *)p;
+    346            /*
+    347            * Check buffer size
+    348            */
+    349            if (NumBytesReq > sizeof(_acBuffer)) {
+    350              NumBytesReq = sizeof(_acBuffer);
+    351            }
+    352            /*
+    353            * Set file pointer to the required position
+    354            */
+    355            f_lseek(phFile, Off);
+    356            /*
+    357            * Read data into buffer
+    358            */
+    359            f_read(phFile, _acBuffer, NumBytesReq, &NumBytesRead); 
+    360            /*
+    361            * Set data pointer to the beginning of the buffer
+    362            */
+    363            *ppData =(unsigned char *) _acBuffer;
+    364            /*
+    365            * Return number of available bytes
+    366            */
+    367            return NumBytesRead;  
+    368          }
+    369          
+    370          /**
+    371            * @brief  draw the image after scaling it
+    372            * @param  hFile: pointer to the image file
+    373            *         Enlarge: 0 = window mode
+    374            *                  1 = full screen mode
+    375            * @retval None
+    376            */
+    377          static void _DrawJPEG(FIL *hFile, uint8_t Enlarge) 
+    378          {
+    379            int XPos, YPos, XSize, YSize, nx, ny, n;
+    380            GUI_JPEG_INFO Info;
+    381            GUI_JPEG_GetInfoEx(_GetData, hFile, &Info);
+    382            
+    383            if((Info.XSize == 0) || (Info.YSize == 0))
+    384            {
+    385              return;
+    386            }
+    387            if(  Enlarge == 0)
+    388            {
+    389              nx = 275000 / Info.XSize;
+    390              ny = 167000 / Info.YSize;
+    391            }
+    392            else
+    393            {
+    394              nx = 320000 / Info.XSize;
+    395              ny = 240000 / Info.YSize;
+    396            }
+    397            
+    398            if (nx < ny) {
+    399              n = nx;
+    400            } else {
+    401              n = ny;
+    402            }
+    403            
+    404            XSize = Info.XSize * n / 1000;
+    405            YSize = Info.YSize * n / 1000;
+    406            if(Enlarge == 0)
+    407            {
+    408              XPos = (275 - XSize) / 2;
+    409              YPos = (167 - YSize) / 2;
+    410            }
+    411            else
+    412            {
+    413              
+    414              XPos = (320 - XSize) / 2;
+    415              YPos = (240 - YSize) / 2;
+    416            }
+    417            
+    418            GUI_JPEG_DrawScaledEx(_GetData, hFile, XPos, YPos, n, 1000);
+    419          }
+    420          
+    421          /**
+    422            * @brief  show one effect amongst the effect list
+    423            * @param  pFunc: array of effect functions
+    424            *         xSize: x size of the image
+    425            *         ySize: y size of the image
+    426            *         Delay: transition delay
+    427            * @retval None
+    428            */
+    429          static void _ShowEffect(void (* pFunc)(int xSize, int ySize, int Delay), int xSize, int ySize, int Delay)
+    430          {
+    431            pFunc(xSize, ySize, Delay);
+    432          }
+    433          
+    434          /**
+    435            * @brief  Callback function of the image frame
+    436            * @param  pMsg: pointer to a data structure of type WM_MESSAGE
+    437            * @retval None
+    438            */
+    439          static void _cbImageWindow(WM_MESSAGE * pMsg) 
+    440          {
+    441            GUI_RECT r;
+    442            const GUI_PID_STATE * pState;
+    443            WM_HWIN hItem;
+    444            static WM_HTIMER hTimerTime;  
+    445            
+    446            switch (pMsg->MsgId) 
+    447            {
+    448            case  WM_TOUCH:
+    449              
+    450              pState = (const GUI_PID_STATE *)pMsg->Data.p;
+    451              if (pState) {
+    452                if (pState->Pressed == 1)
+    453                {
+    454                  IMAGE_Enlarge ^= 1;
+    455                  new_display = 1;
+    456                  if(IMAGE_Enlarge)
+    457                  {
+    458                    
+    459                    WM_AttachWindowAt(pMsg->hWin, WM_GetDesktopWindowEx(1), 0, 0);
+    460                    WM_SetSize(pMsg->hWin,LCD_GetXSize(), LCD_GetYSize());
+    461                  }
+    462                  else
+    463                  {
+    464                    WM_AttachWindowAt(pMsg->hWin, IMAGE_hWin, 25, 35);
+    465                    WM_SetSize(pMsg->hWin,267, 165);
+    466                  }
+    467                  WM_InvalidateWindow(pMsg->hWin);
+    468                }
+    469              }
+    470              break;
+    471              
+    472            case WM_CREATE:
+    473              
+    474              /* Create timer */
+    475              hTimerTime = WM_CreateTimer(pMsg->hWin, 0, 3000, 0);
+    476              break;
+    477              
+    478            case WM_NOTIFY_VIS_CHANGED:
+    479              
+    480              break;
+    481              
+    482            case WM_PAINT:
+    483              
+    484              WM_GetInsideRect(&r);
+    485              if (!new_display)
+    486              {    
+    487                if(FILEMGR_FileList.ptr > 0)
+    488                {
+    489                  _ShowEffect(_apFunc[Index++], r.x1, r.y1, 25);
+    490                  Index = (Index == GUI_COUNTOF(_apFunc)) ? 0 : Index;
+    491                }    
+    492              }
+    493              GUI_ClearRectEx(&r);
+    494              _DrawJPEG(&Image_File, IMAGE_Enlarge);  
+    495              new_display = 0;
+    496              break;
+    497              
+    498            case WM_TIMER:
+    499              if (Image_browse_mode)
+    500              {
+    501                f_close(&Image_File);
+    502                goto_next_file();
+    503                hItem = WM_GetDialogItem(WM_GetParent(pMsg->hWin), ID_IMAGE_FILE);
+    504                TEXT_SetText(hItem, (char *)FILEMGR_FileList.file[FILEMGR_FileList.idx].line);
+    505                WM_InvalidateWindow(pMsg->hWin);
+    506              }
+    507              WM_RestartTimer(pMsg->Data.v, 0);
+    508              break;
+    509              
+    510            case WM_DELETE:
+    511              WM_DeleteTimer(hTimerTime);
+    512              break;
+    513              
+    514            default:
+    515              WM_DefaultProc(pMsg);
+    516            }
+    517            
+    518          }
+    519          
+    520          /**
+    521            * @brief  Callback routine of the dialog
+    522            * @param  pMsg: pointer to a data structure of type WM_MESSAGE
+    523            * @retval None
+    524            */
+    525          static void _cbDialog(WM_MESSAGE * pMsg) {
+    526            WM_HWIN hItem, hClient;
+    527            GUI_RECT r;
+    528            int Id, NCode;
+    529            
+    530            switch (pMsg->MsgId) {
+    531              
+    532            case WM_INIT_DIALOG:
+    533              
+    534              WM_AttachWindow(pMsg->hWin, WM_GetDesktopWindowEx(1));
+    535              GUI_SetOrientation(GUI_SWAP_XY | GUI_MIRROR_Y);
+    536              TS_Orientation = 1;
+    537              hItem = pMsg->hWin;
+    538              
+    539              FRAMEWIN_SetFont       (hItem, GUI_FONT_13B_1);
+    540              FRAMEWIN_SetTextAlign  (hItem, GUI_TA_HCENTER);
+    541              FRAMEWIN_AddCloseButton(hItem, FRAMEWIN_BUTTON_LEFT,  0);
+    542              
+    543              hClient = WM_GetClientWindow(pMsg->hWin);
+    544              WM_GetClientRectEx(hClient, &r);
+    545              vFrame = WM_CreateWindowAsChild(r.x0 + 20, r.y0 + 18, r.x1 - 40, r.y1 - 50, hClient, WM_CF_SHOW, _cbImageWindow , 0);
+    546              
+    547              hItem = WM_GetDialogItem(pMsg->hWin, PREV_BUTTON);     
+    548              BUTTON_SetBitmapEx(hItem, 0, &bmButtonPreviousOn, 32, 6);
+    549              BUTTON_SetBitmapEx(hItem, 1, &bmButtonPreviousOff,32, 6);
+    550              
+    551              hItem = WM_GetDialogItem(pMsg->hWin, NEXT_BUTTON);     
+    552              BUTTON_SetBitmapEx(hItem, 0, &bmButtonNextOn, 32, 6);
+    553              BUTTON_SetBitmapEx(hItem, 1, &bmButtonNextOff,32, 6); 
+    554              
+    555              hItem = WM_GetDialogItem(pMsg->hWin, MODE_BUTTON);    
+    556              Image_browse_mode = 0; 
+    557              BUTTON_SetText(hItem, "Automatic");
+    558              BUTTON_SetTextColor(hItem, BUTTON_CI_PRESSED,GUI_LIGHTBLUE);
+    559              BUTTON_SetTextColor(hItem, BUTTON_CI_UNPRESSED,GUI_LIGHTBLUE);
+    560              
+    561              _GetJPEGFileList("0:");
+    562              
+    563              hItem = WM_GetDialogItem(pMsg->hWin, ID_IMAGE_FILE);   
+    564              if (FILEMGR_FileList.ptr == 0)
+    565              {
+    566                TEXT_SetFont(hItem, GUI_FONT_20B_ASCII);
+    567                TEXT_SetTextColor(hItem, GUI_BROWN);
+    568              }
+    569              else
+    570              {
+    571                TEXT_SetFont(hItem, GUI_FONT_13B_ASCII);
+    572                TEXT_SetTextColor(hItem, 0x00804000);
+    573              }
+    574              
+    575              if (FILEMGR_FileList.ptr > 0)
+    576              {
+    577                hItem = WM_GetDialogItem(pMsg->hWin, ID_IMAGE_FILE);
+    578                TEXT_SetText(hItem, (char *)FILEMGR_FileList.file[FILEMGR_FileList.idx].line);
+    579                if(f_open(&Image_File, (char *)FILEMGR_FileList.file[FILEMGR_FileList.idx].line, FA_OPEN_EXISTING | FA_READ) != FR_OK)
+    580                {
+    581                  /* Error to read file */
+    582                }
+    583              }
+    584              else
+    585              {
+    586                /* No file */
+    587              }
+    588              
+    589              
+    590              break;
+    591              
+    592              
+    593            case WM_NOTIFY_PARENT:
+    594              Id    = WM_GetId(pMsg->hWinSrc);
+    595              NCode = pMsg->Data.v;
+    596              
+    597              if(NCode == WM_NOTIFICATION_CHILD_DELETED)
+    598              {
+    599                f_close(&Image_File);
+    600                WM_AttachWindow(pMsg->hWin, bkparent);
+    601                GUI_SetOrientation(0);
+    602                TS_Orientation = 0;
+    603                WM_InvalidateWindow(bkparent);
+    604                WM_NotifyParent(WM_GetParent(pMsg->hWin), 0x500);      
+    605                break; 
+    606              }   
+    607              
+    608              switch(Id) {
+    609                
+    610              case PREV_BUTTON: /* Notifications sent by 'Button' */
+    611                switch(NCode) {
+    612                case WM_NOTIFICATION_CLICKED:
+    613                  break;
+    614          
+    615                case WM_NOTIFICATION_RELEASED:
+    616                  if((FILEMGR_FileList.ptr > 0)&& (Image_browse_mode == 0))
+    617                  {
+    618                      hItem = WM_GetDialogItem(pMsg->hWin, ID_IMAGE_FILE);     
+    619                      f_close(&Image_File);
+    620                      goto_previous_file();
+    621                      
+    622                      TEXT_SetText(hItem, (char *)FILEMGR_FileList.file[FILEMGR_FileList.idx].line);           
+    623                      WM_InvalidateWindow(vFrame);
+    624                  }
+    625                  break;
+    626                }
+    627                break;
+    628              case NEXT_BUTTON: /* Notifications sent by 'Button' */
+    629                switch(NCode) {
+    630                case WM_NOTIFICATION_CLICKED:
+    631                  break;
+    632                case WM_NOTIFICATION_RELEASED:
+    633                  if((FILEMGR_FileList.ptr > 0)&& (Image_browse_mode == 0))
+    634                  {        
+    635                    hItem = WM_GetDialogItem(pMsg->hWin, ID_IMAGE_FILE);
+    636                    f_close(&Image_File);
+    637                    goto_next_file();
+    638                    TEXT_SetText(hItem, (char *)FILEMGR_FileList.file[FILEMGR_FileList.idx].line);        
+    639                    WM_InvalidateWindow(vFrame);
+    640                  }
+    641                  break;
+    642                }
+    643                break;
+    644              case MODE_BUTTON: /* Notifications sent by 'Button' */
+    645                switch(NCode) {
+    646                case WM_NOTIFICATION_CLICKED:
+    647                  break;
+    648          
+    649                case WM_NOTIFICATION_RELEASED:
+    650                  if(FILEMGR_FileList.ptr > 0)
+    651                  { 
+    652                    Image_browse_mode ^= 1; 
+    653                    if(Image_browse_mode == 1)
+    654                    {
+    655                      BUTTON_SetText(pMsg->hWinSrc, "Manual");
+    656                      BUTTON_SetTextColor(pMsg->hWinSrc, BUTTON_CI_PRESSED,GUI_RED);
+    657                      BUTTON_SetTextColor(pMsg->hWinSrc, BUTTON_CI_UNPRESSED,GUI_RED);
+    658                    }
+    659                    else
+    660                    {
+    661                      BUTTON_SetText(pMsg->hWinSrc, "Automatic");
+    662                      BUTTON_SetTextColor(pMsg->hWinSrc, BUTTON_CI_PRESSED,GUI_LIGHTBLUE);
+    663                      BUTTON_SetTextColor(pMsg->hWinSrc, BUTTON_CI_UNPRESSED,GUI_LIGHTBLUE);
+    664                    }
+    665                  }
+    666                  break;
+    667                }
+    668                break;
+    669                
+    670              }
+    671              break;
+    672              
+    673            case WM_DELETE:
+    674              new_display = 1;
+    675              break;
+    676            default:
+    677              WM_DefaultProc(pMsg);
+    678              break;
+    679            }
+    680          }
+    681          
+    682          /**
+    683            * @brief  DEMO_Image
+    684            * @param  hWin: Window handle
+    685            * @retval None
+    686            */
+    687          void DEMO_Image(WM_HWIN hWin)
+    688          {
+    689            IMAGE_Enlarge = 0;
+    690            bkparent = hWin;
+    691            IMAGE_hWin = GUI_CreateDialogBox(_aDialogCreate, GUI_COUNTOF(_aDialogCreate), &_cbDialog, hWin, 0, 0);
+    692          }
+    693          /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   DEMO_Image
+        16   -> GUI_CreateDialogBox
+      24   _EffectLineH0
+        24   -> GUI_DrawVLine
+        24   -> GUI_SetColor
+        24   -> GUI_X_Delay
+      24   _EffectLineH1
+        24   -> GUI_DrawVLine
+        24   -> GUI_SetColor
+        24   -> GUI_X_Delay
+      32   _EffectLineHV0
+        32   -> GUI_DrawHLine
+        32   -> GUI_DrawVLine
+        32   -> GUI_SetColor
+        32   -> GUI_X_Delay
+      32   _EffectLineHV1
+        32   -> GUI_DrawHLine
+        32   -> GUI_DrawVLine
+        32   -> GUI_SetColor
+        32   -> GUI_X_Delay
+      24   _EffectLineV0
+        24   -> GUI_DrawHLine
+        24   -> GUI_SetColor
+        24   -> GUI_X_Delay
+      24   _EffectLineV1
+        24   -> GUI_DrawHLine
+        24   -> GUI_SetColor
+        24   -> GUI_X_Delay
+      24   _GetData
+        24   -> f_lseek
+        24   -> f_read
+     104   _cbDialog
+       104   -> BUTTON_SetBitmapEx
+       104   -> BUTTON_SetText
+       104   -> BUTTON_SetTextColor
+       104   -> FRAMEWIN_AddCloseButton
+       104   -> FRAMEWIN_SetFont
+       104   -> FRAMEWIN_SetTextAlign
+       104   -> GUI_SetOrientation
+       104   -> TEXT_SetFont
+       104   -> TEXT_SetText
+       104   -> TEXT_SetTextColor
+       104   -> WM_AttachWindow
+       104   -> WM_CreateWindowAsChild
+        28   -> WM_DefaultProc
+       104   -> WM_GetClientRectEx
+       104   -> WM_GetClientWindow
+       104   -> WM_GetDesktopWindowEx
+       104   -> WM_GetDialogItem
+       104   -> WM_GetId
+       104   -> WM_GetParent
+       104   -> WM_InvalidateWindow
+       104   -> WM_NotifyParent
+       104   -> check_filename_ext
+       104   -> f_close
+       104   -> f_open
+       104   -> f_opendir
+       104   -> f_readdir
+       104   -> goto_next_file
+       104   -> strncpy
+      40   _cbImageWindow
+        40   -- Indirect call
+        40   -> GUI_ClearRectEx
+        40   -> GUI_JPEG_DrawScaledEx
+        40   -> GUI_JPEG_GetInfoEx
+        40   -> LCD_GetXSize
+        40   -> LCD_GetYSize
+        40   -> TEXT_SetText
+        40   -> WM_AttachWindowAt
+        40   -> WM_CreateTimer
+        16   -> WM_DefaultProc
+        40   -> WM_DeleteTimer
+        40   -> WM_GetDesktopWindowEx
+        40   -> WM_GetDialogItem
+        40   -> WM_GetInsideRect
+        40   -> WM_GetParent
+        40   -> WM_InvalidateWindow
+        40   -> WM_RestartTimer
+        40   -> WM_SetSize
+        40   -> f_close
+        40   -> goto_next_file
+      16   goto_next_file
+        16   -> f_close
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable13
+       4  ??DataTable13_1
+       4  ??DataTable13_10
+       4  ??DataTable13_11
+       4  ??DataTable13_12
+       4  ??DataTable13_13
+       4  ??DataTable13_14
+       4  ??DataTable13_15
+       4  ??DataTable13_16
+       4  ??DataTable13_17
+       4  ??DataTable13_18
+       4  ??DataTable13_19
+       4  ??DataTable13_2
+       4  ??DataTable13_20
+       4  ??DataTable13_21
+       4  ??DataTable13_22
+       4  ??DataTable13_23
+       4  ??DataTable13_24
+       4  ??DataTable13_3
+       4  ??DataTable13_4
+       4  ??DataTable13_5
+       4  ??DataTable13_6
+       4  ??DataTable13_7
+       4  ??DataTable13_8
+       4  ??DataTable13_9
+      16  ?_0
+      16  ?_1
+       1  ?_2
+       4  ?_3
+       4  ?_4
+      12  ?_5
+       4  ?_6
+       8  ?_7
+      36  DEMO_Image
+     612  IMAGE_hWin
+          vFrame
+          bkparent
+          Image_browse_mode
+          IMAGE_Enlarge
+          Index
+          new_display
+          _apFunc
+          hTimerTime
+          Image_File
+      58  _EffectLineH0
+      56  _EffectLineH1
+      84  _EffectLineHV0
+      82  _EffectLineHV1
+      58  _EffectLineV0
+      56  _EffectLineV1
+      50  _GetData
+     140  _aDialogCreate
+     512  _acBuffer
+     896  _cbDialog
+     492  _cbImageWindow
+      72  goto_next_file
+
+ 
+   512 bytes in section .bss
+   612 bytes in section .data
+    45 bytes in section .rodata
+ 2 200 bytes in section .text
+ 
+ 2 200 bytes of CODE  memory
+    45 bytes of CONST memory
+ 1 124 bytes of DATA  memory
+
+Errors: none
+Warnings: none

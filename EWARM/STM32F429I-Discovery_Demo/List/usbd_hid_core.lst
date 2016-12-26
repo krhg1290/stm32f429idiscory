@@ -1,0 +1,612 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.40.3.8902/W32 for ARM        24/Dec/2016  13:33:51
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Libraries\STM32_USB_Device_Library\Class\hid\src\usbd_hid_core.c
+#    Command line =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Libraries\STM32_USB_Device_Library\Class\hid\src\usbd_hid_core.c
+#        -D USE_STDPERIPH_DRIVER -D STM32F429_439xx -D USE_STM32F429I_DISCO -D
+#        USE_USB_OTG_HS -D USE_EMBEDDED_PHY -lcN
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\
+#        --diag_suppress Pe111,Pa082 -o
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\
+#        --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.2\arm\INC\c\DLib_Config_Full.h" -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Config\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Devices\STM32F4xx\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\User\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Demo\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Lib\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Test_Program\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\HID\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\Audio\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_OTG_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Common\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\STM32F429i-Discovery\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\fat_fs\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\Config\
+#        -Ohs --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.2\arm\CMSIS\Include\"
+#    List file    =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\usbd_hid_core.lst
+#    Object file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\usbd_hid_core.o
+#
+###############################################################################
+
+D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Libraries\STM32_USB_Device_Library\Class\hid\src\usbd_hid_core.c
+      1          /**
+      2            ******************************************************************************
+      3            * @file    usbd_hid_core.c
+      4            * @author  MCD Application Team
+      5            * @version V1.1.0
+      6            * @date    19-March-2012
+      7            * @brief   This file provides the HID core functions.
+      8            *
+      9            * @verbatim
+     10            *      
+     11            *          ===================================================================      
+     12            *                                HID Class  Description
+     13            *          =================================================================== 
+     14            *           This module manages the HID class V1.11 following the "Device Class Definition
+     15            *           for Human Interface Devices (HID) Version 1.11 Jun 27, 2001".
+     16            *           This driver implements the following aspects of the specification:
+     17            *             - The Boot Interface Subclass
+     18            *             - The Mouse protocol
+     19            *             - Usage Page : Generic Desktop
+     20            *             - Usage : Joystick)
+     21            *             - Collection : Application 
+     22            *      
+     23            * @note     In HS mode and when the DMA is used, all variables and data structures
+     24            *           dealing with the DMA during the transaction process should be 32-bit aligned.
+     25            *           
+     26            *      
+     27            *  @endverbatim
+     28            *
+     29            ******************************************************************************
+     30            * @attention
+     31            *
+     32            * <h2><center>&copy; COPYRIGHT 2012 STMicroelectronics</center></h2>
+     33            *
+     34            * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
+     35            * You may not use this file except in compliance with the License.
+     36            * You may obtain a copy of the License at:
+     37            *
+     38            *        http://www.st.com/software_license_agreement_liberty_v2
+     39            *
+     40            * Unless required by applicable law or agreed to in writing, software 
+     41            * distributed under the License is distributed on an "AS IS" BASIS, 
+     42            * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     43            * See the License for the specific language governing permissions and
+     44            * limitations under the License.
+     45            *
+     46            ******************************************************************************
+     47            */ 
+     48          
+     49          /* Includes ------------------------------------------------------------------*/
+     50          #include "usbd_hid_core.h"
+     51          #include "usbd_desc.h"
+     52          #include "usbd_req.h"
+     53          
+     54          
+     55          /** @addtogroup STM32_USB_OTG_DEVICE_LIBRARY
+     56            * @{
+     57            */
+     58          
+     59          
+     60          /** @defgroup USBD_HID 
+     61            * @brief usbd core module
+     62            * @{
+     63            */ 
+     64          
+     65          /** @defgroup USBD_HID_Private_TypesDefinitions
+     66            * @{
+     67            */ 
+     68          /**
+     69            * @}
+     70            */ 
+     71          
+     72          
+     73          /** @defgroup USBD_HID_Private_Defines
+     74            * @{
+     75            */ 
+     76          
+     77          /**
+     78            * @}
+     79            */ 
+     80          
+     81          
+     82          /** @defgroup USBD_HID_Private_Macros
+     83            * @{
+     84            */ 
+     85          /**
+     86            * @}
+     87            */ 
+     88          
+     89          
+     90          
+     91          
+     92          /** @defgroup USBD_HID_Private_FunctionPrototypes
+     93            * @{
+     94            */
+     95          
+     96          
+     97          static uint8_t  USBD_HID_Init (void  *pdev, 
+     98                                         uint8_t cfgidx);
+     99          
+    100          static uint8_t  USBD_HID_DeInit (void  *pdev, 
+    101                                           uint8_t cfgidx);
+    102          
+    103          static uint8_t  USBD_HID_Setup (void  *pdev, 
+    104                                          USB_SETUP_REQ *req);
+    105          
+    106          static uint8_t  *USBD_HID_GetCfgDesc (uint8_t speed, uint16_t *length);
+    107          
+    108          static uint8_t  USBD_HID_DataIn (void  *pdev, uint8_t epnum);
+    109          /**
+    110            * @}
+    111            */ 
+    112          
+    113          /** @defgroup USBD_HID_Private_Variables
+    114            * @{
+    115            */ 
+    116          
+    117          USBD_Class_cb_TypeDef  USBD_HID_cb = 
+    118          {
+    119            USBD_HID_Init,
+    120            USBD_HID_DeInit,
+    121            USBD_HID_Setup,
+    122            NULL, /*EP0_TxSent*/  
+    123            NULL, /*EP0_RxReady*/
+    124            USBD_HID_DataIn, /*DataIn*/
+    125            NULL, /*DataOut*/
+    126            NULL, /*SOF */
+    127            NULL,
+    128            NULL,      
+    129            USBD_HID_GetCfgDesc,
+    130          #ifdef USB_OTG_HS_CORE  
+    131            USBD_HID_GetCfgDesc, /* use same config as per FS */
+    132          #endif  
+    133          };
+    134          
+    135          #ifdef USB_OTG_HS_INTERNAL_DMA_ENABLED
+    136            #if defined ( __ICCARM__ ) /*!< IAR Compiler */
+    137              #pragma data_alignment=4   
+    138            #endif
+    139          #endif /* USB_OTG_HS_INTERNAL_DMA_ENABLED */        
+    140          __ALIGN_BEGIN static uint32_t  USBD_HID_AltSet  __ALIGN_END = 0;
+    141          
+    142          #ifdef USB_OTG_HS_INTERNAL_DMA_ENABLED
+    143            #if defined ( __ICCARM__ ) /*!< IAR Compiler */
+    144              #pragma data_alignment=4   
+    145            #endif
+    146          #endif /* USB_OTG_HS_INTERNAL_DMA_ENABLED */      
+    147          __ALIGN_BEGIN static uint32_t  USBD_HID_Protocol  __ALIGN_END = 0;
+    148          
+    149          #ifdef USB_OTG_HS_INTERNAL_DMA_ENABLED
+    150            #if defined ( __ICCARM__ ) /*!< IAR Compiler */
+    151              #pragma data_alignment=4   
+    152            #endif
+    153          #endif /* USB_OTG_HS_INTERNAL_DMA_ENABLED */  
+    154          __ALIGN_BEGIN static uint32_t  USBD_HID_IdleState __ALIGN_END = 0;
+    155          
+    156          #ifdef USB_OTG_HS_INTERNAL_DMA_ENABLED
+    157            #if defined ( __ICCARM__ ) /*!< IAR Compiler */
+    158              #pragma data_alignment=4   
+    159            #endif
+    160          #endif /* USB_OTG_HS_INTERNAL_DMA_ENABLED */ 
+    161          /* USB HID device Configuration Descriptor */
+    162          __ALIGN_BEGIN static uint8_t USBD_HID_CfgDesc[USB_HID_CONFIG_DESC_SIZ] __ALIGN_END =
+    163          {
+    164            0x09, /* bLength: Configuration Descriptor size */
+    165            USB_CONFIGURATION_DESCRIPTOR_TYPE, /* bDescriptorType: Configuration */
+    166            USB_HID_CONFIG_DESC_SIZ,
+    167            /* wTotalLength: Bytes returned */
+    168            0x00,
+    169            0x01,         /*bNumInterfaces: 1 interface*/
+    170            0x01,         /*bConfigurationValue: Configuration value*/
+    171            0x00,         /*iConfiguration: Index of string descriptor describing
+    172            the configuration*/
+    173            0xE0,         /*bmAttributes: bus powered and Support Remote Wake-up */
+    174            0x32,         /*MaxPower 100 mA: this current is used for detecting Vbus*/
+    175            
+    176            /************** Descriptor of Joystick Mouse interface ****************/
+    177            /* 09 */
+    178            0x09,         /*bLength: Interface Descriptor size*/
+    179            USB_INTERFACE_DESCRIPTOR_TYPE,/*bDescriptorType: Interface descriptor type*/
+    180            0x00,         /*bInterfaceNumber: Number of Interface*/
+    181            0x00,         /*bAlternateSetting: Alternate setting*/
+    182            0x01,         /*bNumEndpoints*/
+    183            0x03,         /*bInterfaceClass: HID*/
+    184            0x01,         /*bInterfaceSubClass : 1=BOOT, 0=no boot*/
+    185            0x02,         /*nInterfaceProtocol : 0=none, 1=keyboard, 2=mouse*/
+    186            0,            /*iInterface: Index of string descriptor*/
+    187            /******************** Descriptor of Joystick Mouse HID ********************/
+    188            /* 18 */
+    189            0x09,         /*bLength: HID Descriptor size*/
+    190            HID_DESCRIPTOR_TYPE, /*bDescriptorType: HID*/
+    191            0x11,         /*bcdHID: HID Class Spec release number*/
+    192            0x01,
+    193            0x00,         /*bCountryCode: Hardware target country*/
+    194            0x01,         /*bNumDescriptors: Number of HID class descriptors to follow*/
+    195            0x22,         /*bDescriptorType*/
+    196            HID_MOUSE_REPORT_DESC_SIZE,/*wItemLength: Total length of Report descriptor*/
+    197            0x00,
+    198            /******************** Descriptor of Mouse endpoint ********************/
+    199            /* 27 */
+    200            0x07,          /*bLength: Endpoint Descriptor size*/
+    201            USB_ENDPOINT_DESCRIPTOR_TYPE, /*bDescriptorType:*/
+    202            
+    203            HID_IN_EP,     /*bEndpointAddress: Endpoint Address (IN)*/
+    204            0x03,          /*bmAttributes: Interrupt endpoint*/
+    205            HID_IN_PACKET, /*wMaxPacketSize: 4 Byte max */
+    206            0x00,
+    207            0x0A,          /*bInterval: Polling Interval (10 ms)*/
+    208            /* 34 */
+    209          } ;
+    210          
+    211          #ifdef USB_OTG_HS_INTERNAL_DMA_ENABLED
+    212            #if defined ( __ICCARM__ ) /*!< IAR Compiler */
+    213              #pragma data_alignment=4   
+    214            #endif
+    215          /* USB HID device Configuration Descriptor */
+    216          __ALIGN_BEGIN static uint8_t USBD_HID_Desc[USB_HID_DESC_SIZ] __ALIGN_END=
+    217          {
+    218            /* 18 */
+    219            0x09,         /*bLength: HID Descriptor size*/
+    220            HID_DESCRIPTOR_TYPE, /*bDescriptorType: HID*/
+    221            0x11,         /*bcdHID: HID Class Spec release number*/
+    222            0x01,
+    223            0x00,         /*bCountryCode: Hardware target country*/
+    224            0x01,         /*bNumDescriptors: Number of HID class descriptors to follow*/
+    225            0x22,         /*bDescriptorType*/
+    226            HID_MOUSE_REPORT_DESC_SIZE,/*wItemLength: Total length of Report descriptor*/
+    227            0x00,
+    228          };
+    229          #endif 
+    230          
+    231          
+    232          #ifdef USB_OTG_HS_INTERNAL_DMA_ENABLED
+    233            #if defined ( __ICCARM__ ) /*!< IAR Compiler */
+    234              #pragma data_alignment=4   
+    235            #endif
+    236          #endif /* USB_OTG_HS_INTERNAL_DMA_ENABLED */  
+    237          __ALIGN_BEGIN static uint8_t HID_MOUSE_ReportDesc[HID_MOUSE_REPORT_DESC_SIZE] __ALIGN_END =
+    238          {
+    239            0x05,   0x01,
+    240            0x09,   0x02,
+    241            0xA1,   0x01,
+    242            0x09,   0x01,
+    243            
+    244            0xA1,   0x00,
+    245            0x05,   0x09,
+    246            0x19,   0x01,
+    247            0x29,   0x03,
+    248            
+    249            0x15,   0x00,
+    250            0x25,   0x01,
+    251            0x95,   0x03,
+    252            0x75,   0x01,
+    253            
+    254            0x81,   0x02,
+    255            0x95,   0x01,
+    256            0x75,   0x05,
+    257            0x81,   0x01,
+    258            
+    259            0x05,   0x01,
+    260            0x09,   0x30,
+    261            0x09,   0x31,
+    262            0x09,   0x38,
+    263            
+    264            0x15,   0x81,
+    265            0x25,   0x7F,
+    266            0x75,   0x08,
+    267            0x95,   0x03,
+    268            
+    269            0x81,   0x06,
+    270            0xC0,   0x09,
+    271            0x3c,   0x05,
+    272            0xff,   0x09,
+    273            
+    274            0x01,   0x15,
+    275            0x00,   0x25,
+    276            0x01,   0x75,
+    277            0x01,   0x95,
+    278            
+    279            0x02,   0xb1,
+    280            0x22,   0x75,
+    281            0x06,   0x95,
+    282            0x01,   0xb1,
+    283            
+    284            0x01,   0xc0
+    285          }; 
+    286          
+    287          /**
+    288            * @}
+    289            */ 
+    290          
+    291          /** @defgroup USBD_HID_Private_Functions
+    292            * @{
+    293            */ 
+    294          
+    295          /**
+    296            * @brief  USBD_HID_Init
+    297            *         Initialize the HID interface
+    298            * @param  pdev: device instance
+    299            * @param  cfgidx: Configuration index
+    300            * @retval status
+    301            */
+    302          static uint8_t  USBD_HID_Init (void  *pdev, 
+    303                                         uint8_t cfgidx)
+    304          {
+    305            
+    306            /* Open EP IN */
+    307            DCD_EP_Open(pdev,
+    308                        HID_IN_EP,
+    309                        HID_IN_PACKET,
+    310                        USB_OTG_EP_INT);
+    311            
+    312            /* Open EP OUT */
+    313            DCD_EP_Open(pdev,
+    314                        HID_OUT_EP,
+    315                        HID_OUT_PACKET,
+    316                        USB_OTG_EP_INT);
+    317            
+    318            return USBD_OK;
+    319          }
+    320          
+    321          /**
+    322            * @brief  USBD_HID_Init
+    323            *         DeInitialize the HID layer
+    324            * @param  pdev: device instance
+    325            * @param  cfgidx: Configuration index
+    326            * @retval status
+    327            */
+    328          static uint8_t  USBD_HID_DeInit (void  *pdev, 
+    329                                           uint8_t cfgidx)
+    330          {
+    331            /* Close HID EPs */
+    332            DCD_EP_Close (pdev , HID_IN_EP);
+    333            DCD_EP_Close (pdev , HID_OUT_EP);
+    334            
+    335            
+    336            return USBD_OK;
+    337          }
+    338          
+    339          /**
+    340            * @brief  USBD_HID_Setup
+    341            *         Handle the HID specific requests
+    342            * @param  pdev: instance
+    343            * @param  req: usb requests
+    344            * @retval status
+    345            */
+    346          static uint8_t  USBD_HID_Setup (void  *pdev, 
+    347                                          USB_SETUP_REQ *req)
+    348          {
+    349            uint16_t len = 0;
+    350            uint8_t  *pbuf = NULL;
+    351            
+    352            switch (req->bmRequest & USB_REQ_TYPE_MASK)
+    353            {
+    354            case USB_REQ_TYPE_CLASS :  
+    355              switch (req->bRequest)
+    356              {
+    357                
+    358                
+    359              case HID_REQ_SET_PROTOCOL:
+    360                USBD_HID_Protocol = (uint8_t)(req->wValue);
+    361                break;
+    362                
+    363              case HID_REQ_GET_PROTOCOL:
+    364                USBD_CtlSendData (pdev, 
+    365                                  (uint8_t *)&USBD_HID_Protocol,
+    366                                  1);    
+    367                break;
+    368                
+    369              case HID_REQ_SET_IDLE:
+    370                USBD_HID_IdleState = (uint8_t)(req->wValue >> 8);
+    371                break;
+    372                
+    373              case HID_REQ_GET_IDLE:
+    374                USBD_CtlSendData (pdev, 
+    375                                  (uint8_t *)&USBD_HID_IdleState,
+    376                                  1);        
+    377                break;      
+    378                
+    379              default:
+    380                USBD_CtlError (pdev, req);
+    381                return USBD_FAIL; 
+    382              }
+    383              break;
+    384              
+    385            case USB_REQ_TYPE_STANDARD:
+    386              switch (req->bRequest)
+    387              {
+    388              case USB_REQ_GET_DESCRIPTOR: 
+    389                if( req->wValue >> 8 == HID_REPORT_DESC)
+    390                {
+    391                  len = MIN(HID_MOUSE_REPORT_DESC_SIZE , req->wLength);
+    392                  pbuf = HID_MOUSE_ReportDesc;
+    393                }
+    394                else if( req->wValue >> 8 == HID_DESCRIPTOR_TYPE)
+    395                {
+    396                  
+    397          #ifdef USB_OTG_HS_INTERNAL_DMA_ENABLED
+    398                  pbuf = USBD_HID_Desc;   
+    399          #else
+    400                  pbuf = USBD_HID_CfgDesc + 0x12;
+    401          #endif 
+    402                  len = MIN(USB_HID_DESC_SIZ , req->wLength);
+    403                }
+    404                
+    405                USBD_CtlSendData (pdev, 
+    406                                  pbuf,
+    407                                  len);
+    408                
+    409                break;
+    410                
+    411              case USB_REQ_GET_INTERFACE :
+    412                USBD_CtlSendData (pdev,
+    413                                  (uint8_t *)&USBD_HID_AltSet,
+    414                                  1);
+    415                break;
+    416                
+    417              case USB_REQ_SET_INTERFACE :
+    418                USBD_HID_AltSet = (uint8_t)(req->wValue);
+    419                break;
+    420              }
+    421            }
+    422            return USBD_OK;
+    423          }
+    424          
+    425          /**
+    426            * @brief  USBD_HID_SendReport 
+    427            *         Send HID Report
+    428            * @param  pdev: device instance
+    429            * @param  buff: pointer to report
+    430            * @retval status
+    431            */
+    432          uint8_t USBD_HID_SendReport     (USB_OTG_CORE_HANDLE  *pdev, 
+    433                                           uint8_t *report,
+    434                                           uint16_t len)
+    435          {
+    436            if (pdev->dev.device_status == USB_OTG_CONFIGURED )
+    437            {
+    438              DCD_EP_Tx (pdev, HID_IN_EP, report, len);
+    439            }
+    440            return USBD_OK;
+    441          }
+    442          
+    443          /**
+    444            * @brief  USBD_HID_GetCfgDesc 
+    445            *         return configuration descriptor
+    446            * @param  speed : current device speed
+    447            * @param  length : pointer data length
+    448            * @retval pointer to descriptor buffer
+    449            */
+    450          static uint8_t  *USBD_HID_GetCfgDesc (uint8_t speed, uint16_t *length)
+    451          {
+    452            *length = sizeof (USBD_HID_CfgDesc);
+    453            return USBD_HID_CfgDesc;
+    454          }
+    455          
+    456          /**
+    457            * @brief  USBD_HID_DataIn
+    458            *         handle data IN Stage
+    459            * @param  pdev: device instance
+    460            * @param  epnum: endpoint index
+    461            * @retval status
+    462            */
+    463          static uint8_t  USBD_HID_DataIn (void  *pdev, 
+    464                                        uint8_t epnum)
+    465          {
+    466            
+    467            /* Ensure that the FIFO is empty before a new transfer, this condition could 
+    468            be caused by  a new transfer before the end of the previous transfer */
+    469            DCD_EP_Flush(pdev, HID_IN_EP);
+    470            return USBD_OK;
+    471          }
+    472          
+    473          /**
+    474            * @}
+    475            */ 
+    476          
+    477          
+    478          /**
+    479            * @}
+    480            */ 
+    481          
+    482          
+    483          /**
+    484            * @}
+    485            */ 
+    486          
+    487          /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   USBD_HID_DataIn
+         8   -> DCD_EP_Flush
+       8   USBD_HID_DeInit
+         8   -> DCD_EP_Close
+       0   USBD_HID_GetCfgDesc
+       8   USBD_HID_Init
+         8   -> DCD_EP_Open
+       8   USBD_HID_SendReport
+         8   -> DCD_EP_Tx
+       8   USBD_HID_Setup
+         8   -> USBD_CtlError
+         8   -> USBD_CtlSendData
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable1
+       4  ??DataTable1_1
+       4  ??DataTable1_2
+       4  ??DataTable1_3
+       4  ??DataTable1_4
+       4  ??DataTable1_5
+     124  USBD_HID_AltSet
+          USBD_HID_Protocol
+          USBD_HID_IdleState
+          USBD_HID_CfgDesc
+          HID_MOUSE_ReportDesc
+      16  USBD_HID_DataIn
+      22  USBD_HID_DeInit
+       8  USBD_HID_GetCfgDesc
+      30  USBD_HID_Init
+      28  USBD_HID_SendReport
+     158  USBD_HID_Setup
+      48  USBD_HID_cb
+
+ 
+ 172 bytes in section .data
+ 286 bytes in section .text
+ 
+ 286 bytes of CODE memory
+ 172 bytes of DATA memory
+
+Errors: none
+Warnings: none

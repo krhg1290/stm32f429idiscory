@@ -1,0 +1,393 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.40.3.8902/W32 for ARM        24/Dec/2016  13:33:35
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\Core\Demo\Res\common_res.c
+#    Command line =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\Core\Demo\Res\common_res.c
+#        -D USE_STDPERIPH_DRIVER -D STM32F429_439xx -D USE_STM32F429I_DISCO -D
+#        USE_USB_OTG_HS -D USE_EMBEDDED_PHY -lcN
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\
+#        --diag_suppress Pe111,Pa082 -o
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\
+#        --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.2\arm\INC\c\DLib_Config_Full.h" -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Config\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Devices\STM32F4xx\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\User\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Demo\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Lib\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\Core\Test_Program\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\MSC\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\HID\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_Device_Library\Class\Audio\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32_USB_OTG_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Common\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\STM32F429i-Discovery\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\fat_fs\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Utilities\Third_Party\FreeRTOS\Source\include\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\inc\
+#        -I
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\..\..\..\Libraries\STemWinLibrary522_4x9i\Config\
+#        -Ohs --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.2\arm\CMSIS\Include\"
+#    List file    =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\List\common_res.lst
+#    Object file  =  
+#        D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\EWARM\STM32F429I-Discovery_Demo\Obj\common_res.o
+#
+###############################################################################
+
+D:\STM32F429I-Discovery_FW_V1.0.1\STM32F429I-Discovery_FW_V1.0.1\Projects\Demonstration\Core\Demo\Res\common_res.c
+      1          /**
+      2            ******************************************************************************
+      3            * @file    common_res.c
+      4            * @author  MCD Application Team
+      5            * @version V1.0.1
+      6            * @date    11-November-2013 
+      7            * @brief   Common resources
+      8            ******************************************************************************
+      9            * @attention
+     10            *
+     11            * <h2><center>&copy; COPYRIGHT 2013 STMicroelectronics</center></h2>
+     12            *
+     13            * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
+     14            * You may not use this file except in compliance with the License.
+     15            * You may obtain a copy of the License at:
+     16            *
+     17            *        http://www.st.com/software_license_agreement_liberty_v2
+     18            *
+     19            * Unless required by applicable law or agreed to in writing, software 
+     20            * distributed under the License is distributed on an "AS IS" BASIS, 
+     21            * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     22            * See the License for the specific language governing permissions and
+     23            * limitations under the License.
+     24            *
+     25            ******************************************************************************
+     26            */
+     27          
+     28          #include "stdlib.h"
+     29          #include "common_res.h"
+     30          #include "GUI.h"
+     31          
+     32          #ifndef GUI_CONST_STORAGE
+     33            #define GUI_CONST_STORAGE const
+     34          #endif
+     35          
+     36          /* Bitmap data for Button keys */
+     37          GUI_CONST_STORAGE GUI_COLOR aColorsButtonOn[] = {
+     38            GUI_DARKBLUE ,GUI_LIGHTBLUE, 
+     39          };
+     40          
+     41          
+     42          GUI_CONST_STORAGE GUI_LOGPALETTE PalButtonOn = {
+     43            2,	/* number of entries */
+     44            1, 	/* No transparency */
+     45            &aColorsButtonOn[0]
+     46          };
+     47          
+     48          /* Bitmap data for Button keys */
+     49          GUI_CONST_STORAGE GUI_COLOR aColorsButtonOff[] = {
+     50            GUI_DARKBLUE ,GUI_LIGHTBLUE, 
+     51          };
+     52          
+     53          
+     54          GUI_CONST_STORAGE GUI_LOGPALETTE PalButtonOff = {
+     55            2,	/* number of entries */
+     56            1, 	/* No transparency */
+     57            &aColorsButtonOff[0]
+     58          };
+     59          
+     60          
+     61          /* Bitmap data for Button keys */
+     62          GUI_CONST_STORAGE GUI_COLOR aColorsButtonPause[] = {
+     63            GUI_DARKBLUE ,GUI_DARKRED, 
+     64          };
+     65          
+     66          
+     67          GUI_CONST_STORAGE GUI_LOGPALETTE PalButtonPause = {
+     68            2,	/* number of entries */
+     69            1, 	/* No transparency */
+     70            &aColorsButtonPause[0]
+     71          };
+     72          
+     73          /* Bitmap data for Button keys */
+     74          GUI_CONST_STORAGE GUI_COLOR aColorsButtonPlay[] = {
+     75            GUI_DARKBLUE ,GUI_DARKGREEN, 
+     76          };
+     77          
+     78          
+     79          GUI_CONST_STORAGE GUI_LOGPALETTE PalButtonPlay = {
+     80            2,	/* number of entries */
+     81            1, 	/* No transparency */
+     82            &aColorsButtonPlay[0]
+     83          };
+     84          
+     85          GUI_CONST_STORAGE unsigned char acButtonPlayPause[] = {
+     86            __XX____,___X__X_,  
+     87            __XXXX__,___X__X_,  
+     88            __XXXXXX,___X__X_,
+     89            __XXXXXX,XX_X__X_,
+     90            __XXXXXX,XXXX__X_,
+     91            __XXXXXX,XX_X__X_,
+     92            __XXXXXX,___X__X_,
+     93            __XXXX__,___X__X_,  
+     94            __XX____,___X__X_,    
+     95          };
+     96          
+     97          GUI_CONST_STORAGE GUI_BITMAP bmButtonPlayPauseOn = {
+     98            16,           /* XSize */
+     99            9,            /* YSize */
+    100            2,            /* BytesPerLine */
+    101            1,            /* BitsPerPixel */
+    102            acButtonPlayPause, /* Pointer to picture data (indices) */
+    103            &PalButtonOn     /* Pointer to palette */
+    104          };
+    105          
+    106          GUI_CONST_STORAGE GUI_BITMAP bmButtonPlayPauseOff = {
+    107            16,           /* XSize */
+    108            9,            /* YSize */
+    109            2,            /* BytesPerLine */
+    110            1,            /* BitsPerPixel */
+    111            acButtonPlayPause, /* Pointer to picture data (indices) */
+    112            &PalButtonOff     /* Pointer to palette */
+    113          };
+    114          
+    115          GUI_CONST_STORAGE GUI_BITMAP bmButtonPause = {
+    116            16,           /* XSize */
+    117            9,            /* YSize */
+    118            2,            /* BytesPerLine */
+    119            1,            /* BitsPerPixel */
+    120            acButtonPlayPause, /* Pointer to picture data (indices) */
+    121            &PalButtonPause     /* Pointer to palette */
+    122          };
+    123          
+    124          GUI_CONST_STORAGE GUI_BITMAP bmButtonPlay = {
+    125            16,           /* XSize */
+    126            9,            /* YSize */
+    127            2,            /* BytesPerLine */
+    128            1,            /* BitsPerPixel */
+    129            acButtonPlayPause, /* Pointer to picture data (indices) */
+    130            &PalButtonPlay     /* Pointer to palette */
+    131          };
+    132          
+    133          
+    134          /******************************************************************************/
+    135          
+    136          GUI_CONST_STORAGE unsigned char acButtonMute[] = {
+    137            ________,______X_,  
+    138            ________,____XXX_,  
+    139            _____XXX,__XXXXX_,  
+    140            _____XXX,XXXXXXX_,
+    141            _____XXX,XXXXXXX_,
+    142            _____XXX,XXXXXXX_,
+    143            _____XXX,XXXXXXX_,
+    144            _____XXX,XXXXXXX_,
+    145            _____XXX,__XXXXX_,  
+    146            ________,____XXX_,  
+    147            ________,______X_,    
+    148          };
+    149          
+    150          GUI_CONST_STORAGE GUI_BITMAP bmButtonMuteOn = {
+    151            16,           /* XSize */
+    152            11,            /* YSize */
+    153            2,            /* BytesPerLine */
+    154            1,            /* BitsPerPixel */
+    155            acButtonMute, /* Pointer to picture data (indices) */
+    156            &PalButtonOn     /* Pointer to palette */
+    157          };
+    158          
+    159          GUI_CONST_STORAGE GUI_BITMAP bmButtonMuteOff = {
+    160            16,           /* XSize */
+    161            11,            /* YSize */
+    162            2,            /* BytesPerLine */
+    163            1,            /* BitsPerPixel */
+    164            acButtonMute, /* Pointer to picture data (indices) */
+    165            &PalButtonOff     /* Pointer to palette */
+    166          };
+    167          
+    168          GUI_CONST_STORAGE GUI_BITMAP bmButtonMuteAct = {
+    169            16,           /* XSize */
+    170            11,            /* YSize */
+    171            2,            /* BytesPerLine */
+    172            1,            /* BitsPerPixel */
+    173            acButtonMute, /* Pointer to picture data (indices) */
+    174            &PalButtonPause     /* Pointer to palette */
+    175          };
+    176          /******************************************************************************/
+    177          
+    178          GUI_CONST_STORAGE unsigned char acButtonNext[] = 
+    179          {
+    180            __XX____,___X____,  
+    181            __XXXX__,___X____,  
+    182            __XXXXXX,___X____,
+    183            __XXXXXX,XX_X____,
+    184            __XXXXXX,XXXX____,
+    185            __XXXXXX,XX_X____,
+    186            __XXXXXX,___X____,
+    187            __XXXX__,___X____,  
+    188            __XX____,___X____,    
+    189          };
+    190          
+    191          GUI_CONST_STORAGE GUI_BITMAP bmButtonNextOn =
+    192          {
+    193            16,           /* XSize */
+    194            9,            /* YSize */
+    195            2,            /* BytesPerLine */
+    196            1,            /* BitsPerPixel */
+    197            acButtonNext, /* Pointer to picture data (indices) */
+    198            &PalButtonOn, /* Pointer to palette */
+    199          };
+    200          
+    201          GUI_CONST_STORAGE GUI_BITMAP bmButtonNextOff = 
+    202          {
+    203            16,           /* XSize */
+    204            9,            /* YSize */
+    205            2,            /* BytesPerLine */
+    206            1,            /* BitsPerPixel */
+    207            acButtonNext, /* Pointer to picture data (indices) */
+    208            &PalButtonOff     /* Pointer to palette */
+    209          };
+    210          /******************************************************************************/
+    211          
+    212          GUI_CONST_STORAGE unsigned char acButtonPrevious[] = 
+    213          {
+    214            ____X___,____XX__,  
+    215            ____X___,__XXXX__,  
+    216            ____X___,XXXXXX__,
+    217            ____X_XX,XXXXXX__,
+    218            ____XXXX,XXXXXX__,
+    219            ____X_XX,XXXXXX__,
+    220            ____X___,XXXXXX__,
+    221            ____X___,__XXXX__,  
+    222            ____X___,____XX__,    
+    223          };
+    224          
+    225          GUI_CONST_STORAGE GUI_BITMAP bmButtonPreviousOn =
+    226          {
+    227            16,           /* XSize */
+    228            9,            /* YSize */
+    229            2,            /* BytesPerLine */
+    230            1,            /* BitsPerPixel */
+    231            acButtonPrevious, /* Pointer to picture data (indices) */
+    232            &PalButtonOn, /* Pointer to palette */
+    233          };
+    234          
+    235          GUI_CONST_STORAGE GUI_BITMAP bmButtonPreviousOff = 
+    236          {
+    237            16,           /* XSize */
+    238            9,            /* YSize */
+    239            2,            /* BytesPerLine */
+    240            1,            /* BitsPerPixel */
+    241            acButtonPrevious, /* Pointer to picture data (indices) */
+    242            &PalButtonOff     /* Pointer to palette */
+    243          };
+    244          /******************************************************************************/
+    245          
+    246          GUI_CONST_STORAGE unsigned char acButtonStop[] = 
+    247          {
+    248            ________,________,  
+    249            ____XXXX,XXXX____,  
+    250            ____XXXX,XXXX____,
+    251            ____XXXX,XXXX____,
+    252            ____XXXX,XXXX____,
+    253            ____XXXX,XXXX____,
+    254            ____XXXX,XXXX____,
+    255            ____XXXX,XXXX____,  
+    256            ________,________,    
+    257          };
+    258          
+    259          GUI_CONST_STORAGE GUI_BITMAP bmButtonStopOn =
+    260          {
+    261            16,           /* XSize */
+    262            9,            /* YSize */
+    263            2,            /* BytesPerLine */
+    264            1,            /* BitsPerPixel */
+    265            acButtonStop, /* Pointer to picture data (indices) */
+    266            &PalButtonOn, /* Pointer to palette */
+    267          };
+    268          
+    269          GUI_CONST_STORAGE GUI_BITMAP bmButtonStopOff = 
+    270          {
+    271            16,           /* XSize */
+    272            9,            /* YSize */
+    273            2,            /* BytesPerLine */
+    274            1,            /* BitsPerPixel */
+    275            acButtonStop, /* Pointer to picture data (indices) */
+    276            &PalButtonOff     /* Pointer to palette */
+    277          };
+    278          
+    279          /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      12  PalButtonOff
+      12  PalButtonOn
+      12  PalButtonPause
+      12  PalButtonPlay
+       8  aColorsButtonOff
+       8  aColorsButtonOn
+       8  aColorsButtonPause
+       8  aColorsButtonPlay
+      24  acButtonMute
+      20  acButtonNext
+      20  acButtonPlayPause
+      20  acButtonPrevious
+      20  acButtonStop
+      20  bmButtonMuteAct
+      20  bmButtonMuteOff
+      20  bmButtonMuteOn
+      20  bmButtonNextOff
+      20  bmButtonNextOn
+      20  bmButtonPause
+      20  bmButtonPlay
+      20  bmButtonPlayPauseOff
+      20  bmButtonPlayPauseOn
+      20  bmButtonPreviousOff
+      20  bmButtonPreviousOn
+      20  bmButtonStopOff
+      20  bmButtonStopOn
+
+ 
+ 444 bytes in section .rodata
+ 
+ 444 bytes of CONST memory
+
+Errors: none
+Warnings: none
